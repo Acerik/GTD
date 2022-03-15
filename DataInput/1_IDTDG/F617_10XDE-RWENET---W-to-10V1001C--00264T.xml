@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10XDE-RWENET---W-20201217F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XDE-RWENET---W"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-15T21:00:02Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YDE-RWENET---I"/>
+    <criticalBranches>
+        <criticalBranch id="D7_CBCO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+        </criticalBranch>
+       
+		<criticalBranch id="D7_CBCO_00133" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CH-DE-000026" from="XBE_TI1" to="D7TIEN1"  elementName="AARE W" name="[CH-D7] Beznau - Tiengen  AARE W [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>178</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D4_CO_00038" name="N-1 Oberjettingen - Pulverdingen ws" >
+            </outage>
+        </criticalBranch>
+		
+        <criticalBranch id="D7_CBCO_00003" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00002" name="N-1 Rheinau - Hoheneck KUGELB O" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00004" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00003" name="N-1 Rheinau - Hoheneck KUGELB W" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00005" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00006" name="N-1 Bacharach - Weissenthurm SOONWD O" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00006" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00007" name="N-1 Buerstadt - Waldlaubersheim WONNEG W" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00007" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00008" name="N-1 Dahlem - Niederstedem SELHN O" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00008" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00009" name="N-1 Dahlem - Oberzier SELHN W" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00009" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D2-D7_CO_00001" name="N-1 Dauersberg - Asslar WESTW W1" >
+            </outage>
+        </criticalBranch>
+         <criticalBranch id="D7_CBCO_00076" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T1001C--00037V" from="XWE_KE2" to="D7YKEM2"  elementName="FUESSN W" name="[AT-D7] Westtirol - Y Kempten FUESSN W [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>69</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00002" name="N-1 Rheinau - Hoheneck KUGELB O" >
+            </outage>
+			</criticalBranch>
+        <criticalBranch id="D7_CBCO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00010" name="N-1 Dauersberg - Sechtem SIEGTA N" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00011" name="N-1 Dauersberg - Sechtem SIEGTA S" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00013" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D4-D7_CO_00003" name="N-1 Daxlanden - Maximiliansau sw" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00014" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D4-D7_CO_00004" name="N-1 Daxlanden - Weingarten ge" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00015" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D2-D7_CO_00003" name="N-1 Dettingen - Grosskrotzenburg UMAIN S1" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00016" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D4-D7_CO_00005" name="N-1 Donau West" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00017" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D4-D7_CO_00006" name="N-1 DonauOst" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00018" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00013" name="N-1 Ensdorf - Uchtelfangen TAUBNT N" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D7_CBCO_00019" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0954-P" from="DBR_WB2" to="D73YWB2"  elementName="DELLM O" name="[AT-D7] Werben - Werben DELLM O [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>57</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S" >
+            </outage>
+        </criticalBranch>
+       <criticalBranch id="D7_CBCO_00092" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T1001C--00037V" from="XWE_KE2" to="D7YKEM2"  elementName="FUESSN W" name="[AT-D7] Westtirol - Y Kempten FUESSN W [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>69</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S" >
+            </outage>
+        </criticalBranch>
+		 <criticalBranch id="D7_CBCO_00078" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T1001C--00037V" from="XWE_KE2" to="D7YKEM2"  elementName="FUESSN W" name="[AT-D7] Westtirol - Y Kempten FUESSN W [DIR] [D7]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>69</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D7</tsoOrigin>
+            <outage id="D7_CO_00006" name="N-1 Bacharach - Weissenthurm SOONWD O" >
+            </outage>
+        </criticalBranch>
+                
+    </criticalBranches>
+	
+	<complexVariants>
+        <complexVariant id="D7_RA_00001" name="PST_Gronau">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D7</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="D7GRON1A" to="D7GRON1B"  elementName="TR 441 E"/>
+                    <range>
+                      <min>-10</min>
+                      <max>10</max>
+                    </range>
+                </action>
+            </actionsSet>
+        </complexVariant>
+    </complexVariants>
+   
+</FlowBasedConstraintDocument>

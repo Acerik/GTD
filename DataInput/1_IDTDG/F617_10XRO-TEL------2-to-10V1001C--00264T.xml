@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10XRO-TEL------2-20201217F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XRO-TEL------2"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-15T21:00:04Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YRO-TEL------P"/>
+    <criticalBranches>
+        <criticalBranch id="RO_CO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00002" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00005" name="N-1 TR Rosiori 400/220 1" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00003" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00007" name="N-1 TR Iernut 400/220 1" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00004" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00016" name="N-1 Iernut - Sibiu Sud" >
+            </outage>
+        </criticalBranch>
+
+       
+        <criticalBranch id="RO_CO_00006" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00007" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00005" name="N-1 TR Rosiori 400/220 1" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00008" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00007" name="N-1 TR Iernut 400/220 1" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00009" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TAIUL220MINT-3" from="RAIUL22" to="RMINT12" order="1"  name="[RO-RO] Alba Iulia - Mintia [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00016" name="N-1 Iernut - Sibiu Sud" >
+            </outage>
+        </criticalBranch>
+     
+	 <criticalBranch id="RO_CO_00021" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220TIMI-5" from="RARAD22" to="RTIMI22" order="1"  name="[RO-RO] Arad - Timisoara [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00010" name="N-1 PST Arad 400/220 3" >
+            </outage>
+        </criticalBranch>
+		
+		<criticalBranch id="RO_CO_00022" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220TIMI-5" from="RARAD22" to="RTIMI22" order="1"  name="[RO-RO] Arad - Timisoara [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00013" name="N-1 Calea Aradului - Sacalaz" >
+            </outage>
+        </criticalBranch>
+	 
+        <criticalBranch id="RO_CO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00004" name="N-1 Arad - Timisoara" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00013" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00010" name="N-1 PST Arad 400/220 3" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00014" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00017" name="N-1 Mintia - Arad" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00015" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00016" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00004" name="N-1 Arad - Timisoara" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00017" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00010" name="N-1 PST Arad 400/220 3" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00018" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220CARA-3" from="RARAD22" to="RCARA22" order="1"  name="[RO-RO] Arad - Calea Aradului [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00017" name="N-1 Mintia - Arad" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00019" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220TIMI-5" from="RARAD22" to="RTIMI22" order="1"  name="[RO-RO] Arad - Timisoara [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="RO_CO_00020" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="30TARAD220TIMI-5" from="RARAD22" to="RTIMI22" order="1"  name="[RO-RO] Arad - Timisoara [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>RO</tsoOrigin>
+            <outage id="RO_CO_00002" name="N-1 Arad - Calea Aradului" >
+            </outage>
+        </criticalBranch>
+         
+    </criticalBranches>
+	
+	 <complexVariants>
+        <complexVariant id="RO_RA_00001" name="PST_ARAD_400/220_3">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>RO</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="RARA4D1" to="RARAD22" order="1" />
+                    <range>
+                      <min>-12</min>
+                      <max>12</max>
+                    </range>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="RO_RA_00002" name="PST_URECHESTI_400/220_1">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>RO</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="RUREC41" to="RUREC22" order="1" />
+                    <range>
+                      <min>-12</min>
+                      <max>12</max>
+                    </range>
+                </action>
+            </actionsSet>
+        </complexVariant>
+       
+    </complexVariants>
+   
+</FlowBasedConstraintDocument>

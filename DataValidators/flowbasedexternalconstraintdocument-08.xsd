@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="flowbased" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="FlowBasedExternalConstraintDocument">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="ExternalConstraintTimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element name="constraints" type="fb:constrList">
+					<unique name="UniqueConstrId">
+						<selector xpath="./fb:netPositionConstraint"/>
+						<field xpath="@id"/>
+					</unique>
+				</element>
+			</sequence>
+			<attribute name="DtdVersion" type="string" use="required"/>
+			<attribute name="DtdRelease" type="string" use="required"/>
+		</complexType>
+	</element>
+	<simpleType name="nonEmptyString">
+		<restriction base="string">
+			<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="country">
+		<restriction base="string">
+			<pattern value="[a-zA-Z0-9_]{2,40}"/>
+		</restriction>
+	</simpleType>
+	<complexType name="tso_type">
+		<simpleContent>
+			<extension base="fb:tso_code">
+				<attribute name="id" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<simpleType name="tso_code">
+		<restriction base="string">
+			<pattern value="[A-Z0-9]{2,3}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="timeInterval">
+		<restriction base="string">
+			<pattern value="\[([01][0-9]|2[0-3]):([0-5][0-9])\-(([01][0-9]|2[0-3]):([0-5][0-9])|24:00)\]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="hour">
+		<restriction base="string">
+			<pattern value="([01][0-9]|2[0-3]):([0-5][0-9])"/>
+		</restriction>
+	</simpleType>
+	<complexType name="NetPositionConstraint">
+		<sequence>
+			<choice maxOccurs="1" minOccurs="1">
+				<element name="time">
+					<complexType>
+						<attribute name="v" type="dateTime"/>
+					</complexType>
+				</element>
+				<element name="timeInterval" type="ecc:TimeIntervalType"/>
+			</choice>
+			<element minOccurs="0" name="tsoOrigin" type="fb:tso_type"/>
+		</sequence>
+		<attribute name="id" type="fb:nonEmptyString" use="optional"/>
+		<attribute name="value" type="int" use="required"/>
+		<attribute name="name" type="string" use="required"/>
+		<attribute name="version" type="integer"/>
+		<attribute name="hub" type="fb:country" use="required"/>
+		<attribute name="direction" use="required">
+			<simpleType>
+				<restriction base="string">
+					<pattern value="EXPORT|IMPORT"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+		<attribute name="type">
+			<simpleType>
+				<restriction base="string">
+					<pattern value="ABSOLUTE|RELATIVE"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<complexType name="constrList">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="netPositionConstraint" type="fb:NetPositionConstraint"/>
+		</sequence>
+	</complexType>
+</schema>

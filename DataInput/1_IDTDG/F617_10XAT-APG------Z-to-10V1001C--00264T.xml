@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10XAT-APG------Z-20201217-F617v2"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XAT-APG------Z"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-10T11:23:32Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YAT-APG------L"/>
+    <criticalBranches>
+        <criticalBranch id="AT_CBCO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="AT_CBCO_00002" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+            <outage id="CZ-D2_CO_00001" name="N-1 Prestice - Etzenricht" >
+            </outage>
+        </criticalBranch>
+		
+		  <criticalBranch id="AT_CO_00739" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-AT-CZ-00003X" from="ODUERN1" to="XDU_SL1"  elementName="437" name="[AT-CZ] Duernrohr 1 - Slavetice 437 [DIR] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>148.2</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+		<criticalBranch id="AT_CBCO_00005" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+            <outage id="AT_CO_00020" name="N-1 Hausruck - St. Peter 2 204A" >
+            </outage>
+        </criticalBranch>
+		
+          <criticalBranch id="AT_CBCO_00091" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0204CA" from="OERNST2" to="OSATTL2"  elementName="204C" name="[AT-AT] Ernsthofen 2 - Sattledt 204C [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+        <criticalBranch id="AT_CBCO_00004" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+            <outage id="CZ_CO_00006" name="N-1 Slavetice - Dasny" >
+            </outage>
+        </criticalBranch>
+            <criticalBranch id="AT_CBCO_00089" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0201BL" from="OERNST2" to="OKLAUS2"  elementName="201B" name="[AT-AT] Ernsthofen 2 - Klaus 201B [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>27.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+     
+       
+	        <criticalBranch id="AT_CO_00169" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0204AE" from="OHAUSR2" to="OPETER2"  elementName="234prov" name="[AT-AT] Hausruck - St. Peter 2 204A [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+		
+		
+         <criticalBranch id="AT_CO_00747" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-AT-CZ-00003X" from="ODUERN1" to="XDU_SL1"  elementName="437" name="[AT-CZ] Duernrohr 1 - Slavetice 437 [OPP] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>148.2</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+		
+        <criticalBranch id="AT_CO_00249" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-00431T" from="OKRONS1" to="OPETER1"  elementName="431" name="[AT-AT] Kronsdorf - St. Peter 1 431 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>151.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+            <outage id="CZ_CO_00006" name="N-1 Slavetice - Dasny" >
+            </outage>
+        </criticalBranch>
+		
+		
+        <criticalBranch id="AT_CO_00241" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-00431T" from="OKRONS1" to="OPETER1"  elementName="431" name="[AT-AT] Kronsdorf - St. Peter 1 431 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>151.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		 <criticalBranch id="AT_CO_00922" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-AT-DE-000061" from="OWESTT2" to="XWE_BR2"  elementName="421" name="[AT-D4] Westtirol 2 - Buers 421 [DIR] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>82.1</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>false</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+		 <criticalBranch id="AT_CO_00931" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-AT-DE-000061" from="OWESTT2" to="XWE_BR2"  elementName="421" name="[AT-D4] Westtirol 2 - Buers 421 [OPP] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>82.1</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+        <criticalBranch id="AT_CBCO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="AT_CBCO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+            <outage id="CZ-D2_CO_00001" name="N-1 Prestice - Etzenricht" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="AT_CBCO_00087" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0201BL" from="OERNST2" to="OKLAUS2"  elementName="201B" name="[AT-AT] Ernsthofen 2 - Klaus 201B [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>27.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+		
+        <criticalBranch id="AT_CBCO_00014" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203BF" from="OASCHA2" to="OHAUSR2"  elementName="203B" name="[AT-AT] Aschach - Hausruck 203B [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+            <outage id="CZ_CO_00006" name="N-1 Slavetice - Dasny" >
+            </outage>
+        </criticalBranch>
+           <criticalBranch id="AT_CBCO_00076" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="14T-220-0-0203CD" from="OERNST2" to="OHAUSR2"  elementName="203C" name="[AT-AT] Ernsthofen 2 - Hausruck 203C [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>30.5</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+       
+	  <criticalBranch id="AT_CO_00868" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T1001C--000332" from="O9YVIL2" to="XYV_SI2"  elementName="273C-SIL" name="[AT-D2] Vill_Thaur - Silz 273C [OPP] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>60</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+		<criticalBranch id="AT_CO_00870" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T1001C--000324" from="O9YVIL2" to="XYV_SI2"  elementName="274C-SIL" name="[AT-D2] Vill_Thaur - Silz 274C [DIR] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>60</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+		
+        <criticalBranch id="AT_CO_00724" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-AT-CZ-000010" from="OBISAM2" to="XBI_SO2"  elementName="243" name="[AT-CZ] Bisamberg 2 - Sokolnice 243 [OPP] [AT]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>25</frmMw>
+            <minRAMfactor>20</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>AT</tsoOrigin>
+        </criticalBranch>
+        
+        
+	</criticalBranches>
+       
+    <complexVariants>
+        <complexVariant id="RA_AT_00001" name="PST_EHPST_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>AT</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="OERNST21" to="OERNST22"  elementName="EHPST"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                   
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="RA_AT_00002" name="PST_TAPST_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>AT</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="OTAUER22" to="OTAUER21"  elementName="TAPST"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                   
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="RA_AT_00003" name="PST_TEPST_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>AT</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="OTERNI21" to="OTERNI22"  elementName="TEPST"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                    
+                </action>
+            </actionsSet>
+        </complexVariant>
+       
+    </complexVariants>
+   
+   
+   
+</FlowBasedConstraintDocument>

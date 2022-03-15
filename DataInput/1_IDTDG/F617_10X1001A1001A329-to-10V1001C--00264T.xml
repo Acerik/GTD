@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10X1001A1001A329-20190330-F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10X1001A1001A329"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-28T15:20:46Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YHU-MAVIR----U"/>
+    <criticalBranches>
+        <criticalBranch id="HU_CO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+        </criticalBranch>
+		  <criticalBranch id="HU_CBCO_00708" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000000303B" from="MDUME 2" to="MOROE 2" order="1"  name="[HU-HU] Dunamenti - Oroszlany [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>38</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00035" name="N-1 Martonvasar TR2" >
+            </outage>
+        </criticalBranch>
+		
+        <criticalBranch id="HU_CO_00002" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00002" name="N-1 Albertirsa - Kerepes" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00003" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00003" name="N-1 God - Kerepes" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00004" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00004" name="N-1 Albertirsa - Martonvasar" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00005" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00005" name="N-1 Albertirsa - Szigetcsep" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00006" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00006" name="N-1 Martonvasar - Szigetcsep" >
+            </outage>
+        </criticalBranch>
+            <criticalBranch id="HU_CBCO_00093" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003335K" from="MAISA 1" to="MSZICS1" order="1"  name="[HU-HU] Albertirsa - Szigetcsep [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00008" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00011" name="N-1 Bicske Del - Martonvasar" >
+            </outage>
+        </criticalBranch>
+       
+        <criticalBranch id="HU_CO_00010" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00012" name="N-1 God - Sajoszoged" >
+            </outage>
+        </criticalBranch>
+          <criticalBranch id="HU_CBCO_00081" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003351M" from="MAISA 1" to="MMART 1" order="1"  name="[HU-HU] Albertirsa - Martonvasar [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00030" name="N-1 Albertirsa - Jozsa" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00013" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00014" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00002" name="N-1 Albertirsa - Kerepes" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00015" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00003" name="N-1 God - Kerepes" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00016" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00004" name="N-1 Albertirsa - Martonvasar" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00017" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00005" name="N-1 Albertirsa - Szigetcsep" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00018" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00006" name="N-1 Martonvasar - Szigetcsep" >
+            </outage>
+        </criticalBranch>
+         <criticalBranch id="HU_CBCO_00069" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003351M" from="MAISA 1" to="MMART 1" order="1"  name="[HU-HU] Albertirsa - Martonvasar [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>HU</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="HU_CO_00020" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="15T-M0000003237K" from="MAISA 1" to="MGOD  1" order="1"  name="[HU-HU] Albertirsa - God [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>138</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>HU</tsoOrigin>
+            <outage id="HU_CO_00011" name="N-1 Bicske Del - Martonvasar" >
+            </outage>
+        </criticalBranch>
+       
+    </criticalBranches>
+	
+	  
+       
+        
+  
+    
+</FlowBasedConstraintDocument>

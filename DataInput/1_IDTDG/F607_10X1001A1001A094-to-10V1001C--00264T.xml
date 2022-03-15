@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GSKDocument DtdRelease="0" DtdVersion="1" xsi:noNamespaceSchemaLocation="gsk-document.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DocumentIdentification v="ELIA_BE_GSK_20190330"/>
+	<DocumentVersion v="1"/>
+	<DocumentType v="B22"/>
+	<ProcessType v="A02"/>
+	<SenderIdentification codingScheme="A01" v="10X1001A1001A094"/>
+	<SenderRole v="A04"/>
+	<ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+	<ReceiverRole v="A36"/>
+	<CreationDateTime v="2019-03-30T00:00:00Z"/>
+	<GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+	<Domain codingScheme="A01" v="10YBE----------2"/>
+	<GSKSeries>
+		<TimeSeriesIdentification v="3"/>
+		<BusinessType v="Z02" share="100"/>
+		<Area codingScheme="A01" v="10YBE----------2"/>
+		<ManualGSK_Block>
+			<GSK_Name v="BE"/>
+			<TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<ManualNodes><NodeName v="BAALST31"/><Factor v="0.007242"/></ManualNodes>
+			<ManualNodes><NodeName v="BAMERC3W"/><Factor v="0.039695"/></ManualNodes>
+			<ManualNodes><NodeName v="BAMERC3V"/><Factor v="0.020874"/></ManualNodes>
+			<ManualNodes><NodeName v="BSERAI21"/><Factor v="0.028392"/></ManualNodes>
+			<ManualNodes><NodeName v="BCOO  1R"/><Factor v="0.046097"/></ManualNodes>
+			<ManualNodes><NodeName v="BCOO  1S"/><Factor v="0.046097"/></ManualNodes>
+			<ManualNodes><NodeName v="BCOO  1T"/><Factor v="0.046097"/></ManualNodes>
+			<ManualNodes><NodeName v="BCOO  1U"/><Factor v="0.066195"/></ManualNodes>
+			<ManualNodes><NodeName v="BCOO  1V"/><Factor v="0.066195"/></ManualNodes>
+			<ManualNodes><NodeName v="BCOO  1W"/><Factor v="0.066195"/></ManualNodes>
+			<ManualNodes><NodeName v="BDROGE3U"/><Factor v="0.043439"/></ManualNodes>
+			<ManualNodes><NodeName v="BHAM  3R"/><Factor v="0.025042"/></ManualNodes>
+			<ManualNodes><NodeName v="BHBRUG3U"/><Factor v="0.041269"/></ManualNodes>
+			<ManualNodes><NodeName v="BCZWIJ3V"/><Factor v="0.007162"/></ManualNodes>
+			<ManualNodes><NodeName v="BCZWIJ3U"/><Factor v="0.007162"/></ManualNodes>
+			<ManualNodes><NodeName v="BCZWIJ3W"/><Factor v="0.007146"/></ManualNodes>
+			<ManualNodes><NodeName v="BBRUGG31"/><Factor v="0.001148"/></ManualNodes>
+			<ManualNodes><NodeName v="BTERGN31"/><Factor v="0.016908"/></ManualNodes>
+			<ManualNodes><NodeName v="BLILLO32"/><Factor v="0.020082"/></ManualNodes>
+			<ManualNodes><NodeName v="BPLATE31"/><Factor v="0.044661"/></ManualNodes>
+			<ManualNodes><NodeName v="BRINGV3W"/><Factor v="0.058086"/></ManualNodes>
+			<ManualNodes><NodeName v="BRODEN3W"/><Factor v="0.034294"/></ManualNodes>
+			<ManualNodes><NodeName v="BBAUDO3W"/><Factor v="0.053732"/></ManualNodes>
+			<ManualNodes><NodeName v="BSCARB32"/><Factor v="0.003445"/></ManualNodes>
+			<ManualNodes><NodeName v="BESSO 3W"/><Factor v="0.019938"/></ManualNodes>
+			<ManualNodes><NodeName v="BLEVAL2W"/><Factor v="0.024271"/></ManualNodes>
+			<ManualNodes><NodeName v="BVERBR3A"/><Factor v="0.03893"/></ManualNodes>
+			<ManualNodes><NodeName v="BKRUSS32"/><Factor v="0.014036"/></ManualNodes>
+			<ManualNodes><NodeName v="BKRUSS31"/><Factor v="0.007018"/></ManualNodes>
+			<ManualNodes><NodeName v="BBASF 3W"/><Factor v="0.05118"/></ManualNodes>
+			<ManualNodes><NodeName v="BCKNIP3W"/><Factor v="0.038946"/></ManualNodes>
+			<ManualNodes><NodeName v="BZWIJN31"/><Factor v="0.009028"/></ManualNodes>
+		</ManualGSK_Block>
+	</GSKSeries>
+</GSKDocument>

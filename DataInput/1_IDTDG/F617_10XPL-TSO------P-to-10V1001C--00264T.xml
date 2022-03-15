@@ -1,0 +1,613 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-18.xsd">
+	<DocumentIdentification v="10XPL-TSO------P-20190330-F617v1"/>
+	<DocumentVersion v="1"/>
+	<DocumentType v="B06"/>
+	<ProcessType v="A02"/>
+	<SenderIdentification codingScheme="A01" v="10XPL-TSO------P"/>
+	<SenderRole v="A04"/>
+	<ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+	<ReceiverRole v="A36"/>
+	<CreationDateTime v="2020-12-28T16:51:05Z"/>
+	<ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+	<Domain codingScheme="A01" v="10YPL-AREA-----S"/>
+	<criticalBranches>
+		
+		<criticalBranch id="PL_CO_00030">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000296P" from="ZKRI241" to="ZTAW341" elementName="415" name="[PL-PL] Krosno Iskrzynia - Tarnow [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>139</frmMw>
+			<minRAMfactor>20</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00030" name="N-1 Krosno Iskrzynia - Rzeszow"/>
+		</criticalBranch>
+		<criticalBranch id="PL_CBCO_00739">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006414F" from="ZPOL422" to="ZZUK422" elementName="4809" name="[PL-PL] Polkowice - Zukowice [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>38</frmMw>
+			<minRAMfactor>1</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00046" name="N-1 Lesniow - Zukowice"/>
+		</criticalBranch>
+		
+
+		<criticalBranch id="PL_CO_00005">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000296P" from="ZKRI241" to="ZTAW341" elementName="415" name="[PL-PL] Krosno Iskrzynia - Tarnow [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>139</frmMw>
+			<minRAMfactor>12</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="SK_CO_00004" name="N-1 Sp.Nova Ves - Lemesany"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CBCO_00733">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006414F" from="ZPOL422" to="ZZUK422" elementName="4809" name="[PL-PL] Polkowice - Zukowice [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>38</frmMw>
+			<minRAMfactor>1</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00034" name="N-1 Czarna - Pasikurowice"/>
+		</criticalBranch>
+		<criticalBranch id="PL_CBCO_00743">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006414F" from="ZPOL422" to="ZZUK422" elementName="4809" name="[PL-PL] Polkowice - Zukowice [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>38</frmMw>
+			<minRAMfactor>1</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00037" name="N-1 Krajnik - Plewiska"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CO_00014">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000296P" from="ZKRI241" to="ZTAW341" elementName="415" name="[PL-PL] Krosno Iskrzynia - Tarnow [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>139</frmMw>
+			<minRAMfactor>3</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="CZ_CO_00014" name="N-1 Albrechtice - Nosovice"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CBCO_00013">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000296P" from="ZKRI241" to="ZTAW341" elementName="415" name="[PL-PL] Krosno Iskrzynia - Tarnow [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>139</frmMw>
+			<minRAMfactor>3</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+		</criticalBranch>
+		<criticalBranch id="PL_CBCO_00014">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000296P" from="ZKRI241" to="ZTAW341" elementName="415" name="[PL-PL] Krosno Iskrzynia - Tarnow [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>139</frmMw>
+			<minRAMfactor>12</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+		</criticalBranch>
+		<criticalBranch id="PL_CBCO_00015">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000299J" from="ZMON441" to="ZDUN541" elementName="418" name="[PL-PL] Morzyczyn - Dunowo [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>130</frmMw>
+			<minRAMfactor>7</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+		</criticalBranch>
+		<criticalBranch id="PL_CBCO_00016">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000299J" from="ZMON441" to="ZDUN541" elementName="418" name="[PL-PL] Morzyczyn - Dunowo [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>130</frmMw>
+			<minRAMfactor>3</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CO_00009">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000299J" from="ZMON441" to="ZDUN541" elementName="418" name="[PL-PL] Morzyczyn - Dunowo [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>130</frmMw>
+			<minRAMfactor>7</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00009" name="N-1 Krajnik - Morzyczyn"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CO_00037">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000000299J" from="ZMON441" to="ZDUN541" elementName="418" name="[PL-PL] Morzyczyn - Dunowo [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>130</frmMw>
+			<minRAMfactor>4</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00037" name="N-1 Krajnik - Plewiska"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CBCO_00053">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="10T-DE-PL-00002B" from="ZMIK441" to="XHG_MI1" elementName="567" name="[D8-PL] Hagenwerder - Mikulowa 2 [DIR] [PL]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>172</frmMw>
+			<minRAMfactor>12</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CBCO_00054">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="10T-DE-PL-00002B" from="ZMIK441" to="XHG_MI1" elementName="567" name="[D8-PL] Hagenwerder - Mikulowa 2 [OPP] [PL]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>172</frmMw>
+			<minRAMfactor>5</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>true</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+		</criticalBranch>
+		
+				<criticalBranch id="PL_CBCO_00744">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006414F" from="ZPOL422" to="ZZUK422" elementName="4809" name="[PL-PL] Polkowice - Zukowice [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>38</frmMw>
+			<minRAMfactor>3</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00037" name="N-1 Krajnik - Plewiska"/>
+		</criticalBranch>
+	
+		<criticalBranch id="PL_CBCO_00745">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006414F" from="ZPOL422" to="ZZUK422" elementName="4809" name="[PL-PL] Polkowice - Zukowice [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>38</frmMw>
+			<minRAMfactor>0</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00043" name="N-1 Polkowice AT3"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CO_00034">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006412J" from="ZDBN341" to="ZWRC441" elementName="423" name="[PL-PL] Wroclaw - Dobrzen [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>83</frmMw>
+			<minRAMfactor>6</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00034" name="N-1 Czarna - Pasikurowice"/>
+		</criticalBranch>
+
+		
+		<criticalBranch id="PL_CO_00043">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006412J" from="ZDBN341" to="ZWRC441" elementName="423" name="[PL-PL] Wroclaw - Dobrzen [DIR]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>83</frmMw>
+			<minRAMfactor>10</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>DIRECT</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00043" name="N-1 Polkowice AT3"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CBCO_00736">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006414F" from="ZPOL422" to="ZZUK422" elementName="4809" name="[PL-PL] Polkowice - Zukowice [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>38</frmMw>
+			<minRAMfactor>2</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00039" name="N-1 Pasikurowice - Ostrow"/>
+		</criticalBranch>
+		
+		<criticalBranch id="PL_CO_00039">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<branch eic="19T000000006412J" from="ZDBN341" to="ZWRC441" elementName="423" name="[PL-PL] Wroclaw - Dobrzen [OPP]"/>
+			<imaxFactor>1</imaxFactor>
+			<imaxType>DYNAMIC</imaxType>
+			<permanentImaxFactor>1</permanentImaxFactor>
+			<temporaryImaxFactor>1</temporaryImaxFactor>
+			<frmMw>83</frmMw>
+			<minRAMfactor>5</minRAMfactor>
+			<CNEC>true</CNEC>
+			<MNEC>false</MNEC>
+			<direction>OPPOSITE</direction>
+			<tsoOrigin>PL</tsoOrigin>
+			<outage id="PL_CO_00039" name="N-1 Pasikurowice - Ostrow"/>
+		</criticalBranch>
+		
+	</criticalBranches>
+
+	<complexVariants>
+		<complexVariant id="PL_RA_00001" name="PST_Mikulowa_1_PRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>true</preventive>
+				<curative>false</curative>
+				<enforced>false</enforced>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF1"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00002" name="PST_Mikulowa_2_PRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>true</preventive>
+				<curative>false</curative>
+				<enforced>false</enforced>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF2"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00003" name="PST_Mikulowa_3_PRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>true</preventive>
+				<curative>false</curative>
+				<enforced>false</enforced>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF3"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00004" name="PST_Mikulowa_4_PRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>true</preventive>
+				<curative>false</curative>
+				<enforced>false</enforced>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF4"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00005" name="PST_Mikulowa_1_CRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>false</preventive>
+				<curative>true</curative>
+				<enforced>false</enforced>
+				<afterCOList>
+					<afterCOId>PL_CO_00024</afterCOId>
+					<afterCOId>PL_CO_00023</afterCOId>
+					<afterCOId>PL_CO_00003</afterCOId>
+					<afterCOId>PL_CO_00002</afterCOId>
+					<afterCOId>PL_CO_00014</afterCOId>
+					<afterCOId>PL_CO_00013</afterCOId>
+					<afterCOId>PL_CO_00011</afterCOId>
+					<afterCOId>PL_CO_00012</afterCOId>
+					<afterCOId>PL_CO_00015</afterCOId>
+				</afterCOList>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF1"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+					<relativeRange>
+						<min>-8</min>
+						<max>8</max>
+					</relativeRange>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00006" name="PST_Mikulowa_2_CRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>false</preventive>
+				<curative>true</curative>
+				<enforced>false</enforced>
+				<afterCOList>
+					<afterCOId>PL_CO_00024</afterCOId>
+					<afterCOId>PL_CO_00023</afterCOId>
+					<afterCOId>PL_CO_00003</afterCOId>
+					<afterCOId>PL_CO_00002</afterCOId>
+					<afterCOId>PL_CO_00014</afterCOId>
+					<afterCOId>PL_CO_00013</afterCOId>
+					<afterCOId>PL_CO_00011</afterCOId>
+					<afterCOId>PL_CO_00012</afterCOId>
+					<afterCOId>PL_CO_00015</afterCOId>
+				</afterCOList>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF2"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+					<relativeRange>
+						<min>-8</min>
+						<max>8</max>
+					</relativeRange>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00007" name="PST_Mikulowa_3_CRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>false</preventive>
+				<curative>true</curative>
+				<enforced>false</enforced>
+				<afterCOList>
+					<afterCOId>PL_CO_00024</afterCOId>
+					<afterCOId>PL_CO_00023</afterCOId>
+					<afterCOId>PL_CO_00003</afterCOId>
+					<afterCOId>PL_CO_00002</afterCOId>
+					<afterCOId>PL_CO_00014</afterCOId>
+					<afterCOId>PL_CO_00013</afterCOId>
+					<afterCOId>PL_CO_00011</afterCOId>
+					<afterCOId>PL_CO_00012</afterCOId>
+					<afterCOId>PL_CO_00015</afterCOId>
+				</afterCOList>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF3"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+					<relativeRange>
+						<min>-8</min>
+						<max>8</max>
+					</relativeRange>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00008" name="PST_Mikulowa_4_CRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>false</preventive>
+				<curative>true</curative>
+				<enforced>false</enforced>
+				<afterCOList>
+					<afterCOId>PL_CO_00024</afterCOId>
+					<afterCOId>PL_CO_00023</afterCOId>
+					<afterCOId>PL_CO_00003</afterCOId>
+					<afterCOId>PL_CO_00002</afterCOId>
+					<afterCOId>PL_CO_00014</afterCOId>
+					<afterCOId>PL_CO_00013</afterCOId>
+					<afterCOId>PL_CO_00011</afterCOId>
+					<afterCOId>PL_CO_00012</afterCOId>
+					<afterCOId>PL_CO_00015</afterCOId>
+				</afterCOList>
+				<action type="PSTTAP">
+					<branch from="ZMIK441" to="ZMIK441" elementName="MIK-PF4"/>
+					<range>
+						<min>-8</min>
+						<max>8</max>
+					</range>
+					<relativeRange>
+						<min>-8</min>
+						<max>8</max>
+					</relativeRange>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00009" name="AT_Mikulowa_1_CRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>false</preventive>
+				<curative>true</curative>
+				<enforced>false</enforced>
+				<afterCOList>
+					<afterCOId>PL_CO_00023</afterCOId>
+					<afterCOId>PL_CO_00003</afterCOId>
+					<afterCOId>PL_CO_00002</afterCOId>
+					<afterCOId>PL_CO_00014</afterCOId>
+					<afterCOId>PL_CO_00013</afterCOId>
+					<afterCOId>PL_CO_00011</afterCOId>
+					<afterCOId>PL_CO_00012</afterCOId>
+					<afterCOId>PL_CO_00015</afterCOId>
+				</afterCOList>
+				<action type="PSTTAP">
+					<branch from="ZMIK422" to="ZMIKP22" elementName="MIK-TD1"/>
+					<range>
+						<min>-5</min>
+						<max>5</max>
+					</range>
+					<relativeRange>
+						<min>-5</min>
+						<max>5</max>
+					</relativeRange>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00010" name="AT_Mikulowa_2_CRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>false</preventive>
+				<curative>true</curative>
+				<enforced>false</enforced>
+				<afterCOList>
+					<afterCOId>PL_CO_00024</afterCOId>
+					<afterCOId>PL_CO_00003</afterCOId>
+					<afterCOId>PL_CO_00002</afterCOId>
+					<afterCOId>PL_CO_00014</afterCOId>
+					<afterCOId>PL_CO_00013</afterCOId>
+					<afterCOId>PL_CO_00011</afterCOId>
+					<afterCOId>PL_CO_00012</afterCOId>
+					<afterCOId>PL_CO_00015</afterCOId>
+				</afterCOList>
+				<action type="PSTTAP">
+					<branch from="ZMIK422" to="ZMIKP22" elementName="MIK-TD2"/>
+					<range>
+						<min>-5</min>
+						<max>5</max>
+					</range>
+					<relativeRange>
+						<min>-5</min>
+						<max>5</max>
+					</relativeRange>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00011" name="AT_Mikulowa_1_PRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>true</preventive>
+				<curative>false</curative>
+				<enforced>false</enforced>
+				<action type="PSTTAP">
+					<branch from="ZMIK422" to="ZMIKP22" elementName="MIK-TD1"/>
+					<range>
+						<min>-5</min>
+						<max>5</max>
+					</range>
+				</action>
+			</actionsSet>
+		</complexVariant>
+		<complexVariant id="PL_RA_00012" name="AT_Mikulowa_2_PRA">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+			<actionsSet>
+				<preventive>true</preventive>
+				<curative>false</curative>
+				<enforced>false</enforced>
+				<action type="PSTTAP">
+					<branch from="ZMIK422" to="ZMIKP22" elementName="MIK-TD2"/>
+					<range>
+						<min>-5</min>
+						<max>5</max>
+					</range>
+				</action>
+			</actionsSet>
+		</complexVariant>
+	</complexVariants>
+
+
+</FlowBasedConstraintDocument>

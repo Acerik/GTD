@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-04.xsd">
+  <DocumentIdentification v="10XRO-TEL------2-20201126F607v1" />
+  <DocumentVersion v="1"/>
+  <DocumentType v="B22" />
+  <ProcessType v="A02" />
+  <SenderIdentification codingScheme="A01" v="10XRO-TEL------2" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-11-24T21:00:01Z" />
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="10YRO-TEL------P" />
+  <GSKSeries>
+    <TimeSeriesIdentification v="1" />
+    <BusinessType v="Z02" share="100" />
+    <Area codingScheme="A01" v="10YRO-TEL------P" />
+    <AutoGSK_Block>
+      <GSK_Name v="RO" />
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <AutoNodes>
+        <NodeName v="RCTCVA5 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RCTCVB5 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RGILC22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RIERN15 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RIERN22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RISAL22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RLOTR22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RMARI22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RMUNT_5 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="ROSTRB5 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RPDF212 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RPDF222 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RREME_5 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RRETE22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RROVI31 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RSUGA22 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RTHARG2 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RTURC11 " />
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="RTURC51 " />
+      </AutoNodes>
+    </AutoGSK_Block>
+  </GSKSeries>
+</GSKDocument>

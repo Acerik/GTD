@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pmb.unicorn.eu/capacity-3.0" xmlns="http://pmb.unicorn.eu/capacity-3.0"
+  xmlns:ecc="etso-core-cmpts.xsd" version="3.0.3">
+  <xs:import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts-pcr.xsd" />
+  <xs:element name="CapacityDocument" type="CapacityDocument" />
+  <xs:complexType name="CapacityDocument">
+    <xs:sequence>
+      <xs:element name="DocumentIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="DocumentVersion" type="ecc:VersionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="DocumentType" type="ecc:DocumentType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="ProcessType" type="ecc:ProcessType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="SenderIdentification" type="ecc:PartyType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="SenderRole" type="ecc:RoleType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="ReceiverIdentification" type="ecc:PartyType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ReceiverRole" type="ecc:RoleType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="CreationDateTime" type="ecc:MessageDateTimeType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="CapacityTimeInterval" type="ecc:TimeIntervalType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Domain" type="ecc:AreaType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="CapacityTimeSeries" type="CapacityTimeSeries" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="FlowBasedTimeSeries" type="FlowBasedTimeSeries" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="BiddingAreaTimeSeries" type="BiddingAreaTimeSeries" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="LineSetTimeSeries" type="LineSetTimeSeries" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapacityTimeSeries">
+    <xs:sequence>
+      <xs:element name="TimeSeriesIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="BusinessType" type="ecc:BusinessType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Product" type="ecc:EnergyProductType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="InArea" type="ecc:AreaType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="OutArea" type="ecc:AreaType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Interconnector" type="ecc:IdentificationType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="MeasureUnit" type="ecc:UnitOfMeasureType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Currency" type="ecc:CurrencyType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="MeasureUnitPrice" type="ecc:UnitOfMeasureType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="LastPreviousQty" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Period" type="CapacityTimeSeries.Period" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapacityTimeSeries.Period">
+    <xs:sequence>
+      <xs:element name="TimeInterval" type="ecc:TimeIntervalType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Resolution" type="ecc:ResolutionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Interval" type="CapacityTimeSeries.Interval" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapacityTimeSeries.Interval">
+    <xs:sequence>
+      <xs:element name="Pos" type="ecc:PositionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Qty" type="ecc:QuantityType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="LTNomination" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Tariff" type="ecc:AmountType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Loss" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Ramping" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="MinimumStableFlow" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FlowBasedTimeSeries">
+    <xs:sequence>
+      <xs:element name="TimeSeriesIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="BusinessType" type="ecc:BusinessType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Product" type="ecc:EnergyProductType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="BalancingArea" type="ecc:AreaType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="ObjectAggregation" type="ecc:ObjectAggregationType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="MeasureUnit" type="ecc:UnitOfMeasureType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Period" type="FlowBasedTimeSeries.Period" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FlowBasedTimeSeries.Period">
+    <xs:sequence>
+      <xs:element name="TimeInterval" type="ecc:TimeIntervalType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Resolution" type="ecc:ResolutionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Interval" type="FlowBasedTimeSeries.Interval" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FlowBasedTimeSeries.Interval">
+    <xs:sequence>
+      <xs:element name="Pos" type="ecc:PositionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Constraint" type="Constraint" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Hub">
+    <xs:sequence>
+      <xs:element name="ID" type="ecc:AreaType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BiddingAreaTimeSeries">
+    <xs:sequence>
+      <xs:element name="TimeSeriesIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="BusinessType" type="ecc:BusinessType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Product" type="ecc:EnergyProductType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="BiddingArea" type="ecc:AreaType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="MeasureUnitQuantity" type="ecc:UnitOfMeasureType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="CumulativeRampLimitUp" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="CumulativeRampLimitDown" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="LastPreviousNetPosition" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Period" type="BiddingAreaTimeSeries.Period" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BiddingAreaTimeSeries.Period">
+    <xs:sequence>
+      <xs:element name="TimeInterval" type="ecc:TimeIntervalType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Resolution" type="ecc:ResolutionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Interval" type="BiddingAreaTimeSeries.Interval" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BiddingAreaTimeSeries.Interval">
+    <xs:sequence>
+      <xs:element name="Pos" type="ecc:PositionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="RampLimitUp" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="RampLimitDown" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ThresholdLimitUp" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ThresholdLimitDown" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ExternalConstraintLimitUp" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ExternalConstraintLimitDown" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PTDF">
+    <xs:sequence>
+      <xs:element name="PTDFFactor" type="ecc:QuantityType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Hub" type="Hub" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Constraint">
+    <xs:sequence>
+      <xs:element name="ConstraintID" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="RAM" type="ecc:QuantityType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="PTDF" type="PTDF" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LineSetTimeSeries">
+    <xs:sequence>
+      <xs:element name="TimeSeriesIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="BusinessType" type="ecc:BusinessType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Product" type="ecc:EnergyProductType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="LineSetIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="MeasureUnitQuantity" type="ecc:UnitOfMeasureType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Period" type="LineSetTimeSeries.Period" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LineSetTimeSeries.Period">
+    <xs:sequence>
+      <xs:element name="TimeInterval" type="ecc:TimeIntervalType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Resolution" type="ecc:ResolutionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Interval" type="LineSetTimeSeries.Interval" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LineSetTimeSeries.Interval">
+    <xs:sequence>
+      <xs:element name="Pos" type="ecc:PositionType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="RampLimitUp" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="RampLimitDown" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="CapacityUp" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="CapacityDown" type="ecc:QuantityType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

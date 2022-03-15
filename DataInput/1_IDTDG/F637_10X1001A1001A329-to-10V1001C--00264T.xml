@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-17.xsd">
+  <DocumentIdentification v="10X1001A1001A329-20190108-F637v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="A16"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10X1001A1001A329"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-08-15T14:07:28Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YHU-MAVIR----U"/>
+  <complexVariants>
+    <complexVariant id="RA_HU_0001" name="PRA_PST_Vaneyck_1">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>HU</tsoOrigin>
+      <actionsSet name="PRA_PST_Vaneyck_1">
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <action type="PSTTAP">
+          <branch order="1" from="MBNAD 41" to="MNBAT 41"/>
+          <value>0</value>
+        </action>
+        <action type="PSTTAP">
+          <branch order="1" from="MDUJVE41" to="MDUJV241"/>
+          <value>2</value>
+        </action>
+        <action type="PSTTAP">
+          <branch order="2" from="MGYOR 41" to="MGYRE 41"/>
+          <value>2</value>
+        </action>
+        <action type="PSTTAP">
+          <branch order="2" from="MZUGL 41" to="MANGY 41"/>
+          <value>2</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+  </complexVariants>
+</FlowBasedConstraintDocument>

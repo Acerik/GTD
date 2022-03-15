@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10XCZ-CEPS-GRIDE-20190330-F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XCZ-CEPS-GRIDE"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-28T17:53:10Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YCZ-CEPS-----N"/>
+    <criticalBranches>
+        <criticalBranch id="CZ_CBCO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TR-SOKT202-O" from="CSOK__1" to="CSOK__2" order="1"  name="[CZ-CZ] TR Sokolnice 220/400 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.3</temporaryImaxFactor>
+            <frmMw>50</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CBCO_00002" >
+            <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+            <branch eic="27T-TR-SOKT202-O" from="CSOK__1" to="CSOK__2" order="1"  name="[CZ-CZ] TR Sokolnice 220/400 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.3</temporaryImaxFactor>
+            <frmMw>50</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        
+       
+       
+        
+        <criticalBranch id="CZ_CO_00007" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-PL-00001G" from="CALB__1" to="XAL_DB11"  elementName="V443" name="[CZ-PL] Albrechtice - Dobrzen [DIR] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CO_00008" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-PL-00001G" from="CALB__1" to="XAL_DB11"  elementName="V443" name="[CZ-PL] Albrechtice - Dobrzen [OPP] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+		
+		        <criticalBranch id="CZ_CBCO_00085" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-SK-00002W" from="CNOS__1" to="XNO_VA1"  elementName="V404" name="[CZ-SK] Nosovice - Varin [DIR] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>120</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="SK-CZ_CO_00001" name="N-1 Krizovany - Sokolnice" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="CZ_CBCO_00086" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-SK-00002W" from="CNOS__1" to="XNO_VA1"  elementName="V404" name="[CZ-SK] Nosovice - Varin [OPP] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>120</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="SK-CZ_CO_00001" name="N-1 Krizovany - Sokolnice" >
+            </outage>
+        </criticalBranch>
+		
+		 <criticalBranch id="CZ_CBCO_00253" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V416MP-N" from="CPRN__1" to="CHBM__1"  elementName="V416" name="[CZ-CZ] Prosenice - Mirovka [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CBCO_00254" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V416MP-N" from="CPRN__1" to="CHBM__1"  elementName="V416" name="[CZ-CZ] Prosenice - Mirovka [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CBCO_00255" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V413RM-R" from="CREP__1" to="CHBM__1"  elementName="V413" name="[CZ-CZ] Reporyje - Mirovka [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+       
+		
+		<criticalBranch id="CZ_CBCO_00025" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="CHRA__1" to="XHR_ET1"  elementName="V441" name="[CZ-D2] Hradec - Etzenricht [DIR] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="CZ_CO_00004" name="N-1 Hradec 400kV - Hradec 220kV" >
+            </outage>
+        </criticalBranch>
+       
+		
+        <criticalBranch id="CZ_CO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V430---Q" from="CHRD__1" to="CCHR__1"  elementName="V430" name="[CZ-CZ] Hradec - Chrast [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.2</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V430---Q" from="CHRD__1" to="CCHR__1"  elementName="V430" name="[CZ-CZ] Hradec - Chrast [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.2</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+       
+	   <criticalBranch id="CZ_CBCO_00147" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00004Q" from="CPRE__1" to="XPR_ET1"  elementName="V442" name="[CZ-D2] Prestice - Etzenricht [DIR] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>155</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="CZ-D2_CO_00002" name="N-1 Hradec - Etzenricht" >
+            </outage>
+        </criticalBranch>
+        
+		<criticalBranch id="CZ_CBCO_00033" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V420---W" from="CHRD__1" to="CHBM__1"  elementName="V420" name="[CZ-CZ] Hradec - Mirovka [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>DYNAMIC</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.2</temporaryImaxFactor>
+            <frmMw>180</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CO_00015" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V430---Q" from="CHRD__1" to="CCHR__1"  elementName="V430" name="[CZ-CZ] Hradec - Chrast [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.2</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="CZ_CO_00001" name="N-1 Hradec - Mirovka" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="CZ_CO_00016" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V430---Q" from="CHRD__1" to="CCHR__1"  elementName="V430" name="[CZ-CZ] Hradec - Chrast [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.2</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="CZ_CO_00001" name="N-1 Hradec - Mirovka" >
+            </outage>
+        </criticalBranch>
+       
+	    <criticalBranch id="CZ_CBCO_00144" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-SK-00005Q" from="CSOK__1" to="XSO_ST1"  elementName="V497" name="[CZ-SK] Sokolnice - Stupava [OPP] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+            <outage id="SK-CZ_CO_00001" name="N-1 Krizovany - Sokolnice" >
+            </outage>
+        </criticalBranch>
+		
+		
+        <criticalBranch id="CZ_CBCO_00157" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="27T-TLI-V405---J" from="CKLT__1" to="CNOS__1"  elementName="V405" name="[CZ-CZ] Kletne - Nosovice [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>false</CNEC>
+            <MNEC>true</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+		
+        <criticalBranch id="CZ_CO_00019" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="CHRA__1" to="XHR_ET1"  elementName="V441" name="[CZ-D2] Hradec - Etzenricht [DIR] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="CZ_CO_00020" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="CHRA__1" to="XHR_ET1"  elementName="V441" name="[CZ-D2] Hradec - Etzenricht [OPP] [CZ]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>CZ</tsoOrigin>
+        </criticalBranch>
+        
+    </criticalBranches>
+	
+	
+	
+	
+</FlowBasedConstraintDocument>

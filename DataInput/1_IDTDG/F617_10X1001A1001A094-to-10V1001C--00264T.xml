@@ -1,0 +1,529 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10X1001A1001A094-20201217-F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10X1001A1001A094"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-15T19:51:00Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YBE----------2"/>
+    <criticalBranches>
+        <criticalBranch id="BE_CBCO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000015" from="BACHEN1" to="XAC_LO1"  elementName="DI   380  19" name="[BE-FR] Achene - Lonny 380.19 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>171</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+			
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00002" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000015" from="BACHEN1" to="XAC_LO1"  elementName="DI   380  19" name="[BE-FR] Achene - Lonny 380.19 [OPP] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>190</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00003" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-00008S" from="BAUBAN2" to="XAU_M.2"  elementName="DI   220 514" name="[BE-FR] Aubange - Mont St Martin 220.514 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>73</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+		
+		<criticalBranch id="BE-D7_CO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000015" from="BACHEN1" to="XAC_LO1"  elementName="DI   380  19" name="[BE-FR] Achene - Lonny 380.19 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>171</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+            <outage id="BE-D7_CO_00001" name="N-1 [BE-DE] ALEGRO DC" >
+            </outage>
+        </criticalBranch>
+		
+        <criticalBranch id="BE_CBCO_00004" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-00008S" from="BAUBAN2" to="XAU_M.2"  elementName="DI   220 514" name="[BE-FR] Aubange - Mont St Martin 220.514 [OPP] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>66</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00005" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000023" from="BAUBAN2" to="XAU_MO2"  elementName="DI   220 513" name="[BE-FR] Aubange - Moulaine 220.513 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>70</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00006" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000023" from="BAUBAN2" to="XAU_MO2"  elementName="DI   220 513" name="[BE-FR] Aubange - Moulaine 220.513 [OPP] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>66</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00007" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000031" from="BAVLGM1" to="XAV_AV1"  elementName="DI   380  80" name="[BE-FR] Avelgem - Avelin 380.80 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>246</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00008" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-000031" from="BAVLGM1" to="XAV_AV1"  elementName="DI   380  80" name="[BE-FR] Avelgem - Avelin 380.80 [OPP] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>199</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00009" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T20161020----I" from="BAVLGM1" to="BHORTA1"  elementName="DI   380 101" name="[BE-BE] Avelgem - Horta 380.101 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>201</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00010" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T20161020----I" from="BAVLGM1" to="BHORTA1"  elementName="DI   380 101" name="[BE-BE] Avelgem - Horta 380.101 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>201</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T20161020---1E" from="BAVLGM1" to="BHORTA1"  elementName="DI   380 102" name="[BE-BE] Avelgem - Horta 380.102 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>161</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T20161020---1E" from="BAVLGM1" to="BHORTA1"  elementName="DI   380 102" name="[BE-BE] Avelgem - Horta 380.102 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>161</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00013" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-10004U" from="BAVLGM1" to="XAV_MA1"  elementName="DI   380  79" name="[BE-FR] Avelgem - Mastaing 380.79 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>172</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00014" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-FR-10004U" from="BAVLGM1" to="XAV_MA1"  elementName="DI   380  79" name="[BE-FR] Avelgem - Mastaing 380.79 [OPP] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>101</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00015" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-NL-00003E" from="BZANDV1" to="XKR_ZA1"  elementName="DI   380  29" name="[NL-BE] Rilland - Zandvliet 380 Grey/29 [OPP] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>259</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00016" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-BE-NL-00003E" from="BZANDV1" to="XKR_ZA1"  elementName="DI   380  29" name="[NL-BE] Rilland - Zandvliet 380 Grey/29 [DIR] [BE]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>202</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00017" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T-BE-IN-LI0033" from="BCHAMP1" to="BCOURC1"  elementName="DI   380  56" name="[BE-BE] Champion - Courcelles 380.56 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>130</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00018" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T-BE-IN-LI0033" from="BCHAMP1" to="BCOURC1"  elementName="DI   380  56" name="[BE-BE] Champion - Courcelles 380.56 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>117</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00023" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T-BE-IN-LI014Z" from="BDOEL 1" to="BLIEF+1"  elementName="DI   380  51" name="[BE-BE] Y-Doel (-Lillo - Mercator) 380.51 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>68</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00020" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T-BE-IN-LI019P" from="BCOURC1" to="BSTAM+1"  elementName="DI   380  31" name="[BE-BE] Y-Courcelles (-Gramme - Tergnee) 380.31 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="BE_CBCO_00021" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="22T-BE-IN-LI019P" from="BGRAMM1" to="BSTAM+1"  elementName="DI   380  31" name="[BE-BE] Y-Gramme (-Courcelles - Tergnee) 380.31 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1.1</temporaryImaxFactor>
+            <frmMw>139</frmMw>
+            <minRAMfactor>70</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>BE</tsoOrigin>
+        </criticalBranch>
+       
+        
+        
+        
+ 
+    </criticalBranches>
+	
+	<complexVariants>
+        
+        
+        <complexVariant id="BE_RA_00005" name="PST_VANYK D1_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="BVANYK17" to="BVANYK15"  elementName="VANYK380 D 1"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                   
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="BE_RA_00006" name="PST_VANYK D2_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="BVANYK18" to="BVANYK16"  elementName="VANYK380 D 2"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                    
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="BE_RA_00007" name="PST_ZANDV D1_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="BZANDV17" to="BZANDV15"  elementName="ZANDV380 D 1"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                    
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="BE_RA_00008" name="PST_ZANDV D2_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="BZANDV18" to="BZANDV16"  elementName="ZANDV380 D 2"/>
+                    <range>
+                        <min>-6</min>
+                        <max>6</max>
+                    </range>
+                    
+                </action>
+            </actionsSet>
+        </complexVariant>
+       
+        
+        
+        
+       
+        <complexVariant id="BE_RA_10004" name="TOP_OPEN_AUBAN_MOULA_513_CRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>false</preventive>
+                <curative>true</curative>
+                <enforced>false</enforced>
+                <afterCOList>
+                  <afterCOId>BE_CO_00001</afterCOId>
+                  <afterCOId>BE-FR_CO_00002</afterCOId>
+                  <afterCOId>BE-FR_CO_00003</afterCOId>
+                  <afterCOId>BE-FR_CO_00004</afterCOId>
+                  <afterCOId>BE-FR_CO_00005</afterCOId>
+                  <afterCOId>BE_CO_00006</afterCOId>
+                  <afterCOId>BE_CO_00007</afterCOId>
+                  <afterCOId>BE-FR_CO_00008</afterCOId>
+                  <afterCOId>BE_CO_00009</afterCOId>
+                  <afterCOId>BE_CO_00010</afterCOId>
+                  <afterCOId>BE-FR_CO_00011</afterCOId>
+                  <afterCOId>BE_CO_00012</afterCOId>
+                  <afterCOId>BE_CO_00013</afterCOId>
+                  <afterCOId>BE_CO_00014</afterCOId>
+                  <afterCOId>BE_CO_00015</afterCOId>
+                  <afterCOId>BE_CO_00016</afterCOId>
+                  <afterCOId>BE_CO_00017</afterCOId>
+                  <afterCOId>BE_CO_00018</afterCOId>
+                  <afterCOId>BE_CO_00019</afterCOId>
+                  <afterCOId>BE_CO_00020</afterCOId>
+                  <afterCOId>BE_CO_00021</afterCOId>
+                  <afterCOId>BE_CO_00022</afterCOId>
+                  <afterCOId>BE_CO_00023</afterCOId>
+                  <afterCOId>BE_CO_00024</afterCOId>
+                  <afterCOId>BE_CO_00025</afterCOId>
+                  <afterCOId>BE_CO_00026</afterCOId>
+                  <afterCOId>BE_CO_00027</afterCOId>
+                  <afterCOId>BE_CO_00028</afterCOId>
+                  <afterCOId>BE_CO_00029</afterCOId>
+                  <afterCOId>BE_CO_00030</afterCOId>
+                  <afterCOId>BE_CO_00031</afterCOId>
+                  <afterCOId>BE_CO_00032</afterCOId>
+                  <afterCOId>BE_CO_00033</afterCOId>
+                  <afterCOId>BE_CO_00034</afterCOId>
+                  <afterCOId>BE_CO_00035</afterCOId>
+                  <afterCOId>BE-NL_CO_00036</afterCOId>
+                  <afterCOId>BE-NL_CO_00037</afterCOId>
+                  <afterCOId>BE-NL_CO_00038</afterCOId>
+                  <afterCOId>BE-NL_CO_00039</afterCOId>
+                  <afterCOId>BE-D7_CO_00001</afterCOId>
+                </afterCOList>
+                <action type="STATUS">
+                    <branch from="BAUBAN2" to="XAU_MO2"  elementName="DI   220 513"/>
+                    <value>OPEN</value>
+                </action>
+                <action type="STATUS">
+                    <branch from="XAU_MO2" to="FMOULA2"  elementName="1"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+       
+        <complexVariant id="BE_RA_10006" name="TOP_2N_AVLGM_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="BAVLGM1" to="BAVLGM1"  elementName="AVLGM380 //"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+       
+        
+        <complexVariant id="BE_RA_10009" name="TOP_2N_COURC_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="BCOURC11" to="BCOURC12"  elementName="COURC380 //"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="BE_RA_10010" name="TOP_2N_BRUEG_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="BBRUEG1A" to="BBRUEG12"  elementName="BRUEG380 //"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        
+        <complexVariant id="BE_RA_10012" name="TOP_2N_AUBAN_PRA">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>BE</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="BAUBAN22" to="BAUBAN21"  elementName="AUBAN220 //"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        
+    </complexVariants>
+  
+</FlowBasedConstraintDocument>

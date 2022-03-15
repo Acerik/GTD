@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-17.xsd">
+  <DocumentIdentification v="10X1001A1001A094-20190108-F637v1"/>
+  <DocumentVersion v="2"/>
+  <DocumentType v="A16"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10X1001A1001A094"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-08-15T14:07:28Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YBE----------2"/>
+  <complexVariants>
+
+	
+	<complexVariant id="BE_RA_00007" name="PST_ZANDV D1_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>BE</tsoOrigin>
+      <actionsSet name="PST_ZANDV D1_PRA">
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <action type="PSTTAP">
+          <branch elementName="ZANDV380 D 1" from="BZANDV15" to="BZANDV17"/>
+          <value>20</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+	
+	
+	
+	
+  </complexVariants>
+</FlowBasedConstraintDocument>

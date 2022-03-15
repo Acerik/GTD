@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="flowbased" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="FlowBasedContingency">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="ContingencyTimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element minOccurs="0" name="outages" type="fb:OutagesType"/>
+			</sequence>
+			<attribute name="DtdVersion" type="string" use="required"/>
+			<attribute name="DtdRelease" type="string" use="required"/>
+		</complexType>
+	</element>
+	<complexType name="OutagesType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="outage" type="fb:outageType"/>
+		</sequence>
+	</complexType>
+	<simpleType name="nonEmptyString">
+		<restriction base="string">
+			<minLength value="1"/>
+			<pattern value="([a-zA-Z 0-9_.,()/=!\[\]#%&amp;*;&apos;+:?-])*"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="idString">
+		<restriction base="string">
+			<minLength value="1"/>
+			<maxLength value="100"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="nodeType">
+		<restriction base="string">
+			<pattern value=".{6}\d(\p{L}|\d| )?"/>
+		</restriction>
+	</simpleType>
+	<complexType name="outageType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="branch">
+				<complexType>
+					<attribute name="from" type="fb:nodeType" use="required"/>
+					<attribute name="to" type="fb:nodeType" use="required"/>
+					<attribute name="order" use="optional">
+						<simpleType>
+							<restriction base="string">
+								<pattern value="[1-9]|[A-Z]"/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name="elementName" type="fb:nonEmptyString" use="optional"/>
+					<attribute name="eic" type="fb:nonEmptyString" use="required"/>
+					<attribute name="name" type="fb:nonEmptyString" use="required"/>
+					<attribute name="party" type="fb:nonEmptyString" use="required"/>
+					<attribute name="horizon" type="fb:nonEmptyString" use="optional"/>
+				</complexType>
+				<key name="outageBranch__order_OR_elementName">
+					<selector xpath="."/>
+					<field xpath="@order|@elementName"/>
+				</key>
+			</element>
+			<element maxOccurs="unbounded" minOccurs="0" name="hvdcVH">
+				<complexType>
+					<attribute name="from" type="fb:nodeType" use="required"/>
+					<attribute name="to" type="fb:nodeType" use="required"/>
+					<attribute name="eic" type="fb:nonEmptyString" use="required"/>
+					<attribute name="name" type="fb:nonEmptyString" use="required"/>
+					<attribute name="party" type="fb:nonEmptyString" use="required"/>
+					<attribute name="horizon" type="fb:nonEmptyString" use="optional"/>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="name" type="fb:nonEmptyString" use="optional"/>
+		<attribute name="id" type="fb:idString" use="required"/>
+		<attribute name="location" type="fb:nonEmptyString" use="optional"/>
+	</complexType>
+</schema>

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-04.xsd">
+  <DocumentIdentification v="10XDE-RWENET---W-20201126F607v1" />
+  <DocumentVersion v="1"/>
+  <DocumentType v="B22" />
+  <ProcessType v="A02" />
+  <SenderIdentification codingScheme="A01" v="10XDE-RWENET---W" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-11-24T21:00:01Z" />
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="10YDE-RWENET---I" />
+  <GSKSeries>
+    <TimeSeriesIdentification v="1" />
+    <BusinessType v="Z02" share="100" />
+    <Area codingScheme="A01" v="10YDE-RWENET---I" />
+    <ManualGSK_Block>
+      <GSK_Name v="D7" />
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T05:00Z" />
+      <ManualNodes>
+        <NodeName v="D7BERG7A" />
+        <Factor v="0.1077" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD70" />
+        <Factor v="0.0362" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD71" />
+        <Factor v="0.0381" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD72" />
+        <Factor v="0.0381" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7HERN74" />
+        <Factor v="0.0436" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7GEIT72" />
+        <Factor v="0.0453" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWIB7B" />
+        <Factor v="0.1233" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN7B" />
+        <Factor v="0.0479" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN71" />
+        <Factor v="0.0301" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7SHOL7B" />
+        <Factor v="0.0513" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7SHOL7C" />
+        <Factor v="0.0513" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWST70" />
+        <Factor v="0.0815" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWWA79" />
+        <Factor v="0.0539" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWWS7E" />
+        <Factor v="0.1029" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWDA71" />
+        <Factor v="0.1488" />
+      </ManualNodes>
+    </ManualGSK_Block>
+    <ManualGSK_Block>
+      <GSK_Name v="D7" />
+      <TimeInterval v="2019-03-30T05:00Z/2019-03-30T21:00Z" />
+      <ManualNodes>
+        <NodeName v="D7BERG7A" />
+        <Factor v="0.091" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD70" />
+        <Factor v="0.031" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD71" />
+        <Factor v="0.032" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD72" />
+        <Factor v="0.032" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSB70" />
+        <Factor v="0.034" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSC70" />
+        <Factor v="0.036" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7HERN74" />
+        <Factor v="0.037" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7GEIT71" />
+        <Factor v="0.038" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7GEIT72" />
+        <Factor v="0.038" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWIB7B" />
+        <Factor v="0.104" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN7B" />
+        <Factor v="0.04" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN71" />
+        <Factor v="0.025" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN72" />
+        <Factor v="0.025" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN70" />
+        <Factor v="0.025" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7SHOL7B" />
+        <Factor v="0.043" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7SHOL7C" />
+        <Factor v="0.043" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWST70" />
+        <Factor v="0.069" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWWA79" />
+        <Factor v="0.045" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWWS7E" />
+        <Factor v="0.087" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWDA71" />
+        <Factor v="0.125" />
+      </ManualNodes>
+    </ManualGSK_Block>
+    <ManualGSK_Block>
+      <GSK_Name v="D7" />
+      <TimeInterval v="2019-03-30T21:00Z/2019-03-30T23:00Z" />
+      <ManualNodes>
+        <NodeName v="D7BERG7A" />
+        <Factor v="0.1077" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD70" />
+        <Factor v="0.0362" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD71" />
+        <Factor v="0.0381" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7EMSD72" />
+        <Factor v="0.0381" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7HERN74" />
+        <Factor v="0.0436" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7GEIT72" />
+        <Factor v="0.0453" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWIB7B" />
+        <Factor v="0.1233" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN7B" />
+        <Factor v="0.0479" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWKN71" />
+        <Factor v="0.0301" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7SHOL7B" />
+        <Factor v="0.0513" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7SHOL7C" />
+        <Factor v="0.0513" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWST70" />
+        <Factor v="0.0815" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWWA79" />
+        <Factor v="0.0539" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWWS7E" />
+        <Factor v="0.1029" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D7KWDA71" />
+        <Factor v="0.1488" />
+      </ManualNodes>
+    </ManualGSK_Block>
+  </GSKSeries>
+</GSKDocument>

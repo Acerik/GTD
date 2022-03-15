@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:ecc="etso-core-cmpts.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<xsd:complexType name="Constraint_Type">
+		<xsd:sequence>
+			<xsd:element name="ConstraintIdentification" type="ecc:IdentificationType"/>
+			<xsd:element name="BranchIdentification" type="ecc:LongIdentificationType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="BranchName" type="ecc:TextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="OutageIdentification" type="ecc:IdentificationType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="OutageName" type="ecc:TextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="FromTso" type="ecc:PartyType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ToTso" type="ecc:PartyType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Ram" type="ecc:QuantityType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Ptdf" type="Ptdf_Type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="FlowBasedParameterTimeSeries_Type">
+		<xsd:sequence>
+			<xsd:element name="TimeSeriesIdentification" type="ecc:IdentificationType"/>
+			<xsd:element name="BusinessType" type="ecc:BusinessType"/>
+			<xsd:element name="Product" type="ecc:EnergyProductType"/>
+			<xsd:element name="BalanceArea" type="ecc:AreaType"/>
+			<xsd:element name="MeasureUnit" type="ecc:UnitOfMeasureType"/>
+			<xsd:element name="Period" type="Period_Type" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Hub_Type">
+		<xsd:sequence>
+			<xsd:element name="HubIdentification" type="ecc:IdentificationType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Interval_Type">
+		<xsd:sequence>
+			<xsd:element name="Pos" type="ecc:PositionType"/>
+			<xsd:element name="Constraint" type="Constraint_Type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Period_Type">
+		<xsd:sequence>
+			<xsd:element name="TimeInterval" type="ecc:TimeIntervalType"/>
+			<xsd:element name="Resolution" type="ecc:ResolutionType"/>
+			<xsd:element name="Interval" type="Interval_Type" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Ptdf_Type">
+		<xsd:sequence>
+			<xsd:element name="PtdfFactor" type="ecc:QuantityType"/>
+			<xsd:element name="Hub" type="Hub_Type"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="FlowBasedParameterDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<xsd:element name="DocumentVersion" type="ecc:VersionType"/>
+				<xsd:element name="DocumentType" type="ecc:MessageType"/>
+				<xsd:element name="ProcessType" type="ecc:ProcessType"/>
+				<xsd:element name="SenderIdentification" type="ecc:PartyType"/>
+				<xsd:element name="SenderRole" type="ecc:RoleType"/>
+				<xsd:element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<xsd:element name="ReceiverRole" type="ecc:RoleType"/>
+				<xsd:element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<xsd:element name="FlowBasedParameterTimeInterval" type="ecc:TimeIntervalType"/>
+				<xsd:element name="Domain" type="ecc:AreaType"/>
+				<xsd:element name="FlowBasedParameterTimeSeries" type="FlowBasedParameterTimeSeries_Type" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name="DtdVersion" type="xsd:string" use="required"/>
+			<xsd:attribute name="DtdRelease" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

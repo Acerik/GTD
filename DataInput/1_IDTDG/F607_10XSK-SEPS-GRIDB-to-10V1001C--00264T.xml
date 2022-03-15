@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-03.xsd" DtdVersion="1" DtdRelease="0">
+	<DocumentIdentification v="10XSK-SEPS-GRIDB-20190330-F607"/>
+	<DocumentVersion v="1"/>
+	<DocumentType v="B22"/>
+	<ProcessType v="A02"/>
+	<SenderIdentification v="10XSK-SEPS-GRIDB" codingScheme="A01"/>
+	<SenderRole v="A04"/>
+	<ReceiverIdentification v="10V1001C--00264T" codingScheme="A01"/>
+	<ReceiverRole v="A36"/>
+	<CreationDateTime v="2020-12-28T14:33:55Z"/>
+	<GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+	<Domain v="10YSK-SEPS-----K" codingScheme="A01"/>
+	<GSKSeries>
+		<TimeSeriesIdentification v="101"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+			<AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="201"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="102"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="202"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="103"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="203"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="104"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="204"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="105"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="205"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="106"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+			<AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="206"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="107"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="207"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="108"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="208"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="109"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="209"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="110"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="210"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="111"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="211"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="112"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="212"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="113"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="213"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="114"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="214"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="115"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="215"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="116"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="216"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="117"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="217"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="118"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="218"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="119"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+			<AutoNodes><NodeName v="QCVAH_1 "/></AutoNodes><AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="219"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="120"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="220"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="121"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="221"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="122"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+			<AutoNodes><NodeName v="QMALZ_1 "/></AutoNodes><AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="222"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="123"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+			<AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="223"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="124"/>
+		<BusinessType v="Z02" share="10"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+			<AutoNodes><NodeName v="QGABC_12"/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+	<GSKSeries>
+		<TimeSeriesIdentification v="224"/>
+		<BusinessType v="Z05" share="90"/>
+		<Area v="10YSK-SEPS-----K" codingScheme="A01"/>
+		<AutoGSK_Block>
+			<GSK_Name v="SK"/>
+			<TimeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+			<AutoNodes><NodeName v="QBOSA_1 "/></AutoNodes><AutoNodes><NodeName v="QBYST_5 "/></AutoNodes><AutoNodes><NodeName v="QHZDA_1 "/></AutoNodes><AutoNodes><NodeName v="QKOSI_1 "/></AutoNodes><AutoNodes><NodeName v="QKRIZ_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_1 "/></AutoNodes><AutoNodes><NodeName v="QLEME_21"/></AutoNodes><AutoNodes><NodeName v="QLEVI_12"/></AutoNodes><AutoNodes><NodeName v="QLMAR_1 "/></AutoNodes><AutoNodes><NodeName v="QMOLD_1 "/></AutoNodes><AutoNodes><NodeName v="QPBIS_1 "/></AutoNodes><AutoNodes><NodeName v="QPBYS_2 "/></AutoNodes><AutoNodes><NodeName v="QRSOB_1 "/></AutoNodes><AutoNodes><NodeName v="QSALA_2 "/></AutoNodes><AutoNodes><NodeName v="QSENI_2 "/></AutoNodes><AutoNodes><NodeName v="QSIRO_2 "/></AutoNodes><AutoNodes><NodeName v="QSPNV_1 "/></AutoNodes><AutoNodes><NodeName v="QSTUP_1 "/></AutoNodes><AutoNodes><NodeName v="QSUCA_2 "/></AutoNodes><AutoNodes><NodeName v="QVARI_1 "/></AutoNodes><AutoNodes><NodeName v="QVOLA_1 "/></AutoNodes><AutoNodes><NodeName v="QMEDZ_1 "/></AutoNodes></AutoGSK_Block>
+	</GSKSeries>
+</GSKDocument>

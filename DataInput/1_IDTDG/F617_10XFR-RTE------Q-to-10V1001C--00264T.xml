@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FlowBasedConstraintDocument xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DtdRelease="0" DtdVersion="1" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-18.xsd">
+  <DocumentIdentification v="CORE_CBCORA-F617-20190330-v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XFR-RTE------Q"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-28T15:33:30Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YFR-RTE------C"/>
+  <criticalBranches>
+    <criticalBranch id="FR_CO_00001">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-CH-FR-00001Y" elementName=".BASS71MAMBE" from="XBA_MA1" name="[NCL] Mambelin - Bassecourt [FR] [FR-CH]" to="FMAMBE1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>9999</permanentImaxFactor>
+      <temporaryImaxFactor>9999</temporaryImaxFactor>
+      <frmMw>0.0</frmMw>
+      <minRAMfactor>0</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="FR_CO_00002">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-CH-FR-00009I" elementName=".VERB61GEN.P" from="XVE_GE2" name="[NCL] [FR-CH] Genissiat - Verbois 1 [FR] [FR-CH]" to="FGEN.P2"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>9999</permanentImaxFactor>
+      <temporaryImaxFactor>9999</temporaryImaxFactor>
+      <frmMw>0.0</frmMw>
+      <minRAMfactor>0</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="FR_CO_00003">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-BE-FR-00008S" elementName=".AUBA61M.MA5" from="XAU_M.2" name="[BE-FR] Aubange - Mont St Martin 514 [DIR] [FR]" to="FM.MA52"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>1299</permanentImaxFactor>
+      <temporaryImaxFactor>1560</temporaryImaxFactor>
+      <frmMw>51.96</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="FR_CO_00004">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-BE-FR-00008S" elementName=".AUBA61M.MA5" from="XAU_M.2" name="[BE-FR] Aubange - Mont St Martin 514 [OPP] [FR]" to="FM.MA52"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>1299</permanentImaxFactor>
+      <temporaryImaxFactor>1560</temporaryImaxFactor>
+      <frmMw>51.96</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="FR_CO_00005">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-BE-FR-00008S" elementName=".AUBA61M.MA5" from="XAU_M.2" name="[BE-FR] Aubange - Mont St Martin 514 [DIR] [FR]" to="FM.MA52"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>1299</permanentImaxFactor>
+      <temporaryImaxFactor>1560</temporaryImaxFactor>
+      <frmMw>51.96</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+    <criticalBranch id="FR_CO_00006">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-BE-FR-00008S" elementName=".AUBA61M.MA5" from="XAU_M.2" name="[BE-FR] Aubange - Mont St Martin 514 [OPP] [FR]" to="FM.MA52"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>1299</permanentImaxFactor>
+      <temporaryImaxFactor>1560</temporaryImaxFactor>
+      <frmMw>51.96</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+	
+   <criticalBranch id="FR_CBCO_05293">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00002G" elementName=".EICH71MUHLB" from="XEI_MU1" name="[D4-FR] Eichstetten - Muhlbach [DIR] [FR]" to="FMUHLB1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2850</permanentImaxFactor>
+      <temporaryImaxFactor>2850</temporaryImaxFactor>
+      <frmMw>246.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+    <criticalBranch id="FR_CBCO_05294">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00002G" elementName=".EICH71MUHLB" from="XEI_MU1" name="[D4-FR] Eichstetten - Muhlbach [OPP] [FR]" to="FMUHLB1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2850</permanentImaxFactor>
+      <temporaryImaxFactor>2850</temporaryImaxFactor>
+      <frmMw>246.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+	
+	 <criticalBranch id="FR_CBCO_06256">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="17T-FR-00000055U" elementName="AVELI71MASTA" from="FAVELI1" name="[FR-FR] Avelin - Mastaing 1 [OPP]" to="FMASTA1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2912</permanentImaxFactor>
+      <temporaryImaxFactor>4142</temporaryImaxFactor>
+      <frmMw>203.84000000000003</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+	
+	
+	
+   
+   <criticalBranch id="FR_CBCO_02827">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00003E" elementName=".EICH61VOGEL" from="XEI_VO2" name="[D4-FR] Eichstetten - Vogelgrun [DIR] [FR]" to="FVOGEL2"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>1302</permanentImaxFactor>
+      <temporaryImaxFactor>1302</temporaryImaxFactor>
+      <frmMw>52.08</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>false</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S"/>
+    </criticalBranch>
+	
+	 <criticalBranch id="FR_CBCO_02828">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00003E" elementName=".EICH61VOGEL" from="XEI_VO2" name="[D4-FR] Eichstetten - Vogelgrun [OPP] [FR]" to="FVOGEL2"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>1302</permanentImaxFactor>
+      <temporaryImaxFactor>1302</temporaryImaxFactor>
+      <frmMw>52.08</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>false</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S"/>
+    </criticalBranch>
+	
+	
+    
+	
+	 
+   
+	
+	
+    <criticalBranch id="FR_CBCO_05957">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="17T-FR-000000333" elementName="MUHLB72SIERE" from="FMUHLB1" name="[FR-FR] Muhlbach - Sierentz 2 [DIR]" to="FSIERE1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2598</permanentImaxFactor>
+      <temporaryImaxFactor>3534</temporaryImaxFactor>
+      <frmMw>186.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+    </criticalBranch>
+	
+	 <criticalBranch id="FR_CBCO_06350">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="17T-FR-00000055U" elementName="AVELI71MASTA" from="FAVELI1" name="[FR-FR] Avelin - Mastaing 1 [OPP]" to="FMASTA1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2912</permanentImaxFactor>
+      <temporaryImaxFactor>4142</temporaryImaxFactor>
+      <frmMw>203.84000000000003</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00001" name="N-1 Muhlbach - Sierentz 1"/>
+    </criticalBranch>
+	
+	
+    <criticalBranch id="FR_CBCO_05457">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00002G" elementName=".EICH71MUHLB" from="XEI_MU1" name="[D4-FR] Eichstetten - Muhlbach [DIR] [FR]" to="FMUHLB1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2850</permanentImaxFactor>
+      <temporaryImaxFactor>2850</temporaryImaxFactor>
+      <frmMw>246.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>false</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S"/>
+    </criticalBranch>
+    <criticalBranch id="FR_CBCO_05458">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00002G" elementName=".EICH71MUHLB" from="XEI_MU1" name="[D4-FR] Eichstetten - Muhlbach [OPP] [FR]" to="FMUHLB1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2850</permanentImaxFactor>
+      <temporaryImaxFactor>2850</temporaryImaxFactor>
+      <frmMw>246.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>false</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S"/>
+    </criticalBranch>
+	
+    <criticalBranch id="FR_CBCO_05455">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00002G" elementName=".EICH71MUHLB" from="XEI_MU1" name="[D4-FR] Eichstetten - Muhlbach [DIR] [FR]" to="FMUHLB1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2850</permanentImaxFactor>
+      <temporaryImaxFactor>2850</temporaryImaxFactor>
+      <frmMw>246.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>false</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="D7_CO_00013" name="N-1 Ensdorf - Uchtelfangen TAUBNT N"/>
+    </criticalBranch>
+    <criticalBranch id="FR_CBCO_05456">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="10T-DE-FR-00002G" elementName=".EICH71MUHLB" from="XEI_MU1" name="[D4-FR] Eichstetten - Muhlbach [OPP] [FR]" to="FMUHLB1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2850</permanentImaxFactor>
+      <temporaryImaxFactor>2850</temporaryImaxFactor>
+      <frmMw>246.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>false</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="D7_CO_00013" name="N-1 Ensdorf - Uchtelfangen TAUBNT N"/>
+    </criticalBranch>
+	
+      <criticalBranch id="FR_CBCO_03332">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="17T-FR-00000002E" elementName="AVELI71GAVRE" from="FAVELI1" name="[FR-FR] Avelin - Gavrelle [DIR]" to="FGAVRE1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2622</permanentImaxFactor>
+      <temporaryImaxFactor>3880</temporaryImaxFactor>
+      <frmMw>306.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+	
+	<criticalBranch id="FR_CBCO_03664">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="17T-FR-00000028X" elementName="M.SEI71VESLE" from="FM.SEI1" name="[FR-FR] Mery - Vesle [OPP]" to="FVESLE1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2778</permanentImaxFactor>
+      <temporaryImaxFactor>3965</temporaryImaxFactor>
+      <frmMw>194.46</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+	<criticalBranch id="FR_CBCO_04289">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <branch eic="17T-FR-000000317" elementName="MUHLB71SIERE" from="FMUHLB1" name="[FR-FR] Muhlbach - Sierentz 1 [DIR]" to="FSIERE1"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+      <permanentImaxFactor>2598</permanentImaxFactor>
+      <temporaryImaxFactor>3534</temporaryImaxFactor>
+      <frmMw>227.0</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>FR</tsoOrigin>
+      <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2"/>
+    </criticalBranch>
+	
+ 
+	</criticalBranches>
+	
+	
+	<complexVariants>
+    
+
+    
+    
+    
+    <complexVariant id="FR_RA_00062" name="TOP_OPEN_AVELIN_GAVRELLE_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="AVELI71GAVRE" from="FAVELI1" to="FGAVRE1"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+   
+   
+    <complexVariant id="FR_RA_00008" name="TOP_2N_AVELIN_tronconnement_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="TRC-1B-1A" from="FAVELI1" to="FAVELI1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-3B-3A" from="FAVELI1" to="FAVELI1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-2B-2A" from="FAVELI1" to="FAVELI1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1B-3B" from="FAVELI1" to="FAVELI1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1A-3A" from="FAVELI1" to="FAVELI1"/>
+          <value>CLOSE</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+    <complexVariant id="FR_RA_00032" name="TOP_OPEN_T.Dom_Vandiere_225_CRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>false</preventive>
+        <curative>true</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="T.DOM61VANDI" from="FT.DOM2" to="FVANDI2"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+    
+    <complexVariant id="FR_RA_00021" name="TOP_2N_VIGY_tronconnement_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="TRC-2A-2B" from="FVIGY 1" to="FVIGY 1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-1A-1B" from="FVIGY 1" to="FVIGY 1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1A-2A" from="FVIGY 1" to="FVIGY 1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1B-2B" from="FVIGY 1" to="FVIGY 1"/>
+          <value>CLOSE</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+    
+    <complexVariant id="FR_RA_00053" name="TOP_COMPLEX_LONNY_quarterbar1B_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="TRC-1B-1A" from="FLONNY1" to="FLONNY1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-2B-2A" from="FLONNY1" to="FLONNY1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1A-2A" from="FLONNY1" to="FLONNY1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1B-2B" from="FLONNY1" to="FLONNY1"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+   
+    <complexVariant id="FR_RA_00019" name="TOP_2N_LONNY_tronconnement_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="CPL-1A-2A" from="FLONNY1" to="FLONNY1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-1B-1A" from="FLONNY1" to="FLONNY1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1B-2B" from="FLONNY1" to="FLONNY1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-2B-2A" from="FLONNY1" to="FLONNY1"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+    
+    <complexVariant id="FR_RA_00010" name="TOP_2N_GAVRELLE_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="CPL-1.1-2.1" from="FGAVRE1" to="FGAVRE1"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+   
+    <complexVariant id="FR_RA_00034" name="TOP_OPEN_Mazures_AT_CRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>false</preventive>
+        <curative>true</curative>
+        <enforced>false</enforced>
+        <afterCOList>
+          <afterCOId>BE-FR_CO_00002</afterCOId>
+          <afterCOId>BE-FR_CO_00003</afterCOId>
+          <afterCOId>BE-FR_CO_00004</afterCOId>
+          <afterCOId>BE-FR_CO_00005</afterCOId>
+          <afterCOId>BE-FR_CO_00008</afterCOId>
+          <afterCOId>BE-FR_CO_00011</afterCOId>
+          <afterCOId>BE-NL_CO_00036</afterCOId>
+          <afterCOId>BE-NL_CO_00037</afterCOId>
+          <afterCOId>BE_CO_00006</afterCOId>
+          <afterCOId>BE_CO_00007</afterCOId>
+          <afterCOId>BE_CO_00012</afterCOId>
+          <afterCOId>BE_CO_00013</afterCOId>
+          <afterCOId>BE_CO_00018</afterCOId>
+          <afterCOId>BE_CO_00019</afterCOId>
+          <afterCOId>BE_CO_00020</afterCOId>
+          <afterCOId>BE_CO_00021</afterCOId>
+          <afterCOId>BE_CO_00022</afterCOId>
+          <afterCOId>BE_CO_00023</afterCOId>
+          <afterCOId>BE_CO_00024</afterCOId>
+          <afterCOId>BE_CO_00025</afterCOId>
+          <afterCOId>BE_CO_00028</afterCOId>
+          <afterCOId>BE_CO_00029</afterCOId>
+          <afterCOId>BE_CO_10003</afterCOId>
+          <afterCOId>BE_CO_10004</afterCOId>
+          <afterCOId>BE_CO_10005</afterCOId>
+          <afterCOId>BE_CO_10006</afterCOId>
+          <afterCOId>CH-FR_CO_00001</afterCOId>
+          <afterCOId>D4-D7_CO_00004</afterCOId>
+          <afterCOId>D4-FR_CO_00001</afterCOId>
+          <afterCOId>D4-FR_CO_00002</afterCOId>
+          <afterCOId>D7-FR_CO_00001</afterCOId>
+          <afterCOId>D7-FR_CO_00002</afterCOId>
+          <afterCOId>D7-NL_CO_00003</afterCOId>
+          <afterCOId>D7-NL_CO_00004</afterCOId>
+          <afterCOId>D7_CO_00013</afterCOId>
+          <afterCOId>D7_CO_00014</afterCOId>
+          <afterCOId>D7_CO_00039</afterCOId>
+          <afterCOId>D7_CO_00040</afterCOId>
+          <afterCOId>D7_CO_00041</afterCOId>
+          <afterCOId>D7_CO_00042</afterCOId>
+          <afterCOId>D7_CO_00048</afterCOId>
+          <afterCOId>FR_CO_00001</afterCOId>
+          <afterCOId>FR_CO_00002</afterCOId>
+          <afterCOId>FR_CO_00003</afterCOId>
+          <afterCOId>FR_CO_00004</afterCOId>
+          <afterCOId>FR_CO_00005</afterCOId>
+          <afterCOId>FR_CO_00006</afterCOId>
+          <afterCOId>FR_CO_00007</afterCOId>
+          <afterCOId>FR_CO_00008</afterCOId>
+          <afterCOId>FR_CO_00009</afterCOId>
+          <afterCOId>FR_CO_00010</afterCOId>
+          <afterCOId>FR_CO_00011</afterCOId>
+          <afterCOId>FR_CO_00012</afterCOId>
+          <afterCOId>FR_CO_00013</afterCOId>
+          <afterCOId>FR_CO_00014</afterCOId>
+          <afterCOId>FR_CO_00015</afterCOId>
+          <afterCOId>FR_CO_00016</afterCOId>
+          <afterCOId>FR_CO_00017</afterCOId>
+          <afterCOId>FR_CO_00018</afterCOId>
+          <afterCOId>FR_CO_00019</afterCOId>
+          <afterCOId>FR_CO_00020</afterCOId>
+          <afterCOId>FR_CO_00021</afterCOId>
+          <afterCOId>FR_CO_00022</afterCOId>
+          <afterCOId>FR_CO_00023</afterCOId>
+          <afterCOId>FR_CO_00024</afterCOId>
+          <afterCOId>FR_CO_00025</afterCOId>
+          <afterCOId>FR_CO_00026</afterCOId>
+          <afterCOId>FR_CO_00027</afterCOId>
+          <afterCOId>FR_CO_00028</afterCOId>
+          <afterCOId>FR_CO_00029</afterCOId>
+          <afterCOId>FR_CO_00030</afterCOId>
+          <afterCOId>FR_CO_00031</afterCOId>
+          <afterCOId>FR_CO_00032</afterCOId>
+          <afterCOId>FR_CO_00033</afterCOId>
+          <afterCOId>FR_CO_00034</afterCOId>
+          <afterCOId>FR_CO_00035</afterCOId>
+          <afterCOId>FR_CO_00036</afterCOId>
+          <afterCOId>FR_CO_00037</afterCOId>
+          <afterCOId>FR_CO_00038</afterCOId>
+          <afterCOId>FR_CO_00039</afterCOId>
+          <afterCOId>FR_CO_00040</afterCOId>
+          <afterCOId>FR_CO_00041</afterCOId>
+          <afterCOId>FR_CO_00042</afterCOId>
+        </afterCOList>
+        <action type="STATUS">
+          <branch elementName="MAZURY763" from="FMAZUR1" to="FMAZUR2"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+  
+    
+   
+    <complexVariant id="FR_RA_00051" name="TOP_COMPLEX_MASTAING_quarterbar2B_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="CPL-1B-2B" from="FMASTA1" to="FMASTA1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-2A-2B" from="FMASTA1" to="FMASTA1"/>
+          <value>OPEN</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="CPL-1A-2A" from="FMASTA1" to="FMASTA1"/>
+          <value>CLOSE</value>
+        </action>
+        <action type="STATUS">
+          <branch elementName="TRC-1A-1B" from="FMASTA1" to="FMASTA1"/>
+          <value>CLOSE</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+    
+    
+    <complexVariant id="FR_RA_00038" name="TOP_2N_SIERENTZ_PRA">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>FR</tsoOrigin>
+      <actionsSet>
+        <preventive>true</preventive>
+        <curative>false</curative>
+        <enforced>false</enforced>
+        <action type="STATUS">
+          <branch elementName="CPL-1-2" from="FSIERE1" to="FSIERE1"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+   
+  </complexVariants>
+	
+</FlowBasedConstraintDocument>

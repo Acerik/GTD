@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedExternalConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedexternalconstraintdocument-07.xsd">
+  <DocumentIdentification v="22Y201903144---9-20201126F609v1" />
+  <DocumentVersion v="1" />
+  <DocumentType v="Z07" />
+  <ProcessType v="A02" />
+  <SenderIdentification codingScheme="A01" v="22Y201903144---9" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-11-24T21:00:08Z" />
+  <ExternalConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="22Y201903144---9" />
+  <constraints>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="BE_AL" name="BE_AL_EXPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="BE_AL" name="BE_AL_IMPORT" type="ABSOLUTE" value="500" version="1">
+          <timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+          <tsoOrigin>BE</tsoOrigin>
+        </netPositionConstraint>
+  </constraints>
+</FlowBasedExternalConstraintDocument>

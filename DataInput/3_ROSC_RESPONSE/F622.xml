@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventMessage xsi:noNamespaceSchemaLocation="common-message-specification-01.xsd" xmlns="http://iec.ch/TC57/2011/schema/message" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <Verb>created</Verb>
+        <Noun>OptimizedCommonGridModel</Noun>
+        <Revision>19</Revision>
+        <Context>ID_PRODUCTION</Context>
+        <Timestamp>2021-05-06T23:45:46Z</Timestamp>
+        <Source>22XCORESO------S</Source>
+        <MessageID>c3c90091-9348-4002-9721-81998fc8ffe5</MessageID>
+        <CorrelationID>683fcc9c-2dd1-4d0b-ae54-1a30ada8cf79</CorrelationID>
+    </Header>
+    <Payload>
+        <resp:ResponseItems xmlns:resp="http://unicorn.com/Response/response-payload" timeInterval="2019-03-29T23:00Z/2019-03-30T23:00Z" xsi:noNamespaceSchemaLocation="response-payload-01.xsd" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+            <resp:ResponseItem timeInterval="2019-03-29T23:00Z/2019-03-30T00:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T00:00Z/2019-03-30T01:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T01:00Z/2019-03-30T02:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T02:00Z/2019-03-30T03:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T03:00Z/2019-03-30T04:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T04:00Z/2019-03-30T05:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T05:00Z/2019-03-30T06:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T06:00Z/2019-03-30T07:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T07:00Z/2019-03-30T08:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T08:00Z/2019-03-30T09:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T09:00Z/2019-03-30T10:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T10:00Z/2019-03-30T11:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T11:00Z/2019-03-30T12:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T12:00Z/2019-03-30T13:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T13:00Z/2019-03-30T14:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T14:00Z/2019-03-30T15:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T15:00Z/2019-03-30T16:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T16:00Z/2019-03-30T17:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T17:00Z/2019-03-30T18:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T18:00Z/2019-03-30T19:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T19:00Z/2019-03-30T20:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T20:00Z/2019-03-30T21:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T21:00Z/2019-03-30T22:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+            <resp:ResponseItem timeInterval="2019-03-30T22:00Z/2019-03-30T23:00Z">
+                <resp:Files>
+                    <resp:File code="CGM" url="documentIdentification://20190330-F613-11"/>
+                    <resp:File code="REFPROG" url="documentIdentification://20190330-F614-01"/>
+
+            
+                </resp:Files>
+            </resp:ResponseItem>
+        </resp:ResponseItems>
+    </Payload>
+</EventMessage>

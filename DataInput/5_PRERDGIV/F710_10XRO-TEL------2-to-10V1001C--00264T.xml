@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowBasedConstraintUpdateDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintupdatedocument-07.xsd">
+  <DocumentIdentification v="10XRO-TEL------2-20191130-F710-v1"/> <!-- vzor pro 310 -->
+  <DocumentVersion v="1"/>
+  <DocumentType v="B07"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XRO-TEL------2"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-11-29T23:00:00Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YRO-TEL------P"/>
+  <ReturnedBranches>
+    <ReturnedBranch id="RO_CO_00017" name="[RO-RO] Arad - Calea Aradului [OPP]">
+      <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+      <CNEC>true</CNEC>
+	  <justification>DQC-NECABOVETHRESHOLD</justification>
+    </ReturnedBranch>
+  </ReturnedBranches>
+  <AdjustmentValues>
+    <AdjustmentValue id="RO_CO_00019" name="[RO-RO] Arad - Timisoara [DIR]">
+      <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+      <IVA>100</IVA>
+    </AdjustmentValue>
+  </AdjustmentValues>
+</FlowBasedConstraintUpdateDocument>

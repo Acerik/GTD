@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-04.xsd">
+  <DocumentIdentification v="10XDE-EON-NETZ-C-20201126F607v1" />
+  <DocumentVersion v="1"/>
+  <DocumentType v="B22" />
+  <ProcessType v="A02" />
+  <SenderIdentification codingScheme="A01" v="10XDE-EON-NETZ-C" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-11-24T21:00:01Z" />
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="10YDE-EON------1" />
+  <GSKSeries>
+    <TimeSeriesIdentification v="1" />
+    <BusinessType v="Z02" share="100" />
+    <Area codingScheme="A01" v="10YDE-EON------1" />
+    <ManualGSK_Block>
+      <GSK_Name v="D2" />
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <ManualNodes>
+        <NodeName v="D2ERZH21" />
+        <Factor v="0.0263" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2ERZH22" />
+        <Factor v="0.0263" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2ETZ 51" />
+        <Factor v="0.0248" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2GEB 51" />
+        <Factor v="0.1321" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2GKRO1C" />
+        <Factor v="0.0756" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2HEYD11" />
+        <Factor v="0.1303" />
+      </ManualNodes>
+      
+      <ManualNodes>
+        <NodeName v="D2KHT 2A" />
+        <Factor v="0.0244" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2KHT 2B" />
+        <Factor v="0.0244" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2LU  51" />
+        <Factor v="0.0392" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2MEHR21" />
+        <Factor v="0.074" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2OBR 51" />
+        <Factor v="0.0186" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2SLZ 2A" />
+        <Factor v="0.0516" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2SLZ 2B" />
+        <Factor v="0.0516" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2WALD1A" />
+        <Factor v="0.0439" />
+      </ManualNodes>
+     
+      <ManualNodes>
+        <NodeName v="D2WHAV21" />
+        <Factor v="0.1075" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="D2ZOL 2A" />
+        <Factor v="0.0712" />
+      </ManualNodes>
+    </ManualGSK_Block>
+  </GSKSeries>
+</GSKDocument>

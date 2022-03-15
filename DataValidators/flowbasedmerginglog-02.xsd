@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="flowbased" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="MergingLog">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="ReportTimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element maxOccurs="1" minOccurs="0" name="TimeSeries" type="fb:TimeSeries_Type"/>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="TimeSeries_Type">
+		<sequence>
+			<element name="TimeSeriesIdentification" type="ecc:IdentificationType"/>
+			<element maxOccurs="1" minOccurs="1" name="Period" type="fb:Period_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Period_Type">
+		<sequence>
+			<element name="TimeInterval" type="ecc:TimeIntervalType"/>
+			<element name="Resolution" type="ecc:ResolutionType"/>
+			<element maxOccurs="unbounded" minOccurs="1" name="Interval" type="fb:Interval_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Interval_Type">
+		<sequence>
+			<element name="Pos" type="ecc:PositionType"/>
+			<element name="MergingReport" type="fb:MergingReport_Type" minOccurs="0" />
+		</sequence>
+	</complexType>
+	<complexType name="MergingReport_Type">
+		<sequence>
+			<element name="BCIactive" type="boolean"/>
+			<element name="MergeType" type="string"/>
+			<element maxOccurs="unbounded" name="Report" type="fb:Report_Type"/>
+			<element name="SI-IT_Report" type="fb:SI-IT_Report_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Report_Type">
+		<sequence>
+			<element minOccurs="0" name="BCI" type="fb:BCI_Type"/>
+			<element minOccurs="0" name="ReferenceProgram" type="fb:ReferenceProgram_Type"/>
+			<element name="LoadFlow" type="fb:LoadFlow_Type"/>
+		</sequence>
+		<attribute name="id" type="string" use="optional"/>
+		<attribute name="name" type="string" use="optional"/>
+		<attribute name="typeInfo" type="string" use="optional"/>
+	</complexType>
+	<complexType name="BCI_Type">
+		<sequence>
+			<element name="BCIapplied"/>
+			<element name="CORE_InitialNP_IGM"/>
+			<element name="InitialMinNP_shift"/>
+			<element name="InitialMaxNP_shift"/>
+			<element name="FinalMinNP_shift"/>
+			<element name="FinalMaxNP_shift"/>
+		</sequence>
+	</complexType>
+	<complexType name="ReferenceProgram_Type">
+		<sequence>
+			<element minOccurs="0" name="Core_NPtarget_initial"/>
+			<element minOccurs="0" name="Core_NPtarget_final"/>
+			<element name="Global_NPtarget_initial"/>
+			<element name="Global_NPtarget_final"/>
+		</sequence>
+	</complexType>
+	<complexType name="LoadFlow_Type">
+		<sequence>
+			<element name="IGM" type="fb:GM_Type"/>
+			<element name="CGM" type="fb:GM_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="SI-IT_Report_Type">
+		<sequence>
+			<element name="InArea" type="ecc:AreaType"/>
+			<element name="OutArea" type="ecc:AreaType"/>
+			<element name="AppliedProcedure" type="byte"/>
+			<element name="TargetFlow" type="fb:TargetFlow_Type"/>
+			<element name="BeforeTargetFlowCGM" type="fb:BeforeTargetFlowCGM_Type"/>
+			<element name="AfterTargetFlowCGM" type="fb:AfterTargetFlowCGM_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="TargetFlow_Type">
+		<sequence>
+			<element name="TotalFlow"/>
+			<element name="FlowDivacaPadriciano"/>
+			<element name="FlowDivacaRedipuglia"/>
+		</sequence>
+	</complexType>
+	<complexType name="BeforeTargetFlowCGM_Type">
+		<sequence>
+			<element name="TotalFlow"/>
+			<element name="FlowDivacaPadriciano"/>
+			<element name="FlowDivacaRedipuglia"/>
+			<element name="TapsPadriciano"/>
+			<element name="TapsDivaca"/>
+		</sequence>
+	</complexType>
+	<complexType name="AfterTargetFlowCGM_Type">
+		<sequence>
+			<element name="TotalFlow"/>
+			<element name="FlowDivacaPadriciano"/>
+			<element name="FlowDivacaRedipuglia"/>
+			<element name="TapsPadriciano"/>
+			<element name="TapsDivaca"/>
+		</sequence>
+	</complexType>
+	<complexType name="GM_Type">
+		<sequence>
+			<element name="Generation"/>
+			<element name="Load"/>
+			<element name="GlobalBalance"/>
+		</sequence>
+	</complexType>
+</schema>

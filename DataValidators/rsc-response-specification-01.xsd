@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RSC Request Message Specification for FBCORE -->
+<!-- Change Log -->
+<xs:schema xmlns:res="http://unicorn.com/Response/response-payload" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://iec.ch/TC57/2011/schema/message" version="1.0.0" xmlns="http://iec.ch/TC57/2011/schema/message">
+
+  <xs:import namespace="http://unicorn.com/Response/response-payload" schemaLocation="response-payload_02.xsd"/>
+  <xs:redefine schemaLocation="common-message-specification-01.xsd">
+    <xs:complexType name="PayloadType">
+      <xs:complexContent>
+        <xs:restriction base="PayloadType">
+          <xs:sequence>
+            <xs:choice>
+              <xs:element ref="res:ResponseItems"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:redefine>
+</xs:schema>

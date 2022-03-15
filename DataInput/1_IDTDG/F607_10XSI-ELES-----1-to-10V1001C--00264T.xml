@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-03.xsd" DtdVersion="1" DtdRelease="0">
+  <DocumentIdentification v="10XSI-ELES-----1-20190330-F607" />
+  <DocumentVersion v="1" />
+  <DocumentType v="B22" />
+  <ProcessType v="A02" />
+  <SenderIdentification v="10XSI-ELES-----1" codingScheme="A01" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification v="10V1001C--00264T" codingScheme="A01" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-12-28T17:40:00Z" />
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain v="10YSI-ELES-----O" codingScheme="A01" />
+  <GSKSeries>
+    <TimeSeriesIdentification v="1" />
+    <BusinessType v="Z02" share="25" />
+    <Area v="10YSI-ELES-----O" codingScheme="A01" />
+    <ManualGSK_Block>
+      <GSK_Name v="SI" />
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <ManualNodes>
+        <NodeName v="LPODLO21" />
+        <Factor v="0.15" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LKRSKO1 " />
+        <Factor v="0.15" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LSOSTA16" />
+        <Factor v="0.65" />
+      </ManualNodes>
+    </ManualGSK_Block>
+  </GSKSeries>
+  <GSKSeries>
+    <TimeSeriesIdentification v="2" />
+    <BusinessType v="Z05" share="75" />
+    <Area v="10YSI-ELES-----O" codingScheme="A01" />
+    <ManualGSK_Block>
+      <GSK_Name v="SI" />
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <ManualNodes>
+        <NodeName v="LOKROG1 " />
+        <Factor v="0.095" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LBERIC1 " />
+        <Factor v="0.067" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LBERIC2 " />
+        <Factor v="0.049" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LCIRKO2 " />
+        <Factor v="0.091" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LDIVAC11" />
+        <Factor v="0.13" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LDIVAC21" />
+        <Factor v="0.087" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LDIVAC51" />
+        <Factor v="0.002" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LKLECE2 " />
+        <Factor v="0.051" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LMARIB1 " />
+        <Factor v="0.198" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LKRSKO1 " />
+        <Factor v="0.076" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LPODLO21" />
+        <Factor v="0.085" />
+      </ManualNodes>
+      <ManualNodes>
+        <NodeName v="LPODLO1 " />
+        <Factor v="0.069" />
+      </ManualNodes>
+    </ManualGSK_Block>
+  </GSKSeries>
+</GSKDocument>

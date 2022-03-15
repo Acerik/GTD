@@ -1,0 +1,747 @@
+Acknowledgement Document			ETSO v5r0	acknowledgement-v5r0.xsd
+ - standard ENTSO-E format
+ - no changes
+
+Capacity Document				ECAN v4r0	capacity-document-v4r0.xsd
+ - standard ENTSO-E format
+ - no changes
+
+IEC61968-100 (message)				CME v1r0	common-message-specification-01.xsd
+ - standard IEC format
+ - no changes
+
+Configuration (CFG XML)				v01		configuration-01.xsd
+ - specific format used for FBPCM
+ - continuously updated
+
+ENTSO-E code lists				v59		etso-code-lists.xsd
+ - standard ENTSO-E format
+ - custom Z0x codes added
+
+ENTSO-E components				v59		etso-core-cmpts.xsd
+ - standard ENTSO-E format
+ - custom share type added on businessType
+
+Flow Based Constraint Document			v12		flowbasedconstraintdocument-12.xsd
+ - specific format
+ - updated to cover calculateFB, optimiseRAO, filterExclusion, filterExclusionJustification, publicationNames and EICs
+
+Flow Based Constraint Update Document		v01		flowbasedconstraintupdatedocument-01.xsd
+ - specific format
+ - newly created for Core
+
+Flow Based Domain Check Document		v08		flowbaseddomaincheckdocument-08.xsd
+ - specific format
+ - no changes
+
+Flow Based Domain Document			v07d		flowbaseddomaindocument-07d.xsd
+ - specific format
+ - updated to cover emptyDomain, publicationNames and EICs
+
+Flow Based External Constraint Document		v05		flowbasedexternalconstraintdocument-05.xsd
+ - specific format
+ - no changes
+
+Flow Based Parameters Document			v04		flowbasedparameter-document-04.xsd
+ - specific format
+ - updated to cover BranchName, OutageIdentification and OutageName
+
+GLSK Document					v01		gsk-document-01.xsd
+ - specific format
+ - no changes
+
+GLSK Market Document				v01		iec62325-451-n-glsk_v2r1.xsd
+ - standard ENTSO-E format
+ - changed import of code lists to Z* codes
+
+IEC61968-100 (payload)				v01		optimized-remedial-actions-01.xsd
+ - specific format
+ - no changes
+
+PMB Capacity Document				PMB v3r0	pmb-capacity-v3r0.xsd
+ - specific PMB format
+ - pending update to support allocation constraints (NEMOs responsibility)
+
+Publication Document 				EPD v2r0	publication-document-v2r0.xsd
+ - standard ENTSO-E format
+ - no changes
+
+Schedule Document				ESS v3r1	schedule-document-v3r1.xsd
+ - standard ENTSO-E format
+ - no changes
+
+Xnodes Check Document				v01		xnodes-01.xsd
+ - specific format
+ - extended to contain message header
+ 
+ 
+ ----15.02.2019----
+ENTSO-E Code List        etso-code-lists.xsd
+- Z06 (External Constraints) code added to MessageTypeList
+
+ENTSO-E CORE Components  etso-core-cmpts.xsd
+- Attribute "share" removed from the BusinessType type
+- Intention is to make it mandatory for GSK Document.
+
+GSK Document            gsk-document-02.xsd
+- A new type "BusinessTypeWithShare" created, containing mandatory "share" attribute.
+- Element "BusinessType" on level of GSKSeries starts to use type "BusinessTypeWithShare" instead of original "BusinessType"
+- XSD version increased from 01 to 02
+
+Configuration         configuration-02.xsd
+- "CornerConfiguration" element made optional
+- XSD version increased froom 01 to 02 
+
+
+ ----20.02.2019----
+GLSK Market Document	iec62325-451-n-glsk_v2r1.xsd
+ - changed import of code lists to Z* codes
+ 
+ 
+  ----21.02.2019----
+ENTSO-E Code List     etso-code-lists.xsd
+ - Z04 (Flow Based Domain Check Result) code added to MessageTypeList
+ - Z11 (Allocation Constraint - for coupling) code added to MessageTypeList
+ - All local "Z" codes (Z04, Z06, Z11) removed from BusinessTypeList as their correct place is MessageTypeList
+ - fix of invalid import element in iec62325-451-n-glsk_v2r1.xsd from previous update
+ 
+   ----25.02.2019----
+GLSK Market Document   iec62325-451-n-glsk_v2r1.xsd
+ - XSD fixed. The earlier "import" element replaced by expected "include".
+ - related Code Lists and Core Components XSDs for Market Documents included
+   - new XSDs are not used by GE as they are used only in CORE v2 for GSK pre-merge factors
+   
+ENTSO-E Code Lists for Market documents   urn-entsoe-eu-wgedi-codelists.xsd
+ - XSD added
+ - not used by GE
+ 
+ENTSO-E Code Lists Local Extensions for Market documents   urn-entsoe-eu-local-extension-types.xsd
+ - XSD added
+ - not used by GE
+ 
+ENTSO-E Components for Market documents   urn-entsoe-eu-wgedi-components.xsd
+ - XSD added
+ - not used by GE
+ 
+ ----16.04.2019----
+ IEC61968-100 (payload)				v02		optimized-remedial-actions-02.xsd
+  - timestamp changed to the timeInterval
+  
+ ----26.04.2019----
+Updated formats:
+	Flow Based Constraint Document			v13		flowbasedconstraintdocument-13.xsd
+	Flow Based Contraint Update Document		v02		flowbasedconstraintupdatedocument-02.xsd
+	Flow Based Domain Document			v7e		flowbaseddomaindocument-07e.xsd
+	Xnodes Check					v02		xnodes-02.xsd
+Added elements:
+	CVA, IVA, minRAMfactor and NECType
+Deprecated elements:
+	FAV, FAVJustification, AMRExclusion, AMRExclusionJustification, calculateFB, optimiseRAO, filterExclusion, filterExclusionJustification
+
+
+----16.05.2019----
+Updated formats:
+	Flow Based Constraint Document			v14		flowbasedconstraintdocument-14.xsd
+  Flow Based Constraint Update Document v03 flowbasedconstraintupdatedocument-03.xsd
+  Flow Based Domain Document          v07f  flowbaseddomaindocument-07f.xsd
+Removed elements:
+  NECType (enum)
+Added elements:
+  CNEC (boolean) for all three updated formats
+  MNEC (boolean) for domain document / constraint document
+
+
+----28.05.2019----
+ENTSO-E Code List        etso-code-lists.xsd
+- Z02 (GLSK) code added to MessageTypeList - temporary code for v 2.1 (v2.2 should use B22)
+- Z05 (Critical network element determination) code added to MessageTypeList - temporary code for v 2.1 (v2.2 should use B06)
+
+----04.06.2019----
+Updated formats:
+	Flow Based Contraint Update Document		v04		flowbasedconstraintupdatedocument-04.xsd
+Removed elements tsoOrigin
+Removed complexType tso_type
+Removed simpleType tso_code
+
+ ----16.04.2019----
+IEC61968-100 (payload)				v03		optimized-remedial-actions-03.xsd
+  - added element OptimizedRemedialActions
+  - added elementFormDefault="qualified" attributeFormDefault="unqualified" to xs:schema
+
+Flow Based Constraint Update Document v03 flowbasedconstraintupdatedocument-05.xsd
+  - completely updated structure for ReturnedBranches and AdjustmentValues
+
+ ----05.07.2019----
+Configuration					v03		configuration-03.xsd
+ - new element and complexType VirtualHubs
+ - new element and complexType VirtualHub
+
+Flow Based Domain Document			v08		flowbaseddomaindocument-08.xsd
+ - new elements: fUaf, f0All
+ - new attribute type (for complexType Outage_Type)
+ - new simpleType OutageType_Type
+ - length for Name_Type extended to 20 chars
+
+Flow Based Constraint Document			v15		flowbasedconstraintdocument-15.xsd
+ - new simpleType minRAMfactor_Type
+ - type of element minRAMfactor changed to minRAMFactor_Type
+
+Flow Based External Constraint Document		v06		flowbasedexternalconstraintdocument-06.xsd
+ - simpleType country_2 changed to country_2-20
+ - lenght for the simpleType country_2-20 extended to 20 chars
+
+Flow Based Domain Check Document		v09		flowbaseddomaincheckdocument-09.xsd
+ - length for tso_code extended to 20 chars 
+
+ ----11.07.2019----
+Flow Based Constraint Update Document		v06		flowbasedconstraintupdatedocument-06.xsd
+ - new element justification added to complexType ReturnedBranchType and AdjustmentValueType
+ 
+  ----17.07.2019----
+Flow Based Domain Document			v09		flowbaseddomaindocument-09.xsd
+ - type Name_Type extended to support underscore ("_") and small letters, length extended to 40 characters
+ 
+Flow Based Domain Check Document		v10		flowbaseddomaincheckdocument-10.xsd
+ - type tso_code extended to support underscore ("_") and small letters, length extended to 40 characters
+ 
+  ---- 23.07.2019 XSDs v0.19 ----
+New XSD added: capacity-3.0.xsd (is replaced by pmb-capacity-v3r0.xsd)
+XSD removed: pmb-capacity-v3r0.xsd
+
+  ---- 24.07.2019 XSDs v0.20 ----
+IEC61968-100 (payload)			v04		optimized-remedial-actions-04.xsd
+ - added attribute timeInterval to OptimizedRemedialActions element
+
+  ---- 29.07.2019 XSDs v0.21 ----
+Flow Based Domain Document			v10		flowbaseddomaindocument-09.xsd
+ - CNEC and MNEC elements set to mandatory
+ - deprecated elements deleted: fav, amrExclusion, amrExclusionJustification, calculateFB
+ - new elements: fLtaMax,f0Ref, f0Ram 
+
+Flow Based Constraint Document			v16		flowbasedconstraintdocument-16.xsd
+ - CNEC, MNEC and minRAMfactor elements set to required
+ - deprecated elements deleted: FAV, FAVJustification, AMRExclusion, AMRExclusionJustification,
+calculateFB, optimiseRAO, filterExclusion, filterExclusionJustification
+
+Flow Based Constraint Update Document		v07		flowbasedconstraintupdatedocument-07.xsd
+ - element justification moved to complexType AdjustmentValueType (in v06 added to AdjustmentValuesType wrongly)
+
+  ---- 21.08.2019 XSDs v0.22 ----
+New XSD added: request-payload-01.xsd
+New XSD added: response-payload_01.xsd
+XSD Deprecated: optimized-remedial-actions-04 (replaced by introduced XSDs for payloads of request and response)
+
+  ---- 10.09.2019 XSDs v0.23 ----
+New XSD added: quality-check-report-01.xsd
+
+  ---- 12.09.2019 XSDs v0.24 ----
+Flow Based Constraint Document			v17		flowbasedconstraintdocument-17.xsd
+ - major changes due to new CBCORA format - version 16 kept in zip file for compatibility
+
+  ---- 01.10.2019 XSDs v0.25 ----
+Flow Based Domain Document			v11		flowbaseddomaindocument-11.xsd
+ - changes agreed with FBEs - alignment with methodology (version 10 kept in zip file for compatibility)
+ -- attribute "name" removed from "ConstResult_Type" used by element "constraintResult"
+ -- element "volume" removed from "FlowBasedDomain_Type" used inside element "FlowBasedDomain"
+ -- element "duration" removed from "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "originalID" removed from "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "originalName" removed from "CriticalBranch_Type" used by element "criticalBranch"
+ -- attribute "name" removed from "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "blackflag" removed from "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "threshold" removed from "CriticalBranch_Type" used by element "criticalBranch" 
+ --- enumerated value MONODIR removed from "Direction_Type" used in element "direction"  
+ --- order of some elements within "CriticalBranch_Type" changed 
+ -- some elements within "CriticalBranch_Type" renamed
+ --- element "f0Ref" renamed to "f0Core
+ --- element "f0Ram" renamed to "virginRam0"
+ --- element "minRAMfactort" renamed to "rAmr"
+ -- element "maxZ2ZPTDF" added to "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "maxZ2ZBorder" and related attributes „from“ and „to“ added to "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "ram_rel" added to "CriticalBranch_Type" used by element "criticalBranch"
+ -- element "specified" removed from "MonitoredBranch_Type" used by element "monitoredBranch"
+ -- element "publicationName" removed from "MonitoredBranch_Type" used by element "monitoredBranch"
+ -- element "publicationName" removed from "Outage_Type" used by element "outage"
+ -- element "fLtn" added added to "CriticalBranch_Type" used by element "criticalBranch"
+
+  ---- 10.10.2019 XSDs v0.26 ----
+Flow Based Domain Document			v12		flowbaseddomaindocument-12.xsd
+ - some changes from previous version reverted not to increase effort on side fo GE
+ -- element "rAmr" reverted to original name "minRAMfactort"
+ -- element "virginRam0" reverted to original name "f0Ram"
+ -- order of some elements within "CriticalBranch_Type" changed (order before v11)
+
+ETSO Components					NA		etso-core-cmpts.xsd
+ - ShareType removed (it was earlier unofficially introduced for GLSKs, but it created a dependency and issues during updates of cmpts)
+ - aligned with official cmpts
+
+GSKDocument					v03		gsk-document-03.xsd
+ - simple type ShareType added to the XSD to remove the dependency on unofficial code list 
+
+  ---- 16.10.2019 XSDs v0.27 ----
+ETSO Code List					 		etso-code-lists.xsd
+ - codes Z02 and Z05 removed from MessageTypeList (consequence of switching back to official codes in input files)
+
+  ---- 22.10.2019 XSDs v0.28 ----
+Flow Based Contingency				v01		flowbasedcontingency-01.xsd
+ - new XSD added
+
+  ---- 29.10.2019 XSDs v0.29 ----
+Flow Based Domain Document			v13		flowbaseddomaindocument-13.xsd
+ - type of attributus "from" and "to" used by element "MaxZ2ZBorder" corrected from "Name_Type" to "fb:Name_Type"
+
+  ---- 30.10.2019 XSDs v0.30 ----
+RSC request					v1		rsc-request-specification-01.xsd
+RSC response					v1		rsc-response-specification-01.xsd
+ - new XSDs for validation of RSC requests and responses XMLs
+Request						v2		request-payload-02.xsd
+ - element RequestItem made required
+Response					v2		response-payload_02.xsd
+ - element ResponseItem made required
+
+  ---- 08.11.2019 XSDs v0.31 ----
+Data Quality Check report			v2		quality-check-report-02.xsd
+ - added unbounded maxOccurs to element QualityChecks	
+ - removed redundant attributes minOccurs and maxOccurs
+
+  ---- 13.11.2019 XSDs v0.32 ----
+Data Quality Check report			v3		quality-check-report-03.xsd
+ - element Info made mandatory (removed minOccurs="0") and should contain at least one character (minLength value="1")
+
+  ---- 15.11.2019 XSDs v0.33 ----
+Flow Based Domain Document			v14		flowbaseddomaindocument-14.xsd
+ - update for release R2.4 in CriticalBranchType
+ -- removed element "f0Ram"
+ -- renamed element from "fLtn" to "ftotalLtn"
+ -- added element "RAM0core"
+ -- removed element "version"
+ - update for release R2.4 in FlowBasedDomain_Type
+ -- removed element "emptyDomain"
+ -- added element "domainStatus" and its enumeration
+
+  ---- 19.11.2019 XSDs v0.34 ----
+Flow Based Domain Document			v15		flowbaseddomaindocument-15.xsd
+ - update for release 2.4 in CriticalBranchType
+ -- added element "fromArea"
+ -- added element "toArea"
+Flow Based PTDF Document			v01		flowbasedptdfdocument-01.xsd
+ -- a new XSD introduced (based on Domain Document). It is used for results of GE - simplified restuls, but with all PTDFs for all Hubs
+
+  ---- 25.11.2019 XSDs v0.36 ----
+Flow Based PTDF Document			v02		flowbasedptdfdocument-02.xsd
+ - update based on discussion with FBEs
+ -- added possibility to inform about branch status
+
+  ---- 26.11.2019 XSDs v0.37 ----
+Flow Based PTDF Document			v03		flowbasedptdfdocument-03.xsd
+ - element Ptdf made optional
+ - attribute id of ConstResult made mandatory
+
+  ---- 09.01.2020 XSDs v0.38 and v0.39 ----
+Flow Based Domain Document			v16		flowbaseddomaindocument-16.xsd
+ - update (for release 2.4 HF / FBPCM R6) in CriticalBranchType
+ -- updated element "fromArea", made optional (used only for CIA computation)
+ -- updated element "toArea", made optional (used only for CIA computation)
+Flow Based External Constraint Document		v07		flowbasedexternalconstraintdocument-07.xsd
+ - updated type "country"
+ -- updated pattern, extended and supporting small letters and numbers
+
+
+  ---- 10.01.2020 XSDs v0.40 ----
+Reporting Information Market Document v2r1			iec62325-451-n-reportinginformation_v2_1.xsd
+ - added XSD for XMLs with Net Position Forecast
+XSD optimized-remedial-actions-04_DEPRECATED.xsd
+- removed as it is not used
+FB Domain Document
+- older version v10 - v15 removed as they are not used
+ENTSO-E Core Components
+- removed etso-core-cmpts_DEPRECATED.xsd as it is not used
+
+  ---- 13.01.2020 XSDs v0.41 ----
+Critical Network Element Market Document			iec62325-451-n-cne_v2_4.xsd
+ - added XSD for XMLs of Raw RAO Reports
+
+  ---- 26.01.2020 XSDs v0.42 ----
+Flow Based Merging Log						flowbasedmerginglog-01.xsd
+ - added XSD for XMLs of Merging entities
+
+  ---- 05.02.2020 XSDs v0.43 ----
+Flow Based Contingency						flowbasedcontingency-02.xsd
+ - added name for branch and hvdcVH
+
+  ---- 13.02.2020 XSDs v0.44 ----
+Flow Based PTDF Document			v04		flowbasedptdfdocument-04.xsd
+ - unconsistent chars &gt; removed 
+
+  ---- 14.02.2020 XSDs v0.45 ----
+iec62325-451-n-cne_v2_4_FlowBased_v02.xsd
+- renamed from original iec62325-451-n-cne_v2_4 to clearly state that it is modified for FlowBased purpuses
+urn-entsoe-eu-local-extension-types.xsd
+- updated - extended with unofficial "Z" codes used for FlowBased only
+
+  ---- 20.02.2020 XSDs v0.46 ----
+Flow Based Contingency						flowbasedcontingency-03.xsd
+ - element ContingencyTimeInterval updated
+
+  ---- 02.03.2020 XSDs v0.47 ----
+Flow Based Domain Document			v17		flowbaseddomaindocument-17.xsd
+ - returned specified element into monitored branch
+ - Branch_Type extended with direction element
+Results Document						result-3.1.xsd
+ - new XSD added
+
+  ---- 03.03.2020 XSDs v0.48 ----
+Data Quality Check report			v5		quality-check-report-05.xsd
+ - TSO extended to 6 characters - change before revision with Post-Coupling (maybe temporary chnage)
+ - Format extended with list of Properties
+
+  ---- 04.03.2020 XSDs v0.49 ----
+MRC Results					v3.1.2		result-3.1.2.xsd
+ - Updated to newer version
+New XSDs:
+ - etso-code-lists-pcr.xsd
+ - etso-core-cmpts-pcr.xsd
+
+
+  ---- 09.03.2020 XSDs v0.50 ----
+New XSD:
+ - confirmation-3.0
+
+
+  ---- 10.03.2020 XSDs v0.51 ----
+Flow Based Domain Document			v18		flowbaseddomaindocument-18.xsd
+ - attribute "ID" in "ConstResult_Type", changed "use" from optional to "required"
+ - attribute "ID" in "CriticalBranch_Type", changed "use" from optional to "required"
+ - update attribute "name" in "MonitoredBranch_Type", change "use" from optional to "required"
+ - element "iMaxType" added for "CriticalBranch_Type"
+ - attribute "originalId" added for "CriticalBranch_Type"
+Flow Based Constraint Document			v18		flowbasedconstraintdocument-18.xsd
+ - element "imaxType" in "criticalBranchType" made mandatory
+Flow Based Kpi Document				v01		flowbasedkpidocument-01.xsd
+ - new XSD added
+
+
+  ---- 16.03.2020 XSDs v0.52 ----
+New XSD:
+ - energy-account-report
+
+
+
+  ---- 17.03.2020 XSDs v0.53 ----
+Flow Based Contingency			v1		flowbasedcontingency-03
+ - attribute "party" addded
+New XSD:
+ - confirmation-xml_v1
+
+  ---- 17.03.2020 XSDs v0.54 ----
+Confirmation Report			v2		confirmation-xml_v2
+ - attribute "MessageType" changed to "DocumentType"
+
+  ---- 18.03.2020 XSDs v0.55 ----
+New version - confirmation-3.1.xsd  
+ - change import from etso-core-cmpts-pmb.xsd to etso-core-cmpts.xsd
+
+  ---- 18.03.2020 XSDs v0.56 ----
+Confirmation Report			v3		confirmation-xml_v3
+ - attribute "ConfirmedMessageIdentification" changed to "DocumentIdentification"
+ - attribute "ConfirmedMessageVersion" changed to "DocumentVersion"
+
+  ---- 20.03.2020 XSDs v0.57 ----
+Quality Check Report			v6		quality-check-report-06.xsd
+- restriction of element TSO updated to allow small letters and to be longer (to support virtual TSO for alegro)
+
+  ---- 23.03.2020 XSDs v0.58 ----
+New XSD:
+ - rights-document
+
+  ---- 24.03.2020 XSDs v0.59 ----
+etso-code-lists.xsd
+- updated, Z12 added to MessageTypeList to support the document with KPIs (produced by GE)
+
+  ---- 24.03.2020 XSDs v0.60 ----
+quality-check-report-07.xsd
+- CheckType extended with "IDATC" which will be used in DQC produced by FBPCM during ID ATC computation
+
+  ---- 30.03.2020 XSDs v0.61 ----
+Rights Document				v02		rights-document-02.xsd
+- DocumentationIdentification element changed the type from "IdentificationType" to "LongIdentificationType" so that SEC files (having longer MD codes) would be still valid.
+
+  ---- 30.03.2020 XSDs v0.62 ----
+Capacity Document			v02		capacity-document-v4r0-02.xsd
+- the official XSD had to be updated, therefore the postfix with version was added, it is FB specific now, but compatible with the official version (i.e. flows valid for oficial version will be valid also in this updated XSD)
+- AuctionIdentification element changed the type from "IdentificationType" to "LongIdentificationType" so that ATCs for Shadow Auction could contrain also the identification for ALEGrO
+
+---- 30.03.2020 XSDs v0.63 ----
+Result Document				--		result-3.1.xsd
+Result document XSD name chaned to result-3.1.xsd (instead of 3.1.2, the 3.1.2 version is only inside of the XSD. The name needs to stay the same as provided from NEMOs)
+
+  ---- 30.03.2020 XSDs v0.64-0.65 ----
+Confirmation Report					confirmation-xml
+ - original XSD from CWE used, earlier updates were not relevant
+
+  ---- 01.04.2020 XSDs v0.66 ----
+etso-code-lists.xsd
+- code Z07 added to MessageTypeList to support ECs/ATCs for virtual hubs 
+
+  ---- 07.04.2020 XSDs v0.67 ----
+Configuration					v04		configuration-04.xsd
+- new section and new elements added to support delivery of parameters (per TSO) for ID ATC computation
+-- added element "IDATCRAMCalculationParameters" and related types and inner elements
+
+  ---- 15.04.2020 XSDs v0.68 ----
+Configuration					v05		configuration-05.xsd
+- complex type "ControlEntity" extended with attribute AHC (impacting both MarketArea and ControlArea elements)
+- complex type "VirtualHub" extended with attribute AHC
+- complex type "BorderDirection" extended with attribute AHC
+
+  ---- 21.04.2020 XSDs v0.69 ----
+Rights Document						rights-document.xsd
+- DocumentationIdentification element changed back to earlier state (before v0.61)
+
+  ---- 18.05.2020 XSDs v0.70 ----
+Quality Check Report				v08		quality-check-report-08.xsd
+- element Area changed to TSO
+- updated names of Quality Check Types (CVA to CV, IVA to IV) based on request of FBEs
+All PTDFs Document 				v05	flowbasedptdfdocument-05.xsd
+- updated structure to include also ID and name of Outage and CB, simplified status (in attribute only)
+Configuration document 				v06	configuration-06.xsd
+- virtual hubs made optional (requested by GE mainly for testing purposes, may be handy also in Study computation of CCCt)
+
+  ---- 26.05.2020 XSDs v0.71 ----
+Changes for scope 2.4.2
+Flow Based Constraint Document				v19		flowbasedconstraintdocument-19
+- new element "minRAMfactor" addded
+- new element "minRAMfactorJustification" addded
+Flow Based Constraint Update Document			v08		flowbasedconstraintupdatedocument-08
+- new element "MinRAMReductions" addded
+- new element "minRAMfactor" addded
+- new element "justification" addded
+
+
+  ---- 01.06.2020 XSDs v0.72 ----
+CNE document update                      v3     iec62325-451-n-cne_v2_4_FlowBased_v03.xsd
+entsoe local extention type updated             urn-entsoe-eu-local-extension-types.xsd
+
+  ---- 01.06.2020 XSDs v0.73 ----
+CNE document update - Long_String type added and assigned to "name" attributes due to publication names              v3     iec62325-451-n-cne_v2_4_FlowBased_v03.xsd
+
+ ---- 19.06.2020 XSDs v0.74 ---- Jan Kaderavek
+Flow Based Constraint Document		flowbasedconstraintdocument-20_candidate.xsd
+- udpated related to restriction of CB file (nonEmptyString type restricted)
+- candidate only, not yet approved by FBEs
+GLSK Document				gsk-document-04_candidate.xsd
+- updated to always have Factor, removal of ActualGSK, introduction of Original factor (see FCC-4738)
+
+ ---- 22.06.2020 XSDs v0.75 ---- Jan Kaderavek
+Flow Based External Constraint Document			v08	flowbasedexternalconstraintdocument-08.xsd
+- extended length of TsoOrigin element so that also DK1 (3 characters) could be submitted - necessary for the support of AHC (Advanced Hybrid Coupling)
+
+ ---- 25.06.2020 XSDs v0.76 ---- Jan Kaderavek
+Flow Based Constraint Document		flowbasedconstraintdocument-20.xsd
+- approved, postfix "candidate" in the name of XSD removed
+GLSK Document				gsk-document-04.xsd
+- approved by TSOs, postfix "candidate" in the name of XSD removed
+
+ ---- 22.06.2020 XSDs v0.77 ---- Jan Kaderavek
+Flow Based External Constraint Document			v08	flowbasedexternalconstraintdocument-08.xsd
+- extended length of TsoOrigin element so that also DK1 (3 characters) could be submitted - necessary for the support of AHC (Advanced Hybrid Coupling)
+-- fix of incorrect pattern which allowed exactly 3 characters, but not 2. Newly, both options are possible. Version not increased based on agreement with GE (XSDs were already shared)
+
+ ---- 16.07.2020 XSDs v0.78 ---- Jan Kaderavek
+Results Document			result-3.1.xsd
+- the original XSD "result-3.1.2.xsd" replaced by "result-3.1.xsd"
+-- necessary to have the expected name which is used by NEMOs and in CWE
+-- there is also a change in the header - reference to the "pcr" version of components XSD. We original tried to get rid of the dependence on the "pcr" vesion, but it was not done.
+
+ ---- 16.07.2020 XSDs v0.79 ---- Jan Kaderavek
+Confirmation report		confirmation-3.0.xsd
+- the earlier XSD "confirmation-3.1.xsd" replaced by "confirmation-3.0.xsd"
+-- necessary to have the expected name which is used by NEMOs and in CWE
+-- header of "3.0" is using the "pmb" versions of componenets and code list XSDs
+
+ ---- 17.07.2020 XSDs v0.80 ---- Jan Kaderavek
+Quality Check Report		quality-check-report-09.xsd
+- enum of Check Types extended with MINRAM value
+FlowBasedContingency		flowbasedcontingency-04.xsd
+- udpate related to restriction of CB file. Also the CO dictionary values need to be restricted so that merge of CB would work fine (would not contain unexpected values for CB file).
+
+ ---- 22.07.2020 XSDs v0.81 ---- David Renč
+Flow Based Constraint Update Document			v09		flowbasedconstraintupdatedocument-09.xsd
+- timeInterval added to ReturnedBranchType - for 2.4.2 CR2 where CNEC Selection evaluates each hour separately
+
+
+ ---- 23.07.2020 XSDs v0.82 ---- Jan Kaderavek
+CNE Market Document		v04	iec62325-451-n-cne_v2_4_FlowBased_v04.xsd
+- pattern of type "ESMP_Float" updated to accept also negative values (Analog values are quite often negative)
+
+ ---- 28.07.2020 XSDs v0.83 ---- Jan Kaderavek
+All PTDF Document		v06	flowbasedptdfdocument-06.xsd
+- updated based on the suggestion of GE (alignment of the element usages closer to Domain Document)
+
+ ---- 29.07.2020 XSDs v0.84 ---- Jan Kaderavek
+FB Merging log			v02	flowbasedmerginglog-02.xsd
+- TimeSeries element set as optional (to resolve a situation when ME would send only header due to the failed merging)
+
+ ---- 08.09.2020 XSDs v0.85 ---- Jan Kaderavek
+Flow Based Coordinated Validation Document	v01 	flowbasedcoordinatedvalidationdocument-01.xsd
+- new format introduced for purpose of Simple Coordinated Validation (CCCt v2.4.3)
+ENTSO-E Code List	etso-code-list.xsd
+- extended with new "Z" codes to support new flows for Simple Coordinated Validation
+-- MessageTypeList extended with codes Z13, Z14, Z15
+-- BusinessTypeList extended with codes Z06, Z07, Z08, Z09
+
+ ---- 08.10.2020 XSDs v0.86 ---- Jan Kaderavek
+Flow Based Coordinated Validation Document	v02 	flowbasedcoordinatedvalidationdocument-02.xsd
+- element "node" updated so that it could occur multiple times
+- element "Period" restricted so that only single Period could appear in the TimeSeries
+
+ ---- 08.10.2020 XSDs v0.87 ---- Jan Kaderavek
+ENTSO-E Code List 	etso-code-lists.xsd 
+- code list contained twice the code Z05 for LSKs, duplicate record removed
+
+ ---- 20.10.2020 XSDs v0.88 ---- Jana Gresova
+Quality Check Report		quality-check-report-10.xsd
+- enum of Check Types extended with RAP value
+
+ ---- 03.11.2020 XSDs v0.89 ---- Jan Kaderavek
+FB Parameters Document		flowbasedparameter-document-05.xsd
+- type for element "BranchIdentification" changed from "IdentificationType" to "LongIdentificationType" to resolve FCC-6909
+Configuration document		configuration-07.xsd
+- name of attribute "rVLC" (of element "RAMCalculationParameter") changed to "rVCL"
+- new attribute "rLTAIncl" introduced in element "BorderDirection" to support new ELI computation in ID ATC computations
+-- so available twice (once on the level of BorderDirection, second on level of RAMCalculationParameter
+
+
+ ---- 06.11.2020 XSDs v0.90 ---- Jan Kaderavek
+Configuration document		configuration-07.xsd
+- new attribute "rLTAIncl" on "BorderDirection" made optional based on agreement with GE
+
+ ---- 27.11.2020 XSDs v0.91 ---- David Renč
+Configuration document		configuration-08.xsd
+- element "LOT3Parameters" made optional - for Merging and RAO will not be used
+
+ ---- 30.11.2020 XSDs v0.92 ---- David Renč
+Configuration document		configuration-09.xsd
+- element "BorderDirections" made optional - for RAO will not be used
+
+ ---- 16.01.2021 XSDs v0.93 ---- David Renč
+Publication document		publication-document-v3r0.xsd
+- element "PublicationTimeSeries" made optional - to enable CCCt to send empty RefProg
+
+ ---- 18.01.2021 XSDs v0.94 ---- Jan Kaderavek
+Publication document 		publication-document-v2r0_FlowBased_v01.xsd
+- earlier suggested XSD name "publication-document-v3r0.xsd" updated to keep the v2 of official version, only postfix for FB added
+
+ ---- 01.02.2021 XSDs v0.95 ---- Jana Grešová
+Flow Based Contingency		flowbasedcontingency-05.xsd
+- attribute "party" moved on the same level as Branch and HVDC based on CR from FBEs
+
+ ---- 09.02.2021 XSDs v0.96 ---- Vojtěch Boukal
+Local extension types       urn-entsoe-eu-local-extension-types.xsd
+- new codes Z18 and Z19 added (minimum RAM factor + minimum RAM factor for Core only)
+
+
+ ---- 19.02.2021 XSDs v0.97 ---- Jan Kaderavek
+FB Domain Document		flowbaseddomaindocument-19.xsd
+- enumeration of branch types (ConstraintType_Type) extended with "EQUALITY_CONSTRAINT" value (to support FCC-8206)
+
+
+ ---- 23.02.2021 XSDs v0.98 ---- Jana Grešová
+Quality Check report		quality-check-report-11.xsd
+- new DQC type added - "IRAS"
+
+
+ ---- 11.03.2021 XSDs v0.99 ---- Vojtěch Boukal
+Result Document		result-3.1.xsd
+- new version 3.1.5 of Result Document including Alpha, LTA Time Series
+
+
+ ---- 23.03.2021 XSDs v0.100 ---- Vojtěch Boukal
+Schedule Document		schedule-document-v3r1.xsd
+- new element ShadowPriceCapacityAmount added
+
+ ---- 22.04.2021 XSDs v0.101 ---- Vojtěch Boukal
+ etsoe-codelists.xsd
+  - new Z11 code added under businessTypeList representing the Allocation Constraints. Used for MD348 LTA and AC with Shadow Prices
+  
+  ---- 28.04.2021 XSDs v0.102 ---- Jana Brokešová
+  Flow Based Constraint Update Document    flowbasedconstraintupdatedocument-10.xsd
+ - new simple type nonEmptyString edit
+ - the "type" of element "justification" was updated to new simple type nonEmptyString         
+ 
+   ---- 10.05.2021 XSDs v0.103 ---- Jana Brokešová
+quality-check-report-12
+  - updated by GE, new checkType "CGM"   
+  
+   ---- 20.05.2021 XSDs v0.104 ---- Jana Brokešová
+configuraion_10.xsd
+  - updated by GE, new attributes TurnOffIDATC and TurnOffSAATC added
+  
+   ---- 13.06.2021 XSDs v0.105 ---- David Renč
+flowbasedptdfdocument-07.xsd
+  - updated by GE, new atributes added (domainLimit, RAM, tsoOrigin)
+  
+   ---- 15.06.2021 XSDs v0.106 ---- David Renč
+result-3.2.xsd
+  - new structure for PMB result file added
+
+   ---- 24.06.2021 XSDs v0.107 ---- Jana Grešová
+iec62325-451-2-schedule_v5_0.xsd
+  - new structure for Schedule Market Document added
+
+   ---- 18.07.2021 XSDs v0.108 ---- David Renč
+publication-document-v2r0_FlowBased_v02.xsd
+  - added ""ProcessType element for distinction between DA and ID
+
+   ---- 29.07.2021 XSDs v0.109 ---- David Renč
+flowbasedtopomeasuresdocument-01.xsd
+  - new structure for Topological Measures updates added
+  
+   ---- 09.09.2021 XSDs v0.110 ---- Jana Brokešová
+quality-check-report-13
+configuration-11
+    - from Thomas Skler
+quality-check-report-14
+    - new Check Types FBDOMAIN and ITMU added 
+    
+ ---- 15.09.2021 XSDs v0.111 ---- Jana Brokešová
+configuration-12
+  - element CnecSelectionTsoType added
+  
+ ---- 01.11.2021 XSDs v0.112 ---- Jana Brokešová
+flowbaseddomaindocument-20.xsd
+    -FCC-11194: MNEC element set to optional, "uva" element added
+flowbasedconstraintdocument-21.xsd
+    -FCC-11194: minRAMfactor and MNEC element set to optional
+  
+---- 06.12.2021 XSDs v0.113 ---- Jana Brokešová
+iec62325-451-3-totalallocation_v7_0.xsd
+    -FCC-11433: new TAR format added
+  
+---- 15.12.2021 XSDs v0.114 ---- Jana Brokešová
+etso-code-lists.xsd
+    -FCC-12499: new Document Type Z03 added
+
+---- 16.12.2021 XSDs v0.115 ---- Jana Brokešová
+etso-code-lists.xsd
+    -FCC-12499: new Message Type Z03 added
+
+---- 23.01.2022 XSDs v0.116 ---- Jana Grešová
+iec62325-451-3-capacity_v7_0.xsd
+    -FCC-11473: new XSD added
+
+---- 21.02.2022 XSDs v0.117 ---- Vojtěch Boukal
+statusinfo-payload-01.xsd
+    -FCC-12317: xsd added (was not part of the xsds before)
+
+---- 04.03.2022 XSDs v0.118 ---- Vojtěch Boukal
+statusinfo-payload-01.xsd
+    -FCC-12317: updated - added new Status(es)
+    
+---- 04.03.2022 XSDs v0.119 ---- Jana Brokešová
+flowbasedcontingency-06.xsd
+    -FCC-12966: new attribute "horizon"  added into branch element and into hvdc element
+
+---- 10.03.2022 XSDs v0.120 ---- David Renč
+quality-check-report-15.xsd
+    - new Check Type BCNEC added
+    

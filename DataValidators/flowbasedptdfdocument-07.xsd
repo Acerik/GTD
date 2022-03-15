@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="flowbased" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="FlowBasedDomainDocument">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="FlowBasedDomainTimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element name="FlowBasedDomainTimeSeries" type="fb:FlowBasedDomainTimeSeries_Type"/>
+			</sequence>
+			<attribute name="DtdVersion" type="string" use="required"/>
+			<attribute name="DtdRelease" type="string" use="required"/>
+		</complexType>
+	</element>
+	<complexType name="FlowBasedDomainTimeSeries_Type">
+		<sequence>
+			<element name="TimeSeriesIdentification" type="ecc:IdentificationType"/>
+			<element name="BusinessType" type="ecc:BusinessType"/>
+			<element name="Product" type="ecc:EnergyProductType"/>
+			<element name="BalanceArea" type="ecc:AreaType"/>
+			<element name="Period" type="fb:Period_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Period_Type">
+		<sequence>
+			<element name="TimeInterval" type="ecc:TimeIntervalType"/>
+			<element name="Resolution" type="ecc:ResolutionType"/>
+			<element name="Interval" type="fb:Interval_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Interval_Type">
+		<sequence>
+			<element name="Pos" type="ecc:PositionType"/>
+			<element name="FlowBasedDomain" type="fb:FlowBasedDomain_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="FlowBasedDomain_Type">
+		<sequence>
+			<element name="constraintResults" type="fb:ConstResults_Type"/>
+		</sequence>
+		<attribute name="id" type="string" use="required"/>
+	</complexType>
+	<complexType name="ConstResults_Type">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="1" name="constraintResult" type="fb:ConstResult_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="ConstResult_Type">
+		<sequence>
+			<element name="criticalBranch" type="fb:CriticalBranch_Type"/>
+			<element minOccurs="0" name="ptdfs" type="fb:Ptdfs_Type"/>
+			<element name="domainLimit" type="fb:DomainLimit_Type" minOccurs="0" maxOccurs="1"/>
+
+		</sequence>
+		<attribute name="id" type="string" use="required"/>
+	</complexType>
+	<complexType name="CriticalBranch_Type">
+		<sequence>
+			<element name="monitoredBranch" type="fb:MonitoredBranch_Type"/>
+			<element name="branchStatus" type="fb:BranchStatus_Type"/>
+			<element name="outage" type="fb:Outage_Type"/>
+			<element name="RAM" type="float" minOccurs="0"/>
+			<element name="tsoOrigin" type="fb:Name_Type" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="Outage_Type">
+		<attribute name="id" type="string"/>
+		<attribute name="name" type="string" use="required"/>
+	</complexType>
+	<complexType name="MonitoredBranch_Type">
+		<attribute name="name" type="string" use="required"/>
+	</complexType>
+	<simpleType name="BranchStatus_Type">
+		<restriction base="string">
+			<enumeration value="OK"/>
+			<enumeration value="OUT"/>
+		</restriction>
+	</simpleType>
+	<complexType name="Ptdfs_Type">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="1" name="ptdf" type="fb:Ptdf_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="DomainLimit_Type">
+		<sequence>
+			<element name="region" type="boolean" minOccurs="0"/>
+			<element name="tso" type="boolean" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="Ptdf_Type">
+		<sequence>
+			<element name="hub" type="fb:Hub_Type"/>
+			<element name="value" type="float"/>
+		</sequence>
+	</complexType>
+	<complexType name="Hub_Type">
+		<attribute name="name" type="fb:Name_Type" use="required"/>
+	</complexType>
+	<simpleType name="Name_Type">
+		<restriction base="string">
+			<pattern value="[a-zA-Z0-9_]{2,40}"/>
+		</restriction>
+	</simpleType>
+</schema>

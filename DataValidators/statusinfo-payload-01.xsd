@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://unicorn.com/Response/statusinfo-payload"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:si="http://unicorn.com/Response/statusinfo-payload" elementFormDefault="qualified">
+  <xs:element name="StatusInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Status" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Heartbeat information (RUNNING)from NRAO or information about abortion of RAO from CCCt (manual or automatic)</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="RUNNING"/>
+              <xs:enumeration value="ABORTED_MANUALLY"/>
+              <xs:enumeration value="ABORTED_BY_SYSTEM"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Notification" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Action">
+                <xs:annotation>
+                  <xs:documentation>Information about changed state of the computation</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="STARTED"/>
+                    <xs:enumeration value="QUEUED"/>
+                    <xs:enumeration value="ABORTED"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reason" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Description of the Action</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="timeInterval" type="si:TimeIntervalType" use="required"/>
+    </xs:complexType> 
+  </xs:element>
+  <xs:simpleType name="TimeIntervalType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(((((20[0-9]{2})[\-](0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9])Z/)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9])Z/)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9])Z/))(((([0-9]{4})-(0[13578]|1[02])[\-](0[1-9]|[12][0-9]|3[01])|([0-9]{4})[\-]((0[469])|(11))[\-](0[1-9]|[12][0-9]|30))T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][048]|[13579][01345789](0)[48]|[13579][01345789][2468][048]|[02468][048][02468][048]|[02468][1235679](0)[48]|[02468][1235679][2468][048]|[0-9][0-9][13579][26])[\-](02)[\-](0[1-9]|1[0-9]|2[0-9])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)|(([13579][26][02468][1235679]|[13579][01345789](0)[01235679]|[13579][01345789][2468][1235679]|[02468][048][02468][1235679]|[02468][1235679](0)[01235679]|[02468][1235679][2468][1235679]|[0-9][0-9][13579][01345789])[\-](02)[\-](0[1-9]|1[0-9]|2[0-8])T(([01][0-9]|2[0-3]):[0-5][0-9])Z)))"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

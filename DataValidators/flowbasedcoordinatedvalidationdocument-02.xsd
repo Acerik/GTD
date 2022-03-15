@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="flowbased" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="FlowBasedCoordinatedValidationDocument">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="CoordinatedValidationTimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element minOccurs="0" name="complexVariants" type="fb:complexVariantsType"/>
+				<element minOccurs="0" name="advices" type="fb:advicesType"/>
+			</sequence>
+			<attribute name="DtdVersion" type="string" use="required"/>
+			<attribute name="DtdRelease" type="string" use="required"/>
+		</complexType>
+	</element>
+	<complexType name="complexVariantsType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="redispatch" type="fb:redispatchType"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="complexVariant" type="fb:complexVariantType"/>
+		</sequence>
+	</complexType>
+	<complexType name="redispatchType">
+		<sequence>
+			<element name="timeInterval" type="ecc:TimeIntervalType"/>
+			<element name="tsoOrigin" type="ecc:PartyType"/>
+			<element name="fuelType" type="ecc:AssetType"/>
+			<element name="uctNodes" type="fb:uctNodesType"/>
+			<element name="minPower" type="float"/><!--the loading of the value from IGM when the value is empty is currently not planned, i.e. the value needs to be provided-->
+			<element name="maxPower" type="float"/><!--the loading of the value from IGM when the value is empty is currently not planned, i.e. the value needs to be provided-->
+			<element name="minRedispatch" type="float"/>
+			<element minOccurs="0" name="minUpTime" type="int"/>
+			<element minOccurs="0" name="minDownTime" type="int"/>
+			<element minOccurs="0" name="maxPositivePowerGradient" type="float"/>
+			<element minOccurs="0" name="maxNegativePowerGradient" type="float"/>
+			<element minOccurs="0" name="leadTime" type="int"/>
+			<element minOccurs="0" name="lagTime" type="int"/>
+			<element minOccurs="0" name="startupAllowed" type="boolean"/>
+			<element minOccurs="0" name="shutdownAllowed" type="boolean"/>
+			<element maxOccurs="unbounded" name="TimeSeries" type="fb:TimeSeries_Type"/>
+		</sequence>
+		<attribute name="id" type="fb:idString" use="required"/>
+		<attribute name="name" type="fb:nonEmptyString" use="required"/>
+	</complexType>
+	<complexType name="uctNodesType">
+		<sequence>
+			<element maxOccurs="unbounded" name="node" type="fb:uctNodeType"/>
+		</sequence>
+	</complexType>
+	<complexType name="uctNodeType">
+		<attribute name="name" type="fb:nodeType" use="required"/>
+		<attribute name="factor" type="fb:factorType" use="required"/>
+	</complexType>
+	<complexType name="TimeSeries_Type">
+		<sequence>
+			<element name="TimeSeriesIdentification" type="ecc:IdentificationType"/>
+			<element name="BusinessType" type="ecc:BusinessType"/>
+			<element name="Period" type="fb:Period_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Period_Type">
+		<sequence>
+			<element name="TimeInterval" type="ecc:TimeIntervalType"/>
+			<element name="Resolution" type="ecc:ResolutionType"/>
+			<element maxOccurs="unbounded" minOccurs="1" name="Interval" type="fb:Interval_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Interval_Type">
+		<sequence>
+			<element name="Pos" type="ecc:PositionType"/>
+			<element maxOccurs="1" minOccurs="0" name="Qty" type="ecc:QuantityType"/>
+		</sequence>
+	</complexType>
+	<complexType name="complexVariantType">
+		<sequence>
+			<element name="timeInterval" type="ecc:TimeIntervalType"/>
+			<element name="tsoOrigin" type="ecc:PartyType"/>
+			<element maxOccurs="unbounded" minOccurs="1" name="actionsSet" type="fb:actionsSetType"/>
+		</sequence>
+		<attribute name="id" type="fb:idString" use="required"/>
+		<attribute name="name" type="fb:nonEmptyString"/>
+	</complexType>
+	<complexType name="actionsSetType">
+		<sequence>
+			<element minOccurs="1" name="preventive" type="boolean"/>
+			<element minOccurs="1" name="curative" type="boolean"/>
+			<element minOccurs="0" name="enforced" type="boolean"/>
+			<element minOccurs="0" name="afterCOList">
+				<complexType>
+					<sequence>
+						<element maxOccurs="unbounded" minOccurs="1" name="afterCOId" type="fb:idString"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element maxOccurs="unbounded" name="action" type="fb:actionType"/>
+		</sequence>
+		<attribute name="name" type="fb:nonEmptyString" use="optional"/>
+	</complexType>
+	<complexType mixed="true" name="actionType">
+		<all>
+			<element minOccurs="1" name="branch">
+				<complexType>
+					<attribute name="from" type="fb:nodeType" use="required"/>
+					<attribute name="to" type="fb:nodeType" use="required"/>
+					<attribute name="order" use="optional">
+						<simpleType>
+							<restriction base="string">
+								<pattern value="[1-9]|[A-Z]"/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name="elementName" type="fb:nonEmptyString" use="optional"/>
+				</complexType>
+				<key name="actionBranch__order_OR_elementName">
+					<selector xpath="."/>
+					<field xpath="@order|@elementName"/>
+				</key>
+			</element>
+			<element minOccurs="0" name="value" type="fb:nonEmptyString"/>
+			<element minOccurs="0" name="range" type="fb:rangeType"/>
+			<element minOccurs="0" name="relativeRange" type="fb:rangeType"/>
+			<element minOccurs="0" name="PSTGroupId" type="fb:nonEmptyString"/>
+		</all>
+		<attribute name="type" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="STATUS"/>
+					<enumeration value="PSTTAP"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<complexType name="rangeType">
+		<sequence>
+			<element minOccurs="1" name="min" type="integer"/>
+			<element minOccurs="1" name="max" type="integer"/>
+		</sequence>
+	</complexType>
+	<complexType name="advicesType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="advice" type="fb:adviceType"/>
+		</sequence>
+	</complexType>
+	<complexType name="adviceType">
+		<sequence>
+			<element name="timeInterval" type="ecc:TimeIntervalType"/>
+			<element name="advicedTSOs" type="fb:advicedTSOsType"/>
+			<element name="text" type="fb:nonEmptyString"/>
+		</sequence>
+		<attribute name="id" type="fb:idString" use="required"/>
+	</complexType>
+	<complexType name="advicedTSOsType">
+		<sequence>
+			<element maxOccurs="unbounded" name="tso" type="ecc:PartyType"/>
+		</sequence>
+	</complexType>
+	<simpleType name="nonEmptyString">
+		<restriction base="string">
+			<minLength value="1"/>
+			<pattern value="([a-zA-Z 0-9_.,()/=!\[\]#%&amp;*;'+:?-])*"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="idString">
+		<restriction base="string">
+			<minLength value="1"/>
+			<maxLength value="100"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="nodeType">
+		<restriction base="string">
+			<pattern value=".{6}\d(\p{L}|\d| )?"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="minRAMfactor_Type">
+		<restriction base="decimal">
+			<minInclusive value="0"/>
+			<maxInclusive value="100"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="factorType">
+		<restriction base="decimal">
+			<minInclusive value="0"/>
+			<maxInclusive value="1"/>
+		</restriction>
+	</simpleType>
+</schema>

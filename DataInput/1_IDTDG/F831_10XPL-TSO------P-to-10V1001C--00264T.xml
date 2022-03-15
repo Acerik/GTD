@@ -1,0 +1,207 @@
+<FlowBasedExternalConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedexternalconstraintdocument-05.xsd">
+	<DocumentIdentification v="10XPL-TSO------P-20190220-F831-v1"/>
+	<DocumentVersion v="1" />
+	<DocumentType v="Z11" />
+	<ProcessType v="A02" />
+	<SenderIdentification codingScheme="A01" v="10XPL-TSO------P" />
+	<SenderRole v="A04" />
+	<ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+	<ReceiverRole v="A36" />
+	<CreationDateTime v="2019-02-12T09:28:45Z" />
+	<ExternalConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+	<Domain codingScheme="A01" v="10YPL-AREA-----S" />
+	<constraints>
+		<netPositionConstraint name="PL_import" value="4900" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="4700" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="4500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="4700" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5300" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5400" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5350" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5300" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5600" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5900" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="6300" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="6350" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="6450" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="6500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="6000" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5600" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5500" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_import" value="5100" direction="IMPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="4900" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="4700" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="4500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="4700" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5300" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5400" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5350" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5300" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5600" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5900" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="6300" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="6350" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="6450" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="6500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="6000" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5600" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5500" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+		<netPositionConstraint name="PL_export" value="5100" direction="EXPORT" type="ABSOLUTE" hub="PL" version="2">
+			<timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>PL</tsoOrigin>
+		</netPositionConstraint>
+	</constraints>
+</FlowBasedExternalConstraintDocument>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-04.xsd">
+  <DocumentIdentification v="10XFR-RTE------Q-20201126F607v1" />
+  <DocumentVersion v="1"/>
+  <DocumentType v="B22" />
+  <ProcessType v="A02" />
+  <SenderIdentification codingScheme="A01" v="10XFR-RTE------Q" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-11-24T21:00:01Z" />
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="10YFR-RTE------C" />
+  <GSKSeries>
+    <TimeSeriesIdentification v="1" />
+    <BusinessType v="Z02" share="100" />
+    <Area codingScheme="A01" v="10YFR-RTE------C" />
+    <CountryGSK_Block>
+      <GSK_Name v="FR" />
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+    </CountryGSK_Block>
+  </GSKSeries>
+</GSKDocument>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <FlowBasedExternalConstraintDocument xmlns:ecl="etso-code-lists.xsd" xmlns:ecc="etso-core-cmpts.xsd" DtdRelease="0" DtdVersion="4" xmlns="flowbased">
+      <DocumentIdentification v="10XPL-TSO------P_EC_20190330_008761"/>
+      <DocumentVersion v="6"/>
+      <DocumentType v="Z06"/>
+      <ProcessType v="A02"/>
+      <SenderIdentification codingScheme="A01" v="10XPL-TSO------P"/>
+      <SenderRole v="A04"/>
+      <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+      <ReceiverRole v="A36"/>
+      <CreationDateTime v="2020-12-28T12:49:26Z"/>
+      <ExternalConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <Domain codingScheme="A01" v="10YPL-AREA-----S"/>
+      <constraints>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="1" name="PL_import" type="RELATIVE" value="0" version="0">
+          <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="2" name="PL_import" type="RELATIVE" value="0" version="0">
+          <timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="3" name="PL_import" type="RELATIVE" value="0" version="0">
+          <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="4" name="PL_import" type="RELATIVE" value="0" version="0">
+          <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="5" name="PL_import" type="RELATIVE" value="0" version="0">
+          <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="6" name="PL_import" type="RELATIVE" value="0" version="0">
+          <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="7" name="PL_import" type="RELATIVE" value="1310" version="0">
+          <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="8" name="PL_import" type="RELATIVE" value="2255" version="0">
+          <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="9" name="PL_import" type="RELATIVE" value="3343" version="0">
+          <timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="10" name="PL_import" type="RELATIVE" value="3795" version="0">
+          <timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="11" name="PL_import" type="RELATIVE" value="4060" version="0">
+          <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="12" name="PL_import" type="RELATIVE" value="4151" version="0">
+          <timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="13" name="PL_import" type="RELATIVE" value="4258" version="0">
+          <timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="14" name="PL_import" type="RELATIVE" value="4732" version="0">
+          <timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="15" name="PL_import" type="RELATIVE" value="4462" version="0">
+          <timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="16" name="PL_import" type="RELATIVE" value="5027" version="0">
+          <timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="17" name="PL_import" type="RELATIVE" value="5481" version="0">
+          <timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="18" name="PL_import" type="RELATIVE" value="5125" version="0">
+          <timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="19" name="PL_import" type="RELATIVE" value="4630" version="0">
+          <timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="20" name="PL_import" type="RELATIVE" value="4423" version="0">
+          <timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="21" name="PL_import" type="RELATIVE" value="3834" version="0">
+          <timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="22" name="PL_import" type="RELATIVE" value="2613" version="0">
+          <timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="23" name="PL_import" type="ABSOLUTE" value="1703" version="0">
+          <timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="IMPORT" hub="PL" id="24" name="PL_import" type="ABSOLUTE" value="465" version="0">
+          <timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="25" name="PL_export" type="RELATIVE" value="10970" version="0">
+          <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="26" name="PL_export" type="RELATIVE" value="11459" version="0">
+          <timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="27" name="PL_export" type="RELATIVE" value="11632" version="0">
+          <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="28" name="PL_export" type="RELATIVE" value="11498" version="0">
+          <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="29" name="PL_export" type="RELATIVE" value="10933" version="0">
+          <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="30" name="PL_export" type="RELATIVE" value="9637" version="0">
+          <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="31" name="PL_export" type="RELATIVE" value="7217" version="0">
+          <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="32" name="PL_export" type="RELATIVE" value="6210" version="0">
+          <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="33" name="PL_export" type="RELATIVE" value="4991" version="0">
+          <timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="34" name="PL_export" type="RELATIVE" value="4372" version="0">
+          <timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="35" name="PL_export" type="RELATIVE" value="3962" version="0">
+          <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="36" name="PL_export" type="RELATIVE" value="3835" version="0">
+          <timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="37" name="PL_export" type="RELATIVE" value="3771" version="0">
+          <timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="38" name="PL_export" type="RELATIVE" value="3414" version="0">
+          <timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="39" name="PL_export" type="RELATIVE" value="3887" version="0">
+          <timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="40" name="PL_export" type="RELATIVE" value="3362" version="0">
+          <timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="41" name="PL_export" type="RELATIVE" value="3246" version="0">
+          <timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="42" name="PL_export" type="RELATIVE" value="3197" version="0">
+          <timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="43" name="PL_export" type="RELATIVE" value="3713" version="0">
+          <timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="44" name="PL_export" type="RELATIVE" value="4092" version="0">
+          <timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="45" name="PL_export" type="RELATIVE" value="4740" version="0">
+          <timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="46" name="PL_export" type="RELATIVE" value="6087" version="0">
+          <timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="47" name="PL_export" type="ABSOLUTE" value="7112" version="0">
+          <timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+        <netPositionConstraint direction="EXPORT" hub="PL" id="48" name="PL_export" type="ABSOLUTE" value="8497" version="0">
+          <timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z"/>
+          <tsoOrigin id="PL">PL</tsoOrigin>
+        </netPositionConstraint>
+      </constraints>
+    </FlowBasedExternalConstraintDocument>

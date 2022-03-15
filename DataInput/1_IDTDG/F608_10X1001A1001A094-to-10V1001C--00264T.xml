@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<FlowBasedExternalConstraintDocument xmlns:ecl="etso-code-lists.xsd" xmlns:ecc="etso-core-cmpts.xsd" DtdRelease="0" DtdVersion="4" xmlns="flowbased">
+	<DocumentIdentification v="ELIA_EC"/>
+	<DocumentVersion v="2"/>
+	<DocumentType v="Z06"/>
+	<ProcessType v="A02"/>
+	<SenderIdentification codingScheme="A01" v="10X1001A1001A094"/>
+	<SenderRole v="A04"/>
+	<ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+	<ReceiverRole v="A36"/>
+	<CreationDateTime v="2018-09-03T00:00:00Z"/>
+	<ExternalConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+	<Domain codingScheme="A01" v="10YBE----------2"/>
+	<constraints>
+		<netPositionConstraint name="BE_import" value="0" direction="IMPORT" type="ABSOLUTE" hub="BE" version="2">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>BE</tsoOrigin>
+		</netPositionConstraint>
+	
+		<netPositionConstraint name="DE_import" value="20000" direction="IMPORT" type="ABSOLUTE" hub="DE" version="2">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>DE</tsoOrigin>
+		</netPositionConstraint>
+	
+	
+		<netPositionConstraint name="AT_export" value="0" direction="EXPORT" type="ABSOLUTE" hub="AT" version="2">
+			<timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+			<tsoOrigin>AT</tsoOrigin>
+		</netPositionConstraint>
+	</constraints>
+	
+	
+	
+</FlowBasedExternalConstraintDocument>

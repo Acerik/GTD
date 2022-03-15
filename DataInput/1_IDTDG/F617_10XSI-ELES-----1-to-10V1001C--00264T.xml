@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-17.xsd">
+  <DocumentIdentification v="10XSI-ELES-----1-20190330-F617v1" />
+  <DocumentVersion v="1" />
+  <DocumentType v="B06" />
+  <ProcessType v="A02" />
+  <SenderIdentification codingScheme="A01" v="10XSI-ELES-----1" />
+  <SenderRole v="A04" />
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+  <ReceiverRole v="A36" />
+  <CreationDateTime v="2020-12-28T17:40:00Z" />
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="10YSI-ELES-----O" />
+  <criticalBranches>
+    <criticalBranch id="SI_CO_00001">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-AT-SI-00003P" from="LPODLO2" to="XOB_PO21" order="1" name="[SI-AT] 220 kV Podlog - Obersielach [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+   
+    <criticalBranch id="SI_CBCO_00089">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000213-Q" from="LMARIB1" to="LKRSKO1" order="1" name="[SI-SI] 400kV Maribor - Krsko [OPP]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+    
+   
+   
+    
+    
+    <criticalBranch id="HR-SI_CO_00003">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-00006V" from="LCIRKO2" to="XZE_CI21" order="1" name="[SI-HR] 220kV Cirkovce - Zerjavinc [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>31</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="HR-SI_CO_00003" name="N-1 Tumbri - Krsko 1">
+      </outage>
+    </criticalBranch>
+    <criticalBranch id="HR-SI_CO_00004">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-00006V" from="LCIRKO2" to="XZE_CI21" order="1" name="[SI-HR] 220kV Cirkovce - Zerjavinc [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>31</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="HR-SI_CO_00004" name="N-1 Tumbri - Krsko 2">
+      </outage>
+    </criticalBranch>
+    <criticalBranch id="SI_CO_00011">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-000022" from="LDIVAC22" to="XPE_DI21" order="1" name="[SI-HR] 220kV Divaca - Pehlin [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="HR-SI_CO_00001">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-000022" from="LDIVAC22" to="XPE_DI21" order="1" name="[SI-HR] 220kV Divaca - Pehlin [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="HR-SI_CO_00001" name="N-1 Melina - Divaca">
+      </outage>
+    </criticalBranch>
+    <criticalBranch id="SI_CO_00013">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000196-R" from="LPODLO2" to="LBERIC2" order="1" name="[SI-SI] 220kV Podlog - Bericevo [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="SI-SI_CO_00002">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000196-R" from="LPODLO2" to="LBERIC2" order="1" name="[SI-SI] 220kV Podlog - Bericevo [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="SI-SI_CO_00002" name="N-1 Bericevo-Podlog 400kV">
+      </outage>
+    </criticalBranch>
+    <criticalBranch id="SI_CO_00004">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000196-R" from="LPODLO2" to="LBERIC2" order="1" name="[SI-SI] 220kV Podlog - Bericevo [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="SI-SI_CO_00004" name="N-1 Podlog-Maribor">
+      </outage>
+    </criticalBranch>
+    <criticalBranch id="SI-SI_CO_00003">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000196-R" from="LPODLO2" to="LBERIC2" order="1" name="[SI-SI] 220kV Podlog - Bericevo [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="SI-SI_CO_00003" name="N-1 Maribor-Krsko">
+      </outage>
+    </criticalBranch>
+    <criticalBranch id="SI_CBCO_00084">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-000014" from="LDIVAC11" to="XME_DI11" order="1" name="[SI-HR] 400 kV Divaca - Melina [OPP] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="HR-SI_CO_00002" name="N-1 Pehlin - Divaca">
+      </outage>
+    </criticalBranch>
+     <criticalBranch id="SI_CBCO_00083">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-000014" from="LDIVAC11" to="XME_DI11" order="1" name="[SI-HR] 400 kV Divaca - Melina [OPP] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>OPPOSITE</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+	
+	
+    <criticalBranch id="SI_CO_00019">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000197-O" from="LPODLO2" to="LCIRKO2" order="1" name="[SI-SI] 220kV Podlog - Cirkovce [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+    <criticalBranch id="SI_CO_00003">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000197-O" from="LPODLO2" to="LCIRKO2" order="1" name="[SI-SI] 220kV Podlog - Cirkovce [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>36</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+      <outage id="SI-SI_CO_00003" name="N-1 Maribor-Krsko">
+      </outage>
+    </criticalBranch>
+	
+	 <criticalBranch id="SI_CBCO_00040">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="28T-0000000214-N" from="LPODLO1" to="LMARIB1" order="1" name="[SI-SI] 400kV Podlog - Maribor [DIR]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+	
+	<criticalBranch id="SI_CBCO_00038">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-000014" from="LDIVAC11" to="XME_DI11" order="1" name="[SI-HR] 400 kV Divaca - Melina [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+	
+	 <criticalBranch id="SI_CBCO_00035">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-00005X" from="LKRSKO1" to="XTU_KR12" order="2" name="[SI-HR] 400 kV Krsko - Tumbri 2 [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+	
+	   <criticalBranch id="SI_CBCO_00032">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-HR-SI-00004Z" from="LKRSKO1" to="XTU_KR11" order="1" name="[SI-HR] 400 kV Krsko - Tumbri 1 [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+	
+	 <criticalBranch id="SI_CBCO_00029">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-AT-SI-00002R" from="LMARIB1" to="XKA_MA12" order="2" name="[SI-AT] 400 kV Maribor - Kainachtal 2 [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+	
+	<criticalBranch id="SI_CBCO_00026">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+      <branch eic="10T-AT-SI-00001T" from="LMARIB1" to="XKA_MA11" order="1" name="[SI-AT] 400 kV Maribor - Kainachtal 1 [DIR] [SI]" />
+      <imaxFactor>1</imaxFactor>
+      <imaxType>DYNAMIC</imaxType>
+      <permanentImaxFactor>1</permanentImaxFactor>
+      <temporaryImaxFactor>1.2</temporaryImaxFactor>
+      <frmMw>133</frmMw>
+      <minRAMfactor>70</minRAMfactor>
+      <CNEC>true</CNEC>
+      <MNEC>true</MNEC>
+      <direction>DIRECT</direction>
+      <tsoOrigin>SI</tsoOrigin>
+    </criticalBranch>
+    
+  </criticalBranches>
+  
+   
+</FlowBasedConstraintDocument>

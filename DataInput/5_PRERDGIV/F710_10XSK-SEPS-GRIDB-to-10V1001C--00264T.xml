@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowBasedConstraintUpdateDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintupdatedocument-07.xsd">
+  <DocumentIdentification v="10XSK-SEPS-GRIDB-20191130-F710-v1"/> <!-- vzor pro 310 -->
+  <DocumentVersion v="1"/>
+  <DocumentType v="B07"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XSK-SEPS-GRIDB"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-11-29T23:00:00Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YSK-SEPS-----K"/>
+  <ReturnedBranches>
+    <ReturnedBranch id="SK_CO_00001" name="[SK-HU] Gabcikovo - Gyor [DIR] [SK]">
+      <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+      <CNEC>false</CNEC>
+	   <justification>DQC</justification>
+    </ReturnedBranch>
+	 </ReturnedBranches>
+ <AdjustmentValues>
+    <AdjustmentValue id="SK_CBCO_00118" name="[SK-SK] Gabcikovo - P.Biskupice [OPP]">
+      <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z"/>
+      <IVA>-50</IVA>
+    </AdjustmentValue>
+	
+	<AdjustmentValue id="SK_CBCO_00050" name="[SK-SK] Krizovany - P.Biskupice [DIR]">
+      <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z"/>
+      <IVA>5000</IVA>
+    </AdjustmentValue>
+ 
+   </AdjustmentValues>
+  
+ <MinRAMReductions>
+      <MinRAMReduction id="SK_CO_00005" name="[NL-BE] Rilland-Zandvliet 380 G [DIR] [NL]">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z"/>
+         <minRAMfactor>25</minRAMfactor>
+         <justification>LFcalc = 0.99%;LFaccept = 24.65%;MACZTtarget = 20.00%</justification>
+     </MinRAMReduction>
+	</MinRAMReductions>  
+</FlowBasedConstraintUpdateDocument>

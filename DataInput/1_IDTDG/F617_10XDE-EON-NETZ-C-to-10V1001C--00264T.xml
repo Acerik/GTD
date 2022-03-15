@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10XDE-EON-NETZ-C-20201217F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XDE-EON-NETZ-C"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-15T21:00:04Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YDE-EON------1"/>
+  
+  <criticalBranches>
+    
+        <criticalBranch id="D2_CO_00009" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ_CO_00012" name="N-1 Mirovka - Cebin" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00010" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="D2_CO_00042" name="N-1 Pleinting - Schwandorf 465" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="D2_CO_00047" name="N-1 Redwitz - Mechlenreuth 469" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00013" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="D2_CO_00025" name="N-1 Etzenricht - Mechlenreuth 437" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00014" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+           
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00015" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ_CO_00001" name="N-1 Hradec - Mirovka" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00016" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ_CO_00002" name="N-1 Hradec - Reporyje" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00017" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ_CO_00003" name="N-1 Hradec - Vyskov" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00018" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ_CO_00012" name="N-1 Mirovka - Cebin" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00019" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="D2_CO_00042" name="N-1 Pleinting - Schwandorf 465" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00020" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ-D2_CO_00001" name="N-1 Prestice - Etzenricht" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00021" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+           
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00022" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00001W" from="XHR_ET1" to="D2ETZ 1"  elementName="441" name="[CZ-D2] Hradec - Etzenricht 441 [OPP] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>140</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="D2_CO_00047" name="N-1 Redwitz - Mechlenreuth 469" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00023" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00004Q" from="XPR_ET1" to="D2ETZ 1"  elementName="442" name="[CZ-D2] Prestice - Etzenricht 442 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>155</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ-D2_CO_00002" name="N-1 Hradec - Etzenricht" >
+            </outage>
+        </criticalBranch>
+       
+        <criticalBranch id="D2_CO_00025" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00004Q" from="XPR_ET1" to="D2ETZ 1"  elementName="442" name="[CZ-D2] Prestice - Etzenricht 442 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>155</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ-D8_CO_00001" name="N-1 Hradec - Rohrsdorf 1" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00026" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00004Q" from="XPR_ET1" to="D2ETZ 1"  elementName="442" name="[CZ-D2] Prestice - Etzenricht 442 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>155</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ-D8_CO_00002" name="N-1 Hradec - Rohrsdorf 2" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00027" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00004Q" from="XPR_ET1" to="D2ETZ 1"  elementName="442" name="[CZ-D2] Prestice - Etzenricht 442 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>155</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            <outage id="CZ_CO_00006" name="N-1 Slavetice - Dasny" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D2_CO_00028" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T-CZ-DE-00004Q" from="XPR_ET1" to="D2ETZ 1"  elementName="442" name="[CZ-D2] Prestice - Etzenricht 442 [DIR] [D2]"/>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>155</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+            
+        </criticalBranch>
+		<criticalBranch id="D2_CBCO_00100" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="10T1001C--00061Y" from="D2YSI 2" to="XPE_AH2"  elementName="233/230" name="[D2-AT] Simbach - St. Peter 233/230 [DIR] [D2]"/>
+            <imaxType>DYNAMIC</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>45</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D2</tsoOrigin>
+        </criticalBranch>
+        
+    </criticalBranches>
+	
+	 <complexVariants>
+        <complexVariant id="D2_RA_00001" name="PST_Diele_T441">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="D2DIEL1" to="D2DIEL1"  elementName="T441"/>
+                    <range>
+                      <min>-10</min>
+                      <max>10</max>
+                    </range>
+                    <PSTGroupId>PST_G1</PSTGroupId>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="D2_RA_00002" name="PST_Diele_T442">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="D2DIEL1" to="D2DIEL1"  elementName="T442"/>
+                    <range>
+                      <min>-10</min>
+                      <max>10</max>
+                    </range>
+                    <PSTGroupId>PST_G1</PSTGroupId>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="D2_RA_00003" name="TOP_2N_Doerpen_West">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D2DOEW1" to="D2DOEW1"  elementName="D2DOEW1K"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="D2_RA_00004" name="TOP_2N_Grafenrheinfeld_Bergrheinfeld">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D2BRFW1" to="D2BRFW1"  elementName="D2BRFW1K1"/>
+                    <value>OPEN</value>
+                </action>
+                <action type="STATUS">
+                    <branch from="D2GR  1" to="D2GR  1"  elementName="D2GR  1K"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="D2_RA_00005" name="TOP_2N_Pleinting">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D2PT  2" to="D2PT  2"  elementName="D2PT  2K"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="D2_RA_00006" name="TOP_2N_Sittling">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D2SIT 2" to="D2SIT 2"  elementName="D2SIT 2K"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="D2_RA_00007" name="TOP_2N_Sittling">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D2</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D2SIT 2" to="D2SIT 2"  elementName="D2SIT 2K"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+    </complexVariants>
+   
+</FlowBasedConstraintDocument>

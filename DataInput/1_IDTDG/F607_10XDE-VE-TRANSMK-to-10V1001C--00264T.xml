@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document.xsd" DtdVersion="1" DtdRelease="0">
+<DocumentIdentification v="10XDE-VE-TRANSMK-20190618-F607"/>   
+<DocumentVersion v="1"/>   
+<DocumentType v="B22"/>   
+<ProcessType v="A02"/>   
+<SenderIdentification v="10XDE-VE-TRANSMK" codingScheme="A01"/>  
+<SenderRole v="A04"/>   
+<ReceiverIdentification v="10V1001C--00264T" codingScheme="A01"/>  
+<ReceiverRole v="A36"/>   
+<CreationDateTime v="2020-12-17T14:53:49Z"/>   
+<GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>   
+<Domain v="10YDE-VE-------2" codingScheme="A01"/>  
+<GSKSeries>    
+<TimeSeriesIdentification v="1"/>   
+<BusinessType v="Z02" share="100"/>  
+<Area v="10YDE-VE-------2" codingScheme="A01"/>  
+<ManualGSK_Block>    
+<GSK_Name v="D8"/>   
+<TimeInterval v="2019-03-29T23:00Z/2019-03-30T07:00Z"/>   
+<ManualNodes>    
+<NodeName v="D8GOLD11"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD12"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD13"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD14"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8MARK11"/>   
+<Factor v="0.1751"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8MARK12"/>   
+<Factor v="0.1751"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8REUW11"/>   
+<Factor v="0.0505"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8REUW12"/>   
+<Factor v="0.0505"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8HOH222"/>   
+<Factor v="0.1009"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8ROST11"/>   
+<Factor v="0.0820"/>   
+</ManualNodes>    
+</ManualGSK_Block>    
+<ManualGSK_Block>    
+<GSK_Name v="D8"/>   
+<TimeInterval v="2019-03-30T07:00Z/2019-03-30T19:00Z"/>   
+<ManualNodes>    
+<NodeName v="D8GOLD11"/>   
+<Factor v="0.0738"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD12"/>   
+<Factor v="0.0738"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD13"/>   
+<Factor v="0.0738"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD14"/>   
+<Factor v="0.0738"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8MARK11"/>   
+<Factor v="0.1462"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8MARK12"/>   
+<Factor v="0.1462"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8REUW11"/>   
+<Factor v="0.0891"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8REUW12"/>   
+<Factor v="0.0891"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8HOH222"/>   
+<Factor v="0.0891"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8ROST11"/>   
+<Factor v="0.1448"/>   
+</ManualNodes>    
+</ManualGSK_Block>    
+<ManualGSK_Block>    
+<GSK_Name v="D8"/>   
+<TimeInterval v="2019-03-30T19:00Z/2019-03-30T23:00Z"/>   
+<ManualNodes>    
+<NodeName v="D8GOLD11"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD12"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD13"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8GOLD14"/>   
+<Factor v="0.0915"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8MARK11"/>   
+<Factor v="0.1751"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8MARK12"/>   
+<Factor v="0.1751"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8REUW11"/>   
+<Factor v="0.0505"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8REUW12"/>   
+<Factor v="0.0505"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8HOH222"/>   
+<Factor v="0.1009"/>   
+</ManualNodes>    
+<ManualNodes>    
+<NodeName v="D8ROST11"/>   
+<Factor v="0.0820"/>   
+</ManualNodes>    
+</ManualGSK_Block>    
+</GSKSeries>    
+</GSKDocument>    

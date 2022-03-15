@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedConstraintDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-20.xsd">
+  <DocumentIdentification v="10XDE-ENBW--TNGX-20201217-F617v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XDE-ENBW--TNGX"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-15T15:46:31Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YDE-ENBW-----N"/>
+    <criticalBranches>
+        <criticalBranch id="D4_CO_00001" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>218</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00002" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00001" name="N-1 Altbach - Muehlhausen ws" >
+            </outage>
+        </criticalBranch>
+       <criticalBranch id="D4_CBCO_00094" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000022" from="D4SLDR1" to="DGR_ST1"  elementName="GRFRTSLD" name="[D2-D4] Grafenrheinfeld - Stalldorf rt [OPP] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>218</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D4</tsoOrigin>
+        </criticalBranch>
+		<criticalBranch id="D4_CO_00099" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="CH_CO_00001" name="N-1 Asphard - Goesgen LN300125" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00004" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4-CH_CO_00001" name="N-1 Asphard - Kuehmoos rt" >
+            </outage>
+        </criticalBranch>
+        
+		<criticalBranch id="D4_CBCO_02926" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0968-9" from="D43BRS1" to="D4GRKR1"  elementName="BRSBLGRK" name="[D4-D4] Buers - Gruenkraut bl [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>141</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00016" name="N-1 Dellmensingen - Rotensohl bl" >
+            </outage>
+        </criticalBranch>
+		
+        <criticalBranch id="D4_CBCO_04559" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11TD400000560-LO" from="D4EICH1" to="D4KUHM1"  elementName="DREI" name="[D4-D4] Eichstetten - Kuehmoos gn (Dreisam) [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>181</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00041" name="N-1 Neurott - Philippsburg WAGB" >
+            </outage>
+        </criticalBranch>
+		
+        <criticalBranch id="D4_CO_00007" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D7_CO_00113" name="N-1 Brauweiler - Knapsack BURBAC O" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00008" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D7_CO_00028" name="N-1 Brauweiler - Rommerskirchen BRAUWL W" >
+            </outage>
+        </criticalBranch>
+       <criticalBranch id="D4_CBCO_00079" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000022" from="D4SLDR1" to="DGR_ST1"  elementName="GRFRTSLD" name="[D2-D4] Grafenrheinfeld - Stalldorf rt [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>SEASONAL</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>254</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+        </criticalBranch>
+		
+        <criticalBranch id="D4_CO_00010" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00003" name="N-1 Bruchsal - Philippsburg - Pulverdingen" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00011" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00004" name="N-1 Buenzwangen - Laichingen gn" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00012" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00005" name="N-1 Buenzwangen - Wendlingen ge" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00013" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00042" name="N-1 Buers - Dellmensingen ws" >
+            </outage>
+        </criticalBranch>
+                <criticalBranch id="D4_CBCO_00078" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [OPP] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>218</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D4</tsoOrigin>
+        </criticalBranch>
+		
+       <criticalBranch id="D4_CBCO_04814" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11TD400000573-L7" from="D4EICH1" to="D4KUHM1"  elementName="KAND" name="[D4-D4] Eichstetten - Kuehmoos rt (Kander) [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>DYNAMIC</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>221</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00031" name="N-1 Grossgartach - Pulverdingen ws" >
+            </outage>
+        </criticalBranch>
+          <criticalBranch id="D4_CBCO_02517" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11TD400000605-LS" from="D4KUPZ1" to="D4SLDR1"  elementName="KUPRTSLD" name="[D4-D4] Kupferzell - Stalldorf rt [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>254</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+        </criticalBranch>
+		 <criticalBranch id="D4_CBCO_03419" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0082-R" from="D43BRS2" to="D43B_F1"  elementName="BMT37" name="[D4-D4] PST Buers BMT37 [DIR]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>77</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00030" name="N-1 Grossgartach - Pulverdingen rt" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CBCO_03512" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T0-0000-0082-R" from="D43BRS2" to="D43B_F1"  elementName="BMT37" name="[D4-D4] PST Buers BMT37 [OPP]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>77</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>OPPOSITE</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00030" name="N-1 Grossgartach - Pulverdingen rt" >
+            </outage>
+        </criticalBranch>
+      
+     
+        <criticalBranch id="D4_CO_00019" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00008" name="N-1 Buers PST37" >
+            </outage>
+        </criticalBranch>
+        <criticalBranch id="D4_CO_00020" >
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <branch eic="11T-D2-D4-000014" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" name="[D2-D4] Grafenrheinfeld - Hoepfingen ge [DIR] [D4]"/>
+            <imaxFactor>1</imaxFactor>
+            <imaxType>FIXED</imaxType>
+            <permanentImaxFactor>1</permanentImaxFactor>
+            <temporaryImaxFactor>1</temporaryImaxFactor>
+            <frmMw>243</frmMw>
+            <minRAMfactor>21.3</minRAMfactor>
+            <CNEC>true</CNEC>
+            <MNEC>false</MNEC>
+            <direction>DIRECT</direction>
+            <tsoOrigin>D4</tsoOrigin>
+            <outage id="D4_CO_00009" name="N-1 Daxlanden - Eichstetten gn" >
+            </outage>
+        </criticalBranch>
+		
+		</criticalBranches>
+		
+		 <complexVariants>
+        <complexVariant id="RA_D4_10001" name="PST_BUERS_BMT37">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D4</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="PSTTAP">
+                    <branch from="D43BRS2" to="D43B_F1"  elementName="BMT37"/>
+                    <range>
+                        <min>-10</min>
+                        <max>10</max>
+                    </range>
+                    <PSTGroupId>D4_PSTGRP_01</PSTGroupId>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="RA_D4_00001" name="TOP_2N_DELLMENSINGEN">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D4</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D4DELL1" to="D4DELL1"  elementName="BMK1"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+        <complexVariant id="RA_D4_00002" name="TOP_2N_EICHSTETTEN">
+            <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+            <tsoOrigin>D4</tsoOrigin>
+            <actionsSet >
+                <preventive>true</preventive>
+                <curative>false</curative>
+                <enforced>false</enforced>
+                <action type="STATUS">
+                    <branch from="D4EICH1" to="D4EICH1"  elementName="BMKP401"/>
+                    <value>OPEN</value>
+                </action>
+            </actionsSet>
+        </complexVariant>
+    </complexVariants>
+</FlowBasedConstraintDocument>

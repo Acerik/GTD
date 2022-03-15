@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased" targetNamespace="flowbased" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="FlowBasedConstraintUpdateDocument">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="ConstraintTimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element name="ReturnedBranches" type="fb:ReturnedBranchesType" minOccurs="0"/>
+				<element name="AdjustmentValues" type="fb:AdjustmentValuesType" minOccurs="0"/>
+				<element name="MinRAMReductions" type="fb:MinRAMReductionsType" minOccurs="0"/>
+			</sequence>
+			<attribute name="DtdVersion" type="string" use="required"/>
+			<attribute name="DtdRelease" type="string" use="required"/>
+		</complexType>
+	</element>
+	<complexType name="ReturnedBranchesType">
+		<sequence>
+			<element name="ReturnedBranch" type="fb:ReturnedBranchType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="ReturnedBranchType">
+		<sequence>
+			<element name="CNEC" type="boolean" minOccurs="1"/>
+			<element name="justification" type="string" minOccurs="0"/>
+		</sequence>
+		<attribute name="name" type="fb:nonEmptyString" use="optional"/>
+		<attribute name="id" type="fb:idString"/>
+	</complexType>
+	<complexType name="AdjustmentValuesType">
+		<sequence>
+			<element name="AdjustmentValue" type="fb:AdjustmentValueType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="AdjustmentValueType">
+		<sequence>
+			<element name="timeInterval" type="ecc:TimeIntervalType"/>
+			<element name="CVA" type="float" minOccurs="0"/> 
+			<element name="IVA" type="float" minOccurs="0"/>
+			<element name="justification" type="string" minOccurs="0"/>
+		</sequence>
+		<attribute name="name" type="fb:nonEmptyString" use="optional"/>
+		<attribute name="id" type="fb:idString"/>
+	</complexType>
+	<complexType name="MinRAMReductionsType">
+		<sequence>
+			<element name="MinRAMReduction" type="fb:MinRAMReductionType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="MinRAMReductionType">
+		<sequence>
+			<element name="timeInterval" type="ecc:TimeIntervalType"/>
+			<element name="minRAMfactor" type="fb:minRAMfactor_Type"/>
+			<element name="justification" type="string"/>
+		</sequence>
+		<attribute name="name" type="fb:nonEmptyString" use="optional"/>
+		<attribute name="id" type="fb:idString"/>
+	</complexType>
+	<simpleType name="minRAMfactor_Type">
+		<restriction base="decimal">
+			<minInclusive value="0"/>
+			<maxInclusive value="100"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="nonEmptyString">
+		<restriction base="string">
+			<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="idString">
+		<restriction base="string">
+			<minLength value="1"/>
+			<maxLength value="100"/>
+		</restriction>
+	</simpleType>
+</schema>

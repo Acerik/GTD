@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased" targetNamespace="flowbased" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+  <simpleType name="DomainType_Type">
+    <restriction base="string">
+      <enumeration value="NTC"/>
+      <enumeration value="LTA"/>
+      <enumeration value="ATC"/>
+      <enumeration value="MINBC"/>
+      <enumeration value="MINIEC"/>
+	  <enumeration value="EDGES"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="Corner_Type">
+    <restriction base="positiveInteger"/>
+  </simpleType>
+  <simpleType name="emptyString">
+    <restriction base="string">
+      <enumeration value=""/>
+    </restriction>
+  </simpleType>
+  <simpleType name="tso_code">
+    <restriction base="string">
+      <pattern value="[a-zA-Z0-9_]{2,40}"/><!-- Extended length for Alegro/CEP -->
+    </restriction>
+  </simpleType>
+  <simpleType name='tso_code-or-empty'>
+    <union memberTypes='fb:tso_code fb:emptyString'/>
+  </simpleType>
+  <simpleType name="MinIecCheckResult_Type">
+    <restriction base="string">
+      <enumeration value="Success"/>
+      <enumeration value="SuccessWithExtension"/>
+      <enumeration value="FailedWithExtensionDisabled"/>
+      <enumeration value="FailedWithNoExtensionPossible"/>
+    </restriction>
+  </simpleType>
+  <complexType name="OverloadedHub_Type">
+    <sequence>
+      <element name="CheckResult" type="fb:MinIecCheckResult_Type"/>
+      <element name="NetPositionThreshold" type="float"/>
+      <element name="NetPosition" type="float"/>
+      <element name="NetPositionMargin" type="float"/>
+      <element name="LimitingConstraints" type="fb:HubConstraints_Type" minOccurs="0"/>
+      <element name="ExtendedConstraints" type="fb:HubConstraints_Type" minOccurs="0"/>
+    </sequence>
+    <attribute name="name" type="string" use="required"/>
+    <attribute name="type" type="string" use="required"/>
+  </complexType>
+  <complexType name="OverloadedHubs_Type">
+    <sequence>
+      <element name="overloadedHub" type="fb:OverloadedHub_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="HubConstraints_Type">
+    <sequence>
+      <element name="constraint" type="fb:HubConstraint_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="HubConstraint_Type">
+    <attribute name="id" type="string" use="required"/>
+    <attribute name="name" type="string" use="required"/>
+    <attribute name="outageName" type="string" use="required"/>
+    <attribute name="tsoOrigin" type="fb:tso_code-or-empty" use="required"/>
+  </complexType>
+  <element name="FlowBasedDomainCheckDocument">
+    <complexType>
+      <sequence>
+        <element name="DocumentIdentification" type="ecc:IdentificationType"/>
+        <element name="DocumentVersion" type="ecc:VersionType"/>
+        <element name="DocumentType" type="ecc:MessageType"/>
+        <element name="ProcessType" type="ecc:ProcessType"/>
+        <element name="SenderIdentification" type="ecc:PartyType"/>
+        <element name="SenderRole" type="ecc:RoleType"/>
+        <element name="ReceiverIdentification" type="ecc:PartyType"/>
+        <element name="ReceiverRole" type="ecc:RoleType"/>
+        <element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+        <element name="FlowBasedDomainCheckTimeInterval" type="ecc:TimeIntervalType"/>
+        <element name="Domain" type="ecc:AreaType"/>
+        <element name="FlowBasedDomainCheckTimeSeries" type="fb:FlowBasedDomainCheckTimeSeries_Type" minOccurs="0" maxOccurs="unbounded"/>
+      </sequence>
+      <attribute name="DtdVersion" type="string" use="required"/>
+      <attribute name="DtdRelease" type="string" use="required"/>
+    </complexType>
+  </element>
+  <complexType name="FlowBasedDomainCheckTimeSeries_Type">
+    <sequence>
+      <element name="TimeSeriesIdentification" type="ecc:IdentificationType"/>
+      <element name="BusinessType" type="ecc:BusinessType"/>
+      <element name="Product" type="ecc:EnergyProductType"/>
+      <element name="BalanceArea" type="ecc:AreaType"/>
+      <element name="Period" type="fb:Period_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="Period_Type">
+    <sequence>
+      <element name="TimeInterval" type="ecc:TimeIntervalType"/>
+      <element name="Resolution" type="ecc:ResolutionType"/>
+      <element name="Interval" type="fb:Interval_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="Interval_Type">
+    <sequence>
+      <element name="Pos" type="ecc:PositionType"/>
+      <element name="FlowBasedDomainChecks" type="fb:FlowBasedDomainChecks_Type"/>
+    </sequence>
+  </complexType>
+  <complexType name="FlowBasedDomainChecks_Type">
+    <sequence>
+      <element name="flowBasedDomainCheck" type="fb:FlowBasedDomainCheck_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="FlowBasedDomainCheck_Type">
+    <sequence>
+      <element name="domain" type="fb:Domain_Type" minOccurs="0"/>
+      <element name="againstDomain" type="fb:AgainstDomain_Type" minOccurs="0"/>
+      <element name="overloadedConstraints" type="fb:OverloadedConstraints_Type" minOccurs="0"/>
+      <element name="overloadedHubs" type="fb:OverloadedHubs_Type" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="Domain_Type">
+    <sequence>
+      <element name="networkName" type="string" minOccurs="0"/>
+    </sequence>
+    <attribute name="name" type="string" use="required"/>
+    <attribute name="id" type="string" use="optional"/>
+  </complexType>
+  <complexType name="AgainstDomain_Type">
+    <sequence>
+      <element name="domain" type="fb:Domain_Type" minOccurs="0"/>
+      <element name="domainType" type="fb:DomainType_Type" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="OverloadedConstraints_Type">
+    <sequence>
+      <element name="overloadedConstraint" type="fb:OverloadedConstraint_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="OverloadedConstraint_Type">
+    <sequence>
+      <element name="maxOverload" type="float"/>
+      <element name="overloads" type="fb:Overloads_Type" minOccurs="0"/>
+    </sequence>
+    <attribute name="id" type="string" use="required"/>
+    <attribute name="name" type="string"/>
+    <attribute name="outageName" type="string" use="optional"/>
+    <attribute name="tsoOrigin" type="fb:tso_code-or-empty" use="optional"/>
+  </complexType>
+  <complexType name="Overloads_Type">
+    <sequence>
+      <element name="overload" type="fb:Overload_Type" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="Overload_Type">
+    <sequence>
+      <element name="corner" type="fb:Corner_Type"/>
+      <element name="value" type="float"/>
+    </sequence>
+  </complexType>
+</schema>

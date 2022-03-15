@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GSKDocument DtdRelease="0" xsi:noNamespaceSchemaLocation="gsk-document-02.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DtdVersion="1">
+ <DocumentIdentification v="10XAT-APG------Z-F607"/>
+  <DocumentVersion v="1"/>
+ <DocumentType v="B22"/>
+ <ProcessType v="A02"/>
+ <SenderIdentification codingScheme="A01" v="10XAT-APG------Z"/>
+ <SenderRole v="A04"/>
+ <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+ <ReceiverRole v="A36"/>
+ <CreationDateTime v="2020-07-11T14:33:00Z"/>
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+ <Domain codingScheme="A01" v="10YAT-APG------L"/>
+ <GSKSeries>
+  <TimeSeriesIdentification v="1"/>
+  <BusinessType share="100" v="Z02"/>
+  <Area codingScheme="A01" v="10YAT-APG------L"/>
+  <ManualGSK_Block>
+   <GSK_Name v="AT"/>
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+   <ManualNodes>
+    <NodeName v="OKAPRU11"/>
+    <Factor v="0.0641"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OLIMBG11"/>
+    <Factor v="0.0681"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OMALTA21"/>
+    <Factor v="0.1196"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OMALTA22"/>
+    <Factor v="0.1196"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OMAYRH21"/>
+    <Factor v="0.0664"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OMAYRH22"/>
+    <Factor v="0.0664"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="O9PRUT21"/>
+    <Factor v="0.0278"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OGERLO11"/>
+    <Factor v="0.0184"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OERNST21"/>
+    <Factor v="0.1003"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OFEIST21"/>
+    <Factor v="0.0062"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OROSEG21"/>
+    <Factor v="0.0057"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OEDLIN21"/>
+    <Factor v="0.0089"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="O6WALG21"/>
+    <Factor v="0.0133"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OKAINA11"/>
+    <Factor v="0.0326"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OOSTST11"/>
+    <Factor v="0.0057"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OMELLA11"/>
+    <Factor v="0.0482"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OBISAM21"/>
+    <Factor v="0.0472"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OBISAM11"/>
+    <Factor v="0.0158"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OWISU 11"/>
+    <Factor v="0.1299"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OWIEN 21"/>
+    <Factor v="0.0129"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OSALZA21"/>
+    <Factor v="0.0145"/>
+   </ManualNodes>
+   <ManualNodes>
+    <NodeName v="OHAUSR21"/>
+    <Factor v="0.0084"/>
+   </ManualNodes>
+  </ManualGSK_Block>
+ </GSKSeries>
+</GSKDocument>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowBasedConstraintUpdateDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedconstraintupdatedocument-07.xsd">
+  <DocumentIdentification v="10XRO-TEL------2-20191130-F710-v1"/> <!-- vzor pro 310 -->
+  <DocumentVersion v="1"/>
+  <DocumentType v="B07"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10XAT-APG------Z"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-11-29T23:00:00Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YAT-APG------L"/>
+  
+  <AdjustmentValues>
+    <AdjustmentValue id="AT_CO_00249" name="[AT-AT] Kronsdorf - St. Peter 1 431 [OPP]">
+      <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z"/>
+      <IVA>205000</IVA>
+	  <justification>LTAINCLUSIONVIOLATION_CVAIVA</justification>
+    </AdjustmentValue>
+	
+	<AdjustmentValue id="AT_CO_00249" name="[AT-AT] Kronsdorf - St. Peter 1 431 [OPP]">
+      <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z"/>
+      <IVA>-200000</IVA>
+	  <justification>LTAINCLUSIONVIOLATION_CVAIVA_HH</justification>
+    </AdjustmentValue>
+	
+	<AdjustmentValue id="AT_CO_00249" name="[AT-AT] Kronsdorf - St. Peter 1 431 [OPP]">
+      <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z"/>
+      <IVA>133</IVA>
+	  <justification>LTAINCLUSIONVIOLATION_CVAIVA_PODHH</justification>
+    </AdjustmentValue>
+	
+	<AdjustmentValue id="AT_CO_00249" name="[AT-AT] Kronsdorf - St. Peter 1 431 [OPP]">
+      <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z"/>
+      <IVA>1150</IVA>
+	  <justification>JENIVA</justification>
+    </AdjustmentValue>
+	
+  </AdjustmentValues>
+</FlowBasedConstraintUpdateDocument>

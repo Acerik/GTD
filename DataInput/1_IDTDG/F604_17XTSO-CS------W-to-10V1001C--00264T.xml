@@ -1,0 +1,1737 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<FlowBasedContingency DtdRelease="4" DtdVersion="0" xmlns="flowbased">
+  <DocumentIdentification v="10V1001C--00264T-20190330F604v1"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B06"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="17XTSO-CS------W"/>
+  <SenderRole v="A36"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2021-07-17T13:46:40Z"/>
+  <ContingencyTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10Y1001C--00059P"/>
+  <outages>
+    <outage id="AT_CO_00072" name="N-1 OWESTT11_OWESTT21_WTRHU41" location="AT-AT">
+      <branch name="MandatoryDummy" from="OWESTT1" to="OWESTT2"  elementName="WTRHU41" eic="14T-38220-WT041O" party="10XAT-APG------Z"/>
+    </outage>
+    <outage id="D7-NL_CO_00003" name="N-1 Maasbracht - Oberzier SELFKWS/W" location="D7-NL">
+      <branch name="MandatoryDummy" from="D7OBZI1" to="XOB_MB1"  elementName="SELFK WS" eic="10T-DE-NL-00005N" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="NMBT381" to="XOB_MB1"  elementName="MBT-OBZ380 W" eic="49T000000000DUMM" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D2_CO_00006" name="N-1 Conneforde T421" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2CONO1" to="D2CONN2"  elementName="T421" eic="11TD2T0000002021" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="AT-D2_CO_00008" name="N-1 Westtitrol - Silz 274E" location="AT-D2">
+      <branch name="MandatoryDummy" from="OWESTT2" to="XWE_SI2"  elementName="274E" eic="10T1001C--000340" party="10XAT-APG------Z"/>
+      <branch name="MandatoryDummy" from="XWE_SI2" to="D2SLZ 2"  elementName="274E" eic="10T1001C--000340" party="10XAT-APG------Z"/>
+    </outage>
+    <outage id="AT-D2_CO_00009" name="N-1 Westtitrol - Silz 413" location="AT-D2">
+      <branch name="MandatoryDummy" from="OWESTT2" to="XWE_SI2"  elementName="413" eic="10T1001C--00035Z" party="10XAT-APG------Z"/>
+      <branch name="MandatoryDummy" from="XWE_SI2" to="D2SLZ 2"  elementName="413" eic="10T1001C--00035Z" party="10XAT-APG------Z"/>
+    </outage>
+    <outage id="AT-D2_CO_00010" name="N-1 Westtitrol - Silz 414" location="AT-D2">
+      <branch name="MandatoryDummy" from="OWESTT2" to="XWE_SI2"  elementName="414" eic="10T1001C--00036X" party="10XAT-APG------Z"/>
+      <branch name="MandatoryDummy" from="XWE_SI2" to="D2SLZ 2"  elementName="414" eic="10T1001C--00036X" party="10XAT-APG------Z"/>
+    </outage>
+    <outage id="CZ_CO_00007" name="N-1 Chrast - Hradec" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CCHR__1" to="CHRD__1"  elementName="V430" eic="27T-TLI-V430---Q" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00001" name="N-1 Hradec - Mirovka" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CHRD__1" to="CHBM__1"  elementName="V420" eic="27T-TLI-V420---W" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00002" name="N-1 Hradec - Reporyje" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CHRA__1" to="CREP__1"  elementName="V412" eic="27T-TLI-V412---S" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00003" name="N-1 Hradec - Vyskov" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CHRA__1" to="CVYSH_1"  elementName="V411" eic="27T-TLI-V411---X" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00004" name="N-1 Hradec 400kV - Hradec 220kV" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CHRA__1" to="CHRA__2" order="1"  eic="27T-TR-SOKT202-O" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00006" name="N-1 Slavetice - Dasny" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CSLV__1" to="CDAS__1"  elementName="V433" eic="27T-TLI-V433---B" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00009" name="N-1  Liskovec - Prosenice (V253)" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CLIS__2" to="CPRN__2"  elementName="V253" eic="27T-TLI-V253---D" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00010" name="N-1  Liskovec - Prosenice (V254)" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CLIS__2" to="CPRN__2"  elementName="V254" eic="27T-TLI-V254---8" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00012" name="N-1 Mirovka - Cebin" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CCEB__1" to="CHBM__1"  elementName="V422" eic="27T-TLI-V422---M" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00014" name="N-1 Albrechtice - Nosovice" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CNOS__1" to="CALB__1"  elementName="V460" eic="27T-TLI-V460---8" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00015" name="N-1 Prestice - Chrast" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CCHR__1" to="CPRE__1"  elementName="V431" eic="27T-TLI-V431---L" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00016" name="N-1 Prosenice - Otrokovice" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="COTR__1" to="CPRN__1"  elementName="V418" eic="27T-TLI-V418---Z" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00017" name="N-1 Slavetice - Dasny_SPS1" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CSLV__1" to="CDAS__1"  elementName="V433" eic="27T-TLI-V433---B" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00011" name="N-2  Liskovec - Prosenice (V253) and  Liskovec - Prosenice (V254)" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CLIS__2" to="CPRN__2"  elementName="V253" eic="27T-TLI-V253---D" party="10XCZ-CEPS-GRIDE"/>
+      <branch name="MandatoryDummy" from="CLIS__2" to="CPRN__2"  elementName="V254" eic="27T-TLI-V254---8" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ_CO_00013" name="N-2 Hradec - Reporyje and Hradec - Mirovka" location="CZ-CZ">
+      <branch name="MandatoryDummy" from="CHRA__1" to="CREP__1"  elementName="V412" eic="27T-TLI-V412---S" party="10XCZ-CEPS-GRIDE"/>
+      <branch name="MandatoryDummy" from="CHRD__1" to="CHBM__1"  elementName="V420" eic="27T-TLI-V420---W" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ-D2_CO_00002" name="N-1 Hradec - Etzenricht" location="CZ-D2">
+      <branch name="MandatoryDummy" from="XHR_ET1" to="CHRA__1"  elementName="V441" eic="10T-CZ-DE-00001W" party="10XCZ-CEPS-GRIDE"/>
+      <branch name="MandatoryDummy" from="XHR_ET1" to="D2ETZ 1"  elementName="441" eic="10T-CZ-DE-00001W" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ-D2_CO_00001" name="N-1 Prestice - Etzenricht" location="CZ-D2">
+      <branch name="MandatoryDummy" from="XPR_ET1" to="CPRE__1"  elementName="V442" eic="10T-CZ-DE-00004Q" party="10XCZ-CEPS-GRIDE"/>
+      <branch name="MandatoryDummy" from="XPR_ET1" to="D2ETZ 1"  elementName="442" eic="10T-CZ-DE-00004Q" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ-D8_CO_00001" name="N-1 Hradec - Rohrsdorf 1" location="CZ-D8">
+      <branch name="MandatoryDummy" from="XHR_RO1" to="CHRD_21"  elementName="V445" eic="10T-CZ-DE-00002U" party="10XCZ-CEPS-GRIDE"/>
+      <branch name="MandatoryDummy" from="XHR_RO1" to="D8ROE_1"  elementName="445" eic="10T-CZ-DE-00002U" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="CZ-D8_CO_00002" name="N-1 Hradec - Rohrsdorf 2" location="CZ-D8">
+      <branch name="MandatoryDummy" from="XHR_RO1" to="CHRD_21"  elementName="V446" eic="10T-CZ-DE-00003S" party="10XCZ-CEPS-GRIDE"/>
+      <branch name="MandatoryDummy" from="XHR_RO1" to="D8ROE_1"  elementName="446" eic="10T-CZ-DE-00003S" party="10XCZ-CEPS-GRIDE"/>
+    </outage>
+    <outage id="D2_CO_00040" name="N-1 Oberbrunn/Krun - Silz 251" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2YKR 2" to="D2SLZ 2"  elementName="251" eic="10T-AT-DE-00019T" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YKR 2" to="D2OBR 2"  elementName="251" eic="10T-AT-DE-00019T" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YKR 2" to="D2KR  2"  elementName="251" eic="10T-AT-DE-00019T" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00001" name="N-1 Altheim - Sittling 219" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2AHM 2" to="D2SIT 2"  elementName="219" eic="11TD2L000000003L" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00002" name="N-1 Altheim - Sittling 220" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2AHM 2" to="D2SIT 2"  elementName="220" eic="11TD2L000000004J" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00003" name="N-1 Oberbachern - Oberbrunn 269" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OBA 2" to="D2OBR 2"  elementName="269" eic="11TD2L000000193R" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00004" name="N-1 Conneforde - Diele ROT" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2CONN1" to="D2DIEL1"  elementName="ROT" eic="11TD2L0000000471" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00005" name="N-1 Conneforde - Diele WEISS" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2CONN1" to="D2DIEL1"  elementName="WEISS" eic="11TD2L000000049Y" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00009" name="N-1 Landesbergen - Ohlensehlen" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2LAND1" to="D2OHLS1"  elementName="1" eic="11TD2L0000003322" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00010" name="N-1 Conneforde - Unterweser GELB" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2CONO1" to="D2UWES1"  elementName="GELB" eic="11TD2L0000002342" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00011" name="N-1 Elsen - Twistetal 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELSE1" to="D2TWIS1"  elementName="1" eic="11TD2L0000002326" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00012" name="N-1 Elsen - Twistetal 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELSE1" to="D2TWIS1"  elementName="2" eic="11TD2L0000002318" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00013" name="N-1 Bechterdissen - Eickum - Ovenstaedt 4/1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2YEIC1" to="D2BECH1"  elementName="4/1" eic="11T0-0000-0086-F" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YEIC1" to="D2OVEN1"  elementName="4/1" eic="11T0-0000-0086-F" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YEIC1" to="D2EICK1"  elementName="4/1" eic="11T0-0000-0086-F" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00014" name="N-1 Bechterdissen - Eickum - Ovenstaedt 3" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2YEIC1" to="D2BECH1"  elementName="3" eic="11T0-0000-0085-I" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YEIC1" to="D2OVEN1"  elementName="3" eic="11T0-0000-0085-I" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YEIC1" to="D2EICK1"  elementName="3" eic="11T0-0000-0085-I" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00015" name="N-1 Bechterdissen - Elsen 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELSE1" to="D2BECH1"  elementName="1" eic="11TD2L000000017A" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00016" name="N-1 Bechterdissen - Elsen 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELSE1" to="D2BECH1"  elementName="2" eic="11TD2L000000335X" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00017" name="N-1 Sottrum - Ovenstaedt" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OVEN1" to="D2SOTT1"  elementName="3" eic="11TD2L000000200J" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00018" name="N-1 Sottrum - Landesbergen" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2LAND1" to="D2SOTT1"  elementName="2" eic="11TD2L0000001508" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00019" name="N-1 Elsfleth West - Unterweser WEISS" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELWE1" to="D2UWES1"  elementName="WEISS" eic="11T0-0000-1004-A" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00020" name="N-1 Elsfleth West - Unterweser ROT" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELWE1" to="D2UWES1"  elementName="ROT" eic="11T0-0000-0981-M" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00021" name="N-1 Landesbergen - Ovenstaedt" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OVEN1" to="D2LAND1"  elementName="4" eic="11TD2L000000149U" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00022" name="N-1 Diele - Doerpen West" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2DIEL1" to="D2DOEW1"  elementName="GELB" eic="11TD2L0000000536" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00023" name="N-1 Doerpen West - Y Niederlangen" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2YNLA1" to="D2DOEW1" order="1"  eic="11T0-0000-0990-L" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00025" name="N-1 Etzenricht - Mechlenreuth 437" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2MH  1" to="D2ETZ 1"  elementName="437" eic="11T0-0000-0103-E" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00027" name="N-1 Aschaffenburg - Grosskrotzenburg 412" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2AS  1" to="D2GKRO1"  elementName="412" eic="11TD2L000000006F" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00028" name="N-1 Grafenrheinfeld - Bergrheinfeld 427" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2GR  1" to="D2BRFW1"  elementName="427" eic="11TD2L000000359J" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00029" name="N-1 Grosskrotzenburg - Bergrheinfeld 417" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2GKRO1" to="D2BRFW1"  elementName="417" eic="11T0-0000-0045-Y" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00030" name="N-1 Grafenrheinfeld - Bergrheinfeld 426" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2GR  1" to="D2BRFW1"  elementName="426" eic="11T0-0000-0029-U" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00031" name="N-1 Aschaffenburg - Bergrheinfeld 418" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2AS  1" to="D2BRFW1"  elementName="418" eic="11T0-0000-0044-0" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00032" name="N-1 Grafenrheinfeld - Eltmann 422" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELT 1" to="D2GR  1"  elementName="422" eic="11TD2L0000000641" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00033" name="N-1 Irsching - Ottenhofen 421" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2IRS 1" to="D2OH  1"  elementName="421" eic="11TD2L0000001192" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00034" name="N-1 Grafenrheinfeld - Oberhaid 423" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OD  1" to="D2GR  1"  elementName="423" eic="11TD2L000000085U" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00035" name="N-1 Grafenrheinfeld - Raitersaich 433" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2RAI 1" to="D2GR  1"  elementName="433" eic="11TD2L000000086S" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00036" name="N-1 Grafenrheinfeld - Raitersaich 434" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2RAI 1" to="D2GR  1"  elementName="434" eic="11TD2L000000087Q" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00037" name="N-1 Isar - Pleinting 451" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2PT  1" to="D2IS  1"  elementName="451" eic="11TD2L0000001265" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00038" name="N-1 Isar - Pleinting 452" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2PT  1" to="D2IS  1"  elementName="452" eic="11TD2L0000001273" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00041" name="N-1 Pleinting - Pirach 257" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2PT  2" to="D2PI  2"  elementName="257" eic="11TD2L000000201H" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00045" name="N-1 Redwitz - Eltmann 428" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2ELT 1" to="D2RED 1"  elementName="428" eic="11TD2L000000088O" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00046" name="N-1 Redwitz - Kriegenbrunn 432" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2KRI 1" to="D2RED 1"  elementName="432" eic="11TD2L0000001370" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00047" name="N-1 Redwitz - Mechlenreuth 469" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2MH  1" to="D2RED 1"  elementName="469" eic="11T0-0000-0104-B" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00048" name="N-1 Redwitz - Oberhaid 435" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OD  1" to="D2RED 1"  elementName="435" eic="11TD2L000000197J" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00049" name="N-1 Redwitz - Wuergau 436" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2WG  1" to="D2RED 1"  elementName="413/436" eic="11T0-0000-0049-M" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00051" name="N-1 Karben - Grosskrotzenburg 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2KARB1" to="D2GKRO1"  elementName="1" eic="11TD2L0000003128" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00053" name="N-1 Bergshausen - Borken 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2BEHS1" to="D2BORK1"  elementName="2" eic="11TD2L000000262Y" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00054" name="N-1 Landesbergen - Grohnde 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2LAND1" to="D2GROH1"  elementName="2" eic="11TD2L0000001427" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00057" name="N-1 Mecklar - Dipperz 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2MECK1" to="D2DIPP1"  elementName="1" eic="11TD2L000000177P" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00058" name="N-1 Mecklar - Dipperz 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2MECK1" to="D2DIPP1"  elementName="2" eic="11TD2L000000178N" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00063" name="N-1 Karben - Frankfurt/SW 3" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2KARB1" to="D2FRSW1"  elementName="3" eic="11TD2L0000000730" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00064" name="N-1 Karben - Grosskrotzenburg 3" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2KARB1" to="D2GKRO1"  elementName="3" eic="11TD2L0000003136" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00065" name="N-1 Bergshausen - Wuergassen 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2BEHS1" to="D2WUER1"  elementName="2" eic="11TD2L0000002512" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00066" name="N-1 Wuergassen - Grohnde 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2WUER1" to="D2GROH1"  elementName="2" eic="11TD2L000000092X" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00067" name="N-1 Borken - Bergshausen 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2BORK1" to="D2BEHS1"  elementName="1" eic="11TD2L000000024D" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00068" name="N-1 Irsching - Raitersaich 425" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2IRS 1" to="D2RAI 1"  elementName="425" eic="11TD2L000000121F" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00069" name="N-1 Irsching - Raitersaich 424" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2IRS 1" to="D2RAI 1"  elementName="424" eic="11TD2L000000120H" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00070" name="N-1 Ottenhofen - Oberbachern 461" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OH  1" to="D2OBA 1"  elementName="461" eic="11TD2L000000195N" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00071" name="N-1 Ottenhofen - Oberbachern 462" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2OH  1" to="D2OBA 1"  elementName="462" eic="11TD2L000000196L" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00072" name="N-1 Raitersaich - Wuergau 431" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2RAI 1" to="D2WG  1"  elementName="431" eic="11TD2L0000002067" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00074" name="N-1 Niedervieland - Ganderkesee SCHWARZ" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2NVLD1" to="D2GANK1"  elementName="SCHWARZ" eic="11TD2L000000074Z" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00075" name="N-1 Dipperz - Grosskrotzenburg 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2DIPP1" to="D2GKRO1"  elementName="2" eic="11TD2L000000337T" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00076" name="N-1 Dipperz - Grosskrotzenburg 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2DIPP1" to="D2GKRO1"  elementName="1" eic="11TD2L000000102J" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00077" name="N-1 Borken - Mecklar 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2BORK1" to="D2MECK1"  elementName="1" eic="11TD2L000000030I" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00078" name="N-1 Borken - Mecklar 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2BORK1" to="D2MECK1"  elementName="2" eic="11TD2L000000031G" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00079" name="N-1 Sottrum - Dollern SCHWARZ" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2SOTT1" to="D2DOLL1"  elementName="SCHWARZ" eic="11TD2L000000219Z" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00080" name="N-1 Sottrum - Dollern GRUEN" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2SOTT1" to="D2DOLL1"  elementName="GRUEN" eic="11TD2L0000002180" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00082" name="N-1 Isar - Ottenhofen 446" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2IS  1" to="D2OH  1"  elementName="446" eic="11TD2L0000001257" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00083" name="N-1 Isar - Ottenhofen 443" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2IS  1" to="D2OH  1"  elementName="443" eic="11TD2L000000123B" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00084" name="N-1 Isar - Ottenhofen 444" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2IS  1" to="D2OH  1"  elementName="444" eic="11TD2L0000001249" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00008" name="N-1 Conneforde - Sottrum GELB" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2CONN2" to="D2YHUN2"  elementName="GELB" eic="11TD2L000000050C" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2SOTT2" to="D2YHUN2"  elementName="GELB" eic="11TD2L000000050C" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2HUNT2" to="D2YHUN2"  elementName="GELB" eic="11TD2L000000050C" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00024" name="N-1 Diele - Rhede -Doerpen West SCHWARZ" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2YRHE1" to="D2DIEL1"  elementName="SCHWARZ" eic="11TD2L0000000544" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YRHE1" to="D2DOEW1"  elementName="SCHWARZ" eic="11TD2L0000000544" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YRHE1" to="D2RHED1"  elementName="SCHWARZ" eic="11TD2L0000000544" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00052" name="N-1 Voerden - Grohnde - Bergshausen 1" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2YVOE1" to="D2GROH1"  elementName="1" eic="11TD2L000000091Z" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YVOE1" to="D2VOER1"  elementName="1" eic="11TD2L000000091Z" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2YVOE1" to="D2BEHS1"  elementName="1" eic="11TD2L000000091Z" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00042" name="N-1 Pleinting - Schwandorf 465" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2SD  1" to="D2YPLA1"  elementName="465" eic="11TD2L000000203D" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2PT  1" to="D2YPLA1"  elementName="465" eic="11TD2L000000203D" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2PLA 1" to="D2YPLA1"  elementName="465" eic="11TD2L000000203D" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00061" name="N-1 Farge - Alfstedt - Dollern BLAU" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2FARG1" to="D2YALF1"  elementName="BLAU" eic="11TD2L0000002334" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2DOLL1" to="D2YALF1"  elementName="BLAU" eic="11TD2L0000002334" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2ALFS1" to="D2YALF1"  elementName="BLAU" eic="11TD2L0000002334" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2_CO_00060" name="N-1 Karben - Giessen/N 2" location="D2-D2">
+      <branch name="MandatoryDummy" from="D2BORK1" to="D2GIEN1"  elementName="2" eic="11TD2L0000003144" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D4_CO_00001" name="N-1 Grafenrheinfeld - Hoepfingen ge" location="D2-D4">
+      <branch name="MandatoryDummy" from="D4HOEP1" to="DGR_HO1"  elementName="GRFGEHOE" eic="11T-D2-D4-000014" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DGR_HO1" to="D2GR  1"  elementName="411" eic="11T-D2-D4-000014" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D4_CO_00002" name="N-1 Grafenrheinfeld - Stalldorf 416" location="D2-D4">
+      <branch name="MandatoryDummy" from="D4SLDR1" to="DGR_ST1"  elementName="GRFRTSLD" eic="11T-D2-D4-000022" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DGR_ST1" to="D2GR  1"  elementName="416" eic="11T-D2-D4-000022" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00001" name="N-1 Dauersberg - Asslar WESTW W1" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7YDAU1" to="DAS_DA1"  elementName="WESTW W1" eic="11T0-0000-0074-P" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DAS_DA1" to="D2ASSL1"  elementName="1" eic="11T0-0000-0074-P" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D7YDAU1" to="D7LIMB1"  elementName="WESTW W1" eic="11T0-0000-0995-6" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D7YDAU1" to="D7DAUR1"  elementName="WESTW W1" eic="11T0-0000-0994-9" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00009" name="N-1 Nehden - Twistetal 3" location="D2-D7">
+      <branch name="MandatoryDummy" from="DTW_NE1" to="D2TWIS1"  elementName="3" eic="11T-D2-D7-00010G" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DTW_NE1" to="D7NEHD1"  elementName="TWIST O3" eic="11T-D2-D7-00010G" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00010" name="N-1 Nehden - Twistetal 4" location="D2-D7">
+      <branch name="MandatoryDummy" from="DTW_NE1" to="D2TWIS1"  elementName="4" eic="11T-D2-D7-00011E" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DTW_NE1" to="D7NEHD1"  elementName="TWIST W4" eic="11T-D2-D7-00011E" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00012" name="N-1 Wehrendorf - Ohlensehlen - St.Huelfe DUEMM S1" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7WEHR1" to="D7YHUF1"  elementName="DUEMM S1" eic="11T0-0000-0978-5" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DOH_WE1" to="D2OHLS1"  elementName="1" eic="11T0-0000-1115-Z" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D7HULF1" to="D7YHUF1"  elementName="DUEMM S1" eic="11T0-0000-0996-3" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DOH_WE1" to="D7YHUF1"  elementName="DUEMM S1" eic="11T0-0000-1115-Z" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00008" name="N-1 Meppen - Niederlangen - Doerpen West EMSLD OW" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7MEPP1" to="DNL_ME1"  elementName="EMSLD OW" eic="11T-D2-D7-00001H" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DNL_ME1" to="D2YNLA1"  elementName="EOWS" eic="11T-D2-D7-00001H" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2DOEW1" to="D2YNLA1"  elementName="EOWS" eic="11T0-0000-0990-L" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D2NLAN1" to="D2YNLA1"  elementName="EOWS" eic="11T0-0000-0991-I" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00005" name="N-1 Hanekenfaehr - Doerpen West EMSLD WB" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="DDO_HA1"  elementName="EMSLD WB" eic="11T-D2-D7-00002F" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DDO_HA1" to="D2DOEW1"  elementName="EWBL" eic="11T-D2-D7-00002F" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00003" name="N-1 Dettingen - Grosskrotzenburg UMAIN S1" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7DETT1" to="DGK_DE1"  elementName="UMAIN S1" eic="11T-D2-D7-00030A" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DGK_DE1" to="D2GKRO1"  elementName="1" eic="11T-D2-D7-00030A" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00011" name="N-1 Urberach - Grosskrotzenburg UMAIN N2" location="D2-D7">
+      <branch name="MandatoryDummy" from="DGK_UR1" to="D2GKRO1"  elementName="2" eic="11T-D2-D7-000318" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="D7URBE1" to="DGK_UR1"  elementName="UMAIN N2" eic="11T-D2-D7-000318" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00006" name="N-1 Meitingen - Oberbachern OBACHE N" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7MEIT1" to="DOB_ME1"  elementName="OBACHE N" eic="11T-D2-D7-000504" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DOB_ME1" to="D2OBA 1"  elementName="419" eic="11T-D2-D7-000504" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00007" name="N-1 Meitingen - Oberbachern OBACHE S" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7MEIT1" to="DOB_ME1"  elementName="OBACHE S" eic="11T-D2-D7-000512" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DOB_ME1" to="D2OBA 1"  elementName="420" eic="11T-D2-D7-000512" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00004" name="N-1 Guetersloh - Bechterdissen SENNE S1" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7GUET1" to="DBE_GU1"  elementName="SENNE S1" eic="11T-D2-D7-00257J" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DBE_GU1" to="D2BECH1"  elementName="1" eic="11T-D2-D7-00257J" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D7_CO_00013" name="N-1 Guetersloh - Bechterdissen SENNE N2" location="D2-D7">
+      <branch name="MandatoryDummy" from="D7GUET1" to="DBE_GU1"  elementName="SENNE N2" eic="11T0-0000-0072-V" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DBE_GU1" to="D2BECH1"  elementName="2" eic="11T0-0000-0072-V" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00007" name="N-1 Remptendorf - Redwitz 413" location="D2-D8">
+      <branch name="MandatoryDummy" from="DRE_RE11" to="D2RED 1"  elementName="413/436" eic="11T-D2-D8-00050X" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DRE_RE11" to="D8RE__1"  elementName="413-436" eic="11T-D2-D8-00050X" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00008" name="N-1 Remptendorf - Redwitz 414" location="D2-D8">
+      <branch name="MandatoryDummy" from="DRE_RE12" to="D2RED 1"  elementName="414" eic="11T-D2-D8-00051V" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DRE_RE12" to="D8RE__1"  elementName="414" eic="11T-D2-D8-00051V" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00003" name="N-1 Helmstedt - Wolmirstedt 491" location="D2-D8">
+      <branch name="MandatoryDummy" from="DHE_WO1" to="D8WOL_1"  elementName="491-1" eic="11T-D2-D8-000205" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DHE_WO1" to="D2HELM1"  elementName="491-1" eic="11T-D2-D8-000205" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00004" name="N-1 Helmstedt - Wolmirstedt 492" location="D2-D8">
+      <branch name="MandatoryDummy" from="DHE_WO1" to="D8WOL_1"  elementName="492-2" eic="11T-D2-D8-000213" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DHE_WO1" to="D2HELM1"  elementName="492-2" eic="11T-D2-D8-000213" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00006" name="N-1 Mecklar - Vieselbach 449" location="D2-D8">
+      <branch name="MandatoryDummy" from="DME_VI1" to="D8VIB_1"  elementName="449-1" eic="11T-D2-D8-000302" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DME_VI1" to="D2MECK1"  elementName="449-1" eic="11T-D2-D8-000302" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00005" name="N-1 Mecklar - Eisenach 450" location="D2-D8">
+      <branch name="MandatoryDummy" from="DME_EI1" to="D8EI__1"  elementName="450-2" eic="11T-D2-D8-000310" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DME_EI1" to="D2MECK1"  elementName="450-2" eic="11T-D2-D8-000310" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00001" name="N-1 Altenfeld - Redwitz 459" location="D2-D8">
+      <branch name="MandatoryDummy" from="DRE_AL1" to="D2RED 1"  elementName="459" eic="11T-D2-D8-001007" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DRE_AL1" to="D8ATF_1"  elementName="459" eic="11T-D2-D8-001007" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D2-D8_CO_00002" name="N-1 Altenfeld - Redwitz 460" location="D2-D8">
+      <branch name="MandatoryDummy" from="DRE_AL1" to="D2RED 1"  elementName="460" eic="11T-D2-D8-001015" party="10XDE-EON-NETZ-C"/>
+      <branch name="MandatoryDummy" from="DRE_AL1" to="D8ATF_1"  elementName="460" eic="11T-D2-D8-001015" party="10XDE-EON-NETZ-C"/>
+    </outage>
+    <outage id="D4-CH_CO_00001" name="N-1 Asphard - Kuehmoos rt" location="D4-CH">
+      <branch name="MandatoryDummy" from="D4KUHM1" to="XAS_KU1"  elementName="WERA" eic="10T-CH-DE-000018" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-CH_CO_00002" name="N-1 Gurtweil - Oftringen bl" location="D4-CH">
+      <branch name="MandatoryDummy" from="D4GURT2" to="XLA_GU2"  elementName="GURBLOFT" eic="10T1001C--000227" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-CH_CO_00004" name="N-1 Kuehmoos - Laufenburg br" location="D4-CH">
+      <branch name="MandatoryDummy" from="D4KUHM1" to="XLA_KU1"  elementName="HEIM" eic="10T-CH-DE-00008V" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-CH_CO_00005" name="N-1 Kuehmoos - Laufenburg ge" location="D4-CH">
+      <branch name="MandatoryDummy" from="D4KUHM1" to="XLA_KU1"  elementName="SEEL" eic="10T-CH-DE-00009T" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-CH_CO_00006" name="N-1 Kuehmoos - Laufenburg rt" location="D4-CH">
+      <branch name="MandatoryDummy" from="D4KUHM1" to="XLA_KU1"  elementName="MURG" eic="10T-CH-DE-000107" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-CH_CO_00007" name="N-1 Laufenburg - Trossingen rt" location="D4-CH">
+      <branch name="MandatoryDummy" from="D4TRSN1" to="XLA_EN1"  elementName="LFBRTTRS" eic="10T-CH-DE-000050" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00021" name="N-1 Endersbach-Grossgartach-Muehlhausen" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4ED7 1" to="D4EDSB1"  elementName="EDSGNED7" eic="11T0-0000-0950-0" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4ED7 1" to="D4GROG1"  elementName="GROGNED7" eic="11T0-0000-0951-Y" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4ED7 1" to="D4MULH1"  elementName="MHSGNED7" eic="11T0-0000-0952-V" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00002" name="N-1 Altbach - Wendlingen bl" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4AL1U1" to="D4WDLN1"  elementName="ALTBLWDL" eic="11TD400000597-LI" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00004" name="N-1 Buenzwangen - Laichingen gn" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4BZWN1" to="D4LAIC1"  elementName="BZWGNLAI" eic="11TD400000600-LB" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00005" name="N-1 Buenzwangen - Wendlingen ge" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4BZWN1" to="D4WDLN1"  elementName="BZWGEWDL" eic="11TD400000601-L7" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00008" name="N-1 Buers PST37" location="D4-D4">
+      <branch name="MandatoryDummy" from="D43BRS2" to="D43B_F1"  elementName="BMT37" eic="11T0-0000-0082-R" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00009" name="N-1 Daxlanden - Eichstetten gn" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DAXL1" to="D4EICH1"  elementName="SUTT" eic="11TD400000588-LJ" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00010" name="N-1 Daxlanden - Eichstetten rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DAXL1" to="D4EICH1"  elementName="OBER" eic="11TD400000577-LS" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00014" name="N-1 Dellmensingen - Laichingen ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DELL1" to="D4LAIC1"  elementName="DELWSLAI" eic="11TD400000526-LK" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00016" name="N-1 Dellmensingen - Rotensohl bl" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DELL1" to="D4ROLS1"  elementName="DELBLROL" eic="11TD400000593-LY" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00018" name="N-1 Eichstetten - Kuehmoos gn" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4EICH1" to="D4KUHM1"  elementName="DREI" eic="11TD400000560-LO" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00019" name="N-1 Eichstetten - Kuehmoos rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4EICH1" to="D4KUHM1"  elementName="KAND" eic="11TD400000573-L7" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00022" name="N-1 Engstlatt - Trossingen rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4ENGS1" to="D4TRSN1"  elementName="ENGRTTRS" eic="11TD40000A548-L6" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00024" name="N-1 Engstlatt-Oberjettingen ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4ENGS1" to="D4OBJT1"  elementName="ENGWSOBJ" eic="11T0-0000-0097-8" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00026" name="N-1 Goldshoefe - Kupferzell gn" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GOHF1" to="D4KUPZ1"  elementName="GOHGNKUP" eic="11TD400000545-LE" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00027" name="N-1 Goldshoefe - Rotensohl gn" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GOHF1" to="D4ROLS1"  elementName="GOHGNROL" eic="11TD400000544-LI" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00029" name="N-1 Grossgartach - Kupferzell ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GROG1" to="D4KUPZ1"  elementName="GROWSKUP" eic="11TD400000524-LS" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00030" name="N-1 Grossgartach - Pulverdingen rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GROG1" to="D4PULV1"  elementName="GRORTPUL" eic="11TD40000A530-L6" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00031" name="N-1 Grossgartach - Pulverdingen ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GROG1" to="D4PULV1"  elementName="GROWSPUL" eic="11TD400000525-LO" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00032" name="N-1 Gruenkraut - Herbertingen rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GRKR1" to="D4HRBT1"  elementName="GRKRTHRB" eic="11TD400000534-LN" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00034" name="N-1 Hoepfingen - Hueffenhardt ge" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4HOEP1" to="D4HUEF1"  elementName="HOEGEHUE" eic="11TD400000543-LM" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00036" name="N-1 Kupferzell - Stalldorf rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4KUPZ1" to="D4SLDR1"  elementName="KUPRTSLD" eic="11TD400000605-LS" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00038" name="N-1 Oberjettingen - Pulverdingen ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4OBJT1" to="D4PULV1"  elementName="OBJWSPUL" eic="11TD400000519-LD" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00042" name="N-1 Buers - Dellmensingen ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D43BRS1" to="D4DELL1"  elementName="BRSWSDEL" eic="11T0-0000-0107-2" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00025" name="N-1 Engstlatt-Oberjettingen-Pulverdingen" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4ENGS1" to="D4OB7 1"  elementName="ENGRTOB7" eic="11TD400000520-1A" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4OB7 1" to="D4OBJT1"  elementName="OBJRTOB7" eic="11TD400000520-28" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4OB7 1" to="D4PULV1"  elementName="PULRTOB7" eic="11TD400000520-36" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00003" name="N-1 Bruchsal - Philippsburg - Pulverdingen" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4BRU81" to="D4BRUK1"  elementName="BRURTBR8" eic="11TD400000521-24" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4BRU81" to="D4PHIL1"  elementName="PBBRTBR8" eic="11TD400000521-16" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4BRU81" to="D4PULV1"  elementName="PULRTBR8" eic="11TD40000A521-36" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00035" name="N-1 Hueffenhardt-Neurott-Wiesloch" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4HUE71" to="D4HUEF1"  elementName="HUEGEHU7" eic="11TD400000542-1T" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4HUE71" to="D4NEUR1"  elementName="NROGEHU7" eic="11TD400000542-2R" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4HUE71" to="D4WIES1"  elementName="WIEGEHU7" eic="11TD400000542-3P" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00023" name="N-1 Engstlatt-Kuehmoos-Villingen" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4EN8 1" to="D4ENGS1"  elementName="ENGGNEN8" eic="11TD400000587-1Q" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4EN8 1" to="D4KUHM1"  elementName="KUHGNEN8" eic="11TD400000587-2O" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4EN8 1" to="D4VILL1"  elementName="VILGNEN8" eic="11TD400000587-3M" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00001" name="N-1 Altbach - Muehlhausen ws" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4AL1U1" to="D4MULH1"  elementName="ALTWSMHS" eic="11TD400000598-LE" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00020" name="N-1 Endersbach - Wendlingen bl" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4EDSB1" to="D4WDLN1"  elementName="EDSBLWDL" eic="11TD400000528-LC" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00012" name="N-1 Daxlanden - Philippsburg ge" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DAXL1" to="D4PHIL1"  elementName="FEDE" eic="11TD400000562-LG" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00028" name="N-1 Grossgartach - Hueffenhardt bl" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4GROG1" to="D4HUEF1"  elementName="GROBLHUE" eic="11TD400000551-LP" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00040" name="N-1 Metzingen - Wendlingen MEZGEWDL" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4MEZN1" to="D4WDLN1"  elementName="MEZGEWDL" eic="11TD400000602-L3" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00037" name="N-1 Muehlhausen - Pulverdingen bl" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4MULH1" to="D4PULV1"  elementName="MHSBLPUL" eic="11TD400000550-LT" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00011" name="N-1 Daxlanden - Kuehmoos ge" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DAXL1" to="D4KUHM1"  elementName="RHGR" eic="11T-D4-D7-00004Q" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00013" name="N-1 Daxlanden - Philippsburg rt" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4DAXL1" to="D4PHIL1"  elementName="SAAL" eic="11TD400000585-LV" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4_CO_00041" name="N-1 Neurott - Philippsburg WAGB" location="D4-D4">
+      <branch name="MandatoryDummy" from="D4NEUR1" to="D4PHIL1"  elementName="WAGB" eic="11TD400000589-LF" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00006" name="N-1 DonauOst" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4DELL1" to="DDE_HV1"  elementName="DEL_DONO" eic="11T0-0000-0953-S" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D7HONE1" to="D7YVOE1"  elementName="DONAU O" eic="11T0-0000-0957-G" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D7VOEH1" to="D7YVOE1"  elementName="DONAU O" eic="11T0-0000-0956-J" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="DDE_HV1" to="D7YVOE1"  elementName="DONAU O" eic="11T0-0000-0956-J" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00007" name="N-1 Herbertingen - Hoheneck - Metzingen" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4HR8 1" to="D4HRBT1"  elementName="HERBTGW1" eic="11T-D4-D7-00009G" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4HR8 1" to="DHR_HO1"  elementName="HERBTGW2" eic="11T0-0000-0963-O" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D4HR8 1" to="D4MEZN1"  elementName="HERBTGW3" eic="11T-D4-D7-00016J" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00003" name="N-1 Daxlanden - Maximiliansau sw" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4DAXL2" to="DDA_MA2"  elementName="GOLD" eic="11T-D4-D7-00002U" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00004" name="N-1 Daxlanden - Weingarten ge" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4DAXL1" to="DDA_WE1"  elementName="GERMH-S" eic="11T-D4-D7-00003S" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00005" name="N-1 Donau West" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4DELL1" to="DDE_VO1"  elementName="DONAUW" eic="11T-D4-D7-00005O" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00009" name="DHR_TI11 D4HRBT12_TIENGNN" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4HRBT1" to="DHR_TI1"  elementName="TIENGNN" eic="11T-D4-D7-00010V" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00008" name="N-1 Hoheneck - Pulverdingen ws" location="D4-D7">
+      <branch name="MandatoryDummy" from="D4PULV1" to="DPU_HO1"  elementName="HHRWSPUL" eic="11T-D4-D7-00014N" party="10XDE-ENBW--TNGX"/>
+      <branch name="MandatoryDummy" from="D7HONE1" to="DPU_HO1"  elementName="HO PU WS" eic="11T-D4-D7-00014N" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D4-D7_CO_00002" name="N-1 DBR_WB22 D43BRS22_DELLMO1" location="D4-D7">
+      <branch name="MandatoryDummy" from="D43BRS2" to="DBR_WB2"  elementName="DELLMO1" eic="11T0-0000-0954-P" party="10XDE-ENBW--TNGX"/>
+    </outage>
+    <outage id="D7-D2_CO_00001" name="N-1 Frankfurt S/W - Karben - Kriftel TAUNUS 2" location="D7-D2">
+      <branch name="MandatoryDummy" from="D2YFRS1" to="D2FRSW1"  elementName="2" eic="11T0-0000-0988-1" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D2YFRS1" to="D2KARB1"  elementName="2" eic="11T0-0000-0989-Z" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D2YFRS1" to="DFR_KR1"  elementName="2" eic="11T0-0000-1032-4" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7KRIF1" to="DFR_KR1"  elementName="TAUNUS 2" eic="11T0-0000-1032-4" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00094" name="N-1 Arpe  - Nehden  SAUERL S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ARPE1" to="D7NEHD1"  elementName="SAUERL S" eic="11T0-0000-0743-5" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00093" name="N-1 Arpe  - Uentrop  ARPE W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ARPE1" to="D7UENT1"  elementName="ARPE W" eic="11T0-0000-0549-Y" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00081" name="N-1 Bischofsheim  - Kelsterbach  KELSTB N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BISC1" to="D7KELS1"  elementName="KELSTB N" eic="11T0-0000-0658-S" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00079" name="N-1 Bischofsheim  - Kriftel  TREBUR S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BISC1" to="D7KRIF1"  elementName="TREBUR S" eic="11T0-0000-0670-7" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00083" name="N-1 Bischofsheim  - Urberach  ERZHAU N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BISC1" to="D7URBE1"  elementName="ERZHAU N" eic="11T0-0000-0560-G" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00001" name="N-1 Bischofsheim - Pfungstadt - Buerstadt RIED W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BISC1" to="D7YPFU1"  elementName="RIED W" eic="11T0-0000-0563-7" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7PFUN1" to="D7YPFU1"  elementName="RIED W" eic="11T0-0000-0819-V" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7BUER1" to="D7YPFU1"  elementName="RIED W" eic="11T0-0000-0573-3" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00113" name="N-1 Brauweiler - Knapsack BURBAC O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BRAU1" to="D7KNAP1"  elementName="BURBAC O" eic="11T0-0000-0928-P" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00028" name="N-1 Brauweiler - Rommerskirchen BRAUWL W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BRAU1" to="D7ROKI1"  elementName="BRAUWL W" eic="11T0-0000-0927-S" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00004" name="N-1 Buerstadt - Pfungstadt RIED O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BUER1" to="D7PFUN1"  elementName="RIED O" eic="11T0-0000-0816-3" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00006" name="N-1 Bacharach - Weissenthurm SOONWD O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BACH1" to="D7WTHU1"  elementName="SOONWD O" eic="11T0-0000-0973-K" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00007" name="N-1 Buerstadt - Waldlaubersheim WONNEG W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BUER1" to="D7WDLA1"  elementName="WONNEG W" eic="11T0-0000-0885-F" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00078" name="N-1 Buescherhof  - Nordlicht  ESSEN W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BUES1" to="D7NLIC1"  elementName="ESSEN W" eic="11T0-0000-0763-Y" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00008" name="N-1 Dahlem - Niederstedem SELHN O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7YDAH1" to="D7NSTE1"  elementName="SELHN O" eic="11T0-0000-0761-3" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7OBZI1" to="D7YDAH1"  elementName="SELHN O" eic="11T0-0000-0783-Q" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00009" name="N-1 Dahlem - Oberzier SELHN W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7YDAH1" to="D7OBZI1"  elementName="SELHN W" eic="11T0-0000-0784-N" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7NSTE1" to="D7YDAH1"  elementName="SELHN W" eic="11T0-0000-0762-0" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00075" name="N-1 Dauersberg  - Halfeshof  DAURSB W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7DAUR1" to="D7HALF1"  elementName="DAURSB W" eic="11T0-0000-0632-H" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00068" name="N-1 Dauersberg  - Limburg  WESTW W1" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LIMB1" to="D7YDAU1"  elementName="WESTW W1" eic="11T0-0000-0995-6" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7DAUR1" to="D7YDAU1"  elementName="WESTW W1" eic="11T0-0000-0994-9" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00076" name="N-1 Dauersberg  - Linde  DAURSB O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7DAUR1" to="D7LIND1"  elementName="DAURSB O" eic="11T0-0000-0706-C" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00010" name="N-1 Dauersberg - Sechtem SIEGTA N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7DAUR1" to="D7SECH1"  elementName="SIEGTA N" eic="11T0-0000-0586-R" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00011" name="N-1 Dauersberg - Sechtem SIEGTA S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7DAUR1" to="D7SECH1"  elementName="SIEGTA S" eic="11T0-0000-0587-O" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00095" name="N-1 Eiberg  - Hattingen  WEITMR W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7EIBE1" to="D7HATT1"  elementName="WEITMR W" eic="11T0-0000-0647-Z" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00073" name="N-1 Eiberg  - Huellen  HUELLN W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7EIBE1" to="D7HUEL1"  elementName="HUELLN W" eic="11T0-0000-0651-C" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00072" name="N-1 Eiberg  - Ohligs  OERKHS W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7EIBE1" to="D7OHLI1"  elementName="OERKHS W" eic="11T0-0000-0591-1" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00013" name="N-1 Ensdorf - Uchtelfangen TAUBNT N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ENSD1" to="D7UCHT1"  elementName="TAUBNT N" eic="11T0-0000-0604-N" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00014" name="N-1 Ensdorf - Uchtelfangen TAUBNT S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ENSD1" to="D7UCHT1"  elementName="TAUBNT S" eic="11T0-0000-0605-K" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00086" name="N-1 Geithe  - Unna  HAARST W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GEIT1" to="D7UNNA1"  elementName="HAARST W" eic="11T0-0000-0607-E" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00015" name="N-1 Gersteinwerk - Lippe WALTRO S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GERS1" to="D7LIPP1"  elementName="WALTRO S" eic="11T0-0000-0610-V" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00016" name="N-1 Gersteinwerk - Mengede MENGED N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GERS1" to="D7MENG1"  elementName="MENGED N" eic="11T0-0000-0729-W" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00017" name="N-1 Gronau - Gronau TR 441 E" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GRON1" to="D7GRON1"  elementName="TR 441 E" eic="11T0-0000-0620-R" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00018" name="N-1 Gronau - Hanekenfaehr GRONAU W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GRON1" to="D7HANE1"  elementName="GRONAU W" eic="11T0-0000-0617-A" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00019" name="N-1 Gronau - Kusenhorst HAMALD" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GRON1" to="D7KUSE1"  elementName="HAMALD" eic="11T0-0000-0618-7" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00020" name="N-1 Guetersloh - Gersteinwerk - Uentrop GERSTE O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GUET1" to="D7YGER1"  elementName="GERSTE O" eic="11T0-0000-0943-W" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7UENT1" to="D7YGER1"  elementName="GERSTE O" eic="11T0-0000-0942-Z" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7GERS1" to="D7YGER1"  elementName="GERSTE O" eic="11T0-0000-0941-1" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00110" name="N-1 Gundelfingen  - Voehringen  GUENZ N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GUND1" to="D7VOEH1"  elementName="GUENZ N" eic="11T0-0000-0625-C" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00097" name="N-1 Gundelfingen  - Voehringen  GUENZ S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GUND1" to="D7VOEH1"  elementName="GUENZ S" eic="11T0-0000-0626-9" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00022" name="N-1 Gundelfingen - Meitingen MEITGN N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GUND1" to="D7MEIT1"  elementName="MEITGN N" eic="11T0-0000-0721-J" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00023" name="N-1 Gundelfingen - Meitingen MEITGN S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7GUND1" to="D7MEIT1"  elementName="MEITGN S" eic="11T0-0000-0722-G" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00024" name="N-1 Halfeshof - Opladen LEICHL W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HALF1" to="D7OPLA1"  elementName="LEICHL W" eic="11T0-0000-0790-V" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00100" name="N-1 Hanekenfaehr  - Westerkappeln  BRAMGAU" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="D7WEST1"  elementName="BRAMGAU" eic="11T0-0000-0642-D" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00057" name="N-1 Hanekenfaehr - Gersteinwerk - Uentrop UENTRO N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="D7YGER1"  elementName="UENTRO N" eic="11T0-0000-0644-7" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7GERS1" to="D7YGER1"  elementName="UENTRO N" eic="11T0-0000-0616-D" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7UENT1" to="D7YGER1"  elementName="UENTRO N" eic="11T0-0000-0869-B" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00030" name="N-1 Hanekenfaehr - Kusenhorst - Kottigerhook MUENST" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="D7YHAN1"  elementName="MUENST" eic="11T0-0000-0643-A" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7KUSE1" to="D7YHAN1"  elementName="MUENST" eic="11T0-0000-0684-S" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7KOTT1" to="D7YHAN1"  elementName="MUENST" eic="11T0-0000-0669-L" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00025" name="N-1 Hanekenfaehr - Meppen MEPPEN" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="D7MEPP1"  elementName="MEPPEN" eic="11T0-0000-0640-J" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00026" name="N-1 Hanekenfaehr - Oechtel - Roxel ROXEL O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="D7YOEC1"  elementName="ROXEL O" eic="11T0-0000-0930-8" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7ROXE1" to="D7YOEC1"  elementName="ROXEL O" eic="11T0-0000-0932-2" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7OECH1" to="D7YOEC1"  elementName="ROXEL O" eic="11T0-0000-0931-5" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00027" name="N-1 Hanekenfaehr - Wehrendorf NSACHS S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HANE1" to="D7WEHR1"  elementName="NSACHS S" eic="11T0-0000-0641-G" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00091" name="N-1 Hattingen  - Witten  KEMNAD S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HATT1" to="D7WITT1"  elementName="KEMNAD S" eic="11T0-0000-0915-1" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00080" name="N-1 Kelsterbach  - Kriftel  TREBUR N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KELS1" to="D7KRIF1"  elementName="TREBUR N" eic="11T0-0000-0671-4" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00029" name="N-1 Knapsack - Sechtem WABERG W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KNAP1" to="D7SECH1"  elementName="WABERG W" eic="11T0-0000-0663-2" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00107" name="N-1 Koblenz  - Limburg  NASSAU" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KOBL1" to="D7LIMB1"  elementName="NASSAU" eic="11T0-0000-0666-U" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00067" name="N-1 Koblenz  - Weissenthurm  KOBLNZ N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KOBL1" to="D7WTHU1"  elementName="KOBLNZ N" eic="11T0-0000-0897-5" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00066" name="N-1 Koblenz  - Weissenthurm  METTER" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KOBL1" to="D7WTHU1"  elementName="METTER" eic="11T0-0000-0898-2" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00070" name="N-1 Kriftel  - Limburg  HESSEN O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KRIF1" to="D7LIMB1"  elementName="HESSEN O" eic="11T0-0000-0702-O" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00112" name="N-1 Kruckel  - Mengede  KIRCHL O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KRUC1" to="D7MENG1"  elementName="KIRCHL O" eic="11T0-0000-0730-I" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00087" name="N-1 Kruckel  - Unna  SHWERT N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KRUC1" to="D7UNNA1"  elementName="SHWERT N" eic="11T0-0000-0548-0" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00084" name="N-1 Kruckel  - Witten  PERSEBEK" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KRUC1" to="D7WITT1"  elementName="PERSEBEK" eic="11T0-0000-0678-K" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00061" name="N-1 Kruckel - Uentrop - Lippborg HAARST O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KRUC1" to="D7YLPB1"  elementName="HAARST O" eic="11T0-0000-0677-N" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7UENT1" to="D7YLPB1"  elementName="HAARST O" eic="11T0-0000-0868-E" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7LIPB1" to="D7YLPB1"  elementName="HAARST O" eic="11T0-0000-0712-K" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00089" name="N-1 Kusenhorst  - Niederrhein  LIPPE N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KUSE1" to="D7NRHE1"  elementName="LIPPE N" eic="11T0-0000-0680-3" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00088" name="N-1 Kusenhorst  - Rosenblumendelle  KUSENH" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KUSE1" to="D7ROSE1"  elementName="KUSENH" eic="11T0-0000-0681-0" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00060" name="N-1 Kusenhorst - Mengede - Huellen WESTFL W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7KUSE1" to="D7YHUE1"  elementName="WESTFL W" eic="11T0-0000-0959-A" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7MENG1" to="D7YHUE1"  elementName="WESTFL W" eic="11T0-0000-0958-D" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7HUEL1" to="D7YHUE1"  elementName="WESTFL W" eic="11T0-0000-0960-X" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00051" name="N-1 Lambsheim - Otterbach  KAILAU S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LAMB1" to="D7OTTE1"  elementName="KAILAU S" eic="11T0-0000-0688-G" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00101" name="N-1 Lambsheim - Weingarten  LAMBSH W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LAMB1" to="D7WEIN1"  elementName="LAMBSH W" eic="11T0-0000-0689-D" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00032" name="N-1 Lechhausen - Meitingen LECHHA W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LECH1" to="D7MEIT1"  elementName="LECHHA W" eic="11T0-0000-0723-D" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00063" name="N-1 Leupolz - Oberottmarshausen - Bidingen ALLG O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BIDI1" to="D7YBID1"  elementName="ALLG O" eic="11T0-0000-0556-2" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7LEUP1" to="D7YBID1"  elementName="ALLG O" eic="11T0-0000-0698-C" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7OOTT1" to="D7YBID1"  elementName="ALLG O" eic="11T0-0000-0769-G" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00103" name="N-1 Liessem  - Weissenthurm  WTHURM O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LIES1" to="D7WTHU1"  elementName="WTHURM O" eic="11T0-0000-0700-U" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00033" name="N-1 Liessem - Sechtem LIESSM O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LIES1" to="D7SECH1"  elementName="LIESSM O" eic="11T0-0000-0842-3" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00034" name="N-1 Linde - Opladen LEICHL O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LIND1" to="D7OPLA1"  elementName="LEICHL O" eic="11T0-0000-0791-S" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00092" name="N-1 Lippe - Mengede  MENGED S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7LIPP1" to="D7MENG1"  elementName="MENGED S" eic="11T0-0000-0733-9" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00106" name="N-1 Meckenheim  - Weissenthurm  NETTE W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MECK1" to="D7WTHU1"  elementName="NETTE W" eic="11T0-0000-0717-5" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00035" name="N-1 Meckenheim - Sechtem BGEIST W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MECK1" to="D7SECH1"  elementName="BGEIST W" eic="11T0-0000-0843-0" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00036" name="N-1 Meitingen - Oberottmarshausen AUGSBU O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MEIT1" to="D7OOTT1"  elementName="AUGSBU O" eic="11T0-0000-0724-A" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00085" name="N-1 Mengede  - Witten  WITTEN W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MENG1" to="D7WITT1"  elementName="WITTEN W" eic="11T0-0000-0734-6" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00037" name="N-1 Buerstadt - Lambsheim BUERST W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BUER1" to="D7LAMB1"  elementName="BUERST W" eic="11T0-0000-0568-T" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00038" name="N-1 Mittelbexbach - Otterbach RAMSTE S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MITB1" to="D7OTTE1"  elementName="RAMSTE S" eic="11T0-0000-0806-7" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00039" name="N-1 Mittelbexbach - Uchtelfangen BLIES N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MITB1" to="D7UCHT1"  elementName="BLIES N" eic="11T0-0000-0740-E" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00040" name="N-1 Mittelbexbach - Uchtelfangen BLIES S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7MITB1" to="D7UCHT1"  elementName="BLIES S" eic="11T0-0000-0741-B" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00102" name="N-1 Nehden  - Uentrop  SAUERL N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7NEHD1" to="D7UENT1"  elementName="SAUERL N" eic="11T0-0000-0744-2" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00111" name="N-1 Niederrhein  - Walsum  NRHEIN W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7NRHE1" to="D7WALS1"  elementName="NRHEIN W" eic="11T0-0000-0750-A" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00041" name="N-1 Niederstedem - Osburg GILZEM O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7NSTE1" to="D7OSBU1"  elementName="GILZEM O" eic="11T0-0000-0744-2" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00042" name="N-1 Niederstedem - Uchtelfangen UCHTLF W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7NSTE1" to="D7UCHT1"  elementName="UCHTLF W" eic="11T0-0000-0756-T" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00045" name="N-1 Oberzier - Siersdorf KIRCHB S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OBZI1" to="D7SIER1"  elementName="KIRCHB S" eic="11T0-0000-0776-L" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00074" name="N-1 Ohligs  - St. Peter  PETER N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OHLI1" to="D7PETE1"  elementName="PETER N" eic="11T0-0000-0787-E" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00046" name="N-1 Opladen - Rommerskirchen OPLADN N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OPLA1" to="D7ROKI1"  elementName="OPLADN N" eic="11T0-0000-0793-M" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00047" name="N-1 Opladen - Rommerskirchen OPLADN S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OPLA1" to="D7ROKI1"  elementName="OPLADN S" eic="11T0-0000-0794-J" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00048" name="N-1 Osburg - Uchtelfangen UCHTLF O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OSBU1" to="D7UCHT1"  elementName="UCHTLF O" eic="11T0-0000-0798-7" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00049" name="N-1 Osterath - Rommerskirchen KNESTE W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OSTR1" to="D7ROKI1"  elementName="KNESTE W" eic="11T0-0000-0802-J" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00050" name="N-1 Otterbach - Mittelbexbach - Lambsheim KAILAU N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7OTTE1" to="D7YOTT1"  elementName="KAILAU N" eic="11T0-0000-0742-8" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7LAMB1" to="D7YOTT1"  elementName="KAILAU N" eic="11T0-0000-0693-R" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7MITB1" to="D7YOTT1"  elementName="KAILAU N" eic="11T0-0000-0742-8" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00053" name="N-1 Paffendorf - Rommerskirchen PAFFEN N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7PAFF1" to="D7ROKI1"  elementName="PAFFEN N" eic="11T0-0000-0829-R" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00052" name="N-1 Paffendorf - Rommerskirchen PAFFEN S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7PAFF1" to="D7ROKI1"  elementName="PAFFEN S" eic="11T0-0000-0830-D" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00002" name="N-1 Rheinau - Hoheneck KUGELB O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HONE1" to="D7REIN1"  elementName="KUGELB O" eic="11T0-0000-0566-Z" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00003" name="N-1 Rheinau - Hoheneck KUGELB W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7HONE1" to="D7REIN1"  elementName="KUGELB W" eic="11T0-0000-0567-W" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00054" name="N-1 Rommerskirchen - Sechtem VILLE O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ROKI1" to="D7SECH1"  elementName="VILLE O" eic="11T0-0000-0831-A" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00062" name="N-1 Rosenblumendelle - Karnap - Buescherhof BUESHR W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ROSE1" to="D7YKAR1"  elementName="BUESHR W" eic="11T0-0000-0838-Q" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7KARN1" to="D7YKAR1"  elementName="BUESHR W" eic="11T0-0000-0657-V" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7BUES1" to="D7YKAR1"  elementName="BUESHR W" eic="11T0-0000-0576-V" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00090" name="N-1 Roxel  - Uentrop  UENTRO S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ROXE1" to="D7UENT1"  elementName="UENTRO S" eic="11T0-0000-0840-9" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00043" name="N-1 Sechtem - Paffendorf - Oberzier SECHTM N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7PAFF1" to="D7YPAF1"  elementName="SECHTM N" eic="11T0-0000-0814-9" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7OBZI1" to="D7YPAF1"  elementName="SECHTM N" eic="11T0-0000-0781-W" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7SECH1" to="D7YPAF1"  elementName="SECHTM N" eic="11T0-0000-0848-M" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00044" name="N-1 Sechtem - Paffendorf - Oberzier SECHTM S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7PAFF1" to="D7YPAF1"  elementName="SECHTM S" eic="11T0-0000-0815-6" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7OBZI1" to="D7YPAF1"  elementName="SECHTM S" eic="11T0-0000-0782-T" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7SECH1" to="D7YPAF1"  elementName="SECHTM S" eic="11T0-0000-0849-J" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00055" name="N-1 Sechtem - Weissenthurm MITREI" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7SECH1" to="D7WTHU1"  elementName="MITREI" eic="11T0-0000-0844-Y" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00104" name="N-1 St. Barbara  - Mittelbexbach  HAGARD O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BABA1" to="D7MITB1"  elementName="HAGARD O" eic="11T0-0000-0738-V" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00105" name="N-1 St. Barbara  - Mittelbexbach  HAGARD W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BABA1" to="D7MITB1"  elementName="HAGARD W" eic="11T0-0000-0739-S" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00056" name="N-1 St. Peter - Rommerskirchen PETER S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7PETE1" to="D7ROKI1"  elementName="PETER S" eic="11T0-0000-0856-O" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00021" name="N-1 Uentrop  - Guetersloh - Enniger  GUETER S" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ENNI1" to="D7YGUE1"  elementName="GUETER S" eic="11T0-0000-0603-Q" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7GUET1" to="D7YGUE1"  elementName="GUETER S" eic="11T0-0000-0631-K" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7UENT1" to="D7YGUE1"  elementName="GUETER S" eic="11T0-0000-0867-H" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00058" name="N-1 Uentrop - Lippborg - Geithe GEITHE W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7UENT1" to="D7YLPB1"  elementName="GEITHE W" eic="11T0-0000-0866-K" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7GEIT1" to="D7YLPB1"  elementName="GEITHE W" eic="11T0-0000-0608-B" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7LIPB1" to="D7YLPB1"  elementName="GEITHE W" eic="11T0-0000-0711-N" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00077" name="N-1 Utfort - Selbeck - Osterath TOESEE W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7UTFO1" to="D7YOST1"  elementName="TOESEE W" eic="11T0-0000-0880-U" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7SELB1" to="D7YOST1"  elementName="TOESEE W" eic="11T0-0000-0851-2" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7OSTR1" to="D7YOST1"  elementName="TOESEE W" eic="11T0-0000-0805-A" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00108" name="N-1 Utfort  - Walsum  LOHHEI W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7UTFO1" to="D7WALS1"  elementName="LOHHEI W" eic="11T0-0000-0890-Q" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00065" name="N-1 Waldlaubersheim  - Weissenthurm  SOONWD W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7WDLA1" to="D7WTHU1"  elementName="SOONWD W" eic="11T0-0000-0901-H" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00059" name="N-1 Wehrendorf - Westerkappeln NSACHS N" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7WEHR1" to="D7WEST1"  elementName="NSACHS N" eic="11T0-0000-0891-N" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00096" name="N-1 Woringen - Voehringen  VOEHRG O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7WORI1" to="D7VOEH1"  elementName="VOEHRG O" eic="11T0-0000-0883-L" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00114" name="N-1 Rommerskirchen - Sechtem VILLE W" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7ROKI1" to="D7SECH1"  elementName="VILLE W" eic="11T0-0000-1011-F" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D7_CO_00116" name="N-1 Bacharach - Buerstadt - Waldlaubersheim WONNEG O" location="D7-D7">
+      <branch name="MandatoryDummy" from="D7BACH1" to="D7YWDL1"  elementName="WONNEG O" eic="11T0-0000-0976-B" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7BUER1" to="D7YWDL1"  elementName="WONNEG O" eic="11T0-0000-0977-8" party="10XDE-RWENET---W"/>
+      <branch name="MandatoryDummy" from="D7WDLA1" to="D7YWDL1"  elementName="WONNEG O" eic="11T0-0000-0975-E" party="10XDE-RWENET---W"/>
+    </outage>
+    <outage id="D8-D2_CO_00001" name="N-1 Hamburg Nord - Nord 1" location="D8-D2">
+      <branch name="MandatoryDummy" from="DNO_NO2" to="D8NOR_2"  elementName="BLAU" eic="11TD2L000000319V" party="10XDE-VE-TRANSMK"/>
+      <branch name="MandatoryDummy" from="DNO_NO2" to="D2HAMN2"  elementName="BLAU" eic="11TD2L000000319V" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8-D2_CO_00002" name="N-1 Hamburg Nord - Nord 2" location="D8-D2">
+      <branch name="MandatoryDummy" from="DNO_NO2" to="D8NOR_2"  elementName="ROT" eic="11T-D2-D8-000035" party="10XDE-VE-TRANSMK"/>
+      <branch name="MandatoryDummy" from="DNO_NO2" to="D2HAMN2"  elementName="ROT" eic="11T-D2-D8-000035" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8-D2_CO_00003" name="N-1 Hamburg Sud - Dollern 981" location="D8-D2">
+      <branch name="MandatoryDummy" from="D8SUED1" to="DSU_DO1"  elementName="981" eic="11T-D2-D8-00063O" party="10XDE-VE-TRANSMK"/>
+      <branch name="MandatoryDummy" from="D2DOLL1" to="DSU_DO1"  elementName="981" eic="11T-D2-D8-00063O" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8-D2_CO_00004" name="N-1 Hamburg Sud - Dollern 982" location="D8-D2">
+      <branch name="MandatoryDummy" from="D8SUED1" to="DSU_DO1"  elementName="982" eic="11T-D2-D8-000051" party="10XDE-VE-TRANSMK"/>
+      <branch name="MandatoryDummy" from="D2DOLL1" to="DSU_DO1"  elementName="982" eic="11T-D2-D8-000051" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00001" name="N-1 D8BE D8NHG 303" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8BE__2" to="D8NHG_2"  elementName="303" eic="11TD8L303------2" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00002" name="N-1 D8VIE D8NHG 304" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_2" to="D8NHG_2"  elementName="304" eic="11TD8L304------V" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00003" name="N-1 D8BE D8PAS 305" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8BE__2" to="D8PAS_2"  elementName="305" eic="11TD8L305------N" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00004" name="N-1 D8VIE D8PAS 306" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_2" to="D8PAS_2"  elementName="306" eic="11TD8L306------F" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00005" name="N-1 D8VIE D8VIE 402" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_1" to="D8VIE_2"  elementName="402" eic="11T0-0000-0026-2" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00006" name="N-1 D8VIE 402" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_1" to="D8VIE_2"  elementName="402" eic="11T0-0000-0026-2" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00007" name="N-1 D8VIE D8VIE 404" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_1" to="D8VIE_2"  elementName="404" eic="11T0-0000-0028-X" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00008" name="N-1 D8VIE 404" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_1" to="D8VIE_2"  elementName="404" eic="11T0-0000-0028-X" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00009" name="N-1 D8VIE PST 1" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_1" to="D8VIE_1"  elementName="441" eic="11T0-0000-0013-F" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00012" name="N-1 D8VIE PST 2" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIE_1" to="D8VIE_1"  elementName="443" eic="11T0-0000-0014-C" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00013" name="N-1 D8VIB D8EI 454" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8VIB_1" to="D8EI__1"  elementName="454" eic="11TD8L454------D" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00014" name="N-1 D8LAU D8VIB 471" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8LAU_1" to="D8VIB_1"  elementName="471" eic="11TD8L471------J" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00015" name="N-1 D8LAU D8VIB 472" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8LAU_1" to="D8VIB_1"  elementName="472" eic="11TD8L472------B" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00016" name="N-1 D8STW D8WOL 489" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8STW_1" to="D8WOL_1"  elementName="489" eic="11TD8L489------K" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00017" name="N-1 D8STW D8WOL 490" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8STW_1" to="D8WOL_1"  elementName="490" eic="11TD8L490------9" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00018" name="N-1 D8WOL D8LAU 535" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8WOL_1" to="D8LAU_1"  elementName="535" eic="11TD8L535------D" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00019" name="N-1 D8WOL D8KLM 536" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8WOL_1" to="D8KLM_1"  elementName="536" eic="11TD8L536------5" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00020" name="N-1 D8LAU D8KLM 538" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8LAU_1" to="D8KLM_1"  elementName="538" eic="11TD8L538------Q" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00021" name="N-1 D8BAE D8SM 551" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8BAE_1" to="D8SM__1"  elementName="551" eic="11TD8L551------R" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00022" name="N-1 D8BAE D8SM 552" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8BAE_1" to="D8SM__1"  elementName="552" eic="11TD8L552------J" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00023" name="N-1 D8HGW D8SM 553" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8HGW_1" to="D8SM__1"  elementName="553" eic="11TD8L553------B" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00024" name="N-1 D8HGW D8SM 554" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8HGW_1" to="D8SM__1"  elementName="554" eic="11TD8L554------3" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00025" name="N-1 D8DRS D8SM 555" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8DRS_1" to="D8SM__1"  elementName="555" eic="11TD8L555------W" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00026" name="N-1 D8DRS D8SM 556" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8DRS_1" to="D8SM__1"  elementName="556" eic="11TD8L556------O" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00027" name="N-1 D8BAE D8GRS 565" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8BAE_1" to="D8GRS_1"  elementName="565" eic="11TD8L565------N" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00028" name="N-1 D8BAE D8GRS 566" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8BAE_1" to="D8GRS_1"  elementName="566" eic="11TD8L566------F" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00029" name="N-1 D8ROE D8STR 571" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8STR_1" to="D8ROE_1"  elementName="571" eic="11TD8L571------9" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00030" name="N-1 D8ROE D8STR 572" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8STR_1" to="D8ROE_1"  elementName="572" eic="11TD8L572------1" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00031" name="N-1 D8ROE D8WD 573" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8ROE_1" to="D8WD__1"  elementName="573" eic="11TD8L573------U" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00032" name="N-1 D8RE D8ROE 574" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8RE__1" to="D8ROE_1"  elementName="574" eic="11TD8L574------M" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00033" name="N-1 D8RE D8WD 575" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8RE__1" to="D8WD__1"  elementName="575" eic="11TD8L575------E" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00035" name="N-1 D8NORD D8OST 961" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8NORD1" to="D8OST_1"  elementName="961" eic="11TD8L961------F" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="D8_CO_00036" name="N-1 D8NORD D8OST 962" location="D8-D8">
+      <branch name="MandatoryDummy" from="D8NORD1" to="D8OST_1"  elementName="962" eic="11TD8L962------7" party="10XDE-VE-TRANSMK"/>
+    </outage>
+    <outage id="FR_CO_00001" name="N-1 Muhlbach - Sierentz 1" location="FR-FR">
+      <branch name="MandatoryDummy" from="FMUHLB1" to="FSIERE1"  elementName="MUHLB71SIERE" eic="17T-FR-000000317" party="10XFR-RTE------Q"/>
+    </outage>
+    <outage id="FR_CO_00002" name="N-1 Muhlbach - Sierentz 2" location="FR-FR">
+      <branch name="MandatoryDummy" from="FMUHLB1" to="FSIERE1"  elementName="MUHLB72SIERE" eic="17T-FR-000000333" party="10XFR-RTE------Q"/>
+    </outage>
+    <outage id="HR-BA_CO_00001" name="N-1 Ernestinovo - Ugljevik" location="HR-BA">
+      <branch name="MandatoryDummy" from="HERNES1" to="XUG_ER11" order="1"  eic="10T-BA-HR-00006L" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-BA_CO_00002" name="N-1 Konjsko - Mostar" location="HR-BA">
+      <branch name="MandatoryDummy" from="HKONJS1" to="XMO_KO11" order="1"  eic="10T-BA-HR-00002T" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-BA_CO_00003" name="N-1 Meduric - Prijedor" location="HR-BA">
+      <branch name="MandatoryDummy" from="HMEDUR2" to="XPR_ME21" order="1"  eic="10T-BA-HR-00004P" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-BA_CO_00004" name="N-1 Sisak - Prijedor" location="HR-BA">
+      <branch name="MandatoryDummy" from="HTESIS2" to="XPR_SI21" order="1"  eic="10T1001C--00027Y" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-BA_CO_00005" name="N-1 Zakucac - Mostar" location="HR-BA">
+      <branch name="MandatoryDummy" from="HZAKUC2" to="XMO_ZA21" order="1"  eic="10T-BA-HR-00003R" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00019" name="N-1 Zakucac -Bilice" location="HR-HR">
+      <branch name="MandatoryDummy" from="HBILIC2" to="HZAKUC2" order="1"  eic="31T-0000-A-0022X" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00002" name="N-1 Brinje - Mraclin" location="HR-HR">
+      <branch name="MandatoryDummy" from="HBRINJ2" to="HMRACL2" order="1"  eic="31T-0000-A-0007T" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00003" name="N-1 Brinje - Senj" location="HR-HR">
+      <branch name="MandatoryDummy" from="HBRINJ2" to="HSENJ 2" order="1"  eic="31T-0000-A-0013Y" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00004" name="N-1 Ernestinovo - Zerjavinec" location="HR-HR">
+      <branch name="MandatoryDummy" from="HERNES1" to="HZERJA1" order="1"  eic="31T-0000-A-00022" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00006" name="N-1 Meduric - Sisak" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMEDUR2" to="HTESIS2" order="1"  eic="31T-0000-A-0006V" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00007" name="N-1 Melina - Pehlin 1" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMELIN2" to="HPEHLI2" order="1"  eic="31T-0000-A-0016S" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00008" name="N-1 Melina - Pehlin 2" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMELIN2" to="HPEHLI2" order="2"  eic="31T-0000-A-0017Q" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00009" name="N-1 Melina - Plomin" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMELIN2" to="HTEPLO2" order="1"  eic="31T-0000-A-0015U" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00010" name="N-1 Melina - Senj" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMELIN2" to="HSENJ 2" order="1"  eic="31T-0000-A-0018O" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00011" name="N-1 Melina - Tumbri" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMELIN1" to="HTUMBR1" order="1"  eic="31T-0000-A-00014" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00012" name="N-1 Melina - Velebit" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMELIN1" to="HVELEB1" order="1"  eic="31T-0000-A-0009P" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00013" name="N-1 Mraclin - Sisak 1" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMRACL2" to="HTESIS2" order="1"  eic="31T-0000-A-0005X" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00014" name="N-1 Mraclin - Sisak 2" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMRACL2" to="HTESIS2" order="2"  eic="31T-0000-A-0019M" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00015" name="N-1 Mraclin - Zerjavinec" location="HR-HR">
+      <branch name="MandatoryDummy" from="HMRACL2" to="HZERJA2" order="1"  eic="31T-0000-A-0004Z" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00016" name="N-1 Pehlin - Plomin" location="HR-HR">
+      <branch name="MandatoryDummy" from="HPEHLI2" to="HTEPLO2" order="1"  eic="31T-0000-A-0014W" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00017" name="N-1 TR Zerjavinec" location="HR-HR">
+      <branch name="MandatoryDummy" from="HZERJA2" to="HZERJA1" order="1"  eic="31T-0000-B-0001Y" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00018" name="N-1 Zakucac - Konjsko" location="HR-HR">
+      <branch name="MandatoryDummy" from="HKONJS2" to="HZAKUC2" order="1"  eic="31T-0000-A-00111" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR_CO_00020" name="N-1 Zerjavinec - Tumbri" location="HR-HR">
+      <branch name="MandatoryDummy" from="HTUMBR1" to="HZERJA1" order="1"  eic="31T-0000-A-00030" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-RS_CO_00001" name="N-1 Ernestinovo - Mitrovica" location="HR-RS">
+      <branch name="MandatoryDummy" from="HERNES1" to="XER_SM11" order="1"  eic="10T-RS-HR-00001B" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-SI_CO_00001" name="N-1 Melina - Divaca" location="HR-SI">
+      <branch name="MandatoryDummy" from="HMELIN1" to="XME_DI11" order="1"  eic="10T-HR-SI-000014" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-SI_CO_00002" name="N-1 Pehlin - Divaca" location="HR-SI">
+      <branch name="MandatoryDummy" from="HPEHLI2" to="XPE_DI21" order="1"  eic="10T-HR-SI-000022" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-SI_CO_00003" name="N-1 Tumbri - Krsko 1" location="HR-SI">
+      <branch name="MandatoryDummy" from="HTUMBR1" to="XTU_KR11" order="1"  eic="10T-HR-SI-00004Z" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-SI_CO_00004" name="N-1 Tumbri - Krsko 2" location="HR-SI">
+      <branch name="MandatoryDummy" from="HTUMBR1" to="XTU_KR12" order="2"  eic="10T-HR-SI-00005X" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HR-SI_CO_00005" name="N-1 Zerjavinec - Cirkovce" location="HR-SI">
+      <branch name="MandatoryDummy" from="HZERJA2" to="XZE_CI21" order="1"  eic="10T-HR-SI-00006V" party="10XHR-HEP-OPS--A"/>
+    </outage>
+    <outage id="HU_CO_00001" name="N-1 Albertirsa - God" location="HU-HU">
+      <branch name="MandatoryDummy" from="MAISA 1" to="MGOD  1" order="1"  eic="15T-M0000003237K" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00002" name="N-1 Albertirsa - Kerepes" location="HU-HU">
+      <branch name="MandatoryDummy" from="MAISA 1" to="MKERP 1" order="1"  eic="15T-M0000003238I" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00003" name="N-1 God - Kerepes" location="HU-HU">
+      <branch name="MandatoryDummy" from="MGOD  1" to="MKERP 1" order="1"  eic="15T-M0000003239G" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00004" name="N-1 Albertirsa - Martonvasar" location="HU-HU">
+      <branch name="MandatoryDummy" from="MAISA 1" to="MMART 1" order="1"  eic="15T-M0000003351M" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00005" name="N-1 Albertirsa - Szigetcsep" location="HU-HU">
+      <branch name="MandatoryDummy" from="MAISA 1" to="MSZICS1" order="1"  eic="15T-M0000003335K" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00006" name="N-1 Martonvasar - Szigetcsep" location="HU-HU">
+      <branch name="MandatoryDummy" from="MMART 1" to="MSZICS1" order="1"  eic="15T-M0000003336I" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00007" name="N-1 Bekescsaba - Szolnok" location="HU-HU">
+      <branch name="MandatoryDummy" from="MBEKO 1" to="MSZOL 1" order="1"  eic="15T-M0000002903E" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00008" name="N-1 Bekescsaba - Sandorfalva" location="HU-HU">
+      <branch name="MandatoryDummy" from="MBEKO 1" to="MSAFA 1" order="1"  eic="15T-M00000001283" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00009" name="N-1 Paks - Sandorfalva" location="HU-HU">
+      <branch name="MandatoryDummy" from="MPAKS 1" to="MSAFA 1" order="1"  eic="15T-M00000010193" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00011" name="N-1 Bicske Del - Martonvasar" location="HU-HU">
+      <branch name="MandatoryDummy" from="MBICSD1" to="MMART 1" order="1"  eic="15T-M00000030240" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00012" name="N-1 God - Sajoszoged" location="HU-HU">
+      <branch name="MandatoryDummy" from="MGOD  1" to="MSAJO 1" order="1"  eic="15T-M00000004029" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00014" name="N-1 Gyor - Liter" location="HU-HU">
+      <branch name="MandatoryDummy" from="MGYOR 1" to="MLITR 1" order="1"  eic="15T-M00000004231" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00015" name="N-1 Gyor - Szombathely" location="HU-HU">
+      <branch name="MandatoryDummy" from="MGYOR 1" to="MSZHO 1" order="1"  eic="15T-M0000002523O" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00016" name="N-1 Heviz - Liter" location="HU-HU">
+      <branch name="MandatoryDummy" from="MHEVI 1" to="MLITR 1" order="1"  eic="15T-M00000004995" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00017" name="N-1 Heviz - Szombathely 1" location="HU-HU">
+      <branch name="MandatoryDummy" from="MHEVI 1" to="MSZHO 1" order="1"  eic="15T-M00000027650" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00019" name="N-1 Heviz - Toponar" location="HU-HU">
+      <branch name="MandatoryDummy" from="MHEVI 1" to="MTOPN 1" order="1"  eic="15T-M0000000463Q" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00020" name="N-1 Kisvarda - Sajoszoged" location="HU-HU">
+      <branch name="MandatoryDummy" from="MKISV 2" to="MSAJO 2" order="1"  eic="15T-M0000000692B" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00021" name="N-1 Martonvasar - Perkata" location="HU-HU">
+      <branch name="MandatoryDummy" from="MMART 1" to="MPERK 1" order="1"  eic="15T-M0000003193E" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00022" name="N-1 Paks - Pecs 1" location="HU-HU">
+      <branch name="MandatoryDummy" from="MPAKS 1" to="MPECSO1" order="1"  eic="15T-M0000002266I" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00024" name="N-1 Paks - Perkata" location="HU-HU">
+      <branch name="MandatoryDummy" from="MPAKS 1" to="MPERK 1" order="1"  eic="15T-M0000003194C" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00025" name="N-1 Paks - Toponar" location="HU-HU">
+      <branch name="MandatoryDummy" from="MPAKS 1" to="MTOPN 1" order="1"  eic="15T-M0000001020I" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00026" name="N-1 Liter - Paks" location="HU-HU">
+      <branch name="MandatoryDummy" from="MLITR 1" to="MPAKS 1" order="1"  eic="15T-M0000000781C" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00027" name="N-1 Liter - Martonvasar" location="HU-HU">
+      <branch name="MandatoryDummy" from="MLITR 1" to="MMART 1" order="1"  eic="15T-M0000000780E" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00028" name="N-1 Sajoszoged - Tiszalok" location="HU-HU">
+      <branch name="MandatoryDummy" from="MSAJO 2" to="MTLOK 2" order="1"  eic="15T-M0000001128Z" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00029" name="N-1 Albertirsa - Szolnok" location="HU-HU">
+      <branch name="MandatoryDummy" from="MAISA 1" to="MSZOL 1" order="1"  eic="15T-M0000002902G" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00030" name="N-1 Albertirsa - Jozsa" location="HU-HU">
+      <branch name="MandatoryDummy" from="MAISA 1" to="MJOZS 1" order="1"  eic="15T-M0000003425J" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00031" name="N-1 Szabolcsbaka - Jozsa" location="HU-HU">
+      <branch name="MandatoryDummy" from="MBAKA 1" to="MJOZS 1" order="1"  eic="15T-M0000003424L" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00032" name="N-1 Szabolcsbaka - Sajoszoged" location="HU-HU">
+      <branch name="MandatoryDummy" from="MBAKA 1" to="MSAJO 1" order="1"  eic="15T-M0000003427F" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00033" name="N-1 Jozsa - Sajoszoged" location="HU-HU">
+      <branch name="MandatoryDummy" from="MJOZS 1" to="MSAJO 1" order="1"  eic="15T-M0000003052W" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00034" name="N-1 Martonvasar TR1" location="HU-HU">
+      <branch name="MandatoryDummy" from="MMART 2" to="MMART 1" order="1"  eic="15T-M0000000817H" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00035" name="N-1 Martonvasar TR2" location="HU-HU">
+      <branch name="MandatoryDummy" from="MMART 2" to="MMART 1" order="2"  eic="15T-M0000000818F" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00018" name="N-1 Heviz - Szombathely 2" location="HU-HU">
+      <branch name="MandatoryDummy" from="MHEVI 1" to="MSZHO 1" order="2"  eic="15T-M0000002766Z" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU_CO_00023" name="N-1 Paks - Pecs 2" location="HU-HU">
+      <branch name="MandatoryDummy" from="MPAKS 1" to="MPECSO1" order="2"  eic="15T-M0000002267G" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU-RS_CO_00001" name="N-1 Sandorfalva - Subotica" location="HU-RS">
+      <branch name="MandatoryDummy" from="MSAFA 1" to="XSA_SU1" order="1"  eic="10T-HU-SR-00001A" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU-UA_CO_00001" name="N-1 Kisvarda - Mukachevo" location="HU-UA">
+      <branch name="MandatoryDummy" from="MKISV 2" to="XKI_MU2" order="1"  eic="10T-HU-UA-00002F" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU-UA_CO_00003" name="N-1 Szabolcsbaka - Mukachevo" location="HU-UA">
+      <branch name="MandatoryDummy" from="MBAKA 1" to="XBA_MU1" order="1"  eic="10T1001C--000421" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU-UA_CO_00004" name="N-1 Szabolcsbaka - Zahidno Ukrainska" location="HU-UA">
+      <branch name="MandatoryDummy" from="MBAKA 0" to="XBA_ZA0" order="1"  eic="10T1001C--00048Q" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="HU-UA_CO_00002" name="N-1 Tiszalok - Mukachevo" location="HU-UA">
+      <branch name="MandatoryDummy" from="MTLOK 2" to="XTI_MU2" order="1"  eic="10T-HU-UA-00004B" party="10X1001A1001A329"/>
+    </outage>
+    <outage id="NL-D7_CO_00001" name="N-1 Doetinchem - Niederrhein DTC-NDR380 Z" location="NL-D7">
+      <branch name="MandatoryDummy" from="XNR_DT1" to="NDTC381"  elementName="DTC-NDR380 Z" eic="10T1001C--000235" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL-D7_CO_00002" name="N-1 Doetinchem - Niederrhein DTC-NDR380 W" location="NL-D7">
+      <branch name="MandatoryDummy" from="XNR_DT1" to="NDTC381"  elementName="DTC-NDR380 W" eic="10T-DE-NL-00007J" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00030" name="N-1 Breukelen - Diemen BKK-DIM380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBKK381" to="NDIM381"  elementName="BKK-DIM380 W" eic="49T0000000000088" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00029" name="N-1 Boxmeer - Dodewaard BMR-DOD380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBMR381" to="NDOD381"  elementName="BMR-DOD380 Z" eic="49T000000000006C" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00003" name="N-1 Crayestein - Krimpen CST-KIJ380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NCST381" to="NKIJ381"  elementName="CST-KIJ380 W" eic="49T0000000000347" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00004" name="N-1 Crayestein - Krimpen CST-KIJ380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NCST381" to="NKIJ381"  elementName="CST-KIJ380 Z" eic="49T0000000000339" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00005" name="N-1 Diemen - Lelystad DIM-LLS380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDIM381" to="NLLS381"  elementName="DIM-LLS380 W" eic="49T0000000000096" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00006" name="N-1 Diemen - Lelystad DIM-LLS380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDIM381" to="NLLS381"  elementName="DIM-LLS380 Z" eic="49T000000000010L" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00007" name="N-1 Dodewaard - Doetinchem DOD-DTC380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDOD381" to="NDTC381"  elementName="DOD-DTC380 W" eic="49T000000000011J" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00008" name="N-1 Dodewaard - Doetinchem DOD-DTC380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDOD381" to="NDTC381"  elementName="DOD-DTC380 Z" eic="49T000000000012H" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00009" name="N-1 Doetinchem - Hengelo DTC-HGL380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDTC381" to="NHGL381"  elementName="DTC-HGL380 W" eic="49T000000000014D" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00010" name="N-1 Doetinchem - Hengelo DTC-HGL380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDTC381" to="NHGL381"  elementName="DTC-HGL380 Z" eic="49T000000000015B" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00011" name="N-1 Eemshaven - EOS EEM-EOS380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NEOS381" to="NEEM381"  elementName="EEM-EOS380 W" eic="49T0000000000177" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00012" name="N-1 Eemshaven - EOS EEM-EOS380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NEOS381" to="NEEM381"  elementName="EEM-EOS380 Z" eic="49T0000000000185" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00040" name="N-1 Meeden - Eemshaven EEM-MEE380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NEEM381" to="NMEE381"  elementName="EEM-MEE380 W" eic="49T000000000004G" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00020" name="N-1 Ens - Zwolle ENS-ZL380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NENS381" to="NZL3801"  elementName="ENS-ZL380 W" eic="49T000000000024A" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00021" name="N-1 Ens - Zwolle ENS-ZL380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NENS381" to="NZL3801"  elementName="ENS-ZL380 Z" eic="49T0000000000258" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00013" name="N-1 Eindhoven - Geertruidenberg GT-EHV380G" location="NL-NL">
+      <branch name="MandatoryDummy" from="NEHV381" to="NGT3801"  elementName="GT-EHV380 G" eic="49T0000000000193" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00014" name="N-1 Eindhoven - Geertruidenberg GT-EHV380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NEHV381" to="NGT3801"  elementName="GT-EHV380 W" eic="49T000000000020I" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00015" name="N-1 Eindhoven - Geertruidenberg GT-EHV380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NEHV381" to="NGT3801"  elementName="GT-EHV380 Z" eic="49T000000000021G" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00024" name="N-1 Krimpen - Breukelen KIJ-BKK380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NKIJ381" to="NBKK381"  elementName="KIJ-BKK380 W" eic="49T0000000000266" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00022" name="N-1 Krimpen - Bleiswijk KIJ-BWK380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBWK381" to="NKIJ381"  elementName="KIJ-BWK380 W" eic="49T0000000000452" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00023" name="N-1 Krimpen - Bleiswijk KIJ-BWK380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBWK381" to="NKIJ381"  elementName="KIJ-BWK380 Z" eic="49T0000000000444" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00025" name="N-1 Krimpen - Geertruidenberg KIJ-GT380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NKIJ381" to="NGT3801"  elementName="KIJ-GT380 W" eic="49T0000000000274" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00026" name="N-1 Krimpen - Geertruidenberg KIJ-GT380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NKIJ381" to="NGT3801"  elementName="KIJ-GT380 Z" eic="49T0000000000282" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00027" name="N-1 Krimpen - Oostzaan KIJ-OZN380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NOZN381" to="NKIJ381"  elementName="KIJ-OZN380 Z" eic="49T000000000032B" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00018" name="N-1 Ens - Lelystad LLS-ENS380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NLLS381" to="NENS381"  elementName="LLS-ENS380 W" eic="49T000000000022E" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00019" name="N-1 Ens - Lelystad LLS-ENS380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NLLS381" to="NENS381"  elementName="LLS-ENS380 Z" eic="49T000000000023C" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00002" name="N-1 Boxmeer - Maasbracht MBT-BMR380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBMR381" to="NMBT381"  elementName="MBT-BMR380 Z" eic="49T000000000006C" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00028" name="N-1 Dodewaard - Maasbracht BMT-DOD380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NDOD381" to="NMBT381"  elementName="MBT-DOD380 W" eic="49T000000000013F" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00017" name="N-1 Eindhoven - Maasbracht MBT-EHV380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NMBT381" to="NEHV381"  elementName="MBT-EHV380 Z" eic="49T000000000030F" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00042" name="N-1 Oostzaan - Diemen OZN-DIM380 G" location="NL-NL">
+      <branch name="MandatoryDummy" from="NOZN381" to="NDIM381"  elementName="OZN-DIM380GS" eic="49T0000000000525" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00043" name="N-1 Zwolle - Hengelo ZL-HGL380W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NZL3801" to="NHGL381"  elementName="ZL-HGL380 W" eic="49T000000000000O" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00044" name="N-1 Zwolle - Hengelo ZL-HGL380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NZL3801" to="NHGL381"  elementName="ZL-HGL380 Z" eic="49T000000000031D" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00046" name="N-1 Zwolle - Meeden ZL-MEE380Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NZL3801" to="NMEE381"  elementName="ZL-MEE380 Z" eic="49T000000000002K" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00047" name="N-1 Beverwijk - Oostzaan BVW-OZN380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NOZN381" to="NBVW381"  elementName="BVW-OZN380 W" eic="49T0000000000517" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00048" name="N-1 Beverwijk - Oostzaan BVW-OZN380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NOZN381" to="NBVW381"  elementName="BVW-OZN380 Z" eic="49T0000000000509" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00049" name="N-1 Beverwijk - Vijfhuizen BVW-VHZ380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NVHZ381" to="NBVW381"  elementName="BVW-VHZ380 W" eic="49T000000000049V" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00050" name="N-1 Beverwijk - Vijfhuizen BVW-VHZ380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NVHZ381" to="NBVW381"  elementName="BVW-VHZ380 Z" eic="49T000000000048X" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00051" name="N-1 Borssele - Rilland BSL-RLL380 G" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBSL381" to="NRLL381"  elementName="BSL-RLL380 G" eic="49T000000000057W" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00052" name="N-1 Rilland - Geertruidenberg RLL-GT380 W" location="NL-NL">
+      <branch name="MandatoryDummy" from="NRLL381" to="NGT3801"  elementName="RLL-GT380 W" eic="49T000000000058U" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00053" name="N-1 Vijfhuizen - Bleiswijk VHZ-BWK380 O" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBWK381" to="NVHZ381"  elementName="VHZ-BWK380 O" eic="49T000000000047Z" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00054" name="N-1 Vijfhuizen - Bleiswijk VHZ-BWK380 P" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBWK381" to="NVHZ381"  elementName="VHZ-BWK380 P" eic="49T0000000000460" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00055" name="N-1 Borssele - Rilland BSL-RLL380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NBSL381" to="NRLL381"  elementName="BSL-RLL380 Z" eic="49T000000000059S" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="NL_CO_00056" name="N-1 Rilland - Geertruidenberg RLL-GT380 Z" location="NL-NL">
+      <branch name="MandatoryDummy" from="NRLL381" to="NGT3801"  elementName="RLL-GT380 Z" eic="49T0000000000606" party="10X1001A1001A361"/>
+    </outage>
+    <outage id="PL-CZ_CO_00004" name="N-2 Albrechtice - Dobrzen and Nosovice - Wielopole" location="PL-CZ">
+      <branch name="MandatoryDummy" from="ZDBN341" to="XAL_DB11"  elementName="U008" eic="10T-CZ-PL-00001G" party="10XPL-TSO------P"/>
+      <branch name="MandatoryDummy" from="ZWIE341" to="XNO_WI11"  elementName="U003" eic="10T-CZ-PL-00004A" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL-CZ_CO_00001" name="N-1 Bujakow - Liskovec" location="PL-CZ">
+      <branch name="MandatoryDummy" from="ZBUJ322" to="XLI_BU21"  elementName="903" eic="10T-CZ-PL-00002E" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL-CZ_CO_00007" name="N-1 Kopanina - Liskovec" location="PL-CZ">
+      <branch name="MandatoryDummy" from="ZKOP322" to="XLI_KO21"  elementName="904" eic="10T-CZ-PL-00003C" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL-D8_CO_00016" name="N-2 Hagenwerder - Mikulowa 1 and Hagenwerder - Mikulowa 2" location="PL-D8">
+      <branch name="MandatoryDummy" from="ZMIK441" to="XHG_MI12"  elementName="568" eic="10T-DE-PL-00001D" party="10XPL-TSO------P"/>
+      <branch name="MandatoryDummy" from="ZMIK441" to="XHG_MI11"  elementName="567" eic="10T-DE-PL-00002B" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL-D8_CO_00008" name="N-2 Vierraden - Krajnik 1 and Vierraden - Krajnik 2" location="PL-D8">
+      <branch name="MandatoryDummy" from="ZKRA441" to="XVI_KR11"  elementName="U011" eic="10T-DE-PL-000039" party="10XPL-TSO------P"/>
+      <branch name="MandatoryDummy" from="ZKRA441" to="XVI_KR12"  elementName="U012" eic="10T-DE-PL-000047" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00055" name="N-2 Tucznawa - Skawina and Byczyna - Skawina" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZTCN341" to="ZSKA341"  elementName="G007" eic="19T000000006398O" party="10XPL-TSO------P"/>
+      <branch name="MandatoryDummy" from="ZBYC341" to="ZSKA341"  elementName="G006" eic="19T000000006397Q" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00058" name="N-2 Rzeszow - Skawina and Tarnow - Skawina" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZRZE241" to="ZSKA341"  elementName="421" eic="19T000000006400Q" party="10XPL-TSO------P"/>
+      <branch name="MandatoryDummy" from="ZTAW341" to="ZSKA341"  elementName="G008" eic="19T000000006399M" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00002" name="N-1 Cieplice - Mikulowa" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZCPC422" to="ZMIK422"  elementName="4011" eic="19T000000000378N" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00003" name="N-1 Czarna - Mikulowa" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZCRN441" to="ZMIK441"  elementName="H001" eic="19T0000000013147" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00005" name="N-1 Gorzow - Krajnik" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZGOR422" to="ZKRA422"  elementName="4021" eic="19T000000006405G" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00006" name="N-1 Gorzow - Lesniow" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZGOR422" to="ZLSN422"  elementName="4423" eic="19T000000006413H" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00009" name="N-1 Krajnik - Morzyczyn" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRA441" to="ZMON441"  elementName="H501" eic="19T000000006404I" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00011" name="N-1 Lesniow - Mikulowa" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZLSN422" to="ZMIK422"  elementName="4014" eic="19T000000000382W" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00012" name="N-1 Mikulowa - Polkowice 1" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZMIK422" to="ZPOL422"  elementName="4001" eic="19T000000000369O" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00013" name="N-1 Mikulowa - Swiebodzice 2" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZMIK422" to="ZSWI422"  elementName="4004" eic="19T000000000372Z" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00014" name="N-1 Mikulowa - Swiebodzice 1" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZMIK422" to="ZSWI422"  elementName="4003" eic="19T0000000003710" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00015" name="N-1 Mikulowa - Polkowice 2" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZMIK422" to="ZPOL422"  elementName="4002" eic="19T0000000003702" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00021" name="N-1 Krajnik AT3" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRA441" to="ZKRA422"  elementName="KRA-A3" eic="19T000000003617G" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00022" name="N-1 Krajnik AT2" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRA441" to="ZKRA422"  elementName="KRA-A2" eic="19T000000003616I" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00023" name="N-1 Mikulowa AT2" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZMIK441" to="ZMIKP22"  elementName="MIK-A2" eic="19T000000004058L" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00024" name="N-1 Mikulowa AT1" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZMIK441" to="ZMIKP22"  elementName="MIK-A1" eic="19T000000004057N" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00029" name="N-1 Krosno Iskrzynia - Tarnow" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRI241" to="ZTAW341"  elementName="415" eic="19T000000000296P" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00030" name="N-1 Krosno Iskrzynia - Rzeszow" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRI241" to="ZRZE241"  elementName="F302" eic="19T000000001304A" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00032" name="N-1 Lagisza - Tucznawa" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZLAG341" to="ZTCN341"  elementName="G401" eic="19T0000000013139" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00033" name="N-1 Bujakow - Byczyna" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZBUJ322" to="ZBYC322"  elementName="3013" eic="19T000000000338Z" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00034" name="N-1 Czarna - Pasikurowice" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZCRN441" to="ZPAS441"  elementName="H002" eic="19T0000000013155" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00035" name="N-1 Kromolice - Ostrow" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRM441" to="ZOSR441"  elementName="H005" eic="19T0000000013171" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00036" name="N-1 Kromolice - Plewiska 1" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRM441" to="ZPLE441"  elementName="H201" eic="19T0000000013228" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00037" name="N-1 Krajnik - Plewiska" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRA441" to="ZPLE441"  elementName="M001" eic="19T0000000013244" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00038" name="N-1 Polaniec - Rzeszow" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPEL241" to="ZRZE241"  elementName="F301" eic="19T000000006420K" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00039" name="N-1 Pasikurowice - Ostrow" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPAS441" to="ZOSR441"  elementName="H006" eic="19T000000006421I" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00040" name="N-1 Kopanina - Wielopole" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKOP322" to="ZWIE322"  elementName="3301" eic="19T0000000003508" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00041" name="N-1 Kopanina - Katowice" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKOP322" to="ZKAT322"  elementName="3311" eic="19T000000006408A" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00042" name="N-1 Czarna - Polkowice 2" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZCRN441" to="ZPOL441"  elementName="H802" eic="19T0000000064179" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00043" name="N-1 Polkowice AT3" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPOL441" to="ZPOL422"  elementName="POL-A3" eic="19T0000000064187" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00044" name="N-1 Grudziadz - Plock" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZGRU541" to="ZPLO141"  elementName="408" eic="19T000000000291Z" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00045" name="N-1 Polkowice - Zukowice" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPOL422" to="ZZUK422"  elementName="4809" eic="19T000000006414F" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00046" name="N-1 Lesniow - Zukowice" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZLSN422" to="ZZUK422"  elementName="4023" eic="19T000000006411L" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00047" name="N-1 Swiebodzice AT3" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZSWI441" to="ZSWI422"  elementName="SWI-A3" eic="19T000000003947W" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00048" name="N-1 Swiebodzice - Wroclaw" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZSWI441" to="ZWRC441"  elementName="H007" eic="19T000000001320C" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00049" name="N-1 Wroclaw - Dobrzen" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZWRC441" to="ZDBN341"  elementName="423" eic="19T000000006412J" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00050" name="N-1 Dunowo - Slupsk" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZDUN541" to="ZSLK541"  elementName="N001" eic="19T0000000013252" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00051" name="N-1 Zukowice - Polkowice" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZZUK422" to="ZPOL422"  elementName="4809" eic="19T000000006414F" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00052" name="N-1 Plewiska - Polkowice" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPLE422" to="ZPOL422"  elementName="4012" eic="19T0000000064098" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00053" name="N-1 Polkowice - Leszno" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPOL422" to="ZLES422"  elementName="4013" eic="19T000000006410N" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00054" name="N-1 Plewiska - Leszno" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZPLE422" to="ZLES422"  elementName="4213" eic="19T0000000064195" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00056" name="N-1 Czarna - Polkowice 1" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZCRN441" to="ZPOL441"  elementName="H801" eic="19T000000006416B" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL_CO_00057" name="N-1 Kromolice - Plewiska 2" location="PL-PL">
+      <branch name="MandatoryDummy" from="ZKRM441" to="ZPLE441"  elementName="H202" eic="19T000000006415D" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="PL-SK_CO_00010" name="N-2 Lemesany - Krosno Iskrz 1 and Lemesany - Krosno Iskrz 2" location="PL-SK">
+      <branch name="MandatoryDummy" from="ZKRI241" to="XKR_LE11"  elementName="U006" eic="10T-PL-SK-00001W" party="10XPL-TSO------P"/>
+      <branch name="MandatoryDummy" from="ZKRI241" to="XKR_LE12"  elementName="U007" eic="10T-PL-SK-00002U" party="10XPL-TSO------P"/>
+    </outage>
+    <outage id="RO_BG_CO_00001" name="N-1 Tantareni-Kozlodui" location="RO-BG">
+      <branch name="MandatoryDummy" from="RTINTB1" to="XKO_TI11" order="1"  eic="10T-BG-RO-00001A" party="10XRO-TEL------2"/>
+      <branch name="MandatoryDummy" from="RTINTB1" to="XKO_TI12" order="1"  eic="10T-RO-BG-00002A" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00021" name="N-1 Portile de Fier-Resita" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDF212" to="RRESI12" order="1"  eic="30TPDFE220RESI1S" party="10XRO-TEL------2"/>
+      <branch name="MandatoryDummy" from="RPDF222" to="RRESI22" order="1"  eic="30TPDFE220RESI2Q" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00025" name="N-1 Resita-Timisoara" location="RO-RO">
+      <branch name="MandatoryDummy" from="RRESI12" to="RTIMI12" order="1"  eic="30TRESI220TIMI1L" party="10XRO-TEL------2"/>
+      <branch name="MandatoryDummy" from="RRESI22" to="RTIMI22" order="1"  eic="30TRESI220TIMI2J" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00001" name="N-1 Alba Iulia-Mintia" location="RO-RO">
+      <branch name="MandatoryDummy" from="RAIUL22" to="RMINT12" order="1"  eic="30TAIUL220MINT-3" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00002" name="N-1 Arad-Calea Aradului" location="RO-RO">
+      <branch name="MandatoryDummy" from="RARAD22" to="RCARA22" order="1"  eic="30TARAD220CARA-3" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00003" name="N-1 Arad-Nadab" location="RO-RO">
+      <branch name="MandatoryDummy" from="RARAD41" to="RNADA_1" order="1"  eic="30TARAD400NADB-P" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00004" name="N-1 Arad-Timisoara" location="RO-RO">
+      <branch name="MandatoryDummy" from="RARAD22" to="RTIMI22" order="1"  eic="30TARAD220TIMI-5" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00005" name="N-1 AT Rosiori" location="RO-RO">
+      <branch name="MandatoryDummy" from="RROSI41" to="RROSI22" order="1"  eic="30T-ROSI400AT--1" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00006" name="N-1 AT Urechesti" location="RO-RO">
+      <branch name="MandatoryDummy" from="RUREC41" to="RUREC22" order="1"  eic="30T-UREC400AT--F" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00007" name="N-1 AT1 Iernut" location="RO-RO">
+      <branch name="MandatoryDummy" from="RIERN41" to="RIERN22" order="1"  eic="30T-IERN400AT1-U" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00008" name="N-1 AT1 Portile de Fier" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDFE41" to="RPDF222" order="1"  eic="30T-PDFE400AT1-A" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00009" name="N-1 AT2 Portile de Fier" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDFE41" to="RPDF222" order="2"  eic="30T-PDFE400AT2-7" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00010" name="N-1 AT3 Arad" location="RO-RO">
+      <branch name="MandatoryDummy" from="RARA4D1" to="RARAD22" order="1"  eic="30T-ARAD400AT3-F" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00011" name="N-1 AT3 Portile de Fier" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDFE41" to="RPDF212" order="3"  eic="30T-PDFE400AT3-4" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00012" name="N-1 Baru Mare-Hasdat" location="RO-RO">
+      <branch name="MandatoryDummy" from="RBARU22" to="RHASD22" order="1"  eic="30TBARU220HASD-G" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00013" name="N-1 Calea Aradului-Sacalaz" location="RO-RO">
+      <branch name="MandatoryDummy" from="RCARA22" to="RSACA22" order="1"  eic="30TCARA220SACA-P" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00014" name="N-1 Cluj Floresti-Alba Iulia" location="RO-RO">
+      <branch name="MandatoryDummy" from="RCJFL22" to="RAIUL22" order="1"  eic="30TAIUL220CJFL-3" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00015" name="N-1 Domnesti-Urechesti" location="RO-RO">
+      <branch name="MandatoryDummy" from="RDOMN41" to="RUREC41" order="1"  eic="30TDOMN400UREC-Q" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00016" name="N-1 Iernut-Sibiu" location="RO-RO">
+      <branch name="MandatoryDummy" from="RIERN41" to="RSIBI41" order="1"  eic="30TIERN400SIBI-3" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00017" name="N-1 Mintia-Arad" location="RO-RO">
+      <branch name="MandatoryDummy" from="RMINT41" to="RARAD41" order="1"  eic="30TARAD400MINT-8" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00018" name="N-1 Oradea-Rosiori" location="RO-RO">
+      <branch name="MandatoryDummy" from="RORAD41" to="RROSI41" order="1"  eic="30TORAD400ROSI-1" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00019" name="N-1 Paroseni-Baru Mare" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPARO22" to="RBARU22" order="1"  eic="30TBARU220PARO-D" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00020" name="N-1 Paroseni-Targu Jiu" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPARO22" to="RTRGJ22" order="1"  eic="30TPARO220TRGJ-Q" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00022" name="N-1 Portile de Fier-Resita c1" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDF212" to="RRESI12" order="1"  eic="30TPDFE220RESI1S" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00023" name="N-1 Portile de Fier-Resita c2" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDF222" to="RRESI22" order="1"  eic="30TPDFE220RESI2Q" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00024" name="N-1 Portile de Fier-Urechesti" location="RO-RO">
+      <branch name="MandatoryDummy" from="RPDFE41" to="RUREC41" order="1"  eic="30TPDFE400UREC-L" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00026" name="N-1 Resita-Timisoara c1" location="RO-RO">
+      <branch name="MandatoryDummy" from="RRESI12" to="RTIMI12" order="1"  eic="30TRESI220TIMI1L" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00027" name="N-1 Resita-Timisoara c2" location="RO-RO">
+      <branch name="MandatoryDummy" from="RRESI22" to="RTIMI22" order="1"  eic="30TRESI220TIMI2J" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00028" name="N-1 Rosiori-Gadalin" location="RO-RO">
+      <branch name="MandatoryDummy" from="RROSI41" to="RGADA41" order="1"  eic="30TGADA400ROSI-A" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00029" name="N-1 Sacalaz-Timisoara" location="RO-RO">
+      <branch name="MandatoryDummy" from="RSACA22" to="RTIMI12" order="1"  eic="30TSACA220TIMI-K" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00030" name="N-1 Sibiu-Mintia" location="RO-RO">
+      <branch name="MandatoryDummy" from="RSIBI41" to="RMINT41" order="1"  eic="30TMINT400SIBI-Z" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00031" name="N-1 Sibiu-Tantareni" location="RO-RO">
+      <branch name="MandatoryDummy" from="RSIBI41" to="RTINTB1" order="1"  eic="30TSIBI400TINT-1" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00032" name="N-1 Slatina-Bucuresti" location="RO-RO">
+      <branch name="MandatoryDummy" from="RSLAT41" to="RBUCU41" order="1"  eic="30TBUCU400SLAT-R" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00033" name="N-1 Slatina-Potile de Fier" location="RO-RO">
+      <branch name="MandatoryDummy" from="RSLAT41" to="RPDFE41" order="1"  eic="30TPDFE400SLAT-S" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00034" name="N-1 Tantareni-Urechesti" location="RO-RO">
+      <branch name="MandatoryDummy" from="RTINTA1" to="RUREC41" order="1"  eic="30TTINT400UREC-4" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_CO_00035" name="N-1 Urechesti-Targu Jiu" location="RO-RO">
+      <branch name="MandatoryDummy" from="RUREC22" to="RTRGJ22" order="1"  eic="30TTRGJ220UREC-1" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_RS_CO_00001" name="N-1 Portile de Fier-Djerdap" location="RO-RS">
+      <branch name="MandatoryDummy" from="RPDFE41" to="XPF_DJ11" order="1"  eic="10T-RO-RS-00001V" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="RO_UA_CO_00001" name="N-1 Rosiori-Mukacevo" location="RO-UA">
+      <branch name="MandatoryDummy" from="RROSI41" to="XRO_MU11" order="1"  eic="10T-RO-UA-000010" party="10XRO-TEL------2"/>
+    </outage>
+    <outage id="SI-SI_CO_00002" name="N-1 Bericevo-Podlog 400kV" location="SI-SI">
+      <branch name="MandatoryDummy" from="LBERIC1" to="LPODLO1" order="1"  eic="28T-0000000208-F" party="10XSI-ELES-----1"/>
+    </outage>
+    <outage id="SI-SI_CO_00003" name="N-1 Maribor-Krsko" location="SI-SI">
+      <branch name="MandatoryDummy" from="LMARIB1" to="LKRSKO1" order="1"  eic="28T-0000000213-Q" party="10XSI-ELES-----1"/>
+    </outage>
+    <outage id="SI-SI_CO_00004" name="N-1 Podlog-Maribor" location="SI-SI">
+      <branch name="MandatoryDummy" from="LPODLO1" to="LMARIB1" order="1"  eic="28T-0000000214-N" party="10XSI-ELES-----1"/>
+    </outage>
+    <outage id="SK-CZ_CO_00001" name="N-1 Krizovany - Sokolnice" location="SK-CZ">
+      <branch name="MandatoryDummy" from="QKRIZ_1" to="XSO_KR11" order="1"  eic="10T-CZ-SK-00003U" party="10XSK-SEPS-GRIDB"/>
+      <branch name="MandatoryDummy" from="XSO_KR1" to="CSOK__1"  elementName="V424" eic="10T-CZ-SK-00003U" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00005" name="N-1 Bosaca - Varin" location="SK-SK">
+      <branch name="MandatoryDummy" from="QBOSA_1" to="QVARI_1" order="1"  eic="24T-V495-0000008" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00003" name="N-1 Gabcikovo - P.Biskupice" location="SK-SK">
+      <branch name="MandatoryDummy" from="QGABC_1" to="QPBIS_1" order="1"  eic="24T-V429-0000005" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00007" name="N-1 H.Zdana - Sucany" location="SK-SK">
+      <branch name="MandatoryDummy" from="QHZDA_1" to="QSUCA_1" order="1"  eic="24T-V493-000000Q" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00013" name="N-1 Krizovany - P.Biskupice" location="SK-SK">
+      <branch name="MandatoryDummy" from="QKRIZ_1" to="QPBIS_1" order="1"  eic="24T-V439-000000W" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00001" name="N-1 Lemesany - Vola" location="SK-SK">
+      <branch name="MandatoryDummy" from="QLEME_1" to="QVOLA_1" order="1"  eic="24T-V409-000000P" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00011" name="N-1 Levice - R.Sobota" location="SK-SK">
+      <branch name="MandatoryDummy" from="QLEVI_1" to="QRSOB_1" order="1"  eic="24T-V426-000000W" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00008" name="N-1 Moldava - R.Sobota" location="SK-SK">
+      <branch name="MandatoryDummy" from="QMOLD_1" to="QRSOB_1" order="1"  eic="24T-V427-000000N" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00009" name="N-1 Moldava - V.Kapusany" location="SK-SK">
+      <branch name="MandatoryDummy" from="QMOLD_1" to="QVKAP_1" order="1"  eic="24T-V428-000000E" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00010" name="N-1 V.Dur - H.Zdana" location="SK-SK">
+      <branch name="MandatoryDummy" from="QVDUR_11" to="QHZDA_1" order="1"  eic="24T-V492-000000Z" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00006" name="N-1 V.Dur - Krizovany" location="SK-SK">
+      <branch name="MandatoryDummy" from="QVDUR_12" to="QKRIZ_1" order="1"  eic="24T-V425-0000004" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00014" name="N-1 V.Dur - Levice 1" location="SK-SK">
+      <branch name="MandatoryDummy" from="QVDUR_11" to="QLEVI_1" order="1"  eic="24T-V490-000000G" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00012" name="N-1 V.Dur - Levice 2" location="SK-SK">
+      <branch name="MandatoryDummy" from="QVDUR_12" to="QLEVI_1" order="1"  eic="24T-V491-0000007" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00017" name="N-1 L.Mara - Sp.Nova Ves" location="SK-SK">
+      <branch name="MandatoryDummy" from="QLMAR_1" to="QSPNV_1" order="1"  eic="24T-V407-0000006" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00004" name="N-1 Sp.Nova Ves - Lemesany" location="SK-SK">
+      <branch name="MandatoryDummy" from="QLEME_1" to="QSPNV_1" order="1"  eic="24T-V408-000000Y" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00016" name="N-1 Varin - Sucany" location="SK-SK">
+      <branch name="MandatoryDummy" from="QSUCA_1" to="QVARI_1" order="1"  eic="24T-V405-000000O" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00002" name="N-1 Vola - V. Kapusany" location="SK-SK">
+      <branch name="MandatoryDummy" from="QVOLA_1" to="QVKAP_1" order="1"  eic="24T-V410-000000M" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+    <outage id="SK_CO_00015" name="N-1 L.Mara - Varin" location="SK-SK">
+      <branch name="MandatoryDummy" from="QLMAR_1" to="QVARI_1" order="1"  eic="24T-V406-000000F" party="10XSK-SEPS-GRIDB"/>
+    </outage>
+  </outages>
+</FlowBasedContingency>

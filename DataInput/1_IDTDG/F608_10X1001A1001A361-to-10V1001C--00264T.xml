@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowBasedExternalConstraintDocument xmlns:ecl="etso-code-lists.xsd" xmlns:ecc="etso-core-cmpts.xsd" DtdRelease="0" DtdVersion="4" xmlns="flowbased">
+   <DocumentIdentification v="10X1001A1001A361_EC_20190330_008761"/>
+  <DocumentVersion v="7"/>
+  <DocumentType v="Z06" />
+  <ProcessType v="A02" />
+	 <SenderIdentification codingScheme="A01" v="10X1001A1001A361" />
+	 <SenderRole v="A04" />
+	 <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T" />
+	 <ReceiverRole v="A36" />
+	 <CreationDateTime v="2020-12-28T15:58:19Z" />
+	 <ExternalConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+	 <Domain codingScheme="A01" v="10YNL----------L" />
+	 <constraints>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="5750" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="5750" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="IMPORT" value="6500" direction="IMPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+	   <netPositionConstraint name="EXPORT" value="6500" direction="EXPORT" type="ABSOLUTE" hub="NL" version="0">
+       <timeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z" />
+       <tsoOrigin>NL</tsoOrigin>
+	   </netPositionConstraint>
+  </constraints>
+</FlowBasedExternalConstraintDocument>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlowBasedConstraintDocument xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             DtdRelease="4"
+                             DtdVersion="0"
+                             xsi:noNamespaceSchemaLocation="flowbasedconstraintdocument-18.xsd">
+   <DocumentIdentification v="10XDE-VE-TRANSMK-20201217-F617v1"/>
+   <DocumentVersion v="1"/>
+   <DocumentType v="B06"/>
+   <ProcessType v="A02"/>
+   <SenderIdentification codingScheme="A01" v="10XDE-VE-TRANSMK"/>
+   <SenderRole v="A04"/>
+   <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+   <ReceiverRole v="A36"/>
+   <CreationDateTime v="2020-12-02T15:34:29Z"/>
+   <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+   <Domain codingScheme="A01" v="10YDE-VE-------2"/>
+   <criticalBranches>
+     
+      <criticalBranch id="D8_CBCO_00002">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="10T-CZ-DE-00002U" elementName="445" from="XHR_RO1"
+                 name="[CZ-D8] Hradec - Rohrsdorf 445 [DIR] [D8]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+
+ 
+
+      <criticalBranch id="CZ-D8_CO_00002">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="10T-CZ-DE-00002U" elementName="445" from="XHR_RO1"
+                 name="[CZ-D8] Hradec - Rohrsdorf 445 [OPP] [D8]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+         <outage id="CZ-D8_CO_00002" name="N-1 Hradec - Rohrsdorf 2"/>
+      </criticalBranch>
+      
+      <criticalBranch id="D8_CBCO_00008">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="10T-CZ-DE-00002U" elementName="445" from="XHR_RO1"
+                 name="[CZ-D8] Hradec - Rohrsdorf 445 [OPP] [D8]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+      
+	  <criticalBranch id="D8_CBCO_00100">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L538-535--K" elementName="538" from="D8KLM_1"
+                 name="[D8-D8] Kostermansfeld - Lauchstaedt 538 [OPP]"
+                 to="D8LAU_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>173</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	  
+      <criticalBranch id="D8_CBCO_00010">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="10T-CZ-DE-00003S" elementName="446" from="XHR_RO1"
+                 name="[CZ-D8] Hradec - Rohrsdorf 446 [DIR] [D8]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+      
+     
+      <criticalBranch id="CZ-D8_CO_00001">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="10T-CZ-DE-00003S" elementName="446" from="XHR_RO1"
+                 name="[CZ-D8] Hradec - Rohrsdorf 446 [OPP] [D8]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+         <outage id="CZ-D8_CO_00001" name="N-1 Hradec - Rohrsdorf 1"/>
+      </criticalBranch>
+      <criticalBranch id="D8_CBCO_00014">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="10T-CZ-DE-00003S" elementName="446" from="XHR_RO1"
+                 name="[CZ-D8] Hradec - Rohrsdorf 446 [OPP] [D8]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+    
+       <criticalBranch id="D8_CBCO_00143">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L571------9" elementName="571" from="D8STR_1"
+                 name="[D8-D8] Streumen - Roehrsdorf 571 [DIR]"
+                 to="D8ROE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>174</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+      <criticalBranch id="D8_CBCO_00017">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-001007" elementName="459" from="D8ATF_1"
+                 name="[D2-D8] Altenfeld - Redwitz 459 [DIR] [D8]"
+                 to="DRE_AL1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>249</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+      <criticalBranch id="D2-D8_CO_00002">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-001007" elementName="459" from="D8ATF_1"
+                 name="[D2-D8] Altenfeld - Redwitz 459 [DIR] [D8]"
+                 to="DRE_AL1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>249</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+         <outage id="D2-D8_CO_00002" name="N-1 Altenfeld - Redwitz 460"/>
+      </criticalBranch>
+     
+      <criticalBranch id="D8_CBCO_00020">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-001007" elementName="459" from="D8ATF_1"
+                 name="[D2-D8] Altenfeld - Redwitz 459 [OPP] [D8]"
+                 to="DRE_AL1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>249</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+      
+	   <criticalBranch id="D8_CBCO_00063">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L551------R" elementName="551" from="D8BAE_1"
+                 name="[D8-D8] Baerwalde - Schmoelln 551 [OPP]"
+                 to="D8SM__1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>249</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	        <criticalBranch id="D8_CBCO_00066">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L552------J" elementName="552" from="D8BAE_1"
+                 name="[D8-D8] Baerwalde - Schmoelln 552 [DIR]"
+                 to="D8SM__1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>249</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	    <criticalBranch id="D8_CBCO_00068">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L552------J" elementName="552" from="D8BAE_1"
+                 name="[D8-D8] Baerwalde - Schmoelln 552 [OPP]"
+                 to="D8SM__1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>249</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	  <criticalBranch id="D8_CBCO_00069">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L565------N" elementName="565" from="D8GRS_1"
+                 name="[D8-D8] Graustein - Baerwalde 565 [DIR]"
+                 to="D8BAE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	  <criticalBranch id="D8_CBCO_00072">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11TD8L565------N" elementName="565" from="D8GRS_1"
+                 name="[D8-D8] Graustein - Baerwalde 565 [OPP]"
+                 to="D8BAE_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	   <criticalBranch id="D8-D2_CO_00004">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-00063O" elementName="981" from="D8SUED1"
+                 name="[D8-D2] Hamburg Sued - Dollern 981 [DIR] [D8]"
+                 to="DSU_DO1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>158</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+         <outage id="D8-D2_CO_00004" name="N-1 Hamburg Sud - Dollern 982"/>
+      </criticalBranch>
+      <criticalBranch id="D8_CBCO_00047">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-00063O" elementName="981" from="D8SUED1"
+                 name="[D8-D2] Hamburg Sued - Dollern 981 [OPP] [D8]"
+                 to="DSU_DO1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>158</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+      
+	   <criticalBranch id="D8_CO_00013">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-000302" elementName="449-1" from="DME_VI1"
+                 name="[D2-D8] Mecklar - Vieselbach 449 [OPP] [D8]"
+                 to="D8VIB_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>OPPOSITE</direction>
+         <tsoOrigin>D8</tsoOrigin>
+         <outage id="D8_CO_00013" name="N-1 Vieselbach - Eisenach 454"/>
+      </criticalBranch>
+      
+	  <criticalBranch id="D8_CBCO_00038">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <branch eic="11T-D2-D8-000302" elementName="449-1" from="DME_VI1"
+                 name="[D2-D8] Mecklar - Vieselbach 449 [DIR] [D8]"
+                 to="D8VIB_1"/>
+         <imaxType>FIXED</imaxType>
+         <permanentImaxFactor>1</permanentImaxFactor>
+         <temporaryImaxFactor>1</temporaryImaxFactor>
+         <frmMw>175</frmMw>
+         <minRAMfactor>21.3</minRAMfactor>
+         <CNEC>true</CNEC>
+         <MNEC>false</MNEC>
+         <direction>DIRECT</direction>
+         <tsoOrigin>D8</tsoOrigin>
+      </criticalBranch>
+	  
+	 </criticalBranches>
+      
+	  <complexVariants>
+      <complexVariant id="D8_RA_00001" name="PST_Vierraden_441">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <tsoOrigin>D8</tsoOrigin>
+         <actionsSet>
+            <preventive>true</preventive>
+            <curative>false</curative>
+            <enforced>false</enforced>
+            <action type="PSTTAP">
+               <branch elementName="441" from="D8VIE_1" to="D8VIE_1"/>
+               <range>
+                  <min>-10</min>
+                  <max>10</max>
+               </range>
+               <PSTGroupId>D8_PSTGRP_01</PSTGroupId>
+            </action>
+         </actionsSet>
+      </complexVariant>
+      <complexVariant id="D8_RA_00002" name="PST_Vierraden_443">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <tsoOrigin>D8</tsoOrigin>
+         <actionsSet>
+            <preventive>true</preventive>
+            <curative>false</curative>
+            <enforced>false</enforced>
+            <action type="PSTTAP">
+               <branch elementName="443" from="D8VIE_1" to="D8VIE_1"/>
+               <range>
+                  <min>-10</min>
+                  <max>10</max>
+               </range>
+               <PSTGroupId>D8_PSTGRP_01</PSTGroupId>
+            </action>
+         </actionsSet>
+      </complexVariant>
+      <complexVariant id="D8_RA_00003" name="PST_Roehrsdorf_441">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <tsoOrigin>D8</tsoOrigin>
+         <actionsSet>
+            <preventive>true</preventive>
+            <curative>false</curative>
+            <enforced>false</enforced>
+            <action type="PSTTAP">
+               <branch elementName="441" from="D8ROE_1" to="D8ROE_1"/>
+               <range>
+                  <min>-10</min>
+                  <max>10</max>
+               </range>
+               <PSTGroupId>D8_PSTGRP_02</PSTGroupId>
+            </action>
+         </actionsSet>
+      </complexVariant>
+      <complexVariant id="D8_RA_00004" name="PST_Roehrsdorf_442">
+         <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+         <tsoOrigin>D8</tsoOrigin>
+         <actionsSet>
+            <preventive>true</preventive>
+            <curative>false</curative>
+            <enforced>false</enforced>
+            <action type="PSTTAP">
+               <branch elementName="442" from="D8ROE_1" to="D8ROE_1"/>
+               <range>
+                  <min>-10</min>
+                  <max>10</max>
+               </range>
+               <PSTGroupId>D8_PSTGRP_03</PSTGroupId>
+            </action>
+         </actionsSet>
+      </complexVariant>
+   </complexVariants>
+  
+</FlowBasedConstraintDocument>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="flowbased" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+	<element name="KpiDocument">
+		<complexType>
+			<sequence>
+				<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+				<element name="DocumentVersion" type="ecc:VersionType"/>
+				<element name="DocumentType" type="ecc:MessageType"/>
+				<element name="ProcessType" type="ecc:ProcessType"/>
+				<element name="SenderIdentification" type="ecc:PartyType"/>
+				<element name="SenderRole" type="ecc:RoleType"/>
+				<element name="ReceiverIdentification" type="ecc:PartyType"/>
+				<element name="ReceiverRole" type="ecc:RoleType"/>
+				<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+				<element name="TimeInterval" type="ecc:TimeIntervalType"/>
+				<element name="Domain" type="ecc:AreaType"/>
+				<element maxOccurs="1" minOccurs="1" name="TimeSeries" type="fb:TimeSeries_Type"/>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="TimeSeries_Type">
+		<sequence>
+			<element name="TimeSeriesIdentification" type="ecc:IdentificationType"/>
+			<element maxOccurs="1" minOccurs="1" name="Period" type="fb:Period_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Period_Type">
+		<sequence>
+			<element name="TimeInterval" type="ecc:TimeIntervalType"/>
+			<element name="Resolution" type="ecc:ResolutionType"/>
+			<element maxOccurs="unbounded" minOccurs="1" name="Interval" type="fb:Interval_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="Interval_Type">
+		<sequence>
+			<element name="Pos" type="ecc:PositionType"/>
+			<element name="KpiReport" type="fb:Kpi_Type" minOccurs="0" />
+		</sequence>
+	</complexType>
+	<complexType name="Kpi_Type">
+		<sequence>
+			<element name="InputSize" type="integer"/>
+			<element name="OutputSize" type="integer"/>
+			<element name="Iterations" type="integer"/>
+			<element name="DistanceKpis" type="fb:DistanceKpis_Type"/>
+			<element name="BoundaryKpis" type="fb:BoundaryKpis_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="DistanceKpis_Type">
+		<sequence>
+			<element name="MaxMax" type="float"/>
+			<element name="MaxAvg" type="float"/>
+			<element name="AvgMax" type="float"/>
+			<element name="AvgAvg" type="float"/>
+			<element name="MaxMin" type="float"/>
+			<element name="AvgMin" type="float"/>
+		</sequence>
+	</complexType>
+	<complexType name="BoundaryKpis_Type">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="BoundaryKpi" type="fb:BoundaryKpi_Type"/>
+		</sequence>
+	</complexType>
+	<complexType name="BoundaryKpi_Type">
+		<sequence>
+			<element name="MaxIn" type="float"/>
+			<element name="MaxOut" type="float"/>
+			<element name="MinIn" type="float"/>
+			<element name="MinOut" type="float"/>
+		</sequence>
+		<attribute name="hub" type="string" use="required"/>
+	</complexType>
+</schema>

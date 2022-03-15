@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlowBasedTopoMeasuresDocument DtdRelease="4" DtdVersion="0" xmlns="flowbased" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowbasedtopomeasuresdocument-01.xsd">
+  <DocumentIdentification v="10X1001A1001A329-20210508-F639v1"/>
+  <DocumentVersion v="3"/>
+  <DocumentType v="A16"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10X1001A1001A329"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-08-15T14:07:28Z"/>
+  <ConstraintTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain codingScheme="A01" v="10YHU-MAVIR----U"/>
+  <complexVariants>
+    <complexVariant id="HU_RA_00329" name="PST_ZANDV D1_329">
+      <timeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <tsoOrigin>HU</tsoOrigin>
+      <actionsSet name="TOPO_ZANDV D1">
+        <action type="STATUS">
+          <branch elementName="ZANDV380 D 1" from="XCEPR120" to="MGOD  12"/>
+          <value>OPEN</value>
+        </action>
+      </actionsSet>
+    </complexVariant>
+  </complexVariants>
+</FlowBasedTopoMeasuresDocument>

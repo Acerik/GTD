@@ -1,0 +1,3474 @@
+<GSKDocument DtdRelease="" DtdVersion="" xsi:noNamespaceSchemaLocation="gsk-document.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DocumentIdentification v="20190330_GSK_D_TEN_CSO_202012281558"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B22"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification codingScheme="A01" v="10X1001A1001A361"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification codingScheme="A01" v="10V1001C--00264T"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2020-12-28T15:58:17Z"/>
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z" />
+  <Domain codingScheme="A01" v="10YNL----------L"/>
+  <GSKSeries>
+  <TimeSeriesIdentification v="PF-GSK-TS1" />
+  <BusinessType v="Z02" share="100" />
+  <Area codingScheme="A01" v="10YNL----------L" />
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-29T23:00Z/2019-03-30T00:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.099911" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.099911" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.047957" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.022647" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.052398" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.018206" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.040409" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.079041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.026643" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.044405" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.027531" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.015542" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.055950" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.014210" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.355239" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T00:00Z/2019-03-30T01:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.050491" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.039271" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.211781" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.023843" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.055166" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.019168" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.066854" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.028986" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.016363" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.064049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.213650" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T01:00Z/2019-03-30T02:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.050491" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.039271" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.211781" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.023843" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.055166" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.019168" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.066854" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.028986" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.016363" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.064049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.213650" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T02:00Z/2019-03-30T03:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.050491" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.039271" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.211781" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.023843" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.055166" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.019168" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.066854" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.028986" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.016363" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.064049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.213650" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T03:00Z/2019-03-30T04:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.105189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.050491" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.039271" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.211781" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.023843" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.055166" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.019168" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.066854" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.028986" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.016363" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.064049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.213650" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T04:00Z/2019-03-30T05:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.103069" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.103069" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.049473" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.038479" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.207513" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.023362" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.054054" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.018781" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.041686" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.045809" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.028401" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.016033" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.062758" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.207513" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T05:00Z/2019-03-30T06:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.100357" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.100357" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.048171" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.037467" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.022748" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.052632" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.018287" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.010259" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.079393" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.063782" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.045049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.044603" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.027654" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.015611" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.056200" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.061106" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.014273" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.202051" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T06:00Z/2019-03-30T07:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.100267" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.048128" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.037433" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.041889" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.005793" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.005793" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.022727" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.052585" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.073529" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.018717" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.018271" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.010250" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.079323" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.026738" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.045009" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.044563" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.027629" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.015597" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.056150" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.061052" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.061052" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.032977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.014260" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.100268" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T07:00Z/2019-03-30T08:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.094221" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.045226" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.035176" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.039363" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.037688" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.005444" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.005444" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.021357" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.049414" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.054858" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.069095" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.017588" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.017169" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.009631" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.025126" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.042295" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.041876" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.025963" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.014657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.052764" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.057370" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.057370" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.030988" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.042295" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.013400" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.094222" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T08:00Z/2019-03-30T09:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.087685" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.042089" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.032736" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.036633" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.005066" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.005066" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.019875" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.045986" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.051052" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.064302" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.016368" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.015978" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.008963" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.069369" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.023383" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.039361" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.038971" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.024162" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.013640" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.049104" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.053390" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.053390" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.028839" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.039361" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.012471" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.087686" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T09:00Z/2019-03-30T10:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.084428" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.040525" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.031520" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.035272" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.033771" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.004878" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.004878" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.019137" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.044278" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.049156" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.061914" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.015760" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.015385" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.008630" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.066792" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.037148" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.022514" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.037899" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.037523" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.023265" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.013133" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.047280" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.051407" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.051407" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.027767" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.037899" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.012008" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.084426" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T10:00Z/2019-03-30T11:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.084428" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.040525" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.031520" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.035272" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.033771" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.004878" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.004878" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.019137" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.044278" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.049156" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.061914" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.015760" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.015385" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.008630" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.066792" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.037148" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.022514" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.037899" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.037523" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.023265" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.013133" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.047280" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.051407" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.051407" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.027767" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.037899" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.012008" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.084426" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T11:00Z/2019-03-30T12:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T12:00Z/2019-03-30T13:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T13:00Z/2019-03-30T14:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T14:00Z/2019-03-30T15:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T15:00Z/2019-03-30T16:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T16:00Z/2019-03-30T17:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T17:00Z/2019-03-30T18:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.060241" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.028916" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.022490" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.025167" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.024096" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.003481" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.013655" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.031593" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.044177" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.011245" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.010977" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.006158" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.047657" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.026506" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.026774" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.016600" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.009371" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.033735" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.036680" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.019813" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.027041" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.008568" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.286478" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T18:00Z/2019-03-30T19:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.087685" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.042089" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.032736" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.036633" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.035074" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.005066" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.005066" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.019875" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.045986" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.051052" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.064302" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.016368" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.015978" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.008963" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.069369" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.023383" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.039361" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.038971" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.024162" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.013640" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.049104" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.053390" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.053390" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.028839" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.039361" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.012471" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.087686" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T19:00Z/2019-03-30T20:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.087379" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.041942" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.032621" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.036505" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.005049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.005049" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.019806" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.045825" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.050874" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.064078" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.016311" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.015922" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.008932" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.069126" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.038447" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.023301" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.039223" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.038835" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.024078" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.013592" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.048932" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.053204" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.053204" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.028738" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.039223" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.012427" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.087377" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T20:00Z/2019-03-30T21:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.112952" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.054217" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.042169" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.047189" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.006526" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.025602" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.065763" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.082831" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.021084" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.020582" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.011546" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.030120" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.050703" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.050201" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.031124" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.017570" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.063253" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.068775" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.068775" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.016064" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.112954" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T21:00Z/2019-03-30T22:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.091949" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.091949" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.044136" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.034328" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.005313" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.020842" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.048222" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.067430" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.017164" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.016755" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.009399" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.024520" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.040866" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.025337" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.014303" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.051492" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.055987" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.013077" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.326931" />
+    </ManualNodes>
+  </ManualGSK_Block>
+  <ManualGSK_Block>
+    <GSK_Name v="NL" />
+    <TimeInterval v="2019-03-30T22:00Z/2019-03-30T23:00Z" />
+    <ManualNodes>
+      <NodeName v="NEGEN_11" />
+      <Factor v="0.071862" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NEGEN_12" />
+      <Factor v="0.071862" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="NMDK2_3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33S" />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_AC913 " />
+      <Factor v="0.034494" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM333 " />
+      <Factor v="0.026828" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-52 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-71 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-11 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-21 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EH-31 " />
+      <Factor v="0.004152" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1G3 " />
+      <Factor v="0.016289" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ES1S3 " />
+      <Factor v="0.037688" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-41 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_FL-53 " />
+      <Factor v="0.052699" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_HW-93 " />
+      <Factor v="0.013414" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63G" />
+      <Factor v="0.013095" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_LWE63S" />
+      <Factor v="0.007346" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123G" />
+      <Factor v="0.056851" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MK123S" />
+      <Factor v="0.031619" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECA3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECB3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_RECX3 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_ROC33G" />
+      <Factor v="0.019163" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL101 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SL201 " />
+      <Factor v="0.031939" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13G" />
+      <Factor v="0.019802" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_SW-13S" />
+      <Factor v="0.011179" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_DM341 " />
+      <Factor v="0.040243" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC311 " />
+      <Factor v="0.043756" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC301 " />
+      <Factor v="0.043756" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-32 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_EC-61 " />
+      <Factor v="0.000000" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MSEC1 " />
+      <Factor v="0.010220" />
+    </ManualNodes>
+    <ManualNodes>
+      <NodeName v="N_MV-31 " />
+      <Factor v="0.341743" />
+    </ManualNodes>
+  </ManualGSK_Block>
+</GSKSeries>
+</GSKDocument>

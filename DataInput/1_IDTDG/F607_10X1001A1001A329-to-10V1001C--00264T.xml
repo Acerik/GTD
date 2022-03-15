@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GSKDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gsk-document-03.xsd" DtdVersion="1" DtdRelease="0">
+  <DocumentIdentification v="10X1001A1001A329-20190330-F607"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="B22"/>
+  <ProcessType v="A02"/>
+  <SenderIdentification v="10X1001A1001A329" codingScheme="A01"/>
+  <SenderRole v="A04"/>
+  <ReceiverIdentification v="10V1001C--00264T" codingScheme="A01"/>
+  <ReceiverRole v="A36"/>
+  <CreationDateTime v="2019-03-30T04:02:32Z"/>
+  <GSKTimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+  <Domain v="10YHU-MAVIR----U" codingScheme="A01"/>
+  <GSKSeries>
+    <TimeSeriesIdentification v="1"/>
+    <BusinessType v="Z02" share="50"/>
+    <Area v="10YHU-MAVIR----U" codingScheme="A01"/>
+    <AutoGSK_Block>
+      <GSK_Name v="HU"/>
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <AutoNodes>
+        <NodeName v="MAJKA 42"/>
+      </AutoNodes>  
+      <AutoNodes>
+        <NodeName v="MAJKA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSPG 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSPG 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSPG 43"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUJV 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUME 21"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDUME 22"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDUME 23"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDUME 24"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUME 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MEBUE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGONYE11"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKELF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKELF 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKISPE41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMATRE21"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMATRE22"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MMATRE23"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMATRE41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMATRE42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMATRE43"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMKCE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPAKS 12"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPAKS 13"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPAKS 14"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPAKS 15"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSE41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSE42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSE44"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MUJPR 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MUJPR 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MSZEPH41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDIMA 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MSZAE 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDUHAM41"/>
+      </AutoNodes>
+    </AutoGSK_Block>
+  </GSKSeries>
+  <GSKSeries>
+    <TimeSeriesIdentification v="2"/>
+    <BusinessType v="Z05" share="50"/>
+    <Area v="10YHU-MAVIR----U" codingScheme="A01"/>
+    <AutoGSK_Block>
+      <GSK_Name v="HU"/>
+      <TimeInterval v="2019-03-29T23:00Z/2019-03-30T23:00Z"/>
+      <AutoNodes>
+        <NodeName v="MAJKA 43"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MALBF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MALGYT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MALGYT42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MALMF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MANGY 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MANGY 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MASZF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBABR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBAJA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBAJD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBAKTA41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBANH 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBARA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBARCS41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBCGA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBCSA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBEKM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBEKS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBELEM41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBFOL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBGYA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBIAT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBICS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBNAD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBOGL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBONY 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBUDO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBUJF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBUJV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBUKO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MBVK  41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCEGL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCELD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSAR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSAT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSEA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSEP 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSOR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MCSUR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDBIPT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDBTOC41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDEBR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDETK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDFOL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDIOS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDOMB 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDORG 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUJO241"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUJV 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDUJV241"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUJVE41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUME 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MDUVA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MEGER 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MEGOM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MERD  41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MERZS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MFEBA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MFGYA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MFZSO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGOD  41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGODO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGYON 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGYOR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGYRD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MGYRE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MHATV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MHBOSZ41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MHEVE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MHNAN 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MHODM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MHSZOB41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MIBRAN41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MIKER 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MINOT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MJBER 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKALO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKAPM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKAPU 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKAPV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKARCT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKATO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKATO 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKDMA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKDUL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKECA 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MKECK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKECS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKERT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKESZ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKFAL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKFOL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKHAL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKHAM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKIGM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKIML 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKISP 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKIST 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKISV 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MKIRE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKKOR 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MKVSZ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKMAJ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKOBA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKOBA 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKOMA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKOML 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKORM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKOTE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKSZE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKUNF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MKUNSZ41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MLABA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MLAJM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MLENT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MLITR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MLORI 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMAFU 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMAKO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMARC 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMDEL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMDGY 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMEHE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMESZ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMHAL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMKOV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMNYU 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMOHA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMONO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMOR  41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMSZAL41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MMTUR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNADU 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNAGK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNBAT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNEPL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNKAN 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNKOR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNOGR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNTAD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNVAR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYAD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYBO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYEK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYIP 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYIRB41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYIRK41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYIRS41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MNYUF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MORIP 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MOROS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MORUV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MOZDE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPAKS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPANKT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPAPA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSE43"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSE44"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSE45"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPECSK41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPERZ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPLAD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPLOR 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPOLG 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPOMZ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MPUMA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MRACK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MRAKH 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MRETS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MRFALT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MRFALT42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MRKER 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MROZS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSAJI 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSAJO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSARB 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSIKO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSIOF 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSKOV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSOJT 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSOLYT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSOLYT42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSORS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSUME 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZAJM41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZAL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZARV41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZBA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZEG 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZEH 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZEK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZEN 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZER 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZFE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZFV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZGH 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZGO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZIG 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZIHT41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZIHT42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZOL 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZOLE41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MSZOM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTAMS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTAPO 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTATA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTET  41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTIKE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTIORV41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTLOK 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MTUJV 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MUJPET41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MUJPET42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MULLO 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MUJHA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVAC  41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVARP 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVECS 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVESZ 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVIRA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVIRA 42"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVLIG 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVNAM 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MVSZE 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MZALA 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MZALD 41"/>
+      </AutoNodes>
+      <AutoNodes>
+        <NodeName v="MZUGL 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MZSAN 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MCSEG 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDOOS 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MFESZ 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MFLCO 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MGYIP 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MPETU 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MSZFD 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MTBIP 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MGYHAL41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MOZDC 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MRECS 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MSZEC 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MDDEL 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MNYLE 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MTPUS 41"/>
+      </AutoNodes>
+	  <AutoNodes>
+        <NodeName v="MKOIP 43"/>
+      </AutoNodes>
+    </AutoGSK_Block>
+  </GSKSeries>
+</GSKDocument>
+

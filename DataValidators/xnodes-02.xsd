@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ecc="etso-core-cmpts.xsd" xmlns:fb="flowbased" targetNamespace="flowbased" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<import namespace="etso-core-cmpts.xsd" schemaLocation="etso-core-cmpts.xsd"/>
+
+<element name="XnodesCheckDocument">
+	<complexType>
+		<sequence>
+			<element name="DocumentIdentification" type="ecc:IdentificationType"/>
+			<element name="DocumentVersion" type="ecc:VersionType"/>
+			<element name="DocumentType" type="ecc:MessageType"/>
+			<element name="ProcessType" type="ecc:ProcessType"/>
+			<element name="SenderIdentification" type="ecc:PartyType"/>
+			<element name="SenderRole" type="ecc:RoleType"/>
+			<element name="ReceiverIdentification" type="ecc:PartyType"/>
+			<element name="ReceiverRole" type="ecc:RoleType"/>
+			<element name="CreationDateTime" type="ecc:MessageDateTimeType"/>
+			<element name="XnodesCheckTimeInterval" type="ecc:TimeIntervalType"/>
+			<element name="Domain" type="ecc:AreaType"/>
+			<element name="XnodesCheck" type="fb:XnodesCheck_Type" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="DtdVersion" type="string" use="required"/>
+		<attribute name="DtdRelease" type="string" use="required"/>
+	</complexType>
+</element>
+
+<complexType name="XnodesCheck_Type">
+  <sequence>
+    <element name="xnodeMonitoredBranches">
+      <complexType>
+        <sequence>
+          <element name="xnode" maxOccurs="unbounded" minOccurs="0">
+            <complexType>
+              <sequence>
+                <element name="monitoredBranch" maxOccurs="unbounded" minOccurs="0">
+                  <complexType>
+                    <sequence>
+                      <element type="string" name="tso"/>
+                      <element type="string" name="criticalBranch"/>
+                      <element type="string" name="criticalOutage"/>
+                      <element type="string" name="complexVariant"/>
+                      <element type="string" name="status"/>
+                      <element type="float" name="frmMw"/>
+                      <element type="float" name="fMax"/>
+                      <element type="float" name="fav" minOccurs="0"/> <!-- deprecated -->
+					  <element type="float" name="cva" minOccurs="0"/> <!-- new -->
+					  <element type="float" name="iva" minOccurs="0"/> <!-- new -->
+                    </sequence>
+                    <attribute type="string" name="id" use="optional"/>
+                  </complexType>
+                </element>
+              </sequence>
+              <attribute type="string" name="id"/>
+            </complexType>
+          </element>
+        </sequence>
+      </complexType>
+    </element>
+    <element name="xnodeOutages">
+      <complexType>
+        <sequence>
+          <element name="xnode" maxOccurs="unbounded" minOccurs="0">
+            <complexType>
+              <sequence>
+                <element name="outage" maxOccurs="unbounded" minOccurs="0">
+                  <complexType>
+                    <sequence>
+                      <element type="string" name="tso"/>
+                      <element type="string" name="criticalBranch"/>
+                      <element type="string" name="criticalOutage"/>
+                      <element type="string" name="complexVariant"/>
+                      <element type="string" name="outagedDevice"/>
+                      <element type="string" name="status"/>
+                      <element type="float" name="frmMw"/>
+                      <element type="float" name="fMax"/>
+                      <element type="float" name="fav" minOccurs="0"/> <!-- deprecated -->
+					  <element type="float" name="cva" minOccurs="0"/> <!-- new -->
+					  <element type="float" name="iva" minOccurs="0"/> <!-- new -->
+                    </sequence>
+                  </complexType>
+                </element>
+              </sequence>
+              <attribute type="string" name="id"/>
+            </complexType>
+          </element>
+        </sequence>
+      </complexType>
+    </element>
+    <element name="crossBorderLines">
+      <complexType>
+        <sequence>
+          <element name="crossBorderPair" maxOccurs="unbounded" minOccurs="0">
+            <complexType>
+              <sequence>
+                <element name="crossBorderLine" maxOccurs="unbounded" minOccurs="0">
+                  <complexType>
+                    <sequence>
+                      <element type="string" name="provider"/>
+                      <element type="string" name="status"/>
+                      <element type="string" name="complexVariant"/>
+                      <element type="string" name="actionsSet"/>
+                    </sequence>
+                    <attribute type="string" name="id" use="optional"/>
+                  </complexType>
+                </element>
+                <element name="variant" maxOccurs="unbounded" minOccurs="0">
+                  <complexType>
+                    <sequence>
+                      <element name="actionsSet" maxOccurs="unbounded" minOccurs="0">
+                        <complexType>
+                          <sequence>
+                            <element name="remedialAction" maxOccurs="unbounded" minOccurs="0">
+                              <complexType>
+                                <sequence>
+                                  <element type="string" name="device"/>
+                                  <element type="string" name="status"/>
+                                </sequence>
+                              </complexType>
+                            </element>
+                          </sequence>
+                          <attribute type="string" name="id" use="optional"/>
+                        </complexType>
+                      </element>
+                    </sequence>
+                    <attribute type="string" name="id" use="optional"/>
+                  </complexType>
+                </element>
+              </sequence>
+            </complexType>
+          </element>
+        </sequence>
+      </complexType>
+    </element>
+  </sequence>
+</complexType>
+</schema>

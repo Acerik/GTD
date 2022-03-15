@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pmb.unicorn.eu/confirmation-3.0" xmlns="http://pmb.unicorn.eu/confirmation-3.0" xmlns:ecc="etso-core-cmpts-pcr.xsd">
+	<xs:import namespace="etso-core-cmpts-pcr.xsd" schemaLocation="etso-core-cmpts-pcr.xsd" />
+	<xs:element name="ConfirmationReport">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DocumentIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="DocumentVersion" type="ecc:VersionType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="DocumentType" type="ecc:DocumentType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="SenderIdentification" type="ecc:PartyType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="SenderRole" type="ecc:RoleType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="ReceiverIdentification" type="ecc:PartyType" minOccurs="0" maxOccurs="1" />
+				<xs:element name="ReceiverRole" type="ecc:RoleType" minOccurs="0" maxOccurs="1" />
+				<xs:element name="CreationDateTime" type="ecc:MessageDateTimeType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="DocumentTimeInterval" type="ecc:TimeIntervalType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="ConfirmedDocumentIdentification" type="ecc:IdentificationType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="ConfirmedDocumentVersion" type="ecc:VersionType" minOccurs="1" maxOccurs="1" />
+				<xs:element name="PublicationDateTime" type="ecc:MessageDateTimeType" minOccurs="0" maxOccurs="1" />
+				<xs:element name="Reason" type="Reason" minOccurs="1" maxOccurs="unbounded" />
+				<xs:element name="Rejection" type="Rejection" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Rejection">
+		<xs:sequence>
+			<xs:element name="PartyIdentification" type="ecc:PartyType" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Reason" type="Reason" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Reason">
+		<xs:sequence>
+			<xs:element name="ReasonCode" type="ecc:ReasonCodeType" minOccurs="1" maxOccurs="1" />
+			<xs:element name="ReasonText" type="ecc:ReasonTextType" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
