@@ -34,7 +34,11 @@ public class FileHandler {
     }
 
     public List<BasicFile> loadFiles(){
-        return this.loadFiles(workingDirectory);
+        return loadFiles(workingDirectory);
+    }
+
+    public static List<BasicFile> loadFilesWithPath(String path){
+        return loadFiles(path);
     }
 
     /**
@@ -42,7 +46,7 @@ public class FileHandler {
      * @param path cesta do složky, ze které se má načítat
      * @return list BasicFile
      */
-    private List<BasicFile> loadFiles(String path){
+    private static List<BasicFile> loadFiles(String path){
         List<BasicFile> basicFiles = new ArrayList<>();
         final File folder = new File(path);
         for(File loadedFile: folder.listFiles()){
@@ -59,7 +63,7 @@ public class FileHandler {
         return basicFiles;
     }
 
-    private List<BasicFile> unZipFile(BasicFile file){
+    private static List<BasicFile> unZipFile(BasicFile file){
         String path = file.getPath();
         List<BasicFile> basicFiles = new ArrayList<>();
         String unzippedDirectoryName = path.split(File.pathSeparator)[path.split(File.pathSeparator).length - 1].replace(".zip", "-TOZIP-") + File.pathSeparator;
