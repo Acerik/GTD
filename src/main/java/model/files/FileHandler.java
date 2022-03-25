@@ -37,6 +37,10 @@ public class FileHandler {
         return loadFiles(workingDirectory);
     }
 
+    /**
+     * rekurzivní průchod, metoda je static kvůli využití načítání jiných souborů (xsd), než které se kopírují do pracovní cache v konstruktoru
+     * @param path cesta do složky, ze které se mají načítat soubory
+     */
     public static List<BasicFile> loadFilesWithPath(String path){
         return loadFiles(path);
     }

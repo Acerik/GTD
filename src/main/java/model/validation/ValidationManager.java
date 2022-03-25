@@ -55,6 +55,7 @@ public class ValidationManager {
     }
 
     public void validateFiles(List<BasicFile> basicFiles){
+        // proměnné a listy pouze pro debug a zobrazení statistiky ohledně validace.
         AtomicInteger filesValidated = new AtomicInteger();
         AtomicInteger filesValidatedSuccess = new AtomicInteger();
         AtomicInteger filesValidatedErrorValidation = new AtomicInteger();
@@ -94,8 +95,8 @@ public class ValidationManager {
                     basicFile.setValidationEndType(ValidationEndType.MISSING_XSD_FILE);
                 }
             } else {
+                // missing xsd scheme in basicfile
                 filesValidatedErrorNoXsdScheme.getAndIncrement();
-                //System.out.println("There is no scheme for file: " + basicFile);
                 if(!missingXsdSchemeFilesPath.contains(basicFile.getPath())){
                     missingXsdSchemeFilesPath.add(basicFile.getPath());
                 }

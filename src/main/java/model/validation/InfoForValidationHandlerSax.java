@@ -20,9 +20,22 @@ public class InfoForValidationHandlerSax extends DefaultHandler {
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if(attributes.getValue("xsi:noNamespaceSchemaLocation") != null) {
+        /*
+        * Hledání názvu xsd souboru pro validaci, za správný soubor k validaci se považuje první nalezený xsd soubor
+         */
+        if(attributes.getValue("xsi:noNamespaceSchemaLocation") != null && validationXsdName == null) {
             validationXsdName = attributes.getValue("xsi:noNamespaceSchemaLocation");
-        } else if(attributes.getValue("xmlns") != null){
+        } else if(attributes.getValue("xsi:schemaLocation") != null && validationXsdName == null){
+            if (attributes.getValue("xsi:schemaLocation").contains(" ")){
+                String[] tempAttribute = attributes.getValue("xsi:schemaLocation").split(" ");
+                for(int x = 0; x < tempAttribute.length; x++){
+                    if(tempAttribute[x].endsWith(".xsd")){
+                        validationXsdName = tempAttribute[x].trim();
+                        break;
+                    }
+                }
+            }
+        } else if(attributes.getValue("xmlns") != null && validationXsdName == null){
             if(attributes.getValue("xmlns").split(":").length > 1) {
                 String[] xsdArrayParam = attributes.getValue("xmlns").split(":");
                 //urn   iec62325.351   tc57wg16    451-3    totalallocationresultdocument   7   0
