@@ -112,4 +112,8 @@ public class ValidationManager {
         System.out.println("Missing xsd files [" + missingXsdFilesNames.size() + "] " + missingXsdFilesNames);
         System.out.println("File paths that missing xsd scheme [" + missingXsdSchemeFilesPath.size() + "] " + missingXsdSchemeFilesPath);
     }
+
+    public List<BasicFile> getValidatorsList() {
+        return validatorsList;
+    }
 }

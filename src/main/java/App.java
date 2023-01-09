@@ -1,3 +1,4 @@
+import gui.MainFrame;
 import model.FileManager;
 import model.files.BasicFile;
 import model.validation.ValidationManager;
@@ -6,6 +7,11 @@ public class App {
 
 
     public static void main(String[] args) {
+        FileManager fileManager = new FileManager("./Cache/");
+        ValidationManager validationManager = null;
+        MainFrame mainFrame = new MainFrame(800,600, fileManager, validationManager);
+        mainFrame.setVisible(true);
+        /*
         FileManager fileManager = new FileManager("./Cache/", "./DataInput/");
         fileManager.prepareInputData();
         ValidationManager validationManager = new ValidationManager("./DataValidators/");
@@ -14,7 +20,7 @@ public class App {
             System.out.println(file);
         }
         validationManager.validateFiles(fileManager.getInputDataBasicFileList());
-
+         */
         /*
         System.out.println("Exporting");
         fileManager.exportDataFromCache("./Export/");

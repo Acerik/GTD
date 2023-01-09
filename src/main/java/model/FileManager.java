@@ -7,11 +7,13 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class FileManager {
-    private final String workingDirectory;
-    private final FileHandler filehandler;
+    private String workingDirectory;
+    private String inputDirectory;
+    private FileHandler filehandler;
 
     private List<BasicFile> inputDataBasicFileList;
 
@@ -22,8 +24,30 @@ public class FileManager {
      */
     public FileManager(String workingDirectory,String inputDirectory) {
         this.workingDirectory = workingDirectory;
-        this.filehandler = new FileHandler(workingDirectory, inputDirectory);
+        this.inputDirectory = inputDirectory;
         inputDataBasicFileList = new ArrayList<>();
+    }
+
+    public FileManager(String workingDirectory){
+        this.workingDirectory = workingDirectory;
+        this.inputDataBasicFileList = new ArrayList<>();
+    }
+
+    public FileManager(){
+        this.inputDataBasicFileList = new ArrayList<>();
+    }
+
+    public void loadFiles(){
+        if(filehandler != null){
+            System.out.println("Již existuje");
+        }
+        if(inputDirectory != null && workingDirectory != null){
+            this.filehandler = new FileHandler(workingDirectory, inputDirectory);
+            prepareInputData();
+        } else {
+            System.out.println("Nejsou zadány složky");
+            this.filehandler = null;
+        }
     }
 
     /**
@@ -54,5 +78,21 @@ public class FileManager {
      */
     public List<BasicFile> getInputDataBasicFileList() {
         return inputDataBasicFileList;
+    }
+
+    public void setInputDirectory(String inputDirectory) {
+        this.inputDirectory = inputDirectory;
+    }
+
+    public void setWorkingDirectory(String workingDirectory) {
+        this.workingDirectory = workingDirectory;
+    }
+
+    public String getWorkingDirectory() {
+        return workingDirectory;
+    }
+
+    public String getInputDirectory() {
+        return inputDirectory;
     }
 }
