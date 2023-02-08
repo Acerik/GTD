@@ -23,8 +23,12 @@ public class FileHandler {
         this.workingDirectory = workingDirectory;
         File workingDirectoryFile = new File(workingDirectory);
         if(workingDirectoryFile.exists()){
-            workingDirectoryFile.delete();
             System.out.println("Working directory: " + workingDirectory + " was deleted and will be renewed");
+            try {
+                FileUtils.deleteDirectory(workingDirectoryFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         try {
             FileUtils.copyDirectory(new File(inputDirectory), workingDirectoryFile);

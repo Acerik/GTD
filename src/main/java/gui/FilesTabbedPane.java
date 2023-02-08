@@ -7,19 +7,13 @@ import model.validation.ValidationManager;
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.TreeModel;
-import javax.swing.tree.TreeSelectionModel;
 import java.awt.*;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class FilesTabbedPane extends JTabbedPane {
     private final JPanel inputPanel;
-    private JTree jTreeInput;
-    private final DefaultTreeModel treeModelInput;
+    private final JTree jTreeInput;
     private final JScrollPane scrollPaneInput;
 
     private final JPanel validatorsPanel;
@@ -34,8 +28,7 @@ public class FilesTabbedPane extends JTabbedPane {
         validatorsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0,0));
         jListValidators = new JList<String>();
         inputPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0,0));
-        treeModelInput = new DefaultTreeModel(new DefaultMutableTreeNode());
-        jTreeInput = new JTree(treeModelInput);
+        jTreeInput = new JTree(new DefaultMutableTreeNode());
         scrollPaneInput = new JScrollPane();
         scrollPaneValidators = new JScrollPane();
         this.fileManager = fileManager;
@@ -45,7 +38,6 @@ public class FilesTabbedPane extends JTabbedPane {
         this.setBounds(5,5,305,530);
         this.addTab("Vstupní data",inputPanel);
         this.addTab("Validátory",validatorsPanel);
-        testTree(50);
         initPanes();
         this.setVisible(true);
     }
@@ -58,58 +50,76 @@ public class FilesTabbedPane extends JTabbedPane {
         scrollPaneValidators.setPreferredSize(new Dimension(this.getWidth()-5,this.getHeight()-25));
         validatorsPanel.add(scrollPaneValidators);
 
-        jTreeInput.setPreferredSize(new Dimension(this.getWidth()-5, this.getHeight()-25));
+        jTreeInput.addTreeSelectionListener(e -> System.out.println(e.getPath()));
         scrollPaneInput.setViewportView(jTreeInput);
-        scrollPaneInput.add(jTreeInput);
         scrollPaneInput.setPreferredSize(new Dimension(this.getWidth()-5, this.getHeight()-25));
-        scrollPaneInput.setBackground(Color.BLUE);
-        inputPanel.setPreferredSize(new Dimension(this.getWidth()-5, this.getHeight()-25));
-        inputPanel.setBackground(Color.red);
         inputPanel.add(scrollPaneInput);
-        inputPanel.setVisible(true);
     }
 
-    public void testTree(int num){
-        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
-        for (int i = 0; i < num; i++) {
-            root.insert(new DefaultMutableTreeNode("test " + i), i);
-        }
-        treeModelInput.setRoot(root);
-        treeModelInput.reload();
-        jTreeInput.setModel(treeModelInput);
+
+    public void initInputTree() throws InterruptedException {
+        System.out.println("JTree start");
+        File currentDir = new File(fileManager.getWorkingDirectory());
+        jTreeInput.setModel(new DefaultTreeModel(new DefaultMutableTreeNode(currentDir)));
+        DefaultTreeModel model = (DefaultTreeModel) jTreeInput.getModel();
+
+        // root celého modelu
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+        // začátek rekurzivního průchodu celé složky vč. podsložek
+        directoryContentScanner(currentDir, root);
+        System.out.println("JTree done");
     }
 
-    public void initInputTree(List<BasicFile> inputList){
-        System.out.println(inputList.size());
-        List<String> directories = new ArrayList<>();
-        for(BasicFile file : inputList){
-            String[] pathParts = file.getPath().split(Pattern.quote("\\"));
-            for (int i = 0; i < pathParts.length-1; i++) {
-                if(pathParts[i].length() < 2)
-                    continue;
-                if(pathParts.length - 2 == i) {
-                    String nameWithPath = "";
-                    for (int x = i; x > 0; x--) {
-                        nameWithPath = x + ";" + pathParts[x] + ";" + nameWithPath;
-                    }
-                    if(nameWithPath.length() > 0)
-                        nameWithPath = nameWithPath.substring(0, nameWithPath.length()-1);
-                    if(!directories.contains(nameWithPath)){
-                        directories.add(nameWithPath);
-                    }
-                }
+    public void directoryContentScanner(File dir, DefaultMutableTreeNode root2) {
+
+        DefaultMutableTreeNode newDirTreeNode;
+
+        // získání všech souborů root složky
+        File[] files = dir.listFiles();
+
+        for (File file : files) {
+            if (file == null) {
+                System.out.println("NUll directory found ");
+                continue;
             }
-        }
-        System.out.println(inputList.get(3));
-        directories.forEach(System.out::println);
-        DefaultMutableTreeNode root = new DefaultMutableTreeNode(directories.get(0).split(";")[1]);
-        root.insert(new DefaultMutableTreeNode(directories.get(0).split(";")[3]), 0);
-        System.out.println(root.getChildAt(0));
-        System.out.println(Arrays.toString(root.getPath()));
-        List<DefaultMutableTreeNode> dirs = new ArrayList<>();
+            if (file.isDirectory()) {
+                // nalezení složky
 
-        treeModelInput.setRoot(root);
-        treeModelInput.reload();
+                if (file.listFiles() == null) {
+                    // přeskočení prázdných složek
+                    continue;
+                }
+                // získání modelu
+                DefaultTreeModel model = (DefaultTreeModel) jTreeInput.getModel();
+                // získání roota modelu
+                DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+                // vytvoření node pro novou složku v modelu
+                newDirTreeNode = new DefaultMutableTreeNode(file.getName());
+
+                // přidání nové složky do modelu
+                root2.add(newDirTreeNode);
+                // obnova modelu
+                model.reload();
+
+                // rekurzivní průchod nově našlé složky
+                directoryContentScanner(file, newDirTreeNode);
+            } else {
+                // jedná se o soubor
+
+                // získání modelu
+                DefaultTreeModel model = (DefaultTreeModel) jTreeInput.getModel();
+                // nadřazená složka (root) pro aktuální soubor
+                DefaultMutableTreeNode rootForCurrentFile = root2;
+                DefaultMutableTreeNode newfile = new DefaultMutableTreeNode(file.getName());
+
+                // vložení souboru do modelu
+                model.insertNodeInto(newfile, rootForCurrentFile, rootForCurrentFile.getChildCount());
+                // obnova změn v modelu
+                model.reload();
+
+            }
+
+        }
     }
 
     public void initValidatorList(List<BasicFile> validatorList){
@@ -124,6 +134,7 @@ public class FilesTabbedPane extends JTabbedPane {
     public void onResize(){
         this.setBounds(5,5,305,frame.getHeight()-70);
         scrollPaneValidators.setPreferredSize(new Dimension(this.getWidth()-5,this.getHeight()-25));
+        scrollPaneInput.setPreferredSize(new Dimension(this.getWidth()-5, this.getHeight()-25));
     }
 
 }
