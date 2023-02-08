@@ -71,7 +71,24 @@ public class FilesTabbedPane extends JTabbedPane {
         scrollPaneValidators.setPreferredSize(new Dimension(this.getWidth()-5,this.getHeight()-25));
         validatorsPanel.add(scrollPaneValidators);
 
-        jTreeInput.addTreeSelectionListener(e -> System.out.println(e.getPath()));
+        jTreeInput.addTreeSelectionListener(e -> {
+            String path = e.getPath().getPath()[0].toString();
+            for (int i = 1; i < e.getPath().getPath().length; i++) {
+                path += "\\" + e.getPath().getPath()[i].toString();
+            }
+            String name = e.getPath().getPath()[e.getPath().getPath().length-1].toString();
+            String finalPath = path;
+            Optional<BasicFile> current = fileManager.getInputDataBasicFileList()
+                    .stream().filter(basicFile -> Objects.equals(basicFile.getName(), name) && Objects.equals(basicFile.getPath(), finalPath))
+                    .findAny();
+            if(current.isPresent()) {
+                try {
+                    textEditor.openFileInEditor(current.get());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
         scrollPaneInput.setViewportView(jTreeInput);
         scrollPaneInput.setPreferredSize(new Dimension(this.getWidth()-5, this.getHeight()-25));
         inputPanel.add(scrollPaneInput);

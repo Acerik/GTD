@@ -63,7 +63,7 @@ public class TextEditor extends JPanel {
             // kontrola změny souboru
             if(!Objects.equals(textArea.getText(), FileUtils.readFileToString(new File(currentOpenBasicFile.getPath())))){
                 // zeptat se na uložení
-                int dialogResult = JOptionPane.showConfirmDialog(null, "Chcete uložit aktuální soubor před otevřením nového souboru?","Uložit?", JOptionPane.YES_NO_OPTION);
+                int dialogResult = JOptionPane.showConfirmDialog(null, "Chcete uložit aktuální soubor před otevřením nového souboru?","Uložit?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
                 if(dialogResult == JOptionPane.YES_OPTION){
                     FileUtils.writeStringToFile(new File(currentOpenBasicFile.getPath()), textArea.getText(), false);
                 }
