@@ -8,8 +8,13 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 
 public class FilesTabbedPane extends JTabbedPane {
     private final JPanel inputPanel;
@@ -23,10 +28,11 @@ public class FilesTabbedPane extends JTabbedPane {
 
     private final FileManager fileManager;
     private final ValidationManager validationManager;
+    private final TextEditor textEditor;
 
-    public FilesTabbedPane(FileManager fileManager, ValidationManager validationManager, JFrame frame){
+    public FilesTabbedPane(FileManager fileManager, ValidationManager validationManager, JFrame frame, TextEditor textEditor){
         validatorsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0,0));
-        jListValidators = new JList<String>();
+        jListValidators = new JList<>();
         inputPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0,0));
         jTreeInput = new JTree(new DefaultMutableTreeNode());
         scrollPaneInput = new JScrollPane();
@@ -34,6 +40,7 @@ public class FilesTabbedPane extends JTabbedPane {
         this.fileManager = fileManager;
         this.validationManager = validationManager;
         this.frame = frame;
+        this.textEditor = textEditor;
 
         this.setBounds(5,5,305,530);
         this.addTab("Vstupní data",inputPanel);
@@ -44,7 +51,21 @@ public class FilesTabbedPane extends JTabbedPane {
 
     private void initPanes(){
         jListValidators.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        jListValidators.addListSelectionListener(e -> System.out.println(e.getFirstIndex()));
+        jListValidators.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Optional<BasicFile> current = validationManager.getValidatorsList().stream().filter(basicFile -> Objects.equals(basicFile.getName(), jListValidators.getSelectedValue())).findAny();
+                if(current.isPresent()) {
+                    try {
+                        textEditor.openFileInEditor(current.get());
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                else
+                    System.out.println("This validator is not loaded");
+            }
+        });
         scrollPaneValidators.setViewportView(jListValidators);
         jListValidators.setLayoutOrientation(JList.VERTICAL);
         scrollPaneValidators.setPreferredSize(new Dimension(this.getWidth()-5,this.getHeight()-25));
@@ -70,7 +91,7 @@ public class FilesTabbedPane extends JTabbedPane {
         System.out.println("JTree done");
     }
 
-    public void directoryContentScanner(File dir, DefaultMutableTreeNode root2) {
+    private void directoryContentScanner(File dir, DefaultMutableTreeNode root2) {
 
         DefaultMutableTreeNode newDirTreeNode;
 

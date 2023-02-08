@@ -108,7 +108,7 @@ public class MainMenuBar extends JMenuBar {
 
     private void loadValidators(String dirPath){
         System.out.println("Start loading data validators");
-        validationManager = new ValidationManager(dirPath);
+        validationManager.setValidatorsDirectory(dirPath);
         ((FilesTabbedPane)tabbedPane).initValidatorList(validationManager.getValidatorsList());
         System.out.println("Data validators are loaded");
     }

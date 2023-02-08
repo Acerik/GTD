@@ -21,13 +21,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ValidationManager {
 
-    private final String validatorsDirectory;
+    private String validatorsDirectory;
 
-    public List<BasicFile> validatorsList;
+    private List<BasicFile> validatorsList;
+
+    public ValidationManager(){
+
+    }
 
     public ValidationManager(String validatorsDirectory){
-        this.validatorsDirectory = validatorsDirectory;
-        loadValidators();
+        setValidatorsDirectory(validatorsDirectory);
     }
 
     private void loadValidators(){
@@ -115,5 +118,10 @@ public class ValidationManager {
 
     public List<BasicFile> getValidatorsList() {
         return validatorsList;
+    }
+
+    public void setValidatorsDirectory(String validatorsDirectory) {
+        this.validatorsDirectory = validatorsDirectory;
+        loadValidators();
     }
 }

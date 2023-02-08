@@ -13,7 +13,7 @@ public class MainFrame extends JFrame {
     private final FileManager fileManager;
     private final ValidationManager validationManager;
 
-    private final JPanel mainPanel;
+    private final JPanel editorPanel;
     private final JMenuBar menuBar;
     private final JTabbedPane jTabbedPane;
 
@@ -26,29 +26,26 @@ public class MainFrame extends JFrame {
 
         this.fileManager = fileManager;
         this.validationManager = validationManager;
-        this.mainPanel = new JPanel(new BorderLayout());
-        this.jTabbedPane = new FilesTabbedPane(fileManager, validationManager, this);
+        this.editorPanel = new TextEditor();
+        this.jTabbedPane = new FilesTabbedPane(fileManager, validationManager, this, (TextEditor) editorPanel);
         this.menuBar = new MainMenuBar(fileManager, validationManager, jTabbedPane);
 
         initGui();
         initListeners();
 
-        this.setLayout(null);
         this.setVisible(true);
     }
 
     private void initGui(){
+        this.setLayout(new BorderLayout(5,5));
         menuBar.setVisible(true);
         this.setJMenuBar(menuBar);
         jTabbedPane.setVisible(true);
-        this.add(jTabbedPane);
+        this.add(jTabbedPane, BorderLayout.WEST);
 
-        /*
-        mainPanel.add(jTabbedPane, BorderLayout.EAST);
-        mainPanel.setVisible(true);
-        this.add(mainPanel);
+        editorPanel.setVisible(true);
+        this.add(editorPanel, BorderLayout.CENTER);
 
-         */
     }
 
     private void initListeners(){
@@ -56,8 +53,8 @@ public class MainFrame extends JFrame {
             @Override
             public void componentResized(ComponentEvent e) {
                 //super.componentResized(e);
-
                 ((FilesTabbedPane)jTabbedPane).onResize();
+
             }
         });
     }
