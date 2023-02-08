@@ -54,7 +54,7 @@ public class MainMenuBar extends JMenuBar {
                 System.out.println("Config reading is done");
             }
         });
-        loadInputAndValidatorsFromConfig.setText("Načtení dat z configu");
+        loadInputAndValidatorsFromConfig.setText("Načtení dat a validátorů z configu");
         loadSources.add(loadInputAndValidatorsFromConfig);
 
         JMenuItem loadDataInput = new JMenuItem();

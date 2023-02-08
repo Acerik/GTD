@@ -5,6 +5,8 @@ import model.files.BasicFile;
 import model.validation.ValidationManager;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
@@ -51,20 +53,17 @@ public class FilesTabbedPane extends JTabbedPane {
 
     private void initPanes(){
         jListValidators.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        jListValidators.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                Optional<BasicFile> current = validationManager.getValidatorsList().stream().filter(basicFile -> Objects.equals(basicFile.getName(), jListValidators.getSelectedValue())).findAny();
-                if(current.isPresent()) {
-                    try {
-                        textEditor.openFileInEditor(current.get());
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
+        jListValidators.addListSelectionListener(e -> {
+            Optional<BasicFile> current = validationManager.getValidatorsList().stream().filter(basicFile -> Objects.equals(basicFile.getName(), jListValidators.getSelectedValue())).findAny();
+            if(current.isPresent()) {
+                try {
+                    textEditor.openFileInEditor(current.get());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
-                else
-                    System.out.println("This validator is not loaded");
             }
+            else
+                System.out.println("This validator is not loaded");
         });
         scrollPaneValidators.setViewportView(jListValidators);
         jListValidators.setLayoutOrientation(JList.VERTICAL);
