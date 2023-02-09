@@ -15,8 +15,10 @@ import java.util.Map;
 public class MainMenuBar extends JMenuBar {
 
     private JMenu loadSources;
+    private JMenu functionMenu;
+
     private final FileManager fileManager;
-    private ValidationManager validationManager;
+    private final ValidationManager validationManager;
     private final JTabbedPane tabbedPane;
 
     public MainMenuBar(FileManager fileManager, ValidationManager validationManager, JTabbedPane tabbedPane){
@@ -28,6 +30,40 @@ public class MainMenuBar extends JMenuBar {
         initLoadSourcesMenu();
         loadSources.setVisible(true);
         this.add(loadSources);
+        initFunctionMenu();
+        functionMenu.setVisible(true);
+        this.add(functionMenu);
+    }
+
+    private void initFunctionMenu(){
+        functionMenu = new JMenu("Funkce");
+
+        JMenuItem validate = new JMenuItem();
+        validate.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //System.out.println("Start validation");
+                ((FilesTabbedPane)tabbedPane).consoleOut("Začátek validace", true);
+                validationManager.setValidationSchemeForFiles(fileManager.getInputDataBasicFileList());
+                ((FilesTabbedPane)tabbedPane).consoleOut(validationManager.validateFiles(fileManager.getInputDataBasicFileList(), false), true);
+                //System.out.println("Validation done");
+                ((FilesTabbedPane)tabbedPane).consoleOut("Validace dokončena", true);
+            }
+        });
+        validate.setText("Validovat");
+        functionMenu.add(validate);
+
+        JMenuItem export = new JMenuItem(); // todo export výchozí podle configu, nastavení cache souboru v configu, vytvoření default configu, ošetření configu
+        export.setAction(new AbstractAction() { // todo opravit chybu exportu se složkami k zazipování
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ((FilesTabbedPane)tabbedPane).consoleOut("Začátek exportování dat.", true);
+                fileManager.exportDataFromCache("./Export/");
+                ((FilesTabbedPane)tabbedPane).consoleOut("Exportování dat dokončeno.", true);
+            }
+        });
+        export.setText("Export");
+        functionMenu.add(export);
     }
 
     private void initLoadSourcesMenu() {
@@ -37,10 +73,12 @@ public class MainMenuBar extends JMenuBar {
         loadInputAndValidatorsFromConfig.setAction(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Start reading config");
+                //System.out.println("Start reading config");
+                ((FilesTabbedPane)tabbedPane).consoleOut("Začátek čtení config souboru", true);
                 File configFile = new File("./gdtconfig.json");
                 if(!configFile.exists()) {
-                    System.out.println("Config is not exists");
+                    ((FilesTabbedPane)tabbedPane).consoleOut("Config nebyl nalezen ./gdtconfig.json", true);
+                    //System.out.println("Config is not exists");
                 } else {
                     try {
                         String configJson = FileUtils.readFileToString(configFile);
@@ -51,7 +89,8 @@ public class MainMenuBar extends JMenuBar {
                         ex.printStackTrace();
                     }
                 }
-                System.out.println("Config reading is done");
+                ((FilesTabbedPane)tabbedPane).consoleOut("Čtení z configu dokončeno", true);
+                //System.out.println("Config reading is done");
             }
         });
         loadInputAndValidatorsFromConfig.setText("Načtení dat a validátorů z configu");
@@ -67,7 +106,7 @@ public class MainMenuBar extends JMenuBar {
                 jFileChooser.setFileFilter(new FileNameExtensionFilter("Složka", "folder"));
                 int i = jFileChooser.showDialog(loadSources, "Potvrdit složku");
                 if(i == JFileChooser.APPROVE_OPTION){
-                    System.out.println(jFileChooser.getSelectedFile());
+                    //System.out.println(jFileChooser.getSelectedFile());
                     loadDataInput(jFileChooser.getSelectedFile().getPath());
                 }
             }
@@ -85,7 +124,7 @@ public class MainMenuBar extends JMenuBar {
                 jFileChooser.setFileFilter(new FileNameExtensionFilter("Složka", "folder"));
                 int i = jFileChooser.showDialog(loadSources, "Potvrdit složku");
                 if(i == JFileChooser.APPROVE_OPTION){
-                    System.out.println(jFileChooser.getSelectedFile());
+                    //System.out.println(jFileChooser.getSelectedFile());
                     loadValidators(jFileChooser.getSelectedFile().getPath());
                 }
             }
@@ -95,21 +134,25 @@ public class MainMenuBar extends JMenuBar {
     }
 
     private void loadDataInput(String dirPath){
-        System.out.println("Start loading data input");
+        //System.out.println("Start loading data input");
+        ((FilesTabbedPane)tabbedPane).consoleOut("Začátek načítání vstupních dat z: " + dirPath, true);
         fileManager.setInputDirectory(dirPath);
         fileManager.loadFiles();
         try {
             ((FilesTabbedPane)tabbedPane).initInputTree();
-            System.out.println("Data input is loaded");
+            //System.out.println("Data input is loaded");
+            ((FilesTabbedPane)tabbedPane).consoleOut("Načítání vstupních dat dokončeno.", true);
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
     }
 
     private void loadValidators(String dirPath){
-        System.out.println("Start loading data validators");
+        //System.out.println("Start loading data validators");
+        ((FilesTabbedPane)tabbedPane).consoleOut("Začátek načítání validátorů z: " + dirPath, true);
         validationManager.setValidatorsDirectory(dirPath);
         ((FilesTabbedPane)tabbedPane).initValidatorList(validationManager.getValidatorsList());
-        System.out.println("Data validators are loaded");
+        //System.out.println("Data validators are loaded");
+        ((FilesTabbedPane)tabbedPane).consoleOut("Načítání validátorů dokončeno.", true);
     }
 }

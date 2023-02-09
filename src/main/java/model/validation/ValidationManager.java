@@ -37,6 +37,11 @@ public class ValidationManager {
         validatorsList = FileHandler.loadFilesWithPath(validatorsDirectory);
     }
 
+    /**
+     * Nachystá xsd schémata pro vstupní data, aby mohlo dojít k jejich validaci
+     * @param basicFiles List základních souborů dat, ve kterých je potřeba najít xsd schémata
+     * @return String s možnými chybami, případně výstupem s informacemi vhodnými do konzole.
+     */
     public void setValidationSchemeForFiles(List<BasicFile> basicFiles) {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         basicFiles.forEach(basicFile -> {
@@ -57,7 +62,20 @@ public class ValidationManager {
         });
     }
 
-    public void validateFiles(List<BasicFile> basicFiles){
+    /**
+     * Slouží k validaci xml souborů
+     * @param basicFiles List základních souborů, které se mají validatovat na základě předem nalezlých xsd schémat.
+     * @return String s možnými chybami, případně výstupem s informacemi vhodnými do konzole.
+     */
+    public String validateFiles(List<BasicFile> basicFiles, boolean findXsdSchemes){
+        if(findXsdSchemes)
+            setValidationSchemeForFiles(basicFiles);
+        return filesValidation(basicFiles);
+    }
+
+
+    private String filesValidation(List<BasicFile> basicFiles){
+        String output = "";
         // proměnné a listy pouze pro debug a zobrazení statistiky ohledně validace.
         AtomicInteger filesValidated = new AtomicInteger();
         AtomicInteger filesValidatedSuccess = new AtomicInteger();
@@ -91,7 +109,7 @@ public class ValidationManager {
                 } else {
                     // there is not xsd file for validation
                     filesValidatedErrorNoXsd.getAndIncrement();
-                    System.out.println("There is no xsd file for validation: " + basicFile.getXsdSchemeName() + " FilePath " + basicFile.getPath());
+                    System.err.println("There is no xsd file for validation: " + basicFile.getXsdSchemeName() + " FilePath " + basicFile.getPath());
                     if(!missingXsdFilesNames.contains(basicFile.getXsdSchemeName())){
                         missingXsdFilesNames.add(basicFile.getXsdSchemeName());
                     }
@@ -108,12 +126,20 @@ public class ValidationManager {
             basicFile.setValidationDone(true);
         });
         System.out.println("Validated files : " + filesValidated);
+        output += "Počet validovaných souborů: " + filesValidated + "\r\n";
         System.out.println("Validated files Success : " + filesValidatedSuccess);
+        output += "Počet úspěšně validovaných souborů: " + filesValidatedSuccess + "\r\n";
         System.out.println("Validated files error validation : " + filesValidatedErrorValidation);
+        output += "Počet chybně validovaných souborů: " + filesValidatedErrorValidation + "\r\n";
         System.out.println("Validated files error no xsd file : " + filesValidatedErrorNoXsd);
+        output += "Počet validovaných souborů, které neobsahují odkaz na xsd schéma: " + filesValidatedErrorNoXsd + "\r\n";
         System.out.println("Validated files error no xsd scheme : " + filesValidatedErrorNoXsdScheme);
+        output += "Počet validovaných souborů, pro které není xsd schéma: " + filesValidatedErrorNoXsdScheme + "\r\n";
         System.out.println("Missing xsd files [" + missingXsdFilesNames.size() + "] " + missingXsdFilesNames);
+        output += "Počet chybějících xsd souborů [" + missingXsdFilesNames.size() + "] Názvy xsd souborů: " + missingXsdFilesNames + "\r\n";
         System.out.println("File paths that missing xsd scheme [" + missingXsdSchemeFilesPath.size() + "] " + missingXsdSchemeFilesPath);
+        output += "Počet souborů bez určených xsd schémat [" + missingXsdSchemeFilesPath.size() + "] Cesty k souborům bez xsd schémat: " + missingXsdSchemeFilesPath + "\r\n";
+        return output;
     }
 
     public List<BasicFile> getValidatorsList() {
