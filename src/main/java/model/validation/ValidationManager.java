@@ -125,19 +125,21 @@ public class ValidationManager {
             }
             basicFile.setValidationDone(true);
         });
+        /*
         System.out.println("Validated files : " + filesValidated);
-        output += "\r\n" + "Počet validovaných souborů: " + filesValidated + "\r\n";
         System.out.println("Validated files Success : " + filesValidatedSuccess);
-        output += "Počet úspěšně validovaných souborů: " + filesValidatedSuccess + "\r\n";
         System.out.println("Validated files error validation : " + filesValidatedErrorValidation);
-        output += "Počet chybně validovaných souborů: " + filesValidatedErrorValidation + "\r\n";
         System.out.println("Validated files error no xsd file : " + filesValidatedErrorNoXsd);
-        output += "Počet validovaných souborů, které neobsahují odkaz na xsd schéma: " + filesValidatedErrorNoXsd + "\r\n";
         System.out.println("Validated files error no xsd scheme : " + filesValidatedErrorNoXsdScheme);
-        output += "Počet validovaných souborů, pro které není xsd schéma: " + filesValidatedErrorNoXsdScheme + "\r\n";
         System.out.println("Missing xsd files [" + missingXsdFilesNames.size() + "] " + missingXsdFilesNames);
-        output += "Počet chybějících xsd souborů [" + missingXsdFilesNames.size() + "] Názvy xsd souborů: " + missingXsdFilesNames + "\r\n";
         System.out.println("File paths that missing xsd scheme [" + missingXsdSchemeFilesPath.size() + "] " + missingXsdSchemeFilesPath);
+        */
+        output += "\r\n" + "Počet validovaných souborů: " + filesValidated + "\r\n";
+        output += "Počet úspěšně validovaných souborů: " + filesValidatedSuccess + "\r\n";
+        output += "Počet chybně validovaných souborů: " + filesValidatedErrorValidation + "\r\n";
+        output += "Počet validovaných souborů, které neobsahují odkaz na xsd schéma: " + filesValidatedErrorNoXsd + "\r\n";
+        output += "Počet validovaných souborů, pro které není xsd schéma: " + filesValidatedErrorNoXsdScheme + "\r\n";
+        output += "Počet chybějících xsd souborů [" + missingXsdFilesNames.size() + "] Názvy xsd souborů: " + missingXsdFilesNames + "\r\n";
         output += "Počet souborů bez určených xsd schémat [" + missingXsdSchemeFilesPath.size() + "] Cesty k souborům bez xsd schémat: " + missingXsdSchemeFilesPath + "\r\n";
         return output;
     }

@@ -5,10 +5,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -84,6 +81,10 @@ public class FileHandler {
         String finalUnzippedDirectoryName = unzippedDirectoryName;
         URI uri = URI.create("jar:file:"+new File(path).toURI().getRawPath());
         try {
+            try{
+                FileSystem fileSystem = FileSystems.getFileSystem(uri);
+                fileSystem.close();
+            } catch (Exception ignored){}
             FileSystems.newFileSystem(uri, Collections.emptyMap())
                     .getRootDirectories()
                     .forEach(root -> {

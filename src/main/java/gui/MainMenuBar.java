@@ -7,21 +7,25 @@ import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.plaf.IconUIResource;
+import javax.swing.plaf.metal.MetalIconFactory;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
-import java.util.IdentityHashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.text.DateFormat;
+import java.util.*;
 
 public class MainMenuBar extends JMenuBar {
 
     private JMenu loadSources;
     private JMenu functionMenu;
+    private JMenu configMenu;
 
     private final FileManager fileManager;
     private final ValidationManager validationManager;
     private final JTabbedPane tabbedPane;
+
+    private static final String CONFIG_PATH = "./gdtconfig.json";
 
     public MainMenuBar(FileManager fileManager, ValidationManager validationManager, JTabbedPane tabbedPane){
         super();
@@ -32,9 +36,100 @@ public class MainMenuBar extends JMenuBar {
         initLoadSourcesMenu();
         loadSources.setVisible(true);
         this.add(loadSources);
+
         initFunctionMenu();
         functionMenu.setVisible(true);
         this.add(functionMenu);
+
+        initConfigMenu();
+        configMenu.setVisible(true);
+        this.add(configMenu);
+    }
+
+    private void initConfigMenu(){
+        configMenu = new JMenu("Config");
+
+        JMenuItem showConfig = new JMenuItem();
+        showConfig.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Map config = loadConfig();
+                JOptionPane.showMessageDialog(null,
+                        String.format("Umístění configu: %s\r\n\r\nCesta pro vstupní data: %s \r\nCesta pro validátory: %s\r\nCesta pro export: %s\r\n",
+                                CONFIG_PATH,
+                                config.getOrDefault("dataInput", "Není nastaveno"),
+                                config.getOrDefault("dataValidators", "Není nastaveno"),
+                                config.getOrDefault("dataExport", "Není nastaveno")),
+                        "Aktuální config: ",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+        showConfig.setText("Zobrazit config");
+        showConfig.setIcon(UIManager.getIcon("Menu.arrowIcon"));
+        configMenu.add(showConfig);
+
+        JMenuItem createConfigWithDialog = new JMenuItem();
+        createConfigWithDialog.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                File configFile = new File(CONFIG_PATH);
+                if(configFile.exists()){
+                    int dialogResult = JOptionPane.showConfirmDialog(null,
+                            "Config již existuje, chcete ho nahradit novým pomocí dialogů?",
+                            "Config již existuje",
+                            JOptionPane.YES_NO_OPTION,
+                            JOptionPane.QUESTION_MESSAGE);
+                    if(dialogResult == JOptionPane.YES_OPTION){
+                        createConfig();
+                    }
+                }
+            }
+        });
+        createConfigWithDialog.setText("Vytvoření configu");
+        createConfigWithDialog.setIcon(UIManager.getIcon("FileView.fileIcon"));
+        configMenu.add(createConfigWithDialog);
+
+        JMenuItem changeDataInput = new JMenuItem();
+        changeDataInput.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Map config = loadConfig();
+                config.remove("dataInput");
+                config.put("dataInput", showDialogFolderChooser("Vyberte cestu ke vstupním datům pro uložení do configu."));
+                saveConfig(config);
+            }
+        });
+        changeDataInput.setText("Změnit cestu ke vstupním datům v configu");
+        changeDataInput.setIcon(UIManager.getIcon("FileView.computerIcon"));
+        configMenu.add(changeDataInput);
+
+        JMenuItem changeValidators = new JMenuItem();
+        changeValidators.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Map config = loadConfig();
+                config.remove("dataValidators");
+                config.put("dataValidators", showDialogFolderChooser("Vyberte cestu k validátorům pro uložení do configu."));
+                saveConfig(config);
+            }
+        });
+        changeValidators.setText("Změnit cestu k validátorům v configu");
+        changeValidators.setIcon(UIManager.getIcon("FileView.computerIcon"));
+        configMenu.add(changeValidators);
+
+        JMenuItem changeExport = new JMenuItem();
+        changeExport.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Map config = loadConfig();
+                config.remove("dataExport");
+                config.put("dataExport", showDialogFolderChooser("Vyberte cestu pro exportu, pro uložení do configu."));
+                saveConfig(config);
+            }
+        });
+        changeExport.setText("Změnit cestu exportu v configu");
+        changeExport.setIcon(UIManager.getIcon("FileView.computerIcon"));
+        configMenu.add(changeExport);
     }
 
     private void initFunctionMenu(){
@@ -53,6 +148,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         validate.setText("Validovat");
+        validate.setIcon(UIManager.getIcon("FileView.hardDriveIcon"));
         functionMenu.add(validate);
 
         JMenuItem exportWithConfig = new JMenuItem();
@@ -77,6 +173,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         exportWithConfig.setText("Export podle configu");
+        exportWithConfig.setIcon(UIManager.getIcon("FileView.floppyDriveIcon"));
         functionMenu.add(exportWithConfig);
 
         JMenuItem export = new JMenuItem();
@@ -98,6 +195,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         export.setText("Export");
+        export.setIcon(UIManager.getIcon("FileView.floppyDriveIcon"));
         functionMenu.add(export);
     }
 
@@ -125,6 +223,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         loadInputAndValidatorsFromConfig.setText("Načtení vst. dat a validátorů z configu");
+        loadInputAndValidatorsFromConfig.setIcon(UIManager.getIcon("FileChooser.detailsViewIcon"));
         loadSources.add(loadInputAndValidatorsFromConfig);
 
         JMenuItem loadInputFromConfig = new JMenuItem();
@@ -145,6 +244,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         loadInputFromConfig.setText("Načtení vstupních dat z configu");
+        loadInputFromConfig.setIcon(UIManager.getIcon("FileChooser.detailsViewIcon"));
         loadSources.add(loadInputFromConfig);
 
         JMenuItem loadValidatorsFromConfig = new JMenuItem();
@@ -165,6 +265,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         loadValidatorsFromConfig.setText("Načtení validátorů z configu");
+        loadValidatorsFromConfig.setIcon(UIManager.getIcon("FileChooser.detailsViewIcon"));
         loadSources.add(loadValidatorsFromConfig);
 
         JMenuItem loadDataInput = new JMenuItem();
@@ -182,6 +283,7 @@ public class MainMenuBar extends JMenuBar {
             }
         });
         loadDataInput.setText("Načíst složku se vstupními daty");
+        loadDataInput.setIcon(UIManager.getIcon("Tree.openIcon"));
         loadSources.add(loadDataInput);
 
         JMenuItem loadValidators = new JMenuItem();
@@ -194,12 +296,12 @@ public class MainMenuBar extends JMenuBar {
                 jFileChooser.setFileFilter(new FileNameExtensionFilter("Složka", "folder"));
                 int i = jFileChooser.showDialog(loadSources, "Potvrdit složku");
                 if(i == JFileChooser.APPROVE_OPTION){
-                    //System.out.println(jFileChooser.getSelectedFile());
                     loadValidators(jFileChooser.getSelectedFile().getPath());
                 }
             }
         });
         loadValidators.setText("Načíst složku s validátory");
+        loadValidators.setIcon(UIManager.getIcon("Tree.openIcon"));
         loadSources.add(loadValidators);
     }
 
@@ -246,9 +348,9 @@ public class MainMenuBar extends JMenuBar {
     private Map loadConfig(){
         ((FilesTabbedPane)tabbedPane).consoleOut("Začátek čtení config souboru", true);
         Map config = null;
-        File configFile = new File("./gdtconfig.json");
+        File configFile = new File(CONFIG_PATH);
         if(!configFile.exists()) {
-            ((FilesTabbedPane)tabbedPane).consoleOut("Config nebyl nalezen ./gdtconfig.json", true);
+            ((FilesTabbedPane)tabbedPane).consoleOut("Config nebyl nalezen " + CONFIG_PATH, true);
             int dialogResult = JOptionPane.showConfirmDialog(null,
                     "Chcete nechat vygenerovat výchozí config?",
                     "Config nenalezen.",
@@ -271,36 +373,44 @@ public class MainMenuBar extends JMenuBar {
     private Map createConfig(){
         ((FilesTabbedPane)tabbedPane).consoleOut("Vytváření configu.", true);
         Map config = new IdentityHashMap();
+
+        String folderPath = showDialogFolderChooser("Vyberte výchozí složku pro vstupní data.");
+        if(folderPath != null)
+            config.put("dataInput", folderPath);
+
+        folderPath = showDialogFolderChooser("Vyberte výchozí složku pro validátory dat.");
+        if(folderPath != null)
+            config.put("dataValidators", folderPath);
+
+        folderPath = showDialogFolderChooser("Vyberte výchozí složku pro export dat.");
+        if(folderPath != null)
+            config.put("dataExport", folderPath);
+
+        saveConfig(config);
+        return config;
+    }
+
+    private String showDialogFolderChooser(String title){
         JFileChooser configFileChooser = new JFileChooser();
         configFileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         configFileChooser.setFileFilter(new FileNameExtensionFilter("Složka", "folder"));
 
-        configFileChooser.setDialogTitle("Vyberte výchozí složku pro vstupní data.");
+        configFileChooser.setDialogTitle(title);
         int i = configFileChooser.showDialog(null, "Potvrdit složku");
         if(i == JFileChooser.APPROVE_OPTION){
-            config.put("dataInput", configFileChooser.getSelectedFile().getPath());
+            return configFileChooser.getSelectedFile().getPath();
         }
+        return null;
+    }
 
-        configFileChooser.setDialogTitle("Vyberte výchozí složku pro validátory dat.");
-        i = configFileChooser.showDialog(null, "Potvrdit složku");
-        if(i == JFileChooser.APPROVE_OPTION){
-            config.put("dataValidators", configFileChooser.getSelectedFile().getPath());
-        }
-
-        configFileChooser.setDialogTitle("Vyberte výchozí složku pro export dat.");
-        i = configFileChooser.showDialog(null, "Potvrdit složku");
-        if(i == JFileChooser.APPROVE_OPTION){
-            config.put("dataExport", configFileChooser.getSelectedFile().getPath());
-        }
+    private void saveConfig(Map config){
         String jsonConfig = new Gson().toJson(config);
         try {
-            FileUtils.writeStringToFile(new File("./gdtconfig.json"), jsonConfig);
-            ((FilesTabbedPane)tabbedPane).consoleOut("Config byl uložen ./gdtconfig.json", true);
+            FileUtils.writeStringToFile(new File(CONFIG_PATH), jsonConfig, false);
+            ((FilesTabbedPane)tabbedPane).consoleOut("Config byl uložen " + CONFIG_PATH, true);
         } catch (IOException e) {
             e.printStackTrace();
             ((FilesTabbedPane)tabbedPane).consoleOut("Chyba při ukládání configu.", true);
         }
-
-        return config;
     }
 }

@@ -24,6 +24,25 @@ public class MainFrame extends JFrame {
         setMinimumSize(new Dimension(width, height));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        // lepší vzhled
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
+
+        //Překlad ui dialogů
+        UIManager.put("OptionPane.yesButtonText", "Ano");
+        UIManager.put("OptionPane.noButtonText", "Ne");
+        UIManager.put("OptionPane.cancelButtonText", "Zrušit");
+        UIManager.put("FileChooser.cancelButtonText", "Zrušit");
+
         this.fileManager = fileManager;
         this.validationManager = validationManager;
         this.editorPanel = new TextEditor();
