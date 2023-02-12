@@ -1,4 +1,5 @@
 {
   "dataInput": "./DataInput",
-  "dataValidators": "./DataValidators"
+  "dataValidators": "./DataValidators",
+  "dataExport": "./Export"
 }

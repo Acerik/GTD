@@ -110,10 +110,21 @@ public class FileHandler {
         return basicFiles;
     }
 
-    public void exportData(List<BasicFile> dataToExport){
-        for(BasicFile basicFile : dataToExport){
+    public void exportData(List<BasicFile> dataToExport, String exportDir) throws IOException {
+        if(!exportDir.endsWith("/") || !exportDir.endsWith("\\"))
+            exportDir += "/";
+        File cacheFolder = new File(workingDirectory);
+        File exportFolder = new File(exportDir);
+        if(exportFolder.exists())
+            FileUtils.deleteDirectory(exportFolder);
+        FileUtils.copyDirectory(cacheFolder, exportFolder);
+
+        List<BasicFile> dataForExport = new ArrayList<>(dataToExport);
+        String finalExportDir = exportDir;
+        dataForExport.forEach(basicFile -> basicFile.setPath(basicFile.getPath().replace(workingDirectory.replace("/", "\\"), finalExportDir)));
+
+        for(BasicFile basicFile : dataForExport){
             if(basicFile.isZipped()){
-                new File(basicFile.getPath()).delete();
                 File zippedFile = new File(basicFile.getPath().replace(".zip", "-TOZIP-"));
                 try {
                     Path pathToZipFile = Files.createFile(Paths.get(zippedFile.getPath().replace("-TOZIP-",".zip")));
@@ -131,6 +142,7 @@ public class FileHandler {
                                     e.printStackTrace();
                                 }
                             });
+                    FileUtils.deleteDirectory(new File(basicFile.getPath().replace(".zip", "-TOZIP-")));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

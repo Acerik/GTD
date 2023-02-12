@@ -62,12 +62,10 @@ public class FileManager {
      * @param exportDirectory specifikace složky, kam se mají exportovat data
      */
     public void exportDataFromCache(String exportDirectory){
-        filehandler.exportData(inputDataBasicFileList);
-        File cacheFile = new File(workingDirectory);
         try {
-            FileUtils.copyDirectory(cacheFile, new File(exportDirectory));
-            FileUtils.deleteDirectory(cacheFile);
-        } catch (IOException e) {
+            filehandler.exportData(inputDataBasicFileList, exportDirectory);
+            //FileUtils.deleteDirectory(cacheFile);
+        }catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -126,7 +126,7 @@ public class ValidationManager {
             basicFile.setValidationDone(true);
         });
         System.out.println("Validated files : " + filesValidated);
-        output += "Počet validovaných souborů: " + filesValidated + "\r\n";
+        output += "\r\n" + "Počet validovaných souborů: " + filesValidated + "\r\n";
         System.out.println("Validated files Success : " + filesValidatedSuccess);
         output += "Počet úspěšně validovaných souborů: " + filesValidatedSuccess + "\r\n";
         System.out.println("Validated files error validation : " + filesValidatedErrorValidation);

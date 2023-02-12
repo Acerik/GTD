@@ -11,21 +11,5 @@ public class App {
         ValidationManager validationManager = new ValidationManager();
         MainFrame mainFrame = new MainFrame(800,600, fileManager, validationManager);
         mainFrame.setVisible(true);
-        /*
-        FileManager fileManager = new FileManager("./Cache/", "./DataInput/");
-        fileManager.prepareInputData();
-        ValidationManager validationManager = new ValidationManager("./DataValidators/");
-        validationManager.setValidationSchemeForFiles(fileManager.getInputDataBasicFileList());
-        for(BasicFile file : fileManager.getInputDataBasicFileList()){
-            System.out.println(file);
-        }
-        validationManager.validateFiles(fileManager.getInputDataBasicFileList());
-         */
-        /*
-        System.out.println("Exporting");
-        fileManager.exportDataFromCache("./Export/");
-        System.out.println("Data exported");
-         */
-
     }
 }
