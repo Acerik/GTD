@@ -2,14 +2,16 @@ package model;
 
 import model.files.BasicFile;
 import model.files.FileHandler;
-import org.apache.commons.io.FileUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Třída slouží k obsluze souborů, načítání, export, nastavení cest. Jedná se o jednodušší přístup k {@link FileHandler}
+ * @see FileHandler
+ * @author Matěj Váňa
+ * */
 public class FileManager {
     private String workingDirectory;
     private String inputDirectory;
@@ -18,7 +20,7 @@ public class FileManager {
     private List<BasicFile> inputDataBasicFileList;
 
     /**
-     *
+     * Konstruktor
      * @param workingDirectory specifikace složky, kde se bude pracovat se soubory (cache)
      * @param inputDirectory specifikace složky pro vstup dat
      */
@@ -27,25 +29,28 @@ public class FileManager {
         this.inputDirectory = inputDirectory;
         inputDataBasicFileList = new ArrayList<>();
     }
-
+    /**
+     * Konstruktor
+     * @param workingDirectory specifikace složky, kde se bude pracovat se soubory (cache)
+     */
     public FileManager(String workingDirectory){
         this.workingDirectory = workingDirectory;
         this.inputDataBasicFileList = new ArrayList<>();
     }
 
-    public FileManager(){
-        this.inputDataBasicFileList = new ArrayList<>();
-    }
-
+    /**
+     * Dojde k načtení souborů pomocí zadaných cest, může vypsat chybu do konzole, pokud nejsou nastaveny cesty
+     * Pokud jsou nastaveny cesty načte data do paměti.
+     * */
     public void loadFiles(){
         if(filehandler != null){
-            System.out.println("Již existuje");
+            System.err.println("Již existuje");
         }
         if(inputDirectory != null && workingDirectory != null){
             this.filehandler = new FileHandler(workingDirectory, inputDirectory);
             prepareInputData();
         } else {
-            System.out.println("Nejsou zadány složky");
+            System.err.println("Nejsou zadány složky");
             this.filehandler = null;
         }
     }
@@ -53,7 +58,7 @@ public class FileManager {
     /**
      * Načte cesty k souborům, zjistí, které jsou v zipu a odzipuje je
      */
-    public void prepareInputData(){
+    private void prepareInputData(){
         inputDataBasicFileList = filehandler.loadFiles();
     }
 
@@ -78,18 +83,34 @@ public class FileManager {
         return inputDataBasicFileList;
     }
 
+    /**
+     * Nastavení cesty pro vstupní data
+     * @param inputDirectory cesta ke složce se vstupními daty
+     * */
     public void setInputDirectory(String inputDirectory) {
         this.inputDirectory = inputDirectory;
     }
 
+    /**
+     * Nastavení pracovní složky (cache), kde se budou editovat soubory a pracovat s nimi, při načtení dojde k rozbalení zip souborů
+     * @param workingDirectory cesta k pracovní složce (cache)
+     * */
     public void setWorkingDirectory(String workingDirectory) {
         this.workingDirectory = workingDirectory;
     }
 
+    /**
+     * Získání pracovní složky (cache)
+     * @return Vrací aktuálně nastavenou pracovní složku (cache)
+     * */
     public String getWorkingDirectory() {
         return workingDirectory;
     }
 
+    /**
+     * Získání cesty ke složce se vstupními daty
+     * @return cesta do složky se vstupními daty
+     * */
     public String getInputDirectory() {
         return inputDirectory;
     }

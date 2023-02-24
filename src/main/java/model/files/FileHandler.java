@@ -9,13 +9,24 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+
+/**
+ * Slouží k přímé práci se soubory, odzipovat, zipovat, načíst, export
+ * @author Matěj Váňa
+ * */
 
 public class FileHandler {
 
     private final String workingDirectory;
 
+    /**
+     * konstruktor, vytvoří pracovní složku (cache), pokud existuje smaže starou a nachystá do nové obsah ze vstupu
+     * @param workingDirectory cesta k pracovní složce (cache)
+     * @param inputDirectory cesta ke složce se vstupními daty
+     * */
     public FileHandler(String workingDirectory, String inputDirectory){
         this.workingDirectory = workingDirectory;
         File workingDirectoryFile = new File(workingDirectory);
@@ -41,6 +52,7 @@ public class FileHandler {
     /**
      * rekurzivní průchod, metoda je static kvůli využití načítání jiných souborů (xsd), než které se kopírují do pracovní cache v konstruktoru
      * @param path cesta do složky, ze které se mají načítat soubory
+     * @return seznam {@link BasicFile} načtených ze zadané cesty
      */
     public static List<BasicFile> loadFilesWithPath(String path){
         return loadFiles(path);
@@ -54,7 +66,7 @@ public class FileHandler {
     private static List<BasicFile> loadFiles(String path){
         List<BasicFile> basicFiles = new ArrayList<>();
         final File folder = new File(path);
-        for(File loadedFile: folder.listFiles()){
+        for(File loadedFile: Objects.requireNonNull(folder.listFiles())){
             if(loadedFile.isDirectory()){
                 basicFiles.addAll(loadFiles(loadedFile.getPath()));
             } else {
@@ -68,6 +80,11 @@ public class FileHandler {
         return basicFiles;
     }
 
+    /**
+     * Rozbalí zadaný soubor a vrátí seznam souborů, které obsahuje
+     * @param file zazipovaný {@link BasicFile}, který je potřeba rozbalit
+     * @return list {@link BasicFile}, které obsahuje zadaný zip soubor
+     * */
     private static List<BasicFile> unZipFile(BasicFile file){
         String path = file.getPath();
         List<BasicFile> basicFiles = new ArrayList<>();
@@ -111,6 +128,12 @@ public class FileHandler {
         return basicFiles;
     }
 
+
+    /**
+     * Slouží k exportu dat, podle zadaných parametrů
+     * @param dataToExport  seznam {@link BasicFile}, které je potřeba exportovat
+     * @param exportDir cesta ke složce, kam se mají data exportovat
+     * */
     public void exportData(List<BasicFile> dataToExport, String exportDir) throws IOException {
         if(!exportDir.endsWith("/") || !exportDir.endsWith("\\"))
             exportDir += "/";

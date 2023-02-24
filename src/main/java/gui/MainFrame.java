@@ -8,10 +8,13 @@ import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-public class MainFrame extends JFrame {
+/**
+ * Hlavní okno aplikace, obsahuje ostatní komponenty.
+ * @see JFrame
+ * @author Matěj Váňa
+ * */
 
-    private final FileManager fileManager;
-    private final ValidationManager validationManager;
+public class MainFrame extends JFrame {
 
     private final JPanel editorPanel;
     private final JMenuBar menuBar;
@@ -27,13 +30,7 @@ public class MainFrame extends JFrame {
         // lepší vzhled
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (UnsupportedLookAndFeelException e) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
 
@@ -43,8 +40,6 @@ public class MainFrame extends JFrame {
         UIManager.put("OptionPane.cancelButtonText", "Zrušit");
         UIManager.put("FileChooser.cancelButtonText", "Zrušit");
 
-        this.fileManager = fileManager;
-        this.validationManager = validationManager;
         this.editorPanel = new TextEditor();
         this.jTabbedPane = new FilesTabbedPane(fileManager, validationManager, this, (TextEditor) editorPanel);
         this.menuBar = new MainMenuBar(fileManager, validationManager, jTabbedPane);
@@ -55,6 +50,9 @@ public class MainFrame extends JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * Slouží k načtení základního GUI, přidá jednotlivé části okna
+     * */
     private void initGui(){
         this.setLayout(new BorderLayout(5,5));
         menuBar.setVisible(true);
@@ -67,6 +65,9 @@ public class MainFrame extends JFrame {
 
     }
 
+    /**
+     * Přidání listeneru pro resize
+     * */
     private void initListeners(){
         this.getRootPane().addComponentListener(new ComponentAdapter() {
             @Override

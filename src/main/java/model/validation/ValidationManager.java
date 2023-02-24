@@ -17,22 +17,35 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Třída sloužící ke správě validací
+ * Umožňujě načtení validátorů, jejich uložení v paměti, nalezení xsd schémat v souborech a jejich přiřazení k souborům, validaci zvolených souborů
+ * @author Matěj Váňa
+ * */
 public class ValidationManager {
 
+    /**
+     * Cesta ke složce s validátory.
+     * */
     private String validatorsDirectory;
 
+    /**
+     * Slouží k uložení validátorů do listu s {@link BasicFile}
+     * @see BasicFile
+     * @see List
+     * */
     private List<BasicFile> validatorsList;
 
-    public ValidationManager(){
+    public ValidationManager(){ }
 
-    }
 
-    public ValidationManager(String validatorsDirectory){
-        setValidatorsDirectory(validatorsDirectory);
-    }
-
+    /**
+     * Pomocí {@link FileHandler} načte validátory ze zadané složky a uloží je do listu validátorů
+     * @see FileHandler
+     * */
     private void loadValidators(){
         validatorsList = FileHandler.loadFilesWithPath(validatorsDirectory);
     }
@@ -40,7 +53,6 @@ public class ValidationManager {
     /**
      * Nachystá xsd schémata pro vstupní data, aby mohlo dojít k jejich validaci
      * @param basicFiles List základních souborů dat, ve kterých je potřeba najít xsd schémata
-     * @return String s možnými chybami, případně výstupem s informacemi vhodnými do konzole.
      */
     public void setValidationSchemeForFiles(List<BasicFile> basicFiles) {
         SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -50,12 +62,11 @@ public class ValidationManager {
                     SAXParser saxParser = factory.newSAXParser();
                     InfoForValidationHandlerSax handlerSax = new InfoForValidationHandlerSax();
                     saxParser.parse(basicFile.getPath(), handlerSax);
-                    basicFile.setXsdSchemeName(handlerSax.getValidationXsdName());
-                } catch (SAXException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (ParserConfigurationException e) {
+                    String xsdSchemeName = handlerSax.getValidationXsdName();
+                    if(xsdSchemeName == null)
+                        xsdSchemeName = "";
+                    basicFile.setXsdSchemeName(xsdSchemeName);
+                } catch (SAXException | IOException | ParserConfigurationException e) {
                     e.printStackTrace();
                 }
             }
@@ -64,7 +75,8 @@ public class ValidationManager {
 
     /**
      * Slouží k validaci xml souborů
-     * @param basicFiles List základních souborů, které se mají validatovat na základě předem nalezlých xsd schémat.
+     * @param basicFiles List {@link BasicFile}, které se mají validatovat na základě předem nalezlých xsd schémat.
+     * @param findXsdSchemes {@code true} zda se mají pro zadané soubory první vyhledat xsd schémata, {@code false} pokud ne
      * @return String s možnými chybami, případně výstupem s informacemi vhodnými do konzole.
      */
     public String validateFiles(List<BasicFile> basicFiles, boolean findXsdSchemes){
@@ -74,6 +86,14 @@ public class ValidationManager {
     }
 
 
+    /**
+     * Samotná validace xsd souborů.
+     * @param basicFiles List {@link BasicFile} se soubory určenými k validaci
+     * @return String s výpisem do konzole.
+     * @see List
+     * @see BasicFile
+     * @see InfoForValidationHandlerSax
+     * */
     private String filesValidation(List<BasicFile> basicFiles){
         String output = "";
         // proměnné a listy pouze pro debug a zobrazení statistiky ohledně validace.
@@ -85,9 +105,9 @@ public class ValidationManager {
         List<String> missingXsdFilesNames = new ArrayList<>();
         List<String> missingXsdSchemeFilesPath = new ArrayList<>();
 
-        basicFiles.stream().filter(basicFile -> basicFile.isXml()).forEach(basicFile -> {
+        basicFiles.stream().filter(BasicFile::isXml).forEach(basicFile -> {
             filesValidated.getAndIncrement();
-            if(basicFile.getXsdSchemeName() != null){
+            if(!Objects.equals(basicFile.getXsdSchemeName(), "")){
                 if(validatorsList.stream().anyMatch(validator -> validator.isXsd() && validator.getName().equals(basicFile.getXsdSchemeName()))){
                     String validatorPath = validatorsList.stream().filter(validator-> validator.isXsd() && validator.getName().equals(basicFile.getXsdSchemeName())).findFirst().get().getPath();
                     Source xmlFile = new StreamSource(new File(basicFile.getPath()));
@@ -125,7 +145,7 @@ public class ValidationManager {
             }
             basicFile.setValidationDone(true);
         });
-        /*
+
         System.out.println("Validated files : " + filesValidated);
         System.out.println("Validated files Success : " + filesValidatedSuccess);
         System.out.println("Validated files error validation : " + filesValidatedErrorValidation);
@@ -133,7 +153,7 @@ public class ValidationManager {
         System.out.println("Validated files error no xsd scheme : " + filesValidatedErrorNoXsdScheme);
         System.out.println("Missing xsd files [" + missingXsdFilesNames.size() + "] " + missingXsdFilesNames);
         System.out.println("File paths that missing xsd scheme [" + missingXsdSchemeFilesPath.size() + "] " + missingXsdSchemeFilesPath);
-        */
+
         output += "\r\n" + "Počet validovaných souborů: " + filesValidated + "\r\n";
         output += "Počet úspěšně validovaných souborů: " + filesValidatedSuccess + "\r\n";
         output += "Počet chybně validovaných souborů: " + filesValidatedErrorValidation + "\r\n";
@@ -144,10 +164,20 @@ public class ValidationManager {
         return output;
     }
 
+    /**
+     * Vrací list validátorů.
+     * @return List {@link BasicFile} s validátory.
+     * @see BasicFile
+     * @see List
+     * */
     public List<BasicFile> getValidatorsList() {
         return validatorsList;
     }
 
+    /**
+     * Slouží k nastavení cesty pro validátory. Zároveň dojde k načtení validátorů do seznamu
+     * @param validatorsDirectory String s cestou na složku s validátory
+     * */
     public void setValidatorsDirectory(String validatorsDirectory) {
         this.validatorsDirectory = validatorsDirectory;
         loadValidators();

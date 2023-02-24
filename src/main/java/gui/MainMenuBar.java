@@ -7,13 +7,16 @@ import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.plaf.IconUIResource;
-import javax.swing.plaf.metal.MetalIconFactory;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.util.*;
+
+/**
+ * Komponenta pro menu v GUI, obsahuje načítání, práci s configem, validace, export
+ * @see JMenuBar
+ * @author Matěj Váňa
+ * */
 
 public class MainMenuBar extends JMenuBar {
 
@@ -46,6 +49,9 @@ public class MainMenuBar extends JMenuBar {
         this.add(configMenu);
     }
 
+    /**
+     * Slouží k vytvoření itemů v záložce config, včetně listenerů, vzhledu, umístění
+     * */
     private void initConfigMenu(){
         configMenu = new JMenu("Config");
 
@@ -53,7 +59,7 @@ public class MainMenuBar extends JMenuBar {
         showConfig.setAction(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Map config = loadConfig();
+                Map<String, String> config = loadConfig();
                 JOptionPane.showMessageDialog(null,
                         String.format("Umístění configu: %s\r\n\r\nCesta pro vstupní data: %s \r\nCesta pro validátory: %s\r\nCesta pro export: %s\r\n",
                                 CONFIG_PATH,
@@ -132,6 +138,9 @@ public class MainMenuBar extends JMenuBar {
         configMenu.add(changeExport);
     }
 
+    /**
+     * Slouží k vytvoření itemů v záložce funkce, včetně listenerů, vzhledu, umístění
+     * */
     private void initFunctionMenu(){
         functionMenu = new JMenu("Funkce");
 
@@ -199,6 +208,9 @@ public class MainMenuBar extends JMenuBar {
         functionMenu.add(export);
     }
 
+    /**
+     * Slouží k vytvoření načtení v záložce config, včetně listenerů, vzhledu, umístění
+     * */
     private void initLoadSourcesMenu() {
         loadSources = new JMenu("Načtení zdrojů");
 
@@ -305,6 +317,10 @@ public class MainMenuBar extends JMenuBar {
         loadSources.add(loadValidators);
     }
 
+    /**
+     * Slouží k načtení vstupní dat ze zadané cesty v parametrech
+     * @param dirPath cesta ke složce se vstupními daty
+     * */
     private void loadDataInput(String dirPath){
         //System.out.println("Start loading data input");
         ((FilesTabbedPane)tabbedPane).consoleOut("Začátek načítání vstupních dat z: " + dirPath, true);
@@ -319,6 +335,10 @@ public class MainMenuBar extends JMenuBar {
         }
     }
 
+    /**
+     * Slouží k načtení validátorů ze zadané cesty v parametrech
+     * @param dirPath cesta ke složce s validátory
+     * */
     private void loadValidators(String dirPath){
         //System.out.println("Start loading data validators");
         ((FilesTabbedPane)tabbedPane).consoleOut("Začátek načítání validátorů z: " + dirPath, true);
@@ -328,6 +348,10 @@ public class MainMenuBar extends JMenuBar {
         ((FilesTabbedPane)tabbedPane).consoleOut("Načítání validátorů dokončeno.", true);
     }
 
+    /**
+     * Slouží k exportu dat podle cesty zadané v parametrech
+     * @param dirPath cesta ke složce s exportem
+     * */
     private void exportData(String dirPath){
         ((FilesTabbedPane)tabbedPane).consoleOut("Začátek exportování dat.", true);
         int dialogResult = JOptionPane.YES_OPTION;
@@ -345,6 +369,10 @@ public class MainMenuBar extends JMenuBar {
         }
     }
 
+    /**
+     * Načte config do mapy, kterou vrací
+     * @return Map vrací mapu s configem
+     * */
     private Map loadConfig(){
         ((FilesTabbedPane)tabbedPane).consoleOut("Začátek čtení config souboru", true);
         Map config = null;
@@ -370,7 +398,11 @@ public class MainMenuBar extends JMenuBar {
         return config;
     }
 
-    private Map createConfig(){
+    /**
+     * Umožňuje skrze dialogová okna vytvořit config, který rovnou vrací.
+     * @return Map aktuálně vytvořneý config
+     * */
+    private Map<String, String> createConfig(){
         ((FilesTabbedPane)tabbedPane).consoleOut("Vytváření configu.", true);
         Map config = new IdentityHashMap();
 
@@ -390,6 +422,11 @@ public class MainMenuBar extends JMenuBar {
         return config;
     }
 
+    /**
+     * Slouží k zobrazení okna pro výběr složky/souboru
+     * @param title Titulek dialogu
+     * @return String s cestou k vybrané složce, případně null pokud není vybrána
+     * */
     private String showDialogFolderChooser(String title){
         JFileChooser configFileChooser = new JFileChooser();
         configFileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -403,6 +440,10 @@ public class MainMenuBar extends JMenuBar {
         return null;
     }
 
+    /**
+     * Uložení configu
+     * @param config Mapa s configem k uložení.
+     * */
     private void saveConfig(Map config){
         String jsonConfig = new Gson().toJson(config);
         try {

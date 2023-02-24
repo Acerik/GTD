@@ -10,17 +10,19 @@ import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+/**
+ * Třída slouží k zobrazení komponenty se záložky a obsahem jednotlivých zálože (konzole, vstupní data v jtree, validátory v jlist)
+ *
+ * @see JTabbedPane
+ * @see JTree
+ * @author Matěj Váňa
+ * */
 public class FilesTabbedPane extends JTabbedPane {
     private final JPanel inputPanel;
     private final JTree jTreeInput;
@@ -63,6 +65,9 @@ public class FilesTabbedPane extends JTabbedPane {
         this.setVisible(true);
     }
 
+    /**
+     * Inicializace panelů ze záložek tabbetpane, včetně listenerů na eventy
+     * */
     private void initPanes(){
         jListValidators.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         jListValidators.addListSelectionListener(e -> {
@@ -83,12 +88,12 @@ public class FilesTabbedPane extends JTabbedPane {
         validatorsPanel.add(scrollPaneValidators);
 
         jTreeInput.addTreeSelectionListener(e -> {
-            String path = e.getPath().getPath()[0].toString();
+            StringBuilder path = new StringBuilder(e.getPath().getPath()[0].toString());
             for (int i = 1; i < e.getPath().getPath().length; i++) {
-                path += "\\" + e.getPath().getPath()[i].toString();
+                path.append("\\").append(e.getPath().getPath()[i].toString());
             }
             String name = e.getPath().getPath()[e.getPath().getPath().length-1].toString();
-            String finalPath = path;
+            String finalPath = path.toString();
             Optional<BasicFile> current = fileManager.getInputDataBasicFileList()
                     .stream().filter(basicFile -> Objects.equals(basicFile.getName(), name) && Objects.equals(basicFile.getPath(), finalPath))
                     .findAny();
@@ -113,6 +118,7 @@ public class FilesTabbedPane extends JTabbedPane {
 
     /**
     * Slouží k načtení dat to stromové struktury na GUI, data pro načtení jsou vybrány na základě informací ve fileManager
+     * @see JTree
     */
     public void initInputTree() throws InterruptedException {
         //System.out.println("JTree start");
@@ -136,6 +142,7 @@ public class FilesTabbedPane extends JTabbedPane {
         // získání všech souborů root složky
         File[] files = dir.listFiles();
 
+        assert files != null;
         for (File file : files) {
             if (file == null) {
                 System.out.println("NUll directory found ");
@@ -151,7 +158,7 @@ public class FilesTabbedPane extends JTabbedPane {
                 // získání modelu
                 DefaultTreeModel model = (DefaultTreeModel) jTreeInput.getModel();
                 // získání roota modelu
-                DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+
                 // vytvoření node pro novou složku v modelu
                 newDirTreeNode = new DefaultMutableTreeNode(file.getName());
 
@@ -167,12 +174,11 @@ public class FilesTabbedPane extends JTabbedPane {
 
                 // získání modelu
                 DefaultTreeModel model = (DefaultTreeModel) jTreeInput.getModel();
-                // nadřazená složka (root) pro aktuální soubor
-                DefaultMutableTreeNode rootForCurrentFile = root2;
+
                 DefaultMutableTreeNode newfile = new DefaultMutableTreeNode(file.getName());
 
                 // vložení souboru do modelu
-                model.insertNodeInto(newfile, rootForCurrentFile, rootForCurrentFile.getChildCount());
+                model.insertNodeInto(newfile, root2, root2.getChildCount());
                 // obnova změn v modelu
                 model.reload();
 
@@ -204,6 +210,11 @@ public class FilesTabbedPane extends JTabbedPane {
         scrollPaneConsole.setPreferredSize(new Dimension(this.getWidth()-5, this.getHeight()-25));
     }
 
+    /**
+     * Slouží k výpisu do konzole, která je přidána v gui.
+     * @param text zadaný string se vypíše do konzole v GUI
+     * @param addTime na základě boolean se přidá čas před text.
+     * */
     public void consoleOut(String text, boolean addTime){
         if(addTime)
             text = "["+ (new SimpleDateFormat("HH:mm:ss").format(new Date())) + "] " + text;

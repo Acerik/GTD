@@ -16,6 +16,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
+/**
+ * Panel s texotvým editorem
+ * @see RSyntaxTextArea
+ * @see JPanel
+ * @author Matěj Váňa
+ * */
+
 public class TextEditor extends JPanel {
 
     private final RSyntaxTextArea textArea;
@@ -37,6 +44,9 @@ public class TextEditor extends JPanel {
         initGui();
     }
 
+    /**
+     * Slouží k načtení základního GUI, přidá jednotlivé části okna
+     * */
     private void initGui(){
         //text editor
         textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_XML);
@@ -49,7 +59,7 @@ public class TextEditor extends JPanel {
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                /*
+
                 try {
                     if(currentOpenBasicFile != null)
                         if(!Objects.equals(textArea.getText(), FileUtils.readFileToString(new File(currentOpenBasicFile.getPath())))) {
@@ -60,8 +70,8 @@ public class TextEditor extends JPanel {
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
-                 */
-                fileSavedLabel.setText("Soubor není uložen.");
+
+                //fileSavedLabel.setText("Soubor není uložen.");
             }
         });
         textArea.addKeyListener(new KeyAdapter() {
@@ -86,14 +96,15 @@ public class TextEditor extends JPanel {
 
         saveButton.setText("Uložit soubor");
         saveButton.setEnabled(false);
-        saveButton.addActionListener(e -> {
-            saveFileInEditor();
-        });
+        saveButton.addActionListener(e -> saveFileInEditor());
         topPanel.add(saveButton, BorderLayout.EAST);
 
         this.add(topPanel, BorderLayout.NORTH);
     }
 
+    /**
+     * Slouží k uložení souboru, který je aktuálně otevřený
+     * */
     private void saveFileInEditor(){
         try {
             FileUtils.writeStringToFile(new File(currentOpenBasicFile.getPath()), textArea.getText(), false);
@@ -103,7 +114,11 @@ public class TextEditor extends JPanel {
         }
     }
 
-    public void openFileInEditor(BasicFile basicFile) throws IOException {
+    /**
+     * Slouží k otevření souboru zadaného v parametru do editoru. Hlidá zda je aktuálně otevřený soubor uložený.
+     * @param newBasicFileToOpen {@link BasicFile}, který se má otevřít nyní.
+     * */
+    public void openFileInEditor(BasicFile newBasicFileToOpen) throws IOException {
         if(currentOpenBasicFile == null)
             saveButton.setEnabled(true);
         if(currentOpenBasicFile != null){
@@ -116,10 +131,10 @@ public class TextEditor extends JPanel {
                 }
             }
         }
-        textArea.setText(FileUtils.readFileToString(new File(basicFile.getPath())));
+        textArea.setText(FileUtils.readFileToString(new File(newBasicFileToOpen.getPath())));
         textArea.setCaretPosition(0);
-        fileNameLabel.setText("<html>Soubor: " + basicFile.getName() + "<br>" + basicFile.getPath()+"</html>");
-        currentOpenBasicFile = basicFile;
+        fileNameLabel.setText("<html>Soubor: " + newBasicFileToOpen.getName() + "<br>" + newBasicFileToOpen.getPath()+"</html>");
+        currentOpenBasicFile = newBasicFileToOpen;
         fileSavedLabel.setText("Soubor je uložen.");
     }
 

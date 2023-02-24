@@ -4,6 +4,10 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+/**
+ * Třída slouží ke čtení xml souborů a nalezení názvu xsd schématu, které daný soubor potřebuje k validaci
+ * @author Matěj Váňa
+ * */
 public class InfoForValidationHandlerSax extends DefaultHandler {
 
     private String validationXsdName = null;
@@ -28,9 +32,9 @@ public class InfoForValidationHandlerSax extends DefaultHandler {
         } else if(attributes.getValue("xsi:schemaLocation") != null && validationXsdName == null){
             if (attributes.getValue("xsi:schemaLocation").contains(" ")){
                 String[] tempAttribute = attributes.getValue("xsi:schemaLocation").split(" ");
-                for(int x = 0; x < tempAttribute.length; x++){
-                    if(tempAttribute[x].endsWith(".xsd")){
-                        validationXsdName = tempAttribute[x].trim();
+                for (String s : tempAttribute) {
+                    if (s.endsWith(".xsd")) {
+                        validationXsdName = s.trim();
                         break;
                     }
                 }
@@ -59,7 +63,11 @@ public class InfoForValidationHandlerSax extends DefaultHandler {
         super.endElement(uri, localName, qName);
     }
 
-
+    /**
+     * Vrací nalezený název xsd souboru, který je potřeba k validaci
+     * @return String s názvem xsd souborů, který je potřeba k validaci souboru
+     * @see model.files.BasicFile
+     * */
     public String getValidationXsdName() {
         return validationXsdName;
     }

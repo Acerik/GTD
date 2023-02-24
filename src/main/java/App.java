@@ -1,6 +1,5 @@
 import gui.MainFrame;
 import model.FileManager;
-import model.files.BasicFile;
 import model.validation.ValidationManager;
 
 public class App {
