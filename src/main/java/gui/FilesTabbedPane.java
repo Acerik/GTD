@@ -8,6 +8,8 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -32,6 +34,7 @@ public class FilesTabbedPane extends JTabbedPane {
     private final JScrollPane scrollPaneValidators;
     private final JList<String> jListValidators;
     private final JFrame frame;
+    private boolean askToDelete = true;
 
     private final JPanel consolePanel;
     private final JScrollPane scrollPaneConsole;
@@ -81,6 +84,35 @@ public class FilesTabbedPane extends JTabbedPane {
             }
             else
                 System.out.println("This validator is not loaded");
+        });
+        jListValidators.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_DELETE){
+                    int dialogResult = -1;
+                    if(askToDelete) {
+                        String[] options = new String[]{"Ano", "Ano a už se neptat.", "Ne"};
+                        dialogResult = JOptionPane.showOptionDialog(null,
+                                "Chcete odebrat validátor s názvem: " + jListValidators.getSelectedValue() + "?",
+                                "Odebrání validátoru.", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+                    }
+                    if(dialogResult == 0 || dialogResult == 1 || !askToDelete){
+                        int selectedIndex = jListValidators.getSelectedIndex();
+                        String value = jListValidators.getSelectedValue();
+                        validationManager.removeValidatorFromList(selectedIndex);
+                        initValidatorList(validationManager.getValidatorsList());
+                        if(selectedIndex < validationManager.getValidatorsList().size()){
+                            jListValidators.setSelectedIndex(selectedIndex);
+                        } else {
+                            jListValidators.setSelectedIndex(validationManager.getValidatorsList().size()-1);
+                        }
+                        consoleOut("Validátor: " + value + " byl odebrán", true);
+                        if(dialogResult == 1){
+                            askToDelete = false;
+                        }
+                    }
+                }
+            }
         });
         scrollPaneValidators.setViewportView(jListValidators);
         jListValidators.setLayoutOrientation(JList.VERTICAL);

@@ -7,10 +7,14 @@ import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Komponenta pro menu v GUI, obsahuje načítání, práci s configem, validace, export
@@ -23,6 +27,7 @@ public class MainMenuBar extends JMenuBar {
     private JMenu loadSources;
     private JMenu functionMenu;
     private JMenu configMenu;
+    private JMenu helpMenu;
 
     private final FileManager fileManager;
     private final ValidationManager validationManager;
@@ -47,6 +52,51 @@ public class MainMenuBar extends JMenuBar {
         initConfigMenu();
         configMenu.setVisible(true);
         this.add(configMenu);
+
+        initHelpMenu();
+        helpMenu.setVisible(true);
+        this.add(helpMenu);
+    }
+
+    /**
+     * Slouží k vytvoření itemů v záložce nápověda, včetně listenerů, vzhledu, umístění
+     * */
+    private void initHelpMenu(){
+        helpMenu = new JMenu("Nápověda");
+
+        JMenuItem appHelp = new JMenuItem();
+        appHelp.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String helpText ;
+                InputStream inputStream = getClass().getClassLoader().getResourceAsStream("help.html");
+                helpText = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8)).lines().collect(Collectors.joining());
+                JOptionPane.showMessageDialog(null, helpText, "Nápověda.", JOptionPane.PLAIN_MESSAGE);
+            }
+        });
+        appHelp.setText("Nápověda k programu");
+        appHelp.setIcon(UIManager.getIcon("Menu.arrowIcon"));
+        helpMenu.add(appHelp);
+
+        JMenuItem editorHelp = new JMenuItem();
+        editorHelp.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                    try {
+                        Desktop.getDesktop().browse(new URI("https://github.com/bobbylight/RSyntaxTextArea/wiki/Keyboard-Shortcut-List"));
+                    } catch (IOException | URISyntaxException ex) {
+                        ex.printStackTrace();
+                        ((FilesTabbedPane)tabbedPane).consoleOut(
+                                "Nelze otevřít nápovědu k editoru. Odkaz: https://github.com/bobbylight/RSyntaxTextArea/wiki/Keyboard-Shortcut-List",
+                                true);
+                    }
+                }
+            }
+        });
+        editorHelp.setText("Nápověda k editoru");
+        editorHelp.setIcon(UIManager.getIcon("Menu.arrowIcon"));
+        helpMenu.add(editorHelp);
     }
 
     /**
@@ -298,23 +348,38 @@ public class MainMenuBar extends JMenuBar {
         loadDataInput.setIcon(UIManager.getIcon("Tree.openIcon"));
         loadSources.add(loadDataInput);
 
-        JMenuItem loadValidators = new JMenuItem();
-        loadValidators.setAction(new AbstractAction() {
+        JMenuItem addValidators = new JMenuItem();
+        addValidators.setAction(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFileChooser jFileChooser = new JFileChooser();
-                jFileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                jFileChooser.setDialogTitle("Vyberte složku s validátory.");
+                jFileChooser.setDialogTitle("Vyberte validátory.");
+                jFileChooser.setMultiSelectionEnabled(true);
+                jFileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
                 jFileChooser.setFileFilter(new FileNameExtensionFilter("Složka", "folder"));
-                int i = jFileChooser.showDialog(loadSources, "Potvrdit složku");
+                jFileChooser.addChoosableFileFilter(new FileNameExtensionFilter("XSD schéma", "xsd"));
+                int i = jFileChooser.showDialog(loadSources, "Potvrdit složku nebo validátory");
                 if(i == JFileChooser.APPROVE_OPTION){
-                    loadValidators(jFileChooser.getSelectedFile().getPath());
+                    if(jFileChooser.getSelectedFiles().length > 0){
+                        ((FilesTabbedPane)tabbedPane).consoleOut("Začátek přidávání validátorů.", true);
+                        for(File file : jFileChooser.getSelectedFiles()){
+                            if(file.isDirectory()){
+                                validationManager.addValidatorsDirectory(file.getPath(), true);
+                            } else {
+                                if(!validationManager.addValidatorsFile(file, true)){
+                                    ((FilesTabbedPane)tabbedPane).consoleOut("Validátor s názvem: " + file.getName() + " je již načten, nedošlo k jeho načtení.", true);
+                                }
+                            }
+                        }
+                        ((FilesTabbedPane)tabbedPane).initValidatorList(validationManager.getValidatorsList());
+                        ((FilesTabbedPane)tabbedPane).consoleOut("Přidávání validátorů dokončeno.", true);
+                    }
                 }
             }
         });
-        loadValidators.setText("Načíst složku s validátory");
-        loadValidators.setIcon(UIManager.getIcon("Tree.openIcon"));
-        loadSources.add(loadValidators);
+        addValidators.setText("Přidat validátory");
+        addValidators.setIcon(UIManager.getIcon("Tree.openIcon"));
+        loadSources.add(addValidators);
     }
 
     /**

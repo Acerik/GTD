@@ -39,15 +39,28 @@ public class ValidationManager {
      * */
     private List<BasicFile> validatorsList;
 
-    public ValidationManager(){ }
+    public ValidationManager(){
+        validatorsList = new ArrayList<>();
+    }
 
 
     /**
-     * Pomocí {@link FileHandler} načte validátory ze zadané složky a uloží je do listu validátorů
+     * Pomocí {@link FileHandler} načte validátory ze zadané složky a přidá je do listu validátorů
      * @see FileHandler
      * */
     private void loadValidators(){
-        validatorsList = FileHandler.loadFilesWithPath(validatorsDirectory);
+        if(validatorsList.isEmpty()) {
+            validatorsList = FileHandler.loadFilesWithPath(validatorsDirectory);
+        } else {
+            List<BasicFile> temp = FileHandler.loadFilesWithPath(validatorsDirectory);
+            temp.forEach(basicFile -> {
+                if(!containsName(validatorsList, basicFile.getName())) {
+                    validatorsList.add(basicFile);
+                } else {
+                    System.out.println("This validator was loaded before config. " + basicFile);
+                }
+            });
+        }
     }
 
     /**
@@ -181,5 +194,58 @@ public class ValidationManager {
     public void setValidatorsDirectory(String validatorsDirectory) {
         this.validatorsDirectory = validatorsDirectory;
         loadValidators();
+    }
+
+    /**
+     * Slouží k přidání validátoru ze zadaného souboru
+     * @param file {@link File} s validátorem, který se má přidat
+     * @param preventDuplicity True pokud se má pohlídat duplicitní přidání validátoru
+     * @return true pokud byl soubor přidán, false pokud ne.
+     * */
+
+    public boolean addValidatorsFile(File file, boolean preventDuplicity){
+        if(preventDuplicity) {
+            if (!containsName(validatorsList, file.getName())) {
+                validatorsList.add(new BasicFile(file));
+                return true;
+            }
+        } else {
+            validatorsList.add(new BasicFile(file));
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Slouží k přidání validátorů ze zadané složky
+     * @param pathToDirectory cesta ke složce, ze které se mají načíst validátory
+     * @param preventDuplicity True pokud se má pohlídat duplicitní přidání validátoru
+     * */
+    public void addValidatorsDirectory(String pathToDirectory, boolean preventDuplicity){
+        if(!preventDuplicity){
+            validatorsList.addAll(FileHandler.loadFilesWithPath(pathToDirectory));
+            return;
+        }
+        List<BasicFile> loaded = FileHandler.loadFilesWithPath(pathToDirectory);
+        loaded.forEach(basicFile -> {
+            if(!containsName(validatorsList, basicFile.getName())){
+                if(basicFile.isXsd())
+                    validatorsList.add(basicFile);
+            }
+        });
+    }
+
+    /**
+     * Odebrání souboru ze sezmanu validátorů
+     * @param index index souboru, který se má odstranit ze seznamu
+     * */
+    public void removeValidatorFromList(int index){
+        validatorsList.remove(index);
+        //validatorsList.removeIf(basicFile -> basicFile.getName().equals(name));
+    }
+
+
+    private boolean containsName(final List<BasicFile> list, final String name){
+        return list.stream().anyMatch(o -> o.getName().equals(name));
     }
 }

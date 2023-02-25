@@ -1,0 +1,50 @@
+<html>
+<h4>Menu</h4>
+<ul>
+    <li>Načtení zdrojů</li>
+    <ul>
+        <li>Načtení vst. dat a validátorů z configu. Načte data i validátory podle zadaných cest v configu.</li>
+        <li>Načtení vstupních dat z configu. Načte vstupní data podle zadaných cest v configu.</li>
+        <li>Načtení validátorů z configu. Pokud jsou již nějaké validátory načteny, přidají se pouze ty, které mají jiný název.</li>
+        <li>Načíst složku se vstupními daty. Umožní nalézt složku, která se při potvrzení okna načte pro vstupní data. Předchozí data budou ztracena.</li>
+        <li>Přidat validátory. Umožní vybrat složku, případně xsd soubory, které se přidají na seznam validátorů.</li>
+    </ul>
+    <li>Funkce</li>
+    <ul>
+        <li>Validovat. Provede validaci vstupních dat, podle načtených validátorů a provede výpis do konzole.</li>
+        <li>Exportovat podle configu. Provede export vstupních dat z cache složky do výchozí složky podle configu.</li>
+        <li>Exportovat. Provede export do složky, kterou umožní zvolit.</li>
+    </ul>
+    <li>Config</li>
+    <ul>
+        <li>Zobrazit config. Zobrazí aktuální cesty nastavené v configu, včetně umístění configu.</li>
+        <li>Vytvoření configu. Umožní skrze dialogy zvolit výchozí složky do configu.</li>
+        <li>Změnit cestu ke vstupním datům v configu. Umožní změnit cestu skrze dialog.</li>
+        <li>Změnit cestu k validátorům v configu. Umožní změnit cestu skrze dialog.</li>
+        <li>Změnit cestu exportu v configu. Umožní změnit cestu skrze dialog.</li>
+    </ul>
+</ul>
+<h4>Načítání vstupních dat</h4>
+<p>
+    Při načítání vstupní dat, dojde k rozbalení zip balíčků a všechny soubory se ve stejné struktuře nakopírují<br>
+    do cache souboru, kde jsou po celou dobu. V případě exportu se tyto data vrátí zpět do původní struktury, <br>
+    se soubory zabalí zpět do zip souborů, atd. Tato kompletní struktura je poté ve složce, kam byl zvolen export.<br>
+    V případě opětovného načtení vstupních dat, se smaže cache a načtou se nová data. Je proto nutné načíst kompletní <br>
+    složku se vstupními daty, nikoliv po částech.
+</p>
+<h4>Načítání validátorů.</h4>
+<p>
+    Načítání validátorů probíhá vytvořením záznamu o místě, kde se validátor nachází. Validátory se nikam nepřesouvají.<br>
+    Validátory je možné ze seznamu odebrat pomocí klávesy DEL. Validátory se nepřidají, <br>
+    pokud je již v seznamu validátor se stejným jménem.
+</p>
+<h4>Části aplikace</h4>
+<ul>
+    <li>Vstupní data, zobrazení vstupních dat, které jsou načteny v cache soubory, který je umístěn na stejném místě jako aplikace.<br>
+    Při kliknutí na soubor dojde k otevření v editoru.</li>
+    <li>Validátory, zobrazuje seznam načtených validátorů, které se použijí k validaci. <br>Pomocí klávesy DEL, je možné odebrat validátor ze seznamu.</li>
+    <li>Konzole, slouží k výpisu aktuálních operací, výsledku validace. Zobrazuje každý krok i případné chyby.</li>
+    <li>Editor, umožňuje využívat klávesové zkratky viz Nápověda -> Nápověda k editoru. <br>
+        Navíc však umožňuje uložit aktuální soubor v editoru pomocí CTRL+S</li>
+</ul>
+</html>

@@ -37,7 +37,7 @@ class ValidationManagerTest {
     @Test
     @Order(1)
     void setValidatorsDirectory() {
-        assertNull(validationManager.getValidatorsList());
+        assertTrue(validationManager.getValidatorsList().isEmpty());
         validationManager.setValidatorsDirectory(validatorDir);
         assertFalse(validationManager.getValidatorsList().isEmpty());
     }
@@ -76,4 +76,34 @@ class ValidationManagerTest {
     void getValidatorsList() {
         assertNotNull(validationManager.getValidatorsList());
     }
+
+    @Test
+    @Order(5)
+    void addValidatorsFile() {
+        File file = new File(validationManager.getValidatorsList().get(0).getPath());
+        int sizeBefore = validationManager.getValidatorsList().size();
+        assertFalse(validationManager.addValidatorsFile(file, true));
+        assertTrue(validationManager.addValidatorsFile(file, false));
+        assertEquals(sizeBefore+1, validationManager.getValidatorsList().size());
+    }
+
+    @Test
+    @Order(6)
+    void removeValidatorFromList(){
+        int index = validationManager.getValidatorsList().size()-1;
+        int sizeBefore = validationManager.getValidatorsList().size();
+        validationManager.removeValidatorFromList(index);
+        assertEquals(sizeBefore-1, validationManager.getValidatorsList().size());
+    }
+
+    @Test
+    @Order(7)
+    void addValidatorsDirectory(){
+        int size= validationManager.getValidatorsList().size();
+        validationManager.addValidatorsDirectory(validatorDir, true);
+        assertEquals(size, validationManager.getValidatorsList().size());
+        validationManager.addValidatorsDirectory(validatorDir, false);
+        assertNotEquals(size, validationManager.getValidatorsList().size());
+    }
+
 }
